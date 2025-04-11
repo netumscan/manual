@@ -1,0 +1,76 @@
+# NETUM Scanner Manual
+
+```{list-table} Standard Manual
+:width: 100%
+:widths: 50 50
+:header-rows: 1
+
+*   - Chinese 
+    - English
+*   - [C Series Scanner](page-zh:C)
+    - [C Series Scanner](page-en:C)
+*   - [DS Series Scanner](page-zh:DS)
+    - [DS Series Scanner](page-en:DS)
+*   - [E Series Scanner](page-zh:E)
+    - [E Series Scanner](page-en:E)
+*   - [F Series Scanner](page-zh:F)
+    - [F Series Scanner](page-en:F)
+*   - [GY Series Scanner](page-zh:GY)
+    - [GY Series Scanner](page-en:GY)
+*   - [H Series Scanner](page-zh:H)
+    - [H Series Scanner](page-en:H)
+*   - [K Series Scanner](page-zh:K)
+    - [K Series Scanner](page-en:K)
+*   - [L Series Scanner](page-zh:L)
+    - [L Series Scanner](page-en:L)
+*   - [M Series Scanner](page-zh:M)
+    - [M Series Scanner](page-en:M)
+*   - [NT Series Scanner](page-zh:NT)
+    - [NT Series Scanner](page-en:NT)
+*   - [RD Series Scanner](page-zh:RD)
+    - [RD Series Scanner](page-en:RD)
+*   - [RS Series Scanner](page-zh:RS)
+    - [RS Series Scanner](page-en:RS)
+*   - [S Series Scanner](page-zh:S)
+    - [S Series Scanner](page-en:S)
+*   - [W Series Scanner](page-zh:W)
+    - [W Series Scanner](page-en:W)
+*   - [Z Series Scanner](page-zh:Z)
+    - [Z Series Scanner](page-en:Z)
+*   - [Payment Box/Embedded Barcode Reader](page-zh:HZ)
+    - [Payment Box/Embedded Barcode Reader](page-en:HZ)
+*   - [Desktop Scanner](page-zh:PT)
+    - [Desktop Scanner](page-en:PT)
+```
+
+
+```{list-table} General Manual
+:width: 100%
+:widths: 50 50
+:header-rows: 1
+
+*   - Chinese 
+    - English
+*   - [Wired Scanner-212](docs-zh:YX-212)
+    - [Wired Scanner-212](docs-en:YX-212)
+*   - [Wired Scanner-280](docs-zh:YX-280)
+    - [Wired Scanner-280](docs-en:YX-280)
+*   - [Wired Scanner-290](docs-zh:YX-290)
+    - [Wired Scanner-290](docs-en:YX-290)
+*   - [Wired Scanner-CCD](docs-zh:YX-CCD)
+    - [Wired Scanner-CCD](docs-en:YX-CCD)
+*   - [Wired Scanner-HS7](docs-zh:YX-HS7)
+    - [Wired Scanner-HS7](docs-en:YX-HS7)
+*   - [2.4G+Bluetooth wireless scanner](docs-zh:WX)
+    - [2.4G+Bluetooth wireless scanner](docs-en:WX)
+*   - [2.4G wireless scanner](docs-zh:WX-RF)
+    - [2.4G wireless scanner](docs-en:WX-RF)
+*   - [Bluetooth wireless scanner](docs-zh:WX-BT)
+    - [Bluetooth wireless scanner](docs-en:WX-BT)
+*   - [WiFi wireless scanner](docs-zh:WiFi)
+    - [WiFi wireless scanner](docs-en:WiFi)
+*   - [Payment Box/Embedded Barcode Reader](docs-zh:HZ)
+    - [Payment Box/Embedded Barcode Reader](docs-en:HZ)
+*   - [Desktop Scanner](docs-zh:PT)
+    - [Desktop Scanner](docs-en:PT)
+```

@@ -1,0 +1,47 @@
+---
+hide-toc: true
+---
+
+# F系列扫描枪
+
+
+## [F20](docs-zh:F20)
+
+
+```{figure} ../media/series/F20.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/F20/latest
+
+[F20](docs-zh:F20)
+```
+
+## [F1900](docs-zh:F1900)
+
+
+```{figure} ../media/series/F1900.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/F1900/latest
+
+[F1900](docs-zh:F1900)
+```
+
+## [F16](docs-zh:F16)
+
+```{figure} ../media/series/F16.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/F16/latest
+
+[F16](docs-zh:F16)
+```
+
+## [F18W](docs-zh:F18W)
+
+```{figure} ../media/series/F18W.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/F18W/latest
+
+[F18W](docs-zh:F18W)
+```
+
+
+

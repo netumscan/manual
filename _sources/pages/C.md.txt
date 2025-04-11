@@ -1,0 +1,60 @@
+---
+hide-toc: true
+---
+
+
+
+# C系列扫描枪
+
+
+## [C740](docs-zh:C740)
+
+
+```{figure} ../media/series/C740.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/C740/latest
+
+[C740](docs-zh:C740)
+```
+
+
+## [C750](docs-zh:C750)
+
+```{figure} ../media/series/C750.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/C750/latest
+
+[C750](docs-zh:C750)
+```
+
+## [C830](docs-zh:C830)
+
+
+```{figure} ../media/series/C830.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/C830/latest
+
+[C830](docs-zh:C830)
+```
+
+## [C850_B2C](docs-zh:C850_B2C)
+
+
+```{figure} ../media/series/C850_B2C.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/C850_B2C/latest
+
+[C850_B2C](docs-zh:C850_B2C)
+```
+
+## [C990](docs-zh:C990)
+
+
+```{figure} ../media/series/C990.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/C990/latest
+
+[C990](docs-zh:C990)
+```
+
+
