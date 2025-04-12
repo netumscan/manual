@@ -3,7 +3,7 @@
 
 ## 0ms
 
-```{figure} media/3E210010030..png
+```{figure} ../../../media/platform/3E210010030..png
 :align: center
 :width: 300px
 
@@ -12,7 +12,7 @@
 
 ## 500ms
 
-```{figure} media/3E21001003500..png
+```{figure} ../../../media/platform/3E21001003500..png
 :align: center
 :width: 300px
 
@@ -21,7 +21,7 @@
 
 ## 3000ms
 
-```{figure} media/3E210010033000..png
+```{figure} ../../../media/platform/3E210010033000..png
 :align: center
 :width: 300px
 
@@ -30,7 +30,7 @@
 
 ## 禁止同码扫描
 
-```{figure} media/3E2100100365535..png
+```{figure} ../../../media/platform/3E2100100365535..png
 :align: center
 :width: 300px
 
