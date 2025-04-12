@@ -1,0 +1,25 @@
+---
+hide-toc: true
+---
+
+# H系列扫描枪
+
+## [H3](docs-zh:H3)
+
+```{figure} ../media/series/H3.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/H3/zh
+
+[H3](docs-zh:H3)
+```
+
+
+## [H8](docs-zh:H8)
+
+
+```{figure} ../media/series/H8.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/H8/zh
+
+[H8](docs-zh:H8)
+```

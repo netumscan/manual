@@ -1,0 +1,54 @@
+---
+hide-toc: true
+---
+
+#   M Series Scanner
+
+## [M20](docs-en:M20)
+
+
+```{figure} ../media/series/M20.jpg
+:align: center
+:target: https://docs.netum.net/manual/M20/en
+
+[M20](docs-en:M20)
+```
+
+## [M5](docs-en:M5)
+
+
+```{figure} ../media/series/M5.jpg
+:align: center
+:target: https://docs.netum.net/manual/M5/en
+
+[M5](docs-en:M5)
+```
+
+## [M60](docs-en:M60)
+
+```{figure} ../media/series/M60.jpg
+:align: center
+:target: https://docs.netum.net/manual/M60/en
+
+[M60](docs-en:M60)
+```
+
+## [M80](docs-en:M80)
+
+```{figure} ../media/series/M80.jpg
+:align: center
+:target: https://docs.netum.net/manual/M80/en
+
+[M80](docs-en:M80)
+```
+
+## [M8BT](docs-en:M8BT)
+
+```{figure} ../media/series/M8BT.jpg
+:align: center
+:target: https://docs.netum.net/manual/M8BT/en
+
+[M8BT](docs-en:M8BT)
+```
+
+

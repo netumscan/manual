@@ -1,0 +1,65 @@
+---
+hide-toc: true
+---
+
+# L系列扫描枪
+
+## [L3](docs-zh:L3)
+
+```{figure} ../media/series/L3.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/L3/zh
+
+[L3](docs-zh:L3)
+```
+
+## [L5](docs-zh:L5)
+
+
+```{figure} ../media/series/L5.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/L5/zh
+
+[L5](docs-zh:L5)
+```
+
+## [L6](docs-zh:L6)
+
+
+```{figure} ../media/series/L6.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/L6
+
+[L6](docs-zh:L6)
+```
+
+## [L6BL](docs-zh:L6BL)
+
+```{figure} ../media/series/L6BL.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/L6BL
+
+[L6BL](docs-zh:L6BL)
+```
+
+## [L8](docs-zh:L8)
+
+
+```{figure} ../media/series/L8.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/L8
+
+[L8](docs-zh:L8)
+```
+
+## [L8BL](docs-zh:L8BL)
+
+```{figure} ../media/series/L8BL.jpg
+:align: center
+:target: https://docs.gzxlscan.cn/manual/L8BL
+
+[L8BL](docs-zh:L8BL)
+```
+
+
+
