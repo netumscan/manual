@@ -9,7 +9,7 @@ EMQX 开源版,下载地址：[EMQX](https://github.com/emqx/emqx/releases)
 
 ### 测试服务
 
-```{figure} ../../../media/wireless/wifi-emqx.png
+```{figure} media/wifi-emqx.png
 :align: center
 ```
 
@@ -55,7 +55,7 @@ EMQX 开源版,下载地址：[EMQX](https://github.com/emqx/emqx/releases)
 - 使用MQTT客户端软件[[MQTTX](https://mqttx.app/)]连接Broker服务器，并订阅扫描枪发布消息的主题。
 
 
-```{figure} ../../../media/wireless/wifi-mqttx.png
+```{figure} media/wifi-mqttx.png
 :align: center
 ```
 

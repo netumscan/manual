@@ -12,7 +12,7 @@ hide-toc: true
 
 ```{figure} ../media/series/C740.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/C740/latest
+:target: https://docs.gzxlscan.cn/manual/C740/zh
 
 [C740](docs-zh:C740)
 ```
@@ -22,7 +22,7 @@ hide-toc: true
 
 ```{figure} ../media/series/C750.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/C750/latest
+:target: https://docs.gzxlscan.cn/manual/C750/zh
 
 [C750](docs-zh:C750)
 ```
@@ -32,7 +32,7 @@ hide-toc: true
 
 ```{figure} ../media/series/C830.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/C830/latest
+:target: https://docs.gzxlscan.cn/manual/C830/zh
 
 [C830](docs-zh:C830)
 ```
@@ -42,7 +42,7 @@ hide-toc: true
 
 ```{figure} ../media/series/C850_B2C.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/C850_B2C/latest
+:target: https://docs.gzxlscan.cn/manual/C850_B2C/zh
 
 [C850_B2C](docs-zh:C850_B2C)
 ```
@@ -52,7 +52,7 @@ hide-toc: true
 
 ```{figure} ../media/series/C990.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/C990/latest
+:target: https://docs.gzxlscan.cn/manual/C990/zh
 
 [C990](docs-zh:C990)
 ```

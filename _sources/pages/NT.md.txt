@@ -9,7 +9,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-1228BC.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-1228BC/latest
+:target: https://docs.gzxlscan.cn/manual/NT-1228BC/zh
 
 [NT-1228BC](docs-zh:NT-1228BC)
 ```
@@ -20,7 +20,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-1228BL.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-1228BL/latest
+:target: https://docs.gzxlscan.cn/manual/NT-1228BL/zh
 
 [NT-1228BL](docs-zh:NT-1228BL)
 ```
@@ -30,7 +30,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-2028.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-2028/latest
+:target: https://docs.gzxlscan.cn/manual/NT-2028/zh
 
 [NT-2028](docs-zh:NT-2028)
 ```
@@ -39,7 +39,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-2028-PS.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-2028-PS/latest
+:target: https://docs.gzxlscan.cn/manual/NT-2028-PS/zh
 
 [NT-2028-PS](docs-zh:NT-2028-PS)
 ```
@@ -48,7 +48,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-2028-PS-W.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-2028-PS-W/latest
+:target: https://docs.gzxlscan.cn/manual/NT-2028-PS-W/zh
 
 [NT-2028-PS-W](docs-zh:NT-2028-PS-W)
 ```

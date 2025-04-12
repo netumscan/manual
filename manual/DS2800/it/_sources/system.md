@@ -3,7 +3,7 @@
 ## 恢复默认设置
 当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。
 
-```{figure} ../../../media/wireless/2523IFSNO24B.png
+```{figure} media/2523IFSNO24B.png
 :align: center
 :width: 300px
 
@@ -15,7 +15,7 @@
 ```
 
 ## 获取固件版本
-```{figure} ../../../media/wireless/24SW23VER.png
+```{figure} media/24SW23VER.png
 :align: center
 :width: 300px
 
@@ -25,14 +25,14 @@
 ## 声音设置
 扫描相应设置码，可以开启/关闭扫描枪的声音提示
 
-```{figure} ../../../media/wireless/24BUZZ231.png
+```{figure} media/24BUZZ231.png
 :align: center
 :width: 300px
 
 声音开启 `默认`
 ```
   
-```{figure} ../../../media/wireless/24BUZZ230.png
+```{figure} media/24BUZZ230.png
 :align: center
 :width: 300px
 
@@ -40,7 +40,7 @@
 ```
 
 ### 高音量
-```{figure} ../../../media/wireless/24BUZZ231.png
+```{figure} media/24BUZZ231.png
 :align: center
 :width: 300px
 
@@ -48,7 +48,7 @@
 ```
 
 ### 中音量
-```{figure} ../../../media/wireless/24BUZZ232.png
+```{figure} media/24BUZZ232.png
 :align: center
 :width: 300px
 
@@ -56,56 +56,12 @@
 ```
 
 ### 低音量
-```{figure} ../../../media/wireless/24BUZZ233.png
+```{figure} media/24BUZZ233.png
 :align: center
 :width: 300px
 
 中音量
 ```
-
-## 蜂鸣器声音定义
-<table>
-<tr>
-<th style="width:15%">所属类型</th>
-<th>响声</th>
-<th>含义</th>
-</tr>
-<tr>
-<td rowspan=4>提示音</td>
-<td>一声(两个声调)</td>
-<td>存储模式扫码、关机提示</td>
-</tr>
-<tr>
-<td>一声(三个声调)</td>
-<td>开机提示、设置指令提示、上传模式传输完成提示</td>
-</tr>
-<tr>
-<td rowspan=2>短音（同声调）</td>
-<td>一声短音：条码扫码成功提示</td>
-</tr>
-<tr>
-<td>连续30s短音：配对模式等待接收器插入，配对成功声音停止</td>
-</tr>
-<tr>
-<td colspan=4></td>
-</tr>
-<tr>
-<td rowspan=4>报警音</td>
-<td>两声（同声调）</td>
-<td>（扫码时）电池欠压报警</td>
-</tr>
-<tr>
-<td rowspan=2>三声（同声调）</td>
-<td>盘点模式下存储出错或超存储容量报警</td>
-</tr>
-<tr>
-<td>条码传输不成功报警</td>
-</tr>
-<tr>
-<td>五声（同声调）</td>
-<td>电量低导致开机失败的提示音</td>
-</tr>
-</table>
 
 ### 声音案例
 ```{admonition} 存储模式扫码、关机提示
@@ -160,7 +116,7 @@
 
 ## 电量信息
 
-```{figure} ../../../media/wireless/25BAT_VOL23.png
+```{figure} media/25BAT_VOL23.png
 :align: center
 :width: 300px
 
@@ -182,7 +138,7 @@
 
 ### 立即休眠
 
-```{figure} ../../../media/wireless/24POWER23OFF.png
+```{figure} media/24POWER23OFF.png
 :align: center
 :width: 300px
 
@@ -191,7 +147,7 @@
 
 ### 一分钟休眠
 
-```{figure} ../../../media/wireless/24RF23ST02.png
+```{figure} media/24RF23ST02.png
 :align: center
 :width: 300px
 
@@ -200,7 +156,7 @@
 
 ### 三分钟休眠
 
-```{figure} ../../../media/wireless/24RF23ST06.png
+```{figure} media/24RF23ST06.png
 :align: center
 :width: 300px
 
@@ -209,7 +165,7 @@
 
 ### 十分钟休眠
 
-```{figure} ../../../media/wireless/24RF23ST20.png
+```{figure} media/24RF23ST20.png
 :align: center
 :width: 300px
 
@@ -218,7 +174,7 @@
 
 ### 三十分钟休眠
 
-```{figure} ../../../media/wireless/24RF23ST60.png
+```{figure} media/24RF23ST60.png
 :align: center
 :width: 300px
 
@@ -227,7 +183,7 @@
 
 ### 不休眠
 
-```{figure} ../../../media/wireless/24RF23ST00.png
+```{figure} media/24RF23ST00.png
 :align: center
 :width: 300px
 

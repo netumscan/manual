@@ -8,7 +8,7 @@ hide-toc: true
 
 ```{figure} ../media/series/L3.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/L3/latest
+:target: https://docs.gzxlscan.cn/manual/L3/zh
 
 [L3](docs-zh:L3)
 ```
@@ -18,7 +18,7 @@ hide-toc: true
 
 ```{figure} ../media/series/L5.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/L5/latest
+:target: https://docs.gzxlscan.cn/manual/L5/zh
 
 [L5](docs-zh:L5)
 ```

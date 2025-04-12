@@ -16,12 +16,12 @@
 ## 建立连接
 1. 下载演示软件并解压到文件夹。
 2. 打开演示软件，输入扫描器需要连接WiFi信息和TCP Server信息，并使用扫描枪扫描下方的二维码。
-```{figure} ../../../media/wireless/wifi-tcpserver1.png
+```{figure} media/wifi-tcpserver1.png
 :align: center
 ```
 3. 点击启动服务，或者通过编程开发启动TCP Server。
 4. 等待扫描枪主动连接软件的TCP Server服务。
-```{figure} ../../../media/wireless/wifi-tcpserver2.png
+```{figure} media/wifi-tcpserver2.png
 :align: center
 ```
 

@@ -1,4 +1,4 @@
-# WiFi 扫描枪快速设置手册
+# {{ model }} 扫描枪快速设置手册
 ```{toctree}
 :maxdepth: 2
 

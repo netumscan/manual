@@ -11,7 +11,7 @@
 ### 原始条码内容[^1]
 [^1]: 原始条码内容： {"ID":"680870"}
 
-```{figure} ../../../media/wireless/25WFCOMMPM23S0.png
+```{figure} media/25WFCOMMPM23S0.png
 :align: center
 :width: 300px
 
@@ -21,7 +21,7 @@
 [^2]: Josn格式内容： {"id":"C143F123","msg":"{"ID":"680870"}"}
 
 
-```{figure} ../../../media/wireless/25WFCOMMPM23S1.png
+```{figure} media/25WFCOMMPM23S1.png
 :align: center
 :width: 300px
 
@@ -31,7 +31,7 @@ Josn格式内容
 [^3]: Josn格式+内容中双引号加转义符： {"id":"C143F123","msg":"{\"ID\":\"680870\"}"}
 
 
-```{figure} ../../../media/wireless/25WFCOMMPM23S2.png
+```{figure} media/25WFCOMMPM23S2.png
 :align: center
 :width: 300px
 

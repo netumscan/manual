@@ -8,7 +8,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-1202.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-1202/latest
+:target: https://docs.gzxlscan.cn/manual/NT-1202/zh
 
 [NT-1202](docs-zh:NT-1202)
 ```
@@ -19,7 +19,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-1202W.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-1202W/latest
+:target: https://docs.gzxlscan.cn/manual/NT-1202W/zh
 
 [NT-1202W](docs-zh:NT-1202W)
 ```
@@ -29,7 +29,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-1203L.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-1203L/latest
+:target: https://docs.gzxlscan.cn/manual/NT-1203L/zh
 
 [NT-1203L](docs-zh:NT-1203L)
 ```
@@ -38,7 +38,7 @@ hide-toc: true
 
 ```{figure} ../media/series/I8.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/I8/latest
+:target: https://docs.gzxlscan.cn/manual/I8/zh
 
 [I8](docs-zh:I8)
 ```
@@ -47,7 +47,7 @@ hide-toc: true
 
 ```{figure} ../media/series/I5.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/I5/latest
+:target: https://docs.gzxlscan.cn/manual/I5/zh
 
 [I5](docs-zh:I5)
 ```
@@ -56,7 +56,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-1988.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-1988/latest
+:target: https://docs.gzxlscan.cn/manual/NT-1988/zh
 
 [NT-1988](docs-zh:NT-1988)
 ```
@@ -64,7 +64,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-1288.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-1288/latest
+:target: https://docs.gzxlscan.cn/manual/NT-1288/zh
 
 [NT-1288](docs-zh:NT-1288)
 ```
@@ -72,7 +72,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-12895.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-12895/latest
+:target: https://docs.gzxlscan.cn/manual/NT-12895/zh
 
 [NT-12895](docs-zh:NT-12895)
 ```
@@ -80,7 +80,7 @@ hide-toc: true
 
 ```{figure} ../media/series/RD-2023.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/RD-2023/latest
+:target: https://docs.gzxlscan.cn/manual/RD-2023/zh
 
 [RD-2023](docs-zh:RD-2023)
 ```

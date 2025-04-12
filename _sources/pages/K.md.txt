@@ -8,7 +8,7 @@ hide-toc: true
 
 ```{figure} ../media/series/K20.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/K20/latest
+:target: https://docs.gzxlscan.cn/manual/K20/zh
 
 [K20](docs-zh:K20)
 ```
@@ -19,7 +19,7 @@ hide-toc: true
 
 ```{figure} ../media/series/K6.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/K6/latest
+:target: https://docs.gzxlscan.cn/manual/K6/zh
 
 [K6](docs-zh:K6)
 ```
@@ -29,7 +29,7 @@ hide-toc: true
 
 ```{figure} ../media/series/K28.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/K28/latest
+:target: https://docs.gzxlscan.cn/manual/K28/zh
 
 [K28](docs-zh:K28)
 ```

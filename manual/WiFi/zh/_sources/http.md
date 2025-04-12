@@ -37,7 +37,7 @@ msg,是,string,扫描内容
 ### 设定扫描枪请求的Content-Type
 
 
-```{figure} ../../../media/wireless/application-json.png
+```{figure} media/application-json.png
 :align: center
 :width: 300px
 
@@ -47,7 +47,7 @@ Application/Json
 ### 设定扫描枪发送的消息格式
 
 
-```{figure} ../../../media/wireless/25WFCOMMPM23S1.png
+```{figure} media/25WFCOMMPM23S1.png
 :align: center
 :width: 300px
 

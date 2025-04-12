@@ -8,7 +8,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-20.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-20/latest
+:target: https://docs.gzxlscan.cn/manual/NT-20/zh
 
 [NT-20](docs-zh:NT-20)
 ```
@@ -19,7 +19,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-2016.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-2016/latest
+:target: https://docs.gzxlscan.cn/manual/NT-2016/zh
 
 [NT-2016](docs-zh:NT-2016)
 ```
@@ -29,7 +29,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-1600.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-1600/latest
+:target: https://docs.gzxlscan.cn/manual/NT-1600/zh
 
 [NT-1600](docs-zh:NT-1600)
 ```
@@ -39,7 +39,7 @@ hide-toc: true
 
 ```{figure} ../media/series/NT-5090.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/NT-5090/latest
+:target: https://docs.gzxlscan.cn/manual/NT-5090/zh
 
 [NT-5090](docs-zh:NT-5090)
 ```

@@ -10,7 +10,7 @@ hide-toc: true
 
 ```{figure} ../media/series/E740.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/E740/latest
+:target: https://docs.gzxlscan.cn/manual/E740/zh
 
 [E740](docs-zh:E740)
 ```
@@ -20,7 +20,7 @@ hide-toc: true
 
 ```{figure} ../media/series/E800.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/E800/latest
+:target: https://docs.gzxlscan.cn/manual/E800/zh
 
 [E800](docs-zh:E800)
 ```
@@ -30,7 +30,7 @@ hide-toc: true
 
 ```{figure} ../media/series/E900.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/E900/latest
+:target: https://docs.gzxlscan.cn/manual/E900/zh
 
 [E900](docs-zh:E900)
 ```
@@ -39,7 +39,7 @@ hide-toc: true
 
 ```{figure} ../media/series/E950.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/E950/latest
+:target: https://docs.gzxlscan.cn/manual/E950/zh
 
 [E950](docs-zh:E950)
 ```

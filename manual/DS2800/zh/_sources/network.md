@@ -4,7 +4,7 @@
 
 ### 1.恢复WiFi模块默认设置
 
-```{figure} ../../../media/wireless/AT2BRESTORE.png
+```{figure} media/AT2BRESTORE.png
 :align: center
 :width: 300px
 
@@ -13,7 +13,7 @@
 
 ### 2.设定静态IP模式
 
-```{figure} ../../../media/wireless/AT2BDHCP3D1.png
+```{figure} media/AT2BDHCP3D1.png
 :align: center
 :width: 300px
 
@@ -23,7 +23,7 @@
 
 ### 3.重启扫描枪
 
-```{figure} ../../../media/wireless/24POWER23OFF.png
+```{figure} media/24POWER23OFF.png
 :align: center
 :width: 300px
 
@@ -43,7 +43,7 @@
 
 ### 1.恢复WiFi模块默认设置
 
-```{figure} ../../../media/wireless/AT2BRESTORE.png
+```{figure} media/AT2BRESTORE.png
 :align: center
 :width: 300px
 
@@ -52,7 +52,7 @@
 
 ### 2.设定静态IP模式
 
-```{figure} ../../../media/wireless/AT2BDHCP3D0.png
+```{figure} media/AT2BDHCP3D0.png
 :align: center
 :width: 300px
 
@@ -62,7 +62,7 @@
 
 ### 3.重启扫描枪
 
-```{figure} ../../../media/wireless/24POWER23OFF.png
+```{figure} media/24POWER23OFF.png
 :align: center
 :width: 300px
 

@@ -8,7 +8,7 @@ hide-toc: true
 
 ```{figure} ../media/series/R2L.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/R2L/latest
+:target: https://docs.gzxlscan.cn/manual/R2L/zh
 
 [R2L](docs-zh:R2L)
 ```
@@ -19,7 +19,7 @@ hide-toc: true
 
 ```{figure} ../media/series/RS-8000BT.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/RS-8000BT/latest
+:target: https://docs.gzxlscan.cn/manual/RS-8000BT/zh
 
 [RS-8000BT](docs-zh:RS-8000BT)
 ```
@@ -28,7 +28,7 @@ hide-toc: true
 
 ```{figure} ../media/series/RS-9000BT.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/RS-9000BT/latest
+:target: https://docs.gzxlscan.cn/manual/RS-9000BT/zh
 
 [RS-9000BT](docs-zh:RS-9000BT)
 ```
@@ -37,7 +37,7 @@ hide-toc: true
 
 ```{figure} ../media/series/RS-9000PT.jpg
 :align: center
-:target: https://docs.gzxlscan.cn/manual/RS-9000PT/latest
+:target: https://docs.gzxlscan.cn/manual/RS-9000PT/zh
 
 [RS-9000PT](docs-zh:RS-9000PT)
 ```
