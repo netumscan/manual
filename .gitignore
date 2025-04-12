@@ -1,0 +1,5 @@
+# 忽略所有的 .doctrees 文件夹
+.doctrees/
+
+# 忽略所有的 locales 文件夹
+locales/
