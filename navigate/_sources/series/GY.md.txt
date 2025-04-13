@@ -1,0 +1,44 @@
+---
+hide-toc: true
+---
+
+# GY Series Scanner
+
+## [GY-50U](https://scanner-280.netum.info/GY-50U/en)
+
+```{figure} ../media/series/GY-50U.jpg
+:align: center
+:target: https://scanner-280.netum.info/GY-50U/en
+
+[GY-50U](https://scanner-280.netum.info/GY-50U/en)
+```
+
+
+## [GY-60U](https://scanner-wx2.netum.info/GY-60U/en)
+
+
+```{figure} ../media/series/GY-60U.jpg
+:align: center
+:target: https://scanner-wx2.netum.info/GY-60U/en
+
+[GY-60U](https://scanner-wx2.netum.info/GY-60U/en)
+```
+
+## [GY-70U](https://scanner-290.netum.info/GY-70U/en)
+
+
+```{figure} ../media/series/GY-70U.jpg
+:align: center
+:target: https://scanner-290.netum.info/GY-70U/en
+
+[GY-70U](https://scanner-290.netum.info/GY-70U/en)
+```
+
+## [GY-80U](https://scanner-wx2.netum.info/GY-80U/en)
+
+```{figure} ../media/series/GY-80U.jpg
+:align: center
+:target: https://scanner-wx2.netum.info/GY-80U/en
+
+[GY-80U](https://scanner-wx2.netum.info/GY-80U/en)
+```

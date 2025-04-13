@@ -1,0 +1,47 @@
+---
+hide-toc: true
+---
+
+# F系列扫描枪
+
+
+## [F20](https://scanner-ccd.netum.info/F20/zh)
+
+
+```{figure} ../media/series/F20.jpg
+:align: center
+:target: https://scanner-ccd.netum.info/F20/zh
+
+[F20](https://scanner-ccd.netum.info/F20/zh)
+```
+
+## [F1900](https://scanner-wx2.netum.info/F1900/zh)
+
+
+```{figure} ../media/series/F1900.jpg
+:align: center
+:target: https://scanner-wx2.netum.info/F1900/zh
+
+[F1900](https://scanner-wx2.netum.info/F1900/zh)
+```
+
+## [F16](https://scanner-212.netum.info/F16/zh)
+
+```{figure} ../media/series/F16.jpg
+:align: center
+:target: https://scanner-212.netum.info/F16/zh
+
+[F16](https://scanner-212.netum.info/F16/zh)
+```
+
+## [F18W](https://scanner-wx2.netum.info/F18W/zh)
+
+```{figure} ../media/series/F18W.jpg
+:align: center
+:target: https://scanner-wx2.netum.info/F18W/zh
+
+[F18W](https://scanner-wx2.netum.info/F18W/zh)
+```
+
+
+

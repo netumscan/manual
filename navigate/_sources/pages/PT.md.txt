@@ -1,0 +1,80 @@
+---
+hide-toc: true
+---
+
+# 支付平台
+
+## [A5](https://platform.netum.info/A5/zh)
+
+```{figure} ../media/series/A5.jpg
+:align: center
+:target: https://platform.netum.info/A5/zh
+
+[A5](https://platform.netum.info/A5/zh)
+```
+
+
+## [A6](https://scanner-wx1.netum.info/A6/zh)
+
+
+```{figure} ../media/series/A6.jpg
+:align: center
+:target: https://scanner-wx1.netum.info/A6/zh
+
+[A6](https://scanner-wx1.netum.info/A6/zh)
+```
+
+## [NT-2055M](https://platform.netum.info/NT-2055M/zh)
+
+
+```{figure} ../media/series/NT-2055M.jpg
+:align: center
+:target: https://platform.netum.info/NT-2055M/zh
+
+[NT-2055M](https://platform.netum.info/NT-2055M/zh)
+```
+
+## [NT-2055A1](https://platform.netum.info/NT-2055A1/zh)
+
+```{figure} ../media/series/NT-2055A1.jpg
+:align: center
+:target: https://platform.netum.info/NT-2055A1/zh
+
+[NT-2055A1](https://platform.netum.info/NT-2055A1/zh)
+```
+
+## [NT-2085PRO](https://platform.netum.info/NT-2085PRO/zh)
+
+```{figure} ../media/series/NT-2085PRO.jpg
+:align: center
+:target: https://platform.netum.info/NT-2085PRO/zh
+
+[NT-2085PRO](https://platform.netum.info/NT-2085PRO/zh)
+```
+
+## [D-8600](https://platform.netum.info/D-8600/zh)
+
+```{figure} ../media/series/D-8600.jpg
+:align: center
+:target: https://platform.netum.info/D-8600/zh
+
+[D-8600](https://platform.netum.info/D-8600/zh)
+```
+## [A8](https://platform.netum.info/A8/zh)
+
+```{figure} ../media/series/A8.jpg
+:align: center
+:target: https://platform.netum.info/A8/zh
+
+[A8](https://platform.netum.info/A8/zh)
+```
+## [CN-40](https://platform.netum.info/CN-40/zh)
+
+```{figure} ../media/series/CN-40.jpg
+:align: center
+:target: https://platform.netum.info/CN-40/zh
+
+[CN-40](https://platform.netum.info/CN-40/zh)
+```
+
+

@@ -1,0 +1,48 @@
+---
+hide-toc: true
+---
+
+# 支付盒子/嵌入式扫描仪
+
+## [NT-20](https://reader.netum.info//NT-20/zh)
+
+```{figure} ../media/series/NT-20.jpg
+:align: center
+:target: https://reader.netum.info//NT-20/zh
+
+[NT-20](https://reader.netum.info//NT-20/zh)
+```
+
+
+## [NT-2016](https://reader.netum.info//NT-2016/zh)
+
+
+```{figure} ../media/series/NT-2016.jpg
+:align: center
+:target: https://reader.netum.info//NT-2016/zh
+
+[NT-2016](https://reader.netum.info//NT-2016/zh)
+```
+
+## [NT-1600](https://reader.netum.info//NT-1600/zh)
+
+
+```{figure} ../media/series/NT-1600.jpg
+:align: center
+:target: https://reader.netum.info//NT-1600/zh
+
+[NT-1600](https://reader.netum.info//NT-1600/zh)
+```
+
+
+## [NT-5090](https://reader.netum.info//NT-5090/zh)
+
+```{figure} ../media/series/NT-5090.jpg
+:align: center
+:target: https://reader.netum.info//NT-5090/zh
+
+[NT-5090](https://reader.netum.info//NT-5090/zh)
+```
+
+
+

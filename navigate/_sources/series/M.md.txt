@@ -1,0 +1,54 @@
+---
+hide-toc: true
+---
+
+#   M Series Scanner
+
+## [M20](https://scanner-wx3.netum.info/M20/en)
+
+
+```{figure} ../media/series/M20.jpg
+:align: center
+:target: https://scanner-wx3.netum.info/M20/en
+
+[M20](https://scanner-wx3.netum.info/M20/en)
+```
+
+## [M5](https://scanner-212.netum.info/M5/en)
+
+
+```{figure} ../media/series/M5.jpg
+:align: center
+:target: hhttps://scanner-212.netum.info/M5/en
+
+[M5](https://scanner-212.netum.info/M5/en)
+```
+
+## [M60](https://scanner-212.netum.info/M60/en)
+
+```{figure} ../media/series/M60.jpg
+:align: center
+:target: https://scanner-212.netum.info/M60/en
+
+[M60](https://scanner-212.netum.info/M60/en)
+```
+
+## [M80](https://scanner-wx3.netum.info/M80/en)
+
+```{figure} ../media/series/M80.jpg
+:align: center
+:target: https://scanner-wx3.netum.info/M80/en
+
+[M80](https://scanner-wx3.netum.info/M80/en)
+```
+
+## [M8BT](https://scanner-wx3.netum.info/M8BT/en)
+
+```{figure} ../media/series/M8BT.jpg
+:align: center
+:target: https://scanner-wx3.netum.info/M8BT/en
+
+[M8BT](https://scanner-wx3.netum.info/M8BT/en)
+```
+
+
