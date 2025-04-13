@@ -4,40 +4,40 @@ hide-toc: true
 
 # RS Series Scanner
 
-## [R2L](https://scanner-wx5.netum.info/R2L/en)
+## [R2L](https://scanner-wx5.pages.dev/R2L/en)
 
 ```{figure} ../media/series/R2L.jpg
 :align: center
-:target: https://scanner-wx5.netum.info/R2L/en
+:target: https://scanner-wx5.pages.dev/R2L/en
 
-[R2L](https://scanner-wx5.netum.info/R2L/en)
+[R2L](https://scanner-wx5.pages.dev/R2L/en)
 ```
 
 
-## [RS-8000BT](https://scanner-wx5.netum.info/RS-8000BT/en)
+## [RS-8000BT](https://scanner-wx5.pages.dev/RS-8000BT/en)
 
 
 ```{figure} ../media/series/RS-8000BT.jpg
 :align: center
-:target: https://scanner-wx5.netum.info/RS-8000BT/en
+:target: https://scanner-wx5.pages.dev/RS-8000BT/en
 
-[RS-8000BT](https://scanner-wx5.netum.info/RS-8000BT/en)
+[RS-8000BT](https://scanner-wx5.pages.dev/RS-8000BT/en)
 ```
 
-## [RS-9000BT](https://scanner-wx5.netum.info/RS-9000BT/en)
+## [RS-9000BT](https://scanner-wx5.pages.dev/RS-9000BT/en)
 
 ```{figure} ../media/series/RS-9000BT.jpg
 :align: center
-:target: https://scanner-wx5.netum.info/RS-9000BT/en
+:target: https://scanner-wx5.pages.dev/RS-9000BT/en
 
-[RS-9000BT](https://scanner-wx5.netum.info/RS-9000BT/en)
+[RS-9000BT](https://scanner-wx5.pages.dev/RS-9000BT/en)
 ```
 
-## [RS-9000PT](https://scanner-wx5.netum.info/RS-9000PT/en)
+## [RS-9000PT](https://scanner-wx5.pages.dev/RS-9000PT/en)
 
 ```{figure} ../media/series/RS-9000PT.jpg
 :align: center
-:target: https://scanner-wx5.netum.info/RS-9000PT/en
+:target: https://scanner-wx5.pages.dev/RS-9000PT/en
 
-[RS-9000PT](https://scanner-wx5.netum.info/RS-9000PT/en)
+[RS-9000PT](https://scanner-wx5.pages.dev/RS-9000PT/en)
 ```

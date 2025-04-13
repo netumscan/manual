@@ -4,44 +4,44 @@ hide-toc: true
 
 # Payment Box/Embedded Barcode Reader
 
-## [NT-20](https://reader.netum.info//NT-20/en)
+## [NT-20](https://reader.pages.dev//NT-20/en)
 
 ```{figure} ../media/series/NT-20.jpg
 :align: center
-:target: https://reader.netum.info//NT-20/en
+:target: https://reader.pages.dev//NT-20/en
 
-[NT-20](https://reader.netum.info//NT-20/en)
+[NT-20](https://reader.pages.dev//NT-20/en)
 ```
 
 
-## [NT-2016](https://reader.netum.info//NT-2016/en)
+## [NT-2016](https://reader.pages.dev//NT-2016/en)
 
 
 ```{figure} ../media/series/NT-2016.jpg
 :align: center
-:target: https://reader.netum.info//NT-2016/en
+:target: https://reader.pages.dev//NT-2016/en
 
-[NT-2016](https://reader.netum.info//NT-2016/en)
+[NT-2016](https://reader.pages.dev//NT-2016/en)
 ```
 
-## [NT-1600](https://reader.netum.info//NT-1600/en)
+## [NT-1600](https://reader.pages.dev//NT-1600/en)
 
 
 ```{figure} ../media/series/NT-1600.jpg
 :align: center
-:target: https://reader.netum.info//NT-1600/en
+:target: https://reader.pages.dev//NT-1600/en
 
-[NT-1600](https://reader.netum.info//NT-1600/en)
+[NT-1600](https://reader.pages.dev//NT-1600/en)
 ```
 
 
-## [NT-5090](https://reader.netum.info//NT-5090/en)
+## [NT-5090](https://reader.pages.dev//NT-5090/en)
 
 ```{figure} ../media/series/NT-5090.jpg
 :align: center
-:target: https://reader.netum.info//NT-5090/en
+:target: https://reader.pages.dev//NT-5090/en
 
-[NT-5090](https://reader.netum.info//NT-5090/en)
+[NT-5090](https://reader.pages.dev//NT-5090/en)
 ```
 
 

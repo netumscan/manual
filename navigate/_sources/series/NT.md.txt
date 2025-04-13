@@ -5,52 +5,52 @@ hide-toc: true
 # NT Series Scanner
 
 
-## [NT-1228BC](https://scanner-wx4.netum.info/NT-1228BC/en)
+## [NT-1228BC](https://scanner-wx4.pages.dev/NT-1228BC/en)
 
 ```{figure} ../media/series/NT-1228BC.jpg
 :align: center
-:target: https://scanner-wx4.netum.info/NT-1228BC/en
+:target: https://scanner-wx4.pages.dev/NT-1228BC/en
 
-[NT-1228BC](https://scanner-wx4.netum.info/NT-1228BC/en)
+[NT-1228BC](https://scanner-wx4.pages.dev/NT-1228BC/en)
 ```
 
 
-## [NT-1228BL](https://scanner-wx4.netum.info/NT-1228BL/en)
+## [NT-1228BL](https://scanner-wx4.pages.dev/NT-1228BL/en)
 
 
 ```{figure} ../media/series/NT-1228BL.jpg
 :align: center
-:target: https://scanner-wx4.netum.info/NT-1228BL/en
+:target: https://scanner-wx4.pages.dev/NT-1228BL/en
 
-[NT-1228BL](https://scanner-wx4.netum.info/NT-1228BL/en)
+[NT-1228BL](https://scanner-wx4.pages.dev/NT-1228BL/en)
 ```
 
-## [NT-2028](https://scanner-wx4.netum.info/NT-2028/en)
+## [NT-2028](https://scanner-wx4.pages.dev/NT-2028/en)
 
 
 ```{figure} ../media/series/NT-2028.jpg
 :align: center
-:target: https://scanner-wx4.netum.info/NT-2028/en
+:target: https://scanner-wx4.pages.dev/NT-2028/en
 
-[NT-2028](https://scanner-wx4.netum.info/NT-2028/en)
+[NT-2028](https://scanner-wx4.pages.dev/NT-2028/en)
 ```
 
-## [NT-2028-PS](https://scanner-212.netum.info/NT-2028-PS/en)
+## [NT-2028-PS](https://scanner-212.pages.dev/NT-2028-PS/en)
 
 ```{figure} ../media/series/NT-2028-PS.jpg
 :align: center
-:target: https://scanner-212.netum.info/NT-2028-PS/en
+:target: https://scanner-212.pages.dev/NT-2028-PS/en
 
-[NT-2028-PS](https://scanner-212.netum.info/NT-2028-PS/en)
+[NT-2028-PS](https://scanner-212.pages.dev/NT-2028-PS/en)
 ```
 
-## [NT-2028-PS-W](https://scanner-wx4.netum.info/NT-2028-PS/en-W)
+## [NT-2028-PS-W](https://scanner-wx4.pages.dev/NT-2028-PS/en-W)
 
 ```{figure} ../media/series/NT-2028-PS-W.jpg
 :align: center
-:target: https://scanner-wx4.netum.info/NT-2028-PS-W/en
+:target: https://scanner-wx4.pages.dev/NT-2028-PS-W/en
 
-[NT-2028-PS-W](https://scanner-wx4.netum.info/NT-2028-PS/en-W)
+[NT-2028-PS-W](https://scanner-wx4.pages.dev/NT-2028-PS/en-W)
 ```
 
 

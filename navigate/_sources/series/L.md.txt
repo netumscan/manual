@@ -4,61 +4,61 @@ hide-toc: true
 
 # L Series Scanner
 
-## [L3](https://scanner-ccd.netum.info/L3/en)
+## [L3](https://scanner-ccd.pages.dev/L3/en)
 
 ```{figure} ../media/series/L3.jpg
 :align: center
-:target: https://scanner-ccd.netum.info/L3/en
+:target: https://scanner-ccd.pages.dev/L3/en
 
-[L3](https://scanner-ccd.netum.info/L3/en)
+[L3](https://scanner-ccd.pages.dev/L3/en)
 ```
 
-## [L5](https://scanner-212.netum.info/L5/en)
+## [L5](https://scanner-212.pages.dev/L5/en)
 
 
 ```{figure} ../media/series/L5.jpg
 :align: center
-:target: https://scanner-212.netum.info/L5/en
+:target: https://scanner-212.pages.dev/L5/en
 
-[L5](https://scanner-212.netum.info/L5/en)
+[L5](https://scanner-212.pages.dev/L5/en)
 ```
 
-## [L6](https://scanner-wx3.netum.info/L6/en)
+## [L6](https://scanner-wx3.pages.dev/L6/en)
 
 
 ```{figure} ../media/series/L6.jpg
 :align: center
-:target: https://scanner-wx3.netum.info/L6/en
+:target: https://scanner-wx3.pages.dev/L6/en
 
-[L6](https://scanner-wx3.netum.info/L6/en)
+[L6](https://scanner-wx3.pages.dev/L6/en)
 ```
 
-## [L6BL](https://scanner-wx3.netum.info/L6BL/en)
+## [L6BL](https://scanner-wx3.pages.dev/L6BL/en)
 
 ```{figure} ../media/series/L6BL.jpg
 :align: center
-:target: https://scanner-wx3.netum.info/L6BL/en
+:target: https://scanner-wx3.pages.dev/L6BL/en
 
-[L6BL](https://scanner-wx3.netum.info/L6BL/en)
+[L6BL](https://scanner-wx3.pages.dev/L6BL/en)
 ```
 
-## [L8](https://scanner-wx3.netum.info/L8/en)
+## [L8](https://scanner-wx3.pages.dev/L8/en)
 
 
 ```{figure} ../media/series/L8.jpg
 :align: center
-:target: https://scanner-wx3.netum.info/L8/en
+:target: https://scanner-wx3.pages.dev/L8/en
 
-[L8](https://scanner-wx3.netum.info/L8/en)
+[L8](https://scanner-wx3.pages.dev/L8/en)
 ```
 
-## [L8BL](https://scanner-wx3.netum.info/L8BL/en)
+## [L8BL](https://scanner-wx3.pages.dev/L8BL/en)
 
 ```{figure} ../media/series/L8BL.jpg
 :align: center
-:target: https://scanner-wx3.netum.info/L8BL/en
+:target: https://scanner-wx3.pages.dev/L8BL/en
 
-[L8BL](https://scanner-wx3.netum.info/L8BL/en)
+[L8BL](https://scanner-wx3.pages.dev/L8BL/en)
 ```
 
 

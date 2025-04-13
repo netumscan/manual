@@ -6,41 +6,41 @@ hide-toc: true
 # E系列扫描枪
 
 
-## [E740](https://scanner-wx2.netum.info/E740/zh)
+## [E740](https://scanner-wx2.pages.dev/E740/zh)
 
 ```{figure} ../media/series/E740.jpg
 :align: center
-:target: https://scanner-wx2.netum.info/E740/zh
+:target: https://scanner-wx2.pages.dev/E740/zh
 
-[E740](https://scanner-wx2.netum.info/E740/zh)
+[E740](https://scanner-wx2.pages.dev/E740/zh)
 ```
 
-## [E800](https://scanner-wx2.netum.info/E800/zh)
+## [E800](https://scanner-wx2.pages.dev/E800/zh)
 
 
 ```{figure} ../media/series/E800.jpg
 :align: center
-:target: https://scanner-wx2.netum.info/E800/zh
+:target: https://scanner-wx2.pages.dev/E800/zh
 
-[E800](https://scanner-wx2.netum.info/E800/zh)
+[E800](https://scanner-wx2.pages.dev/E800/zh)
 ```
 
-## [E900](https://scanner-wx2.netum.info/E900/zh)
+## [E900](https://scanner-wx2.pages.dev/E900/zh)
 
 
 ```{figure} ../media/series/E900.jpg
 :align: center
-:target: https://scanner-wx2.netum.info/E900/zh
+:target: https://scanner-wx2.pages.dev/E900/zh
 
-[E900](https://scanner-wx2.netum.info/E900/zh)
+[E900](https://scanner-wx2.pages.dev/E900/zh)
 ```
 
-## [E950](https://scanner-wx2.netum.info/E950/zh)
+## [E950](https://scanner-wx2.pages.dev/E950/zh)
 
 ```{figure} ../media/series/E950.jpg
 :align: center
-:target: https://scanner-wx2.netum.info/E950/zh
+:target: https://scanner-wx2.pages.dev/E950/zh
 
-[E950](https://scanner-wx2.netum.info/E950/zh)
+[E950](https://scanner-wx2.pages.dev/E950/zh)
 ```
 

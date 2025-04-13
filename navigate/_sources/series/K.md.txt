@@ -4,32 +4,32 @@ hide-toc: true
 
 # K Series Scanner
 
-## [K20](https://scanner-212.netum.info/K20/en)
+## [K20](https://scanner-212.pages.dev/K20/en)
 
 ```{figure} ../media/series/K20.jpg
 :align: center
-:target: https://scanner-212.netum.info/K20/en
+:target: https://scanner-212.pages.dev/K20/en
 
-[K20](https://scanner-212.netum.info/K20/en)
+[K20](https://scanner-212.pages.dev/K20/en)
 ```
 
 
-## [K6](https://scanner-wx3.netum.info/K6/en)
+## [K6](https://scanner-wx3.pages.dev/K6/en)
 
 
 ```{figure} ../media/series/K6.jpg
 :align: center
-:target: https://scanner-wx3.netum.info/K6/en
+:target: https://scanner-wx3.pages.dev/K6/en
 
-[K6](https://scanner-wx3.netum.info/K6/en)
+[K6](https://scanner-wx3.pages.dev/K6/en)
 ```
 
-## [K28](https://scanner-wx3.netum.info/K28/en)
+## [K28](https://scanner-wx3.pages.dev/K28/en)
 
 
 ```{figure} ../media/series/K28.jpg
 :align: center
-:target: https://scanner-wx3.netum.info/K28/en
+:target: https://scanner-wx3.pages.dev/K28/en
 
-[K28](https://scanner-wx3.netum.info/K28/en)
+[K28](https://scanner-wx3.pages.dev/K28/en)
 ```
