@@ -3,7 +3,7 @@
 ## 键盘字符集类型
 ### GBK(GB2312)
 
-```{figure} ../../../media/8210131..png
+```{figure} ../../media/8210131..png
 :align: center
 :width: 300px
 
@@ -15,7 +15,7 @@ GBK(GB2312)
 ```
 
 ### UNICODE
-```{figure} ../../../media/8210132..png
+```{figure} ../../media/8210132..png
 :align: center
 :width: 300px
 
@@ -32,7 +32,7 @@ UNICODE
 
 ### 中文
 
-```{figure} ../../../media/82100190..png
+```{figure} ../../media/82100190..png
 :align: center
 :width: 300px
 
@@ -42,7 +42,7 @@ UNICODE
 ### 美国
 
 
-```{figure} ../../../media/8210010..png
+```{figure} ../../media/8210010..png
 :align: center
 :width: 300px
 
@@ -51,7 +51,7 @@ UNICODE
 
 ### 芬兰 
 
-```{figure} ../../../media/8210012..png
+```{figure} ../../media/8210012..png
 :align: center
 :width: 300px
 
@@ -60,7 +60,7 @@ UNICODE
 
 ### 西班牙
 
-```{figure} ../../../media/82100110..png
+```{figure} ../../media/82100110..png
 :align: center
 :width: 300px
 
@@ -70,7 +70,7 @@ UNICODE
 
 ### 法国
 
-```{figure} ../../../media/8210013..png
+```{figure} ../../media/8210013..png
 :align: center
 :width: 300px
 
@@ -80,7 +80,7 @@ UNICODE
 
 ### 德国
 
-```{figure} ../../../media/8210014..png
+```{figure} ../../media/8210014..png
 :align: center
 :width: 300px
 
@@ -90,7 +90,7 @@ UNICODE
 
 ### 意大利
 
-```{figure} ../../../media/8210015..png
+```{figure} ../../media/8210015..png
 :align: center
 :width: 300px
 
@@ -100,7 +100,7 @@ UNICODE
 
 ### 丹麦
 
-```{figure} ../../../media/8210018..png
+```{figure} ../../media/8210018..png
 :align: center
 :width: 300px
 
@@ -111,7 +111,7 @@ UNICODE
 
 ### 挪威
 
-```{figure} ../../../media/8210019..png
+```{figure} ../../media/8210019..png
 :align: center
 :width: 300px
 
@@ -120,7 +120,7 @@ UNICODE
 
 ### 捷克
 
-```{figure} ../../../media/82100115..png
+```{figure} ../../media/82100115..png
 :align: center
 :width: 300px
 
@@ -130,7 +130,7 @@ UNICODE
 
 ### 匈牙利
 
-```{figure} ../../../media/82100119..png
+```{figure} ../../media/82100119..png
 :align: center
 :width: 300px
 
@@ -139,7 +139,7 @@ UNICODE
 
 ### 瑞典
 
-```{figure} ../../../media/82100123..png
+```{figure} ../../media/82100123..png
 :align: center
 :width: 300px
 
@@ -148,7 +148,7 @@ UNICODE
 
 ### 阿拉伯
 
-```{figure} ../../../media/82100191..png
+```{figure} ../../media/82100191..png
 :align: center
 :width: 300px
 
@@ -157,7 +157,7 @@ UNICODE
 
 ### 俄罗斯
 
-```{figure} ../../../media/82100126..png
+```{figure} ../../media/82100126..png
 :align: center
 :width: 300px
 
@@ -166,7 +166,7 @@ UNICODE
 
 ### 瑞士_法语
 
-```{figure} ../../../media/82100129..png
+```{figure} ../../media/82100129..png
 :align: center
 :width: 300px
 
@@ -175,7 +175,7 @@ UNICODE
 
 ### 冰岛
 
-```{figure} ../../../media/82100175..png
+```{figure} ../../media/82100175..png
 :align: center
 :width: 300px
 
@@ -184,7 +184,7 @@ UNICODE
 
 ### 斯洛文尼亚
 
-```{figure} ../../../media/82100131..png
+```{figure} ../../media/82100131..png
 :align: center
 :width: 300px
 
@@ -193,7 +193,7 @@ UNICODE
 
 ### 克罗地亚
 
-```{figure} ../../../media/82100132..png
+```{figure} ../../media/82100132..png
 :align: center
 :width: 300px
 
@@ -202,7 +202,7 @@ UNICODE
 
 ### 阿尔巴尼亚
 
-```{figure} ../../../media/82100135..png
+```{figure} ../../media/82100135..png
 :align: center
 :width: 300px
 
@@ -211,7 +211,7 @@ UNICODE
 
 ### 塞尔维亚_拉丁
 
-```{figure} ../../../media/82100136..png
+```{figure} ../../media/82100136..png
 :align: center
 :width: 300px
 
@@ -220,7 +220,7 @@ UNICODE
 
 ### 塞尔维亚西里尔文
 
-```{figure} ../../../media/82100137..png
+```{figure} ../../media/82100137..png
 :align: center
 :width: 300px
 
@@ -229,7 +229,7 @@ UNICODE
 
 ### 捷克_QWERTZ
 
-```{figure} ../../../media/82100138..png
+```{figure} ../../media/82100138..png
 :align: center
 :width: 300px
 
@@ -238,7 +238,7 @@ UNICODE
 
 ### 捷克_QWERTY
 
-```{figure} ../../../media/82100139..png
+```{figure} ../../media/82100139..png
 :align: center
 :width: 300px
 
@@ -247,7 +247,7 @@ UNICODE
 
 ### 爱沙尼亚
 
-```{figure} ../../../media/82100141..png
+```{figure} ../../media/82100141..png
 :align: center
 :width: 300px
 
@@ -257,7 +257,7 @@ UNICODE
 
 ### 立陶宛
 
-```{figure} ../../../media/82100144..png
+```{figure} ../../media/82100144..png
 :align: center
 :width: 300px
 
@@ -266,7 +266,7 @@ UNICODE
 
 ### 爱尔兰
 
-```{figure} ../../../media/82100173..png
+```{figure} ../../media/82100173..png
 :align: center
 :width: 300px
 
@@ -275,7 +275,7 @@ UNICODE
 
 ### 法罗语
 
-```{figure} ../../../media/82100183..png
+```{figure} ../../media/82100183..png
 :align: center
 :width: 300px
 
@@ -284,7 +284,7 @@ UNICODE
 
 ### 土耳其_F
 
-```{figure} ../../../media/82100127..png
+```{figure} ../../media/82100127..png
 :align: center
 :width: 300px
 
@@ -293,7 +293,7 @@ UNICODE
 
 ### 土耳其_Q
 
-```{figure} ../../../media/82100124..png
+```{figure} ../../media/82100124..png
 :align: center
 :width: 300px
 
@@ -302,7 +302,7 @@ UNICODE
 
 ### 斯洛伐克
 
-```{figure} ../../../media/82100122..png
+```{figure} ../../media/82100122..png
 :align: center
 :width: 300px
 
@@ -311,7 +311,7 @@ UNICODE
 
 ### 日语 
 
-```{figure} ../../../media/82100128..png
+```{figure} ../../media/82100128..png
 :align: center
 :width: 300px
 

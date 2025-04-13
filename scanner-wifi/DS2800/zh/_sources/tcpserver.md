@@ -2,7 +2,7 @@
 
 ## 快速配置
 ```{raw} html
-    <iframe src="../../../plugins/wifi-tcpclient.html" height="700px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-tcpclient.html" height="700px" width="100%"></iframe>
 
 ```
 ```{note}
@@ -17,11 +17,11 @@
 ## 建立连接
 1. 下载演示软件并解压到文件夹。
 2. 打开演示软件，输入扫描器需要连接WiFi信息和扫描枪的IP地址、TCP Server端口，并使用扫描枪扫描下方的二维码。
-```{figure} ../../../media/wifi-tcpclient1.png
+```{figure} ../../media/wifi-tcpclient1.png
 :align: center
 ```
 3. 点击启动按钮，或者通过编程开发启动TCP Client去连接扫描枪。
-```{figure} ../../../media/wifi-tcpclient2.png
+```{figure} ../../media/wifi-tcpclient2.png
 :align: center
 ```
 4. 软件建立与扫描器的连接，扫描枪的指示灯常亮。

@@ -15,7 +15,7 @@
 
 ## 蓝牙HID
 
-```{figure} ../../../media/AT2BPROFILE3D2.png
+```{figure} ../../media/AT2BPROFILE3D2.png
 :align: center
 :width: 300px
 
@@ -24,7 +24,7 @@
 
  ## 蓝牙SPP
 
-```{figure} ../../../media/AT2BPROFILE3D4.png
+```{figure} ../../media/AT2BPROFILE3D4.png
 :align: center
 :width: 300px
 
@@ -33,7 +33,7 @@
 
 ## 蓝牙BLE
 
-```{figure} ../../../media/AT2BPROFILE3D8.png
+```{figure} ../../media/AT2BPROFILE3D8.png
 :align: center
 :width: 300px
 
@@ -45,7 +45,7 @@
 ```
 ## 清除配对信息
 
-```{figure} ../../../media/2525ALL-CH.png
+```{figure} ../../media/2525ALL-CH.png
 :align: center
 :width: 300px
 
@@ -57,7 +57,7 @@
 ```
 
 ## iOS弹出/隐藏键盘
-```{figure} ../../../media/25250S.png
+```{figure} ../../media/25250S.png
 :align: center
 :width: 300px
 
@@ -71,7 +71,7 @@ iOS弹出/隐藏键盘
 ## 蓝牙键盘传输速度
 
 
-```{figure} ../../../media/AT2BHIDDLY.png
+```{figure} ../../media/AT2BHIDDLY.png
 :align: center
 :width: 300px
 
@@ -79,7 +79,7 @@ iOS弹出/隐藏键盘
 ```
 ### 高速
 
-```{figure} ../../../media/AT2BHIDDLY3D2.png
+```{figure} ../../media/AT2BHIDDLY3D2.png
 :align: center
 :width: 300px
 
@@ -88,7 +88,7 @@ iOS弹出/隐藏键盘
 
 ### 中速
 
-```{figure} ../../../media/AT2BHIDDLY3D10.png
+```{figure} ../../media/AT2BHIDDLY3D10.png
 :align: center
 :width: 300px
 
@@ -96,7 +96,7 @@ iOS弹出/隐藏键盘
 ```
 
 ### 低速
-```{figure} ../../../media/AT2BHIDDLY3D25.png
+```{figure} ../../media/AT2BHIDDLY3D25.png
 :align: center
 :width: 300px
 
@@ -105,6 +105,6 @@ iOS弹出/隐藏键盘
 
 ## 修改蓝牙名称
 ```{raw} html
-    <iframe src="../../../plugins/scan-bluetoothname.html" height="600px" width="100%"></iframe>
+    <iframe src="../../plugins/scan-bluetoothname.html" height="600px" width="100%"></iframe>
 
 ```

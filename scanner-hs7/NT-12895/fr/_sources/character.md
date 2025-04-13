@@ -4,7 +4,7 @@
 
 ## 添加回车
 
-```{figure} ../../../media/890000..png
+```{figure} ../../media/890000..png
 :align: center
 :width: 300px
 
@@ -15,7 +15,7 @@
 
 ## 取消回车
 
-```{figure} ../../../media/888003..png
+```{figure} ../../media/888003..png
 :align: center
 :width: 300px
 
@@ -25,7 +25,7 @@
 
 ## 添加回车换行
 
-```{figure} ../../../media/890001..png
+```{figure} ../../media/890001..png
 :align: center
 :width: 300px
 
@@ -36,7 +36,7 @@
 
 ## 取消回车换行
 
-```{figure} ../../../media/888003..png
+```{figure} ../../media/888003..png
 :align: center
 :width: 300px
 

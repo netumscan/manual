@@ -2,7 +2,7 @@
 
 ## 开始设置
 
-```{figure} ../../../media/S_CMD_0001.png
+```{figure} ../../media/S_CMD_0001.png
 :align: center
 :width: 300px
 
@@ -15,7 +15,7 @@
 
 ## 开启语音提示
 
-```{figure} ../../../media/S_CMD_040A.png
+```{figure} ../../media/S_CMD_040A.png
 :align: center
 :width: 300px
 
@@ -24,7 +24,7 @@
 
 ## 关闭语音提示
 
-```{figure} ../../../media/S_CMD_040B.png
+```{figure} ../../media/S_CMD_040B.png
 :align: center
 :width: 300px
 
@@ -33,7 +33,7 @@
 
 ## 关闭支付条码语音
 
-```{figure} ../../../media/S_CMD_040F.png
+```{figure} ../../media/S_CMD_040F.png
 :align: center
 :width: 300px
 
@@ -42,7 +42,7 @@
 
 ## 叮咚
 
-```{figure} ../../../media/S_CMD_2002.png
+```{figure} ../../media/S_CMD_2002.png
 :align: center
 :width: 300px
 
@@ -51,7 +51,7 @@
 
 ## 扫码成功
 
-```{figure} ../../../media/S_CMD_2003.png
+```{figure} ../../media/S_CMD_2003.png
 :align: center
 :width: 300px
 
@@ -60,7 +60,7 @@
 
 ## 支付成功语音方案1
 
-```{figure} ../../../media/S_CMD_2004.png
+```{figure} ../../media/S_CMD_2004.png
 :align: center
 :width: 300px
 
@@ -70,7 +70,7 @@
 
 ## 支付成功语音方案2
 
-```{figure} ../../../media/S_CMD_2005.png
+```{figure} ../../media/S_CMD_2005.png
 :align: center
 :width: 300px
 
@@ -82,7 +82,7 @@
 
 ## 欢迎使用语音方案
 
-```{figure} ../../../media/S_CMD_2006.png
+```{figure} ../../media/S_CMD_2006.png
 :align: center
 :width: 300px
 
@@ -97,7 +97,7 @@
 
 ## 结束设置
 
-```{figure} ../../../media/S_CMD_0000.png
+```{figure} ../../media/S_CMD_0000.png
 :align: center
 :width: 300px
 

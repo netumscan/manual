@@ -37,7 +37,7 @@ msg,是,string,扫描内容
 ### 设定扫描枪请求的Content-Type
 
 
-```{figure} ../../../media/application-json.png
+```{figure} ../../media/application-json.png
 :align: center
 :width: 300px
 
@@ -47,7 +47,7 @@ Application/Json
 ### 设定扫描枪发送的消息格式
 
 
-```{figure} ../../../media/25WFCOMMPM23S1.png
+```{figure} ../../media/25WFCOMMPM23S1.png
 :align: center
 :width: 300px
 
@@ -57,5 +57,5 @@ Json格式
 
 ### 配置WiFi和接口地址
 ```{raw} html
-    <iframe src="../../../plugins/wifi-https.html" height="650px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-https.html" height="650px" width="100%"></iframe>
 ```

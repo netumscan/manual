@@ -9,7 +9,7 @@ EMQX 开源版,下载地址：[EMQX](https://github.com/emqx/emqx/releases)
 
 ### 测试服务
 
-```{figure} ../../../media/wifi-emqx.png
+```{figure} ../../media/wifi-emqx.png
 :align: center
 ```
 
@@ -27,7 +27,7 @@ EMQX 开源版,下载地址：[EMQX](https://github.com/emqx/emqx/releases)
 
 ### 配置WiFi和服务信息
 ```{raw} html
-    <iframe src="../../../plugins/wifi-mqtt.html" height="900px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-mqtt.html" height="900px" width="100%"></iframe>
 ```
 
 ```{note}
@@ -37,17 +37,17 @@ EMQX 开源版,下载地址：[EMQX](https://github.com/emqx/emqx/releases)
 
 ### 修改MQTT连接端口号
 ```{raw} html
-    <iframe src="../../../plugins/wifi-mqtt-ConnectPort.html" height="500px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-mqtt-ConnectPort.html" height="500px" width="100%"></iframe>
 ```
 
 ### 修改扫描枪发布主题
 ```{raw} html
-    <iframe src="../../../plugins/wifi-mqtt-PublishTopic.html" height="500px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-mqtt-PublishTopic.html" height="500px" width="100%"></iframe>
 ```
 
 ### 修改扫描枪订阅主题
 ```{raw} html
-    <iframe src="../../../plugins/wifi-mqtt-SubscribeTopic.html" height="500px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-mqtt-SubscribeTopic.html" height="500px" width="100%"></iframe>
 ```
 
 ## 接收数据
@@ -55,7 +55,7 @@ EMQX 开源版,下载地址：[EMQX](https://github.com/emqx/emqx/releases)
 - 使用MQTT客户端软件[[MQTTX](https://mqttx.app/)]连接Broker服务器，并订阅扫描枪发布消息的主题。
 
 
-```{figure} ../../../media/wifi-mqttx.png
+```{figure} ../../media/wifi-mqttx.png
 :align: center
 ```
 

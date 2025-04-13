@@ -3,7 +3,7 @@
 
 ### 开启反白图像识别
 
-```{figure} ../../../media/00161.png
+```{figure} ../../media/00161.png
 :align: center
 :width: 300px
 
@@ -12,7 +12,7 @@
 
 ### 关闭反白图像识别
 
-```{figure} ../../../media/00160.png
+```{figure} ../../media/00160.png
 :align: center
 :width: 300px
 

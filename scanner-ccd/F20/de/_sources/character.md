@@ -3,7 +3,7 @@
 
 ## 无结束符
 
-```{figure} ../../../media/021040.png
+```{figure} ../../media/021040.png
 :align: center
 :width: 300px
 
@@ -13,7 +13,7 @@
 
 ## 回车换行 CR LF
 
-```{figure} ../../../media/0213405Cr5Cn.png
+```{figure} ../../media/0213405Cr5Cn.png
 :align: center
 :width: 300px
 
@@ -23,7 +23,7 @@
 
 ## 回车 CR
 
-```{figure} ../../../media/0212405Cr.png
+```{figure} ../../media/0212405Cr.png
 :align: center
 :width: 300px
 
@@ -33,7 +33,7 @@
 
 ## 换行 LF
 
-```{figure} ../../../media/0212405Cn.png
+```{figure} ../../media/0212405Cn.png
 :align: center
 :width: 300px
 
@@ -43,7 +43,7 @@
 
 ## 跳格 TAB
 
-```{figure} ../../../media/0212405Ct.png
+```{figure} ../../media/0212405Ct.png
 :align: center
 :width: 300px
 
@@ -53,7 +53,7 @@
 
 ## 回车回车 CR CR
 
-```{figure} ../../../media/0211405Cr5Cr.png
+```{figure} ../../media/0211405Cr5Cr.png
 :align: center
 :width: 300px
 

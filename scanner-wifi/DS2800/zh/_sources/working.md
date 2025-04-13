@@ -3,7 +3,7 @@
 
 
 ## 普通模式
-```{figure} ../../../media/2523NORMD.png
+```{figure} ../../media/2523NORMD.png
 :align: center
 :width: 300px
 
@@ -15,7 +15,7 @@
 ```
 ## 储存模式
 
-```{figure} ../../../media/2523INVMD.png
+```{figure} ../../media/2523INVMD.png
 :align: center
 :width: 300px
 
@@ -28,7 +28,7 @@
 
 ### 数据上传[^1]
 [^1]: 数据上传过程中，再次扫描“数据上传”指令将取消/停止数据上传。
-```{figure} ../../../media/2523TXMEM.png
+```{figure} ../../media/2523TXMEM.png
 :align: center
 :width: 300px
 
@@ -40,7 +40,7 @@
 
 ### 存储总数
 
-```{figure} ../../../media/25232BTCNT.png
+```{figure} ../../media/25232BTCNT.png
 :align: center
 :width: 300px
 
@@ -52,7 +52,7 @@
 ```
 ### 清除储存条码
 
-```{figure} ../../../media/25232ANEW2A.png
+```{figure} ../../media/25232ANEW2A.png
 :align: center
 :width: 300px
 
@@ -65,7 +65,7 @@
 
 ### 自动存储模式关闭
 
-```{figure} ../../../media/25AutoSav23Off.png
+```{figure} ../../media/25AutoSav23Off.png
 :align: center
 :width: 300px
 
@@ -76,7 +76,7 @@
 
 [^2]: 无线传输模式下，当自动存储模式开启，传输失败时条码将自动存储起来，可通过“数据上传”获取到存储的数据。
 
-```{figure} ../../../media/25AutoSav23On.png
+```{figure} ../../media/25AutoSav23On.png
 :align: center
 :width: 300px
 

@@ -2,7 +2,7 @@
 
 ## 键盘字符集类型
 ### 原始类型
-```{figure} ../../../media/6060101.png
+```{figure} ../../media/6060101.png
 :align: center
 :width: 300px
 
@@ -10,7 +10,7 @@
 ```
 ### GBK(GB2312)
 
-```{figure} ../../../media/6060101.png
+```{figure} ../../media/6060101.png
 :align: center
 :width: 300px
 
@@ -22,7 +22,7 @@ GBK(GB2312)
 ```
 
 ### UTF8
-```{figure} ../../../media/6060101.png
+```{figure} ../../media/6060101.png
 :align: center
 :width: 300px
 
@@ -42,7 +42,7 @@ UTF8
 ### 美国
 
 
-```{figure} ../../../media/6060101.png
+```{figure} ../../media/6060101.png
 :align: center
 :width: 300px
 
@@ -51,7 +51,7 @@ UTF8
 
 ### 比利时 
 
-```{figure} ../../../media/6060102.png
+```{figure} ../../media/6060102.png
 :align: center
 :width: 300px
 
@@ -60,7 +60,7 @@ UTF8
 
 ### 巴西
 
-```{figure} ../../../media/6060103.png
+```{figure} ../../media/6060103.png
 :align: center
 :width: 300px
 
@@ -70,7 +70,7 @@ UTF8
 
 ### 丹麦
 
-```{figure} ../../../media/6060106.png
+```{figure} ../../media/6060106.png
 :align: center
 :width: 300px
 
@@ -80,7 +80,7 @@ UTF8
 
 ### 芬兰
 
-```{figure} ../../../media/6060107.png
+```{figure} ../../media/6060107.png
 :align: center
 :width: 300px
 
@@ -90,7 +90,7 @@ UTF8
 
 ### 法国
 
-```{figure} ../../../media/6060108.png
+```{figure} ../../media/6060108.png
 :align: center
 :width: 300px
 
@@ -100,7 +100,7 @@ UTF8
 
 ### 德语（奥地利）
 
-```{figure} ../../../media/6060109.png
+```{figure} ../../media/6060109.png
 :align: center
 :width: 300px
 
@@ -111,7 +111,7 @@ UTF8
 
 ### 意大利
 
-```{figure} ../../../media/606010D.png
+```{figure} ../../media/606010D.png
 :align: center
 :width: 300px
 
@@ -120,7 +120,7 @@ UTF8
 
 ### 葡萄牙
 
-```{figure} ../../../media/6060112.png
+```{figure} ../../media/6060112.png
 :align: center
 :width: 300px
 

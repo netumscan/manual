@@ -4,7 +4,7 @@
 
 ### 1.恢复WiFi模块默认设置
 
-```{figure} ../../../media/AT2BRESTORE.png
+```{figure} ../../media/AT2BRESTORE.png
 :align: center
 :width: 300px
 
@@ -13,7 +13,7 @@
 
 ### 2.设定静态IP模式
 
-```{figure} ../../../media/AT2BDHCP3D1.png
+```{figure} ../../media/AT2BDHCP3D1.png
 :align: center
 :width: 300px
 
@@ -23,7 +23,7 @@
 
 ### 3.重启扫描枪
 
-```{figure} ../../../media/24POWER23OFF.png
+```{figure} ../../media/24POWER23OFF.png
 :align: center
 :width: 300px
 
@@ -43,7 +43,7 @@
 
 ### 1.恢复WiFi模块默认设置
 
-```{figure} ../../../media/AT2BRESTORE.png
+```{figure} ../../media/AT2BRESTORE.png
 :align: center
 :width: 300px
 
@@ -52,7 +52,7 @@
 
 ### 2.设定静态IP模式
 
-```{figure} ../../../media/AT2BDHCP3D0.png
+```{figure} ../../media/AT2BDHCP3D0.png
 :align: center
 :width: 300px
 
@@ -62,7 +62,7 @@
 
 ### 3.重启扫描枪
 
-```{figure} ../../../media/24POWER23OFF.png
+```{figure} ../../media/24POWER23OFF.png
 :align: center
 :width: 300px
 
@@ -74,21 +74,21 @@
 
 ```{raw} html
 
-    <iframe src="../../../plugins/wifi-network-address.html" height="400px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-network-address.html" height="400px" width="100%"></iframe>
 
 ```
 ### 5.设定网关
 
 ```{raw} html
 
-    <iframe src="../../../plugins/wifi-network-gateway.html" height="400px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-network-gateway.html" height="400px" width="100%"></iframe>
 
 ```
 ### 6.设定子网掩码
 
 ```{raw} html
 
-    <iframe src="../../../plugins/wifi-network-mask.html" height="400px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-network-mask.html" height="400px" width="100%"></iframe>
 
 ```
 

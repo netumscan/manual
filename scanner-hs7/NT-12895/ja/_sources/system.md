@@ -3,7 +3,7 @@
 ## 恢复默认设置
 当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。
 
-```{figure} ../../../media/800006..png
+```{figure} ../../media/800006..png
 :align: center
 :width: 300px
 
@@ -13,7 +13,7 @@
 
 ## 获取固件版本
 
-```{figure} ../../../media/809005..png
+```{figure} ../../media/809005..png
 :align: center
 :width: 300px
 
@@ -23,7 +23,7 @@
 ## USB 模式
 ### USB Keyboard
 
-```{figure} ../../../media/881001124..png
+```{figure} ../../media/881001124..png
 :align: center
 :width: 300px
 
@@ -33,7 +33,7 @@ USB Keyboard
 
 ### USB COM
 
-```{figure} ../../../media/881001133..png
+```{figure} ../../media/881001133..png
 :align: center
 :width: 300px
 
@@ -48,7 +48,7 @@ USB COM
 ## 声音设置
 
 ### 低音
-```{figure} ../../../media/8410091..png
+```{figure} ../../media/8410091..png
 :align: center
 :width: 300px
 
@@ -56,7 +56,7 @@ USB COM
 ```
   
 ### 中音
-```{figure} ../../../media/8410092..png
+```{figure} ../../media/8410092..png
 :align: center
 :width: 300px
 
@@ -64,7 +64,7 @@ USB COM
 ```
   
 ### 高音
-```{figure} ../../../media/8410093..png
+```{figure} ../../media/8410093..png
 :align: center
 :width: 300px
 
@@ -72,7 +72,7 @@ USB COM
 ```
   
 ### 关闭声音
-```{figure} ../../../media/8410090..png
+```{figure} ../../media/8410090..png
 :align: center
 :width: 300px
 
@@ -83,7 +83,7 @@ USB COM
 ## LED 照明灯
 
 ### 打开照明灯
-```{figure} ../../../media/8980051..png
+```{figure} ../../media/8980051..png
 :align: center
 :width: 300px
 
@@ -93,7 +93,7 @@ USB COM
 
 
 ### 关闭照明灯
-```{figure} ../../../media/8980050..png
+```{figure} ../../media/8980050..png
 :align: center
 :width: 300px
 
@@ -106,7 +106,7 @@ USB COM
 
 
 ### 打开指示
-```{figure} ../../../media/8980022..png
+```{figure} ../../media/8980022..png
 :align: center
 :width: 300px
 
@@ -116,7 +116,7 @@ USB COM
 
 
 ### 关闭指示
-```{figure} ../../../media/8980020..png
+```{figure} ../../media/8980020..png
 :align: center
 :width: 300px
 
