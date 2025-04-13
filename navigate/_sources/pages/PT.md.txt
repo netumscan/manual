@@ -4,13 +4,13 @@ hide-toc: true
 
 # 支付平台
 
-## [A5](https://platform.pages.dev/A5/zh)
+## [A5](https://platform-86l.pages.dev/A5/zh)
 
 ```{figure} ../media/series/A5.jpg
 :align: center
-:target: https://platform.pages.dev/A5/zh
+:target: https://platform-86l.pages.dev/A5/zh
 
-[A5](https://platform.pages.dev/A5/zh)
+[A5](https://platform-86l.pages.dev/A5/zh)
 ```
 
 
@@ -24,57 +24,57 @@ hide-toc: true
 [A6](https://scanner-wx1.pages.dev/A6/zh)
 ```
 
-## [NT-2055M](https://platform.pages.dev/NT-2055M/zh)
+## [NT-2055M](https://platform-86l.pages.dev/NT-2055M/zh)
 
 
 ```{figure} ../media/series/NT-2055M.jpg
 :align: center
-:target: https://platform.pages.dev/NT-2055M/zh
+:target: https://platform-86l.pages.dev/NT-2055M/zh
 
-[NT-2055M](https://platform.pages.dev/NT-2055M/zh)
+[NT-2055M](https://platform-86l.pages.dev/NT-2055M/zh)
 ```
 
-## [NT-2055A1](https://platform.pages.dev/NT-2055A1/zh)
+## [NT-2055A1](https://platform-86l.pages.dev/NT-2055A1/zh)
 
 ```{figure} ../media/series/NT-2055A1.jpg
 :align: center
-:target: https://platform.pages.dev/NT-2055A1/zh
+:target: https://platform-86l.pages.dev/NT-2055A1/zh
 
-[NT-2055A1](https://platform.pages.dev/NT-2055A1/zh)
+[NT-2055A1](https://platform-86l.pages.dev/NT-2055A1/zh)
 ```
 
-## [NT-2085PRO](https://platform.pages.dev/NT-2085PRO/zh)
+## [NT-2085PRO](https://platform-86l.pages.dev/NT-2085PRO/zh)
 
 ```{figure} ../media/series/NT-2085PRO.jpg
 :align: center
-:target: https://platform.pages.dev/NT-2085PRO/zh
+:target: https://platform-86l.pages.dev/NT-2085PRO/zh
 
-[NT-2085PRO](https://platform.pages.dev/NT-2085PRO/zh)
+[NT-2085PRO](https://platform-86l.pages.dev/NT-2085PRO/zh)
 ```
 
-## [D-8600](https://platform.pages.dev/D-8600/zh)
+## [D-8600](https://platform-86l.pages.dev/D-8600/zh)
 
 ```{figure} ../media/series/D-8600.jpg
 :align: center
-:target: https://platform.pages.dev/D-8600/zh
+:target: https://platform-86l.pages.dev/D-8600/zh
 
-[D-8600](https://platform.pages.dev/D-8600/zh)
+[D-8600](https://platform-86l.pages.dev/D-8600/zh)
 ```
-## [A8](https://platform.pages.dev/A8/zh)
+## [A8](https://platform-86l.pages.dev/A8/zh)
 
 ```{figure} ../media/series/A8.jpg
 :align: center
-:target: https://platform.pages.dev/A8/zh
+:target: https://platform-86l.pages.dev/A8/zh
 
-[A8](https://platform.pages.dev/A8/zh)
+[A8](https://platform-86l.pages.dev/A8/zh)
 ```
-## [CN-40](https://platform.pages.dev/CN-40/zh)
+## [CN-40](https://platform-86l.pages.dev/CN-40/zh)
 
 ```{figure} ../media/series/CN-40.jpg
 :align: center
-:target: https://platform.pages.dev/CN-40/zh
+:target: https://platform-86l.pages.dev/CN-40/zh
 
-[CN-40](https://platform.pages.dev/CN-40/zh)
+[CN-40](https://platform-86l.pages.dev/CN-40/zh)
 ```
 
 
