@@ -19,7 +19,7 @@ hide-toc: true
 
 ```{figure} ../media/series/M5.jpg
 :align: center
-:target: hhttps://scanner-212.netum.info/M5/zh
+:target: https://scanner-212.netum.info/M5/zh
 
 [M5](https://scanner-212.netum.info/M5/zh)
 ```

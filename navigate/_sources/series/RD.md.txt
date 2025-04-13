@@ -14,14 +14,14 @@ hide-toc: true
 ```
 
 
-## [NT-1202W](https://scanner-280.netum.info/NT-1202W/en)
+## [NT-1202W](https://scanner-wx4.netum.info/NT-1202W/en)
 
 
 ```{figure} ../media/series/NT-1202W.jpg
 :align: center
-:target: https://scanner-280.netum.info/NT-1202W/en
+:target: https://scanner-wx4.netum.info/NT-1202W/en
 
-[NT-1202W](https://scanner-280.netum.info/NT-1202W/en)
+[NT-1202W](https://scanner-wx4.netum.info/NT-1202W/en)
 ```
 
 ## [NT-1203L](https://scanner-wx4.netum.info/NT-1203L/en)
