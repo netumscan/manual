@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Modalità di scansione &#8212; YX-CCD Scanner User Manual</title>
+    <title>Modalità Scansione &#8212; YX-CCD Scanner User Manual</title>
   
   
   
@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Impostazione carattere finale" href="character.html" />
-    <link rel="prev" title="Impostazioni di sistema" href="system.html" />
+    <link rel="next" title="Impostazioni Dei Caratteri Finali" href="character.html" />
+    <link rel="prev" title="Impostazioni Di Sistema" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -160,11 +160,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni di sistema</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Modalità di scansione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Impostazione carattere finale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni della tastiera</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni del codice a barre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Modalità Scansione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni Codici A Barre</a></li>
 </ul>
 
     </div>
@@ -303,7 +303,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Modalità di scansione</h1>
+    <h1>Modalità Scansione</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -313,18 +313,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Modalità chiave</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Modalità continua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Modalità di ritardo dei tasti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Impostazioni di auto-rilevamento</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir">Disattivare il rilevamento automatico IR</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Attiva il rilevamento automatico IR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Modalità Tasto Innesco</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Modalità Continua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Modalità Di Sensibilità Automatica</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Disabilita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Abilita</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Impostazioni di rilevamento del codice duplicato</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Disabilita il rilevamento del codice duplicato</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Abilita il rilevamento del codice duplicato</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Intervallo di ricodifica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duplicate-barcode-detection-settings">Impostazioni Di Rilevamento Codici A Barre Duplicate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Disabilita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Abilita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeat-barcode-interval">Ripeti Intervallo Codici A Barre</a></li>
 </ul>
 </li>
 </ul>
@@ -338,121 +337,111 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Modalità di scansione<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Modalità chiave<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>In questa modalità, il modulo inizia a leggere il codice dopo che è stato premuto il pulsante di attivazione e interrompe la lettura dopo che il codice è stato letto correttamente o il pulsante di attivazione è stato rilasciato.</p>
-<figure class="align-center" id="id11">
+  <section id="scan-mode">
+<h1>Modalità Scansione<a class="headerlink" href="#scan-mode" title="Link to this heading">#</a></h1>
+<section id="key-trigger-mode">
+<h2>Modalità Tasto Innesco<a class="headerlink" href="#key-trigger-mode" title="Link to this heading">#</a></h2>
+<p>Premere il pulsante per attivare la scansione e rilasciare il pulsante per terminare la scansione. La scansione termina quando la scansione ha successo o il tempo di lettura supera il tempo di lettura singolo.</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/013300.png"><img alt="../../media/013300.png" src="../../media/013300.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Modalità chiave <code class="docutils literal notranslate"><span class="pre">Predefinito</span></code></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Tasto Attivatore Della Modalità <code class="docutils literal notranslate"><span class="pre">Predefinito</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Modalità continua<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>La luce rossa del modulo rimane accesa a lungo. Quando passa un codice a barre, il modulo lo legge automaticamente. Lo stesso codice a barre non può essere letto più volte, a meno che non venga rimosso e letto nuovamente.</p>
-<figure class="align-center" id="id12">
+<section id="continuous-mode">
+<h2>Modalità Continua<a class="headerlink" href="#continuous-mode" title="Link to this heading">#</a></h2>
+<p>Lo scanner funziona in modo continuo. Se la scansione è riuscita o il tempo di scansione supera il tempo di lavoro singolo, la scansione corrente termina. Se il tempo supera il tempo specificato, la scansione successiva viene attivata automaticamente.</p>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/013304.png"><img alt="../../media/013304.png" src="../../media/013304.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Modalità continua</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modalità Continua</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Modalità di ritardo dei tasti<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>Una volta completata correttamente l’impostazione, la luce rossa del modulo rimarrà accesa per 3 secondi e si spegnerà se il codice a barre non verrà letto entro 3 secondi, oppure si spegnerà dopo che il codice a barre sarà stato letto correttamente.</p>
-<figure class="align-center" id="id13">
-<a class="reference internal image-reference" href="../../media/013301.png"><img alt="../../media/013301.png" src="../../media/013301.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Modalità di ritardo dei tasti</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id5">
-<h2>Impostazioni di auto-rilevamento<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<section id="ir">
-<h3>Disattivare il rilevamento automatico IR<a class="headerlink" href="#ir" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="auto-sensing-mode">
+<h2>Modalità Di Sensibilità Automatica<a class="headerlink" href="#auto-sensing-mode" title="Link to this heading">#</a></h2>
+<p>Nella modalità di rilevamento automatico, lo scanner rileva la luminosità dell’ambiente circostante. Quando la luminosità cambia, la scansione viene attivata. La scansione termina quando la scansione ha successo o il tempo di scansione supera il tempo di lavoro singolo. Indipendentemente dal fatto che l’ultima scansione abbia avuto successo o fallito, la luminosità dell’ambiente circostante verrà nuovamente rilevata.</p>
+<section id="disable">
+<h3>Disabilita<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/02310.png"><img alt="../../media/02310.png" src="../../media/02310.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disattivare il rilevamento automatico IR <code class="docutils literal notranslate"><span class="pre">Predefinito</span></code></span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disabilita <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Attiva il rilevamento automatico IR<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="enable">
+<h3>Abilita<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/02311.png"><img alt="../../media/02311.png" src="../../media/02311.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Attiva il rilevamento automatico IR</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Abilita</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id7">
-<h2>Impostazioni di rilevamento del codice duplicato<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<section id="id8">
-<h3>Disabilita il rilevamento del codice duplicato<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="duplicate-barcode-detection-settings">
+<h2>Impostazioni Di Rilevamento Codici A Barre Duplicate<a class="headerlink" href="#duplicate-barcode-detection-settings" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Disabilita<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/02770.png"><img alt="../../media/02770.png" src="../../media/02770.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disabilita il rilevamento del codice duplicato <code class="docutils literal notranslate"><span class="pre">Predefinito</span></code></span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disabilita <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Abilita il rilevamento del codice duplicato<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="id2">
+<h3>Abilita<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/02771.png"><img alt="../../media/02771.png" src="../../media/02771.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Abilita il rilevamento del codice duplicato</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Abilita</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>Intervallo di ricodifica<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="repeat-barcode-interval">
+<h3>Ripeti Intervallo Codici A Barre<a class="headerlink" href="#repeat-barcode-interval" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/02630A.png"><img alt="../../media/02630A.png" src="../../media/02630A.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">1s</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">1s</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id19">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/026314.png"><img alt="../../media/026314.png" src="../../media/026314.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2s</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">2s</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/02631E.png"><img alt="../../media/02631E.png" src="../../media/02631E.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">3s</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
+<p><span class="caption-text">3s</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../media/026332.png"><img alt="../../media/026332.png" src="../../media/026332.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">5s</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">5s</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../media/026364.png"><img alt="../../media/026364.png" src="../../media/026364.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">10s</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+<p><span class="caption-text">10s</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -476,7 +465,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title">Impostazioni di sistema</p>
+        <p class="prev-next-title">Impostazioni Di Sistema</p>
       </div>
     </a>
     <a class="right-next"
@@ -484,7 +473,7 @@ document.write(`
        title="pagina seguente">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title">Impostazione carattere finale</p>
+        <p class="prev-next-title">Impostazioni Dei Caratteri Finali</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -504,18 +493,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Modalità chiave</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Modalità continua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Modalità di ritardo dei tasti</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Impostazioni di auto-rilevamento</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir">Disattivare il rilevamento automatico IR</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Attiva il rilevamento automatico IR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Modalità Tasto Innesco</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Modalità Continua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Modalità Di Sensibilità Automatica</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Disabilita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Abilita</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Impostazioni di rilevamento del codice duplicato</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Disabilita il rilevamento del codice duplicato</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Abilita il rilevamento del codice duplicato</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Intervallo di ricodifica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duplicate-barcode-detection-settings">Impostazioni Di Rilevamento Codici A Barre Duplicate</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Disabilita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Abilita</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeat-barcode-interval">Ripeti Intervallo Codici A Barre</a></li>
 </ul>
 </li>
 </ul>

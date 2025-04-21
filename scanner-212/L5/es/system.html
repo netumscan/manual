@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Configuración del sistema &#8212; L5 Scanner User Manual</title>
+    <title>Ajustes del sistema &#8212; L5 Scanner User Manual</title>
   
   
   
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Configuración del sistema</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Fin de la configuración del personaje</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configuración del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Interruptor de código de barras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Ajustes de código de barras</a></li>
 </ul>
 
     </div>
@@ -372,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Configuración del sistema</h1>
+    <h1>Ajustes del sistema</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,14 +393,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Restaurar la configuración predeterminada</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Obtenga la versión del firmware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Configuración de sonido</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">bajo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Rango medio</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Triplicar</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Habilitar sonido</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Desactivar sonido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">Restaurar ajustes por defecto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">Obtener versión de Firmware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">Ajustes de volumen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">Volumen bajo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">Volumen medio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">Volumen alto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-sound">Activar sonido</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-sound">Desactivar sonido</a></li>
 </ul>
 </li>
 </ul>
@@ -403,78 +414,78 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Configuración del sistema<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Restaurar la configuración predeterminada<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Cuando ocurre un error desconocido en el escáner, puede restablecerlo restaurando la configuración predeterminada.</p>
-<figure class="align-center" id="id10">
+  <section id="system-settings">
+<h1>Ajustes del sistema<a class="headerlink" href="#system-settings" title="Link to this heading">#</a></h1>
+<section id="restore-default-settings">
+<h2>Restaurar ajustes por defecto<a class="headerlink" href="#restore-default-settings" title="Link to this heading">#</a></h2>
+<p>Cuando ocurre un error desconocido en el escáner, puede reiniciar el escáner restaurando la configuración predeterminada.</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/303FFF0.png"><img alt="../../media/303FFF0.png" src="../../media/303FFF0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Restaurar la configuración predeterminada</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Restaurar ajustes por defecto</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Obtenga la versión del firmware<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id11">
+<section id="get-firmware-version">
+<h2>Obtener versión de Firmware<a class="headerlink" href="#get-firmware-version" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/4040010.png"><img alt="../../media/4040010.png" src="../../media/4040010.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Obtenga la versión del firmware</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Obtener versión de Firmware</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Configuración de sonido<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<section id="id5">
-<h3>bajo<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id12">
+<section id="volume-settings">
+<h2>Ajustes de volumen<a class="headerlink" href="#volume-settings" title="Link to this heading">#</a></h2>
+<section id="low-volume">
+<h3>Volumen bajo<a class="headerlink" href="#low-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/2050802.png"><img alt="../../media/2050802.png" src="../../media/2050802.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">bajo</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Volumen bajo</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Rango medio<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+<section id="medium-volume">
+<h3>Volumen medio<a class="headerlink" href="#medium-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/2050801.png"><img alt="../../media/2050801.png" src="../../media/2050801.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Rango medio</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Volumen medio</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>Triplicar<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="high-volume">
+<h3>Volumen alto<a class="headerlink" href="#high-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/2050800.png"><img alt="../../media/2050800.png" src="../../media/2050800.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Triplicar</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Volumen alto</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Habilitar sonido<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="enable-sound">
+<h3>Activar sonido<a class="headerlink" href="#enable-sound" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/30300C0.png"><img alt="../../media/30300C0.png" src="../../media/30300C0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Habilitar sonido</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Activar sonido</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Desactivar sonido<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="disable-sound">
+<h3>Desactivar sonido<a class="headerlink" href="#disable-sound" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/30300C1.png"><img alt="../../media/30300C1.png" src="../../media/30300C1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Desactivar sonido</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Desactivar sonido</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -526,14 +537,14 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Restaurar la configuración predeterminada</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Obtenga la versión del firmware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Configuración de sonido</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">bajo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Rango medio</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Triplicar</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Habilitar sonido</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Desactivar sonido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">Restaurar ajustes por defecto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">Obtener versión de Firmware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">Ajustes de volumen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">Volumen bajo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">Volumen medio</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">Volumen alto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-sound">Activar sonido</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-sound">Desactivar sonido</a></li>
 </ul>
 </li>
 </ul>

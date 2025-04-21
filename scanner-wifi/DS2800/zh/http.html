@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>使用HTTP协议传输数据 &#8212; DS2800 Scanner User Manual</title>
+    <title>使用 HTTP 协议传输数据 &#8212; DS2800 Scanner User Manual</title>
   
   
   
@@ -49,7 +49,7 @@
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="网络配置" href="network.html" />
-    <link rel="prev" title="使用MQTT协议传输数据" href="mqtt.html" />
+    <link rel="prev" title="使用 MQTT 协议传输数据" href="mqtt.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="zh-CN"/>
   </head>
@@ -162,11 +162,11 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">工作模式</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFi模式</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用TCP Client传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">使用TCP Server传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">使用MQTT协议传输数据</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">使用HTTP协议传输数据</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi 传输模式</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用 TCP 客户端来传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">使用 TCP 服务端传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">使用 MQTT 协议传输数据</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">使用 HTTP 协议传输数据</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network.html">网络配置</a></li>
 </ul>
 </details></li>
@@ -311,7 +311,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>使用HTTP协议传输数据</h1>
+    <h1>使用 HTTP 协议传输数据</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -321,18 +321,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rest-api">创建REST API</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">简要描述</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#url">请求URL</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">请求方式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">请求参数</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">返回参数</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-rest-api">创建 REST API</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-description">简要描述</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-url">请求URL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-mode">请求模式</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-parameters">请求参数</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#return-parameter">返回参数</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">配置扫描枪</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-type">设定扫描枪请求的Content-Type</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">设定扫描枪发送的消息格式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">配置WiFi和接口地址</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">配置扫描枪</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-content-type-of-the-scanner-request">设置扫描枪请求的Content-Type</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-data-format-sent-by-the-scanner">设置扫描枪发送的数据格式</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-api-url-address">配置 WiFi 和 API URL 地址</a></li>
 </ul>
 </li>
 </ul>
@@ -346,30 +346,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="http">
-<h1>使用HTTP协议传输数据<a class="headerlink" href="#http" title="Link to this heading">#</a></h1>
-<section id="rest-api">
-<h2>创建REST API<a class="headerlink" href="#rest-api" title="Link to this heading">#</a></h2>
-<section id="id1">
-<h3>简要描述<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+  <section id="use-http-protocol-to-transfer-data">
+<h1>使用 HTTP 协议传输数据<a class="headerlink" href="#use-http-protocol-to-transfer-data" title="Link to this heading">#</a></h1>
+<section id="create-rest-api">
+<h2>创建 REST API<a class="headerlink" href="#create-rest-api" title="Link to this heading">#</a></h2>
+<section id="brief-description">
+<h3>简要描述<a class="headerlink" href="#brief-description" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>扫描枪数据上传接口</p></li>
 </ul>
 </section>
-<section id="url">
-<h3>请求URL<a class="headerlink" href="#url" title="Link to this heading">#</a></h3>
+<section id="request-url">
+<h3>请求URL<a class="headerlink" href="#request-url" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>https://httpbin.org/post</p></li>
 </ul>
 </section>
-<section id="id2">
-<h3>请求方式<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="request-mode">
+<h3>请求模式<a class="headerlink" href="#request-mode" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>POST</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>请求参数<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<section id="request-parameters">
+<h3>请求参数<a class="headerlink" href="#request-parameters" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 25.0%" />
@@ -378,62 +378,62 @@ document.write(`
 <col style="width: 25.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>参数名</p></th>
-<th class="head"><p>必选</p></th>
+<tr class="row-odd"><th class="head"><p>参数名称</p></th>
+<th class="head"><p>必填</p></th>
 <th class="head"><p>类型</p></th>
-<th class="head"><p>说明</p></th>
+<th class="head"><p>描述</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>id</p></td>
-<td><p>是</p></td>
+<td><p>是的</p></td>
 <td><p>string</p></td>
-<td><p>设备Id</p></td>
+<td><p>设备ID</p></td>
 </tr>
 <tr class="row-odd"><td><p>msg</p></td>
-<td><p>是</p></td>
+<td><p>是的</p></td>
 <td><p>string</p></td>
 <td><p>扫描内容</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">请求示例</span><a class="headerlink" href="#id7" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">请求示例</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;04B9023A&quot;</span><span class="p">,</span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="s2">&quot;1234567890&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </section>
-<section id="id4">
-<h3>返回参数<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<p>详情见<a class="reference internal" href="wireless.html#id10"><span class="std std-ref">数据接收格式</span></a></p>
+<section id="return-parameter">
+<h3>返回参数<a class="headerlink" href="#return-parameter" title="Link to this heading">#</a></h3>
+<p>详情请查看<a class="reference internal" href="wireless.html#data-rceiving-format"><span class="std std-ref">数据接收格式</span></a></p>
 </section>
 </section>
-<section id="id5">
-<h2>配置扫描枪<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<section id="content-type">
-<h3>设定扫描枪请求的Content-Type<a class="headerlink" href="#content-type" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+<section id="configure-scanner">
+<h2>配置扫描枪<a class="headerlink" href="#configure-scanner" title="Link to this heading">#</a></h2>
+<section id="set-the-content-type-of-the-scanner-request">
+<h3>设置扫描枪请求的Content-Type<a class="headerlink" href="#set-the-content-type-of-the-scanner-request" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/application-json.png"><img alt="../../media/application-json.png" src="../../media/application-json.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Application/Json</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Application/Json</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>设定扫描枪发送的消息格式<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<section id="set-the-data-format-sent-by-the-scanner">
+<h3>设置扫描枪发送的数据格式<a class="headerlink" href="#set-the-data-format-sent-by-the-scanner" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S1.png"><img alt="../../media/25WFCOMMPM23S1.png" src="../../media/25WFCOMMPM23S1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Json格式</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Json Format</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="wifi">
-<h3>配置WiFi和接口地址<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h3>
+<section id="configure-wifi-and-api-url-address">
+<h3>配置 WiFi 和 API URL 地址<a class="headerlink" href="#configure-wifi-and-api-url-address" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-https.html" height="650px" width="100%"></iframe></section>
 </section>
 </section>
@@ -455,7 +455,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">上一页</p>
-        <p class="prev-next-title">使用MQTT协议传输数据</p>
+        <p class="prev-next-title">使用 MQTT 协议传输数据</p>
       </div>
     </a>
     <a class="right-next"
@@ -483,18 +483,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rest-api">创建REST API</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">简要描述</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#url">请求URL</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">请求方式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">请求参数</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">返回参数</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-rest-api">创建 REST API</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-description">简要描述</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-url">请求URL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-mode">请求模式</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-parameters">请求参数</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#return-parameter">返回参数</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">配置扫描枪</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-type">设定扫描枪请求的Content-Type</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">设定扫描枪发送的消息格式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">配置WiFi和接口地址</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">配置扫描枪</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-content-type-of-the-scanner-request">设置扫描枪请求的Content-Type</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-data-format-sent-by-the-scanner">设置扫描枪发送的数据格式</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-api-url-address">配置 WiFi 和 API URL 地址</a></li>
 </ul>
 </li>
 </ul>

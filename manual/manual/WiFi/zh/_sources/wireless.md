@@ -1,76 +1,76 @@
-# WiFi模式
+# Wi-Fi Transmission mode
 
-## 修改设备编号
+## Modify Device ID
 
 ```{raw} html
 
     <iframe src="../../plugins/wifi-clientId.html" height="400px" width="100%"></iframe>
 
 ```
-## 数据上传格式
-### 原始条码内容[^1]
-[^1]: 原始条码内容： {"ID":"680870"}
+## Data Upload Format
+### Original Barcode Content[^1]
+[^1]: Original barcode content: {"ID":"680870"}
 
 ```{figure} ../../media/25WFCOMMPM23S0.png
 :align: center
 :width: 300px
 
-原始条码内容
+Original Barcode Content
 ```
-### Josn格式内容[^2]
-[^2]: Josn格式内容： {"id":"C143F123","msg":"{"ID":"680870"}"}
+### Json Format Content[^2]
+[^2]: Json format content: {"id":"C143F123","msg":"{"ID":"680870"}"}
 
 
 ```{figure} ../../media/25WFCOMMPM23S1.png
 :align: center
 :width: 300px
 
-Josn格式内容
+Json Format Content
 ```
-### Josn格式+内容中双引号加转义符[^3]
-[^3]: Josn格式+内容中双引号加转义符： {"id":"C143F123","msg":"{\"ID\":\"680870\"}"}
+### Json Format + double quotes plus escape characters in content[^3]
+[^3]: Json Format + double quotes plus escape characters in content: {"id":"C143F123","msg":"{\"ID\":\"680870\"}"}
 
 
 ```{figure} ../../media/25WFCOMMPM23S2.png
 :align: center
 :width: 300px
 
-Josn格式+内容中双引号加转义符
+Json Format + double quotes plus escape characters in content
 ```
 
-## 数据接收格式
+## Data Rceiving Format
 
 ```{csv-table}
 :widths: 30 30 40
 :header-rows: 1
 
-参数名,类型,描述
-ply,Int,语音代码
-msg,String,消息内容
+Parameter name,type,description
+ply,Int,Voice Code
+msg,String,Message content
 ```
 
 ```{code-block} json
-:caption: 返回示例
+:caption: Return example
 :lineno-start: 1
 
 {"ply":2,"msg":"ABEF"}
 ```
 
-### 语音代码
+### Voice Code
 
 ```{csv-table}
 :widths: 50 50
 :header-rows: 1
 
-语音代码,语音内容
-1,蜂鸣器响一声
-2,蜂鸣器响二声
-3,蜂鸣器响三声
+Voice Code,Voice content
+1,The buzzer sounds once
+2,The buzzer sounds twice
+3,The buzzer sounds three
 ```
 
 
 
-## 数据传输协议
+## Data Transmission Protocol
 ```{toctree}
 :maxdepth: 2
 
@@ -79,7 +79,7 @@ tcpserver.md
 mqtt.md
 http.md
 ```
-## 网络配置方式
+## Network Configuration
 ```{toctree}
 :maxdepth: 2
 

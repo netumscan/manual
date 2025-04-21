@@ -1,51 +1,53 @@
-# 系统设置
+# System Settings
 
-## 恢复默认设置
-当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。
+## Restore Default Settings
+When an unknown error occurs on the scanner, you can reset the scanner by restoring the default settings.
 
 ```{figure} ../../media/3E210016000..png
 :align: center
 :width: 300px
 
-恢复默认设置
+Restore Default Settings
 ```
 
-## 获取固件版本
+## Get Firmware Version
 ```{figure} ../../media/3E210006000..png
 :align: center
 :width: 300px
 
-获取固件版本
+Get Firmware Version
 ```
 
-## 声音设置
-可以根据应用环境和个人习惯，通过识读以下设置码，调整蜂鸣器音量的大小。默认：高音
+## Volume Settings
+You can adjust the buzzer volume by scanning the following setting code according to the application environment and personal habits.
 
-
+### Mute
 ```{figure} ../../media/3E210010100..png
 :align: center
 :width: 300px
 
-静音
+Mute
 ```
-  
+### Low Volume
 ```{figure} ../../media/3E2100101010..png
 :align: center
 :width: 300px
 
-低音
+Low Volume
 ```
   
+### Medium Volume
 ```{figure} ../../media/3E2100101050..png
 :align: center
 :width: 300px
 
-中音
+Medium Volume
 ```
 
+### High Volume
 ```{figure} ../../media/3E21001010100..png
 :align: center
 :width: 300px
 
-高音 `默认`
+High Volume `Default`
 ```

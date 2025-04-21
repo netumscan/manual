@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>结束符设置 &#8212; NT-12895 Scanner User Manual</title>
+    <title>结束字符设置 &#8212; NT-12895 Scanner User Manual</title>
   
   
   
@@ -162,9 +162,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">扫描模式</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">结束符设置</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">结束字符设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">条码开关</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">条码设置</a></li>
 </ul>
 
     </div>
@@ -303,7 +303,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>结束符设置</h1>
+    <h1>结束字符设置</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -313,10 +313,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">添加回车</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">取消回车</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">添加回车换行</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">取消回车换行</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-enter-cr">添加回车符(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancel-enter-cr">取消回车符(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-enter-new-line-crlf">添加回车符+换行符(CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancel-enter-new-line-crlf">取消回车符+换行符(CRLF)</a></li>
 </ul>
             </nav>
         </div>
@@ -328,46 +328,46 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>结束符设置<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>结束字符是在解码数据后面添加字符格式: 解码数据+结束字符。</p>
-<section id="id2">
-<h2>添加回车<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id6">
+  <section id="end-character-settings">
+<h1>结束字符设置<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
+<p>结束字符是在解码的数据后添加的，格式为解码的数据+结束字符。</p>
+<section id="add-enter-cr">
+<h2>添加回车符(CR)<a class="headerlink" href="#add-enter-cr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/890000..png"><img alt="../../media/890000..png" src="../../media/890000..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">添加回车</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">添加回车符(CR)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>取消回车<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id7">
+<section id="cancel-enter-cr">
+<h2>取消回车符(CR)<a class="headerlink" href="#cancel-enter-cr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/888003..png"><img alt="../../media/888003..png" src="../../media/888003..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">取消回车</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">取消回车符(CR)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>添加回车换行<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id8">
+<section id="add-enter-new-line-crlf">
+<h2>添加回车符+换行符(CRLF)<a class="headerlink" href="#add-enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/890001..png"><img alt="../../media/890001..png" src="../../media/890001..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">添加回车换行</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">添加回车符+换行符(CRLF)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>取消回车换行<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id9">
+<section id="cancel-enter-new-line-crlf">
+<h2>取消回车符+换行符(CRLF)<a class="headerlink" href="#cancel-enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/888003..png"><img alt="../../media/888003..png" src="../../media/888003..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">取消回车换行</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">取消回车符+换行符(CRLF)</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -418,10 +418,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">添加回车</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">取消回车</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">添加回车换行</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">取消回车换行</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-enter-cr">添加回车符(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancel-enter-cr">取消回车符(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-enter-new-line-crlf">添加回车符+换行符(CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancel-enter-new-line-crlf">取消回车符+换行符(CRLF)</a></li>
 </ul>
   </nav></div>
 

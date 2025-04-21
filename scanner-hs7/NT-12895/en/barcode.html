@@ -212,6 +212,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,7 +240,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan Mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">End character setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">End Character Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Settings</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Barcode Settings</a></li>
 </ul>
@@ -380,34 +391,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Disable 1D code scanning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Enable 1D code scanning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Disable 2D code scanning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Enable 2D code scanning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Reverse white barcodes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Does not support reverse white barcodes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Only supports reverse white barcodes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">All supported</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">Disable All 1D Codes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">Enable All 1D Codes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">Disable All 2D Codes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">Enable All 2D Codes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">Reversal Barcode Settings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">No Support Reversal Barcode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">Only Supports Reversal Barcode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">All Supported</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">QR URL Code Settings</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Disabled</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Enable</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Alipay invoicing function</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK format invoicing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Open step 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Open step 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Open step 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Close Invoicing</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">Invoicing in UNICODE format</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Open step 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Open step 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Open step 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Close Invoicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QR Code URL Settings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Disable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Enable</a></li>
 </ul>
 </li>
 </ul>
@@ -421,195 +417,105 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Barcode Settings<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Disable 1D code scanning<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id21">
+  <section id="barcode-settings">
+<h1>Barcode Settings<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
+<section id="disable-all-1d-codes">
+<h2>Disable All 1D Codes<a class="headerlink" href="#disable-all-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/9950041..png"><img alt="../../media/9950041..png" src="../../media/9950041..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disable 1D code scanning</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disable All 1D Codes</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Enable 1D code scanning<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id22">
+<section id="enable-all-1d-codes">
+<h2>Enable All 1D Codes<a class="headerlink" href="#enable-all-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/9950040..png"><img alt="../../media/9950040..png" src="../../media/9950040..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Enable 1D code scanning</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+<p><span class="caption-text">Enable All 1D Codes</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Disable 2D code scanning<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id23">
+<section id="disable-all-2d-codes">
+<h2>Disable All 2D Codes<a class="headerlink" href="#disable-all-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/9950071..png"><img alt="../../media/9950071..png" src="../../media/9950071..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disable 2D code scanning</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disable All 2D Codes</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Enable 2D code scanning<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id24">
+<section id="enable-all-2d-codes">
+<h2>Enable All 2D Codes<a class="headerlink" href="#enable-all-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/9950070..png"><img alt="../../media/9950070..png" src="../../media/9950070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Enable 2D code scanning</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
+<p><span class="caption-text">Enable All 2D Codes</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>Reverse white barcodes<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<section id="id7">
-<h3>Does not support reverse white barcodes<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id25">
+<section id="reversal-barcode-settings">
+<h2>Reversal Barcode Settings<a class="headerlink" href="#reversal-barcode-settings" title="Link to this heading">#</a></h2>
+<section id="no-support-reversal-barcode">
+<h3>No Support Reversal Barcode<a class="headerlink" href="#no-support-reversal-barcode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/8910010..png"><img alt="../../media/8910010..png" src="../../media/8910010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Does not support reverse white barcodes</span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
+<p><span class="caption-text">No Support Reversal Barcode</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Only supports reverse white barcodes<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id26">
+<section id="only-supports-reversal-barcode">
+<h3>Only Supports Reversal Barcode<a class="headerlink" href="#only-supports-reversal-barcode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/8910011..png"><img alt="../../media/8910011..png" src="../../media/8910011..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Only supports reverse white barcodes</span><a class="headerlink" href="#id26" title="Link to this image">#</a></p>
+<p><span class="caption-text">Only Supports Reversal Barcode</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>All supported<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id27">
+<section id="all-supported">
+<h3>All Supported<a class="headerlink" href="#all-supported" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/8910012..png"><img alt="../../media/8910012..png" src="../../media/8910012..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">All supported</span><a class="headerlink" href="#id27" title="Link to this image">#</a></p>
+<p><span class="caption-text">All Supported</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the device is configured to <a class="reference internal" href="#id8">Only support reverse</a>, if you want to configure it to support normal barcodes at the same time, scan reverse barcodes and configure it to <a class="reference internal" href="#id9">Support all</a></p>
+<p>If the scanner is configured as <a class="reference internal" href="#only-supports-reversal-barcode">Only Supports Reversal Barcode</a>, and you want to configure it to support both normal barcodes and reverse barcodes, configure it as <a class="reference internal" href="#all-supported">All Supported</a></p>
 </div>
 </section>
 </section>
-<section id="qr">
-<h2>QR URL Code Settings<a class="headerlink" href="#qr" title="Link to this heading">#</a></h2>
-<p>Block URLs starting with <code class="docutils literal notranslate"><span class="pre">http://</span></code> and <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
-<section id="id10">
-<h3>Disabled<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id28">
+<section id="qr-code-url-settings">
+<h2>QR Code URL Settings<a class="headerlink" href="#qr-code-url-settings" title="Link to this heading">#</a></h2>
+<p>Block scanning of URL QR codes starting with <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
+<section id="disable">
+<h3>Disable<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/9950061..png"><img alt="../../media/9950061..png" src="../../media/9950061..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disabled</span><a class="headerlink" href="#id28" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disable</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>Enable<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id29">
+<section id="enable">
+<h3>Enable<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/9950060..png"><img alt="../../media/9950060..png" src="../../media/9950060..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Enable</span><a class="headerlink" href="#id29" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="id12">
-<h2>Alipay invoicing function<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
-<p>Alipay invoices are divided into two settings according to the output format: GBK and UNICODE</p>
-<section id="gbk">
-<h3>GBK format invoicing<a class="headerlink" href="#gbk" title="Link to this heading">#</a></h3>
-</section>
-<section id="id13">
-<h3>Open step 1<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id30">
-<a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Open step 1</span><a class="headerlink" href="#id30" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id14">
-<h3>Open step 2<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id31">
-<a class="reference internal image-reference" href="../../media/8210141..png"><img alt="../../media/8210141..png" src="../../media/8210141..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Open step 2</span><a class="headerlink" href="#id31" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id15">
-<h3>Open step 3<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id32">
-<a class="reference internal image-reference" href="../../media/8210131..png"><img alt="../../media/8210131..png" src="../../media/8210131..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Open step 3</span><a class="headerlink" href="#id32" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id16">
-<h3>Close Invoicing<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id33">
-<a class="reference internal image-reference" href="../../media/8210140..png"><img alt="../../media/8210140..png" src="../../media/8210140..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Close Invoicing</span><a class="headerlink" href="#id33" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="unicode">
-<h2>Invoicing in UNICODE format<a class="headerlink" href="#unicode" title="Link to this heading">#</a></h2>
-<section id="id17">
-<h3>Open step 1<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id34">
-<a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Open step 1</span><a class="headerlink" href="#id34" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id18">
-<h3>Open step 2<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id35">
-<a class="reference internal image-reference" href="../../media/8210141..png"><img alt="../../media/8210141..png" src="../../media/8210141..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Open step 2</span><a class="headerlink" href="#id35" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id19">
-<h3>Open step 3<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id36">
-<a class="reference internal image-reference" href="../../media/8210132..png"><img alt="../../media/8210132..png" src="../../media/8210132..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Open step 3</span><a class="headerlink" href="#id36" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id20">
-<h3>Close Invoicing<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id37">
-<a class="reference internal image-reference" href="../../media/8210140..png"><img alt="../../media/8210140..png" src="../../media/8210140..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Close Invoicing</span><a class="headerlink" href="#id37" title="Link to this image">#</a></p>
+<p><span class="caption-text">Enable</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -652,34 +558,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Disable 1D code scanning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Enable 1D code scanning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Disable 2D code scanning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Enable 2D code scanning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Reverse white barcodes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Does not support reverse white barcodes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Only supports reverse white barcodes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">All supported</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">Disable All 1D Codes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">Enable All 1D Codes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">Disable All 2D Codes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">Enable All 2D Codes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">Reversal Barcode Settings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">No Support Reversal Barcode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">Only Supports Reversal Barcode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">All Supported</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">QR URL Code Settings</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Disabled</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Enable</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Alipay invoicing function</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK format invoicing</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Open step 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Open step 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Open step 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Close Invoicing</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">Invoicing in UNICODE format</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Open step 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Open step 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Open step 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Close Invoicing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QR Code URL Settings</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Disable</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Enable</a></li>
 </ul>
 </li>
 </ul>

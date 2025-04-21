@@ -1,78 +1,75 @@
-# 结束符设置
-结束字符是在解码数据后面添加字符格式: 解码数据+结束字符。
+# End Character Settings
+The end character is added after the decoded data in the format of decoded data + end character.
 
-## 开始设置
-
+## Start Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/23SETUPE1.png
 :align: center
 :width: 300px
 
-开始设置
+Start Setup
 ```
 
-## 无结束符
+## No End Character
 
 ```{figure} ../../media/40CANCEL_STOPTEXT.png
 :align: center
 :width: 300px
 
-无结束符
+No End Character
 ```
 
 
-## 回车 CR
+## Enter(CR)
 
 ```{figure} ../../media/40ADDENTER.png
 :align: center
 :width: 300px
 
-回车 CR`默认`
+Enter(CR) `Default`
 ```
 
 
-## 回车换行 CR LF
+## Enter+New Line(CRLF)
 
 ```{figure} ../../media/40ADD_ENTER_NEWLINE.png
 :align: center
 :width: 300px
 
-回车换行 CR LF
+Enter+New Line(CRLF)
 ```
 
-## 换行 LF
+## New Line(LF)
 
 ```{figure} ../../media/40ADD_NEWLINE.png
 :align: center
 :width: 300px
 
-换行 LF
+New Line(LF)
 ```
 
 
-## 跳格 TAB
+## Tab(TAB)
 
 ```{figure} ../../media/40ADD_TAB1.png
 :align: center
 :width: 300px
 
-跳格 TAB
+Tab(TAB)
 ```
 
 
-## 结束设置
-
+## End Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/23SETUPE0.png
 :align: center
 :width: 300px
 
-结束设置
+End Setup
 ```
-

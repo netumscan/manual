@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Verwenden Sie das MQTT-Protokoll zum Übertragen von Daten &#8212; WiFi Scanner User Manual</title>
+    <title>MQTT Protokoll zur Datenübertragung verwenden &#8212; WiFi Scanner User Manual</title>
   
   
   
@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'mqtt';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="Verwenden Sie das HTTP-Protokoll zum Übertragen von Daten" href="http.html" />
-    <link rel="prev" title="Verwenden eines TCP-Servers zur Datenübertragung" href="tcpserver.html" />
+    <link rel="next" title="Benutze HTTP-Protokoll um Daten zu übertragen" href="http.html" />
+    <link rel="prev" title="Benutze TCP Server um Daten zu übertragen" href="tcpserver.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -231,17 +242,17 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Arbeitsmodus</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFi-Modus</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Verwenden des TCP-Clients zum Übertragen von Daten</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Verwenden eines TCP-Servers zur Datenübertragung</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Verwenden Sie das MQTT-Protokoll zum Übertragen von Daten</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html">Verwenden Sie das HTTP-Protokoll zum Übertragen von Daten</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi-Übertragungsmodus</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Benutze TCP Client um Daten zu übertragen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Benutze TCP Server um Daten zu übertragen</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">MQTT Protokoll zur Datenübertragung verwenden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html">Benutze HTTP-Protokoll um Daten zu übertragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network.html">Netzwerkkonfiguration</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth-Modus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Häufig gestellte Fragen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -380,7 +391,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Verwenden Sie das MQTT-Protokoll zum Übertragen von Daten</h1>
+    <h1>MQTT Protokoll zur Datenübertragung verwenden</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,20 +401,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#broker">Erstellen Sie einen Proxy-Server (Broker).</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Demo-Software</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Testdienstleistungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-broker-server">Build Broker Server</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">Demo-Software</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-services">Test-Dienste</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Konfigurieren des Scanners</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">WLAN und Serviceinformationen konfigurieren</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ändern Sie die Portnummer der MQTT-Verbindung</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ändern des Scanner-Veröffentlichungsthemas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Ändern des Scannerabonnementthemas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">Scanner konfigurieren</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-broker">WiFi und Broker konfigurieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-mqtt-connection-port">MQTT Verbindungsport ändern</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-publishing-topic">Thema der Veröffentlichung des Scanners ändern</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-subscription-topic">Ändern Sie das Thema des Scanner-Abonnements</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Empfangen von Daten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Entwicklungsreferenz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiving-data">Empfange Daten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-reference">Entwicklungsreferenz</a></li>
 </ul>
             </nav>
         </div>
@@ -415,72 +426,72 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="mqtt">
-<h1>Verwenden Sie das MQTT-Protokoll zum Übertragen von Daten<a class="headerlink" href="#mqtt" title="Link to this heading">#</a></h1>
-<section id="broker">
-<h2>Erstellen Sie einen Proxy-Server (Broker).<a class="headerlink" href="#broker" title="Link to this heading">#</a></h2>
+  <section id="use-mqtt-protocol-to-transmit-data">
+<h1>MQTT Protokoll zur Datenübertragung verwenden<a class="headerlink" href="#use-mqtt-protocol-to-transmit-data" title="Link to this heading">#</a></h1>
+<section id="build-broker-server">
+<h2>Build Broker Server<a class="headerlink" href="#build-broker-server" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Verwenden Sie einen Server, um MQTT Broker zu erstellen, und die vom Scanner hochgeladenen Barcodes werden über diesen Server übertragen.</p></li>
+<li><p>Verwenden Sie einen Server, um MQTT Broker zu bauen, und die vom Scanner hochgeladenen Barcodes werden über diesen Server übertragen.</p></li>
 </ul>
-<section id="id1">
-<h3>Demo-Software<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>EMQX Open Source-Version, Download-Adresse: <a class="reference external" href="https://github.com/emqx/emqx/releases">EMQX</a></p>
+<section id="demo-software">
+<h3>Demo-Software<a class="headerlink" href="#demo-software" title="Link to this heading">#</a></h3>
+<p>EMQX Open Source Version, Downloadadresse: <a class="reference external" href="https://github.com/emqx/emqx/releases">EMQX</a></p>
 </section>
-<section id="id2">
-<h3>Testdienstleistungen<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="testing-services">
+<h3>Test-Dienste<a class="headerlink" href="#testing-services" title="Link to this heading">#</a></h3>
 <figure class="align-center">
 <img alt="../../media/wifi-emqx.png" src="../../media/wifi-emqx.png" />
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p><strong>Serververbindungsinformationen</strong></p>
+<p><strong>Serververbindungsinformation</strong></p>
 <ul>
 <li><p>Host：mqtt.handy.pub</p></li>
 <li><p>Port：1883</p></li>
 <li><p>Username：netum</p></li>
-<li><p>Password：netum&#64;2022</p>
-<p>Nur zu Testzwecken, die Verwendung in Produktionsumgebungen ist strengstens untersagt.</p>
+<li><p>Passwort：netum&#64;2022</p>
+<p>Für die Prüfung nur Verwendung und streng verboten für die Verwendung in Produktionsumgebungen.</p>
 </li>
 </ul>
 </div>
 </section>
 </section>
-<section id="id3">
-<h2>Konfigurieren des Scanners<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<section id="wifi">
-<h3>WLAN und Serviceinformationen konfigurieren<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h3>
+<section id="configure-scanner">
+<h2>Scanner konfigurieren<a class="headerlink" href="#configure-scanner" title="Link to this heading">#</a></h2>
+<section id="configure-wifi-and-broker">
+<h3>WiFi und Broker konfigurieren<a class="headerlink" href="#configure-wifi-and-broker" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt.html" height="900px" width="100%"></iframe><div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
 <ul class="simple">
-<li><p>Der Scanner stellt standardmäßig über Port 1883 eine Verbindung zum MQTT-Broker her.</p></li>
-<li><p>Der vom Scanner abonnierte Themeninhalt ist die Geräte-ID.</p></li>
+<li><p>Der Scanner verbindet standardmäßig mit dem MQTT Broker über Port 1883.</p></li>
+<li><p>Der Themeninhalt des Scanners ist die Geräte-ID.</p></li>
 </ul>
 </div>
 </section>
-<section id="id4">
-<h3>Ändern Sie die Portnummer der MQTT-Verbindung<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<section id="modify-the-mqtt-connection-port">
+<h3>MQTT Verbindungsport ändern<a class="headerlink" href="#modify-the-mqtt-connection-port" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-ConnectPort.html" height="500px" width="100%"></iframe></section>
-<section id="id5">
-<h3>Ändern des Scanner-Veröffentlichungsthemas<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<section id="modify-the-scanner-publishing-topic">
+<h3>Thema der Veröffentlichung des Scanners ändern<a class="headerlink" href="#modify-the-scanner-publishing-topic" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-PublishTopic.html" height="500px" width="100%"></iframe></section>
-<section id="id6">
-<h3>Ändern des Scannerabonnementthemas<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<section id="modify-the-scanner-subscription-topic">
+<h3>Ändern Sie das Thema des Scanner-Abonnements<a class="headerlink" href="#modify-the-scanner-subscription-topic" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-SubscribeTopic.html" height="500px" width="100%"></iframe></section>
 </section>
-<section id="id7">
-<h2>Empfangen von Daten<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="receiving-data">
+<h2>Empfange Daten<a class="headerlink" href="#receiving-data" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Verwenden Sie die MQTT-Clientsoftware [<a class="reference external" href="https://mqttx.app/">MQTTX</a>], um eine Verbindung zum Broker-Server herzustellen und das Thema zu abonnieren, in dem der Scanner Nachrichten veröffentlicht.</p></li>
+<li><p>Verwenden Sie die MQTT Client-Software [<a class="reference external" href="https://mqttx.app/">MQTTX</a>], um sich mit dem Broker-Server zu verbinden und das Thema zu abonnieren, in dem der Scanner Nachrichten veröffentlicht.</p></li>
 </ul>
 <figure class="align-center">
 <img alt="../../media/wifi-mqttx.png" src="../../media/wifi-mqttx.png" />
 </figure>
 </section>
-<section id="id8">
-<h2>Entwicklungsreferenz<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<section id="development-reference">
+<h2>Entwicklungsreferenz<a class="headerlink" href="#development-reference" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.emqx.com/zh/mqtt-client-sdk">MQTT-Clientbibliothek</a></p></li>
-<li><p><a class="reference external" href="https://www.emqx.com/zh/mqtt-guide">MQTT-Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://www.emqx.com/zh/mqtt-client-sdk">MQTT Client-Bibliothek</a></p></li>
+<li><p>[MQTT Tutorial(https://www.emqx.com/zh/mqtt-guide)</p></li>
 </ul>
 </section>
 </section>
@@ -502,7 +513,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">zurück</p>
-        <p class="prev-next-title">Verwenden eines TCP-Servers zur Datenübertragung</p>
+        <p class="prev-next-title">Benutze TCP Server um Daten zu übertragen</p>
       </div>
     </a>
     <a class="right-next"
@@ -510,7 +521,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">Verwenden Sie das HTTP-Protokoll zum Übertragen von Daten</p>
+        <p class="prev-next-title">Benutze HTTP-Protokoll um Daten zu übertragen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -530,20 +541,20 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#broker">Erstellen Sie einen Proxy-Server (Broker).</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Demo-Software</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Testdienstleistungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-broker-server">Build Broker Server</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">Demo-Software</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-services">Test-Dienste</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Konfigurieren des Scanners</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">WLAN und Serviceinformationen konfigurieren</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Ändern Sie die Portnummer der MQTT-Verbindung</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Ändern des Scanner-Veröffentlichungsthemas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Ändern des Scannerabonnementthemas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">Scanner konfigurieren</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-broker">WiFi und Broker konfigurieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-mqtt-connection-port">MQTT Verbindungsport ändern</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-publishing-topic">Thema der Veröffentlichung des Scanners ändern</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-subscription-topic">Ändern Sie das Thema des Scanner-Abonnements</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Empfangen von Daten</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Entwicklungsreferenz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiving-data">Empfange Daten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-reference">Entwicklungsreferenz</a></li>
 </ul>
   </nav></div>
 

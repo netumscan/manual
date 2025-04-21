@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,8 +241,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Working Mode</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFi Mode</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Using TCP Client to transmit data</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi Transmission mode</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Use TCP Client to transfer data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Using TCP Server to Transmit Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mqtt.html">Use MQTT protocol to transmit data</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Use HTTP protocol to transfer data</a></li>
@@ -389,18 +400,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rest-api">Create REST API</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Brief Description</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#url">Request URL</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Request method</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Request Parameters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Return Parameter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-rest-api">Create REST API</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-description">Brief Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-url">Request URL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-mode">Request Mode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-parameters">Request Parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#return-parameter">Return Parameter</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Configuring the Scanner</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-type">Set the Content-Type of the scanner request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Set the message format sent by the scanner</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">Configure WiFi and interface addresses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">Configure Scanner</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-content-type-of-the-scanner-request">Set the Content-Type of the scanner request</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-data-format-sent-by-the-scanner">Set the data format sent by the scanner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-api-url-address">Configure WiFi and API URL address</a></li>
 </ul>
 </li>
 </ul>
@@ -414,30 +425,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="http">
-<h1>Use HTTP protocol to transfer data<a class="headerlink" href="#http" title="Link to this heading">#</a></h1>
-<section id="rest-api">
-<h2>Create REST API<a class="headerlink" href="#rest-api" title="Link to this heading">#</a></h2>
-<section id="id1">
-<h3>Brief Description<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+  <section id="use-http-protocol-to-transfer-data">
+<h1>Use HTTP protocol to transfer data<a class="headerlink" href="#use-http-protocol-to-transfer-data" title="Link to this heading">#</a></h1>
+<section id="create-rest-api">
+<h2>Create REST API<a class="headerlink" href="#create-rest-api" title="Link to this heading">#</a></h2>
+<section id="brief-description">
+<h3>Brief Description<a class="headerlink" href="#brief-description" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Scanner data upload interface</p></li>
 </ul>
 </section>
-<section id="url">
-<h3>Request URL<a class="headerlink" href="#url" title="Link to this heading">#</a></h3>
+<section id="request-url">
+<h3>Request URL<a class="headerlink" href="#request-url" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>https://httpbin.org/post</p></li>
 </ul>
 </section>
-<section id="id2">
-<h3>Request method<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="request-mode">
+<h3>Request Mode<a class="headerlink" href="#request-mode" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>POST</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>Request Parameters<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<section id="request-parameters">
+<h3>Request Parameters<a class="headerlink" href="#request-parameters" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 25.0%" />
@@ -447,61 +458,61 @@ document.write(`
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Parameter name</p></th>
-<th class="head"><p>Required</p></th>
-<th class="head"><p>Type</p></th>
-<th class="head"><p>explain</p></th>
+<th class="head"><p>required</p></th>
+<th class="head"><p>type</p></th>
+<th class="head"><p>description</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>id</p></td>
 <td><p>yes</p></td>
 <td><p>string</p></td>
-<td><p>Device Id</p></td>
+<td><p>device Id</p></td>
 </tr>
 <tr class="row-odd"><td><p>msg</p></td>
 <td><p>yes</p></td>
 <td><p>string</p></td>
-<td><p>Scan content</p></td>
+<td><p>Scan Content</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">Request Example</span><a class="headerlink" href="#id7" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Request Example</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;04B9023A&quot;</span><span class="p">,</span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="s2">&quot;1234567890&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </section>
-<section id="id4">
-<h3>Return Parameter<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<p>For details, see <a class="reference internal" href="wireless.html#id10"><span class="std std-ref">Data receiving format</span></a></p>
+<section id="return-parameter">
+<h3>Return Parameter<a class="headerlink" href="#return-parameter" title="Link to this heading">#</a></h3>
+<p>For details, see <a class="reference internal" href="wireless.html#data-rceiving-format"><span class="std std-ref">Data receiving format</span></a></p>
 </section>
 </section>
-<section id="id5">
-<h2>Configuring the Scanner<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<section id="content-type">
-<h3>Set the Content-Type of the scanner request<a class="headerlink" href="#content-type" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+<section id="configure-scanner">
+<h2>Configure Scanner<a class="headerlink" href="#configure-scanner" title="Link to this heading">#</a></h2>
+<section id="set-the-content-type-of-the-scanner-request">
+<h3>Set the Content-Type of the scanner request<a class="headerlink" href="#set-the-content-type-of-the-scanner-request" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/application-json.png"><img alt="../../media/application-json.png" src="../../media/application-json.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Application/Json</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Application/Json</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Set the message format sent by the scanner<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<section id="set-the-data-format-sent-by-the-scanner">
+<h3>Set the data format sent by the scanner<a class="headerlink" href="#set-the-data-format-sent-by-the-scanner" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S1.png"><img alt="../../media/25WFCOMMPM23S1.png" src="../../media/25WFCOMMPM23S1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Json format</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Json Format</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="wifi">
-<h3>Configure WiFi and interface addresses<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h3>
+<section id="configure-wifi-and-api-url-address">
+<h3>Configure WiFi and API URL address<a class="headerlink" href="#configure-wifi-and-api-url-address" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-https.html" height="650px" width="100%"></iframe></section>
 </section>
 </section>
@@ -551,18 +562,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rest-api">Create REST API</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Brief Description</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#url">Request URL</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Request method</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Request Parameters</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Return Parameter</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-rest-api">Create REST API</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-description">Brief Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-url">Request URL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-mode">Request Mode</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-parameters">Request Parameters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#return-parameter">Return Parameter</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Configuring the Scanner</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-type">Set the Content-Type of the scanner request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Set the message format sent by the scanner</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">Configure WiFi and interface addresses</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">Configure Scanner</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-content-type-of-the-scanner-request">Set the Content-Type of the scanner request</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-data-format-sent-by-the-scanner">Set the data format sent by the scanner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-api-url-address">Configure WiFi and API URL address</a></li>
 </ul>
 </li>
 </ul>

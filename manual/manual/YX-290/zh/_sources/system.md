@@ -1,60 +1,56 @@
 # 系统设置
 
-## 开始设置
-
+## Start Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/23SETUPE1.png
 :align: center
 :width: 300px
 
-开始设置
+Start Setup
 ```
 
-## 恢复默认设置
-当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。
+## Restore Default Settings
+When an unknown error occurs on the scanner, you can reset the scanner by restoring the default settings.
 
 
 ```{figure} ../../media/40DFTPAM4.png
 :align: center
 :width: 300px
 
-恢复默认设置
+Restore Default Settings
 ```
 
 
-## 声音设置
-扫描相应设置码，可以开启/关闭扫描枪的声音提示
+## Volume Settings
+Scan the corresponding setting code to turn on/off the sound prompt of the scanner
 
-### 声音开启
+### Enable
 ```{figure} ../../media/40BUZZERON5.png
 :align: center
 :width: 300px
 
-声音开启 `默认`
+Enable `Default`
 ```
 
-### 声音关闭
+### Disable
 ```{figure} ../../media/40BUZZEROFF6.png
 :align: center
 :width: 300px
 
-声音关闭
+Disable
 ```
 
-## 结束设置
-
+## End Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/23SETUPE0.png
 :align: center
 :width: 300px
 
-结束设置
+End Setup
 ```
-
-

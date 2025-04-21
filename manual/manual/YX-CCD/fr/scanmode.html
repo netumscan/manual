@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Mode de numérisation &#8212; YX-CCD Scanner User Manual</title>
+    <title>Mode de scan &#8212; YX-CCD Scanner User Manual</title>
   
   
   
@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
-    <link rel="next" title="Paramètre de caractère de fin" href="character.html" />
-    <link rel="prev" title="Paramètres système" href="system.html" />
+    <link rel="next" title="Paramètres de caractère de fin" href="character.html" />
+    <link rel="prev" title="Paramètres du système" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -160,9 +160,9 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Mode de numérisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètre de caractère de fin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Mode de scan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Paramètres du code-barres</a></li>
 </ul>
@@ -303,7 +303,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Mode de numérisation</h1>
+    <h1>Mode de scan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -313,18 +313,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Mode clé</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Mode continu</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Mode de retard de touche</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Paramètres d’auto-détection</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir">Désactiver la détection automatique IR</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Activer la détection automatique IR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Mode de déclenchement des touches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Mode continu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Mode de détection automatique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Paramètres de détection de code en double</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Désactiver la détection de code en double</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Activer la détection de code en double</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Intervalle de temps de recodage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duplicate-barcode-detection-settings">Dupliquer les paramètres de détection de codes à barres</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Désactiver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Activer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeat-barcode-interval">Répéter l’intervalle de code-barres</a></li>
 </ul>
 </li>
 </ul>
@@ -338,121 +337,111 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Mode de numérisation<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<section id="id2">
-<h2>Mode clé<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<p>Dans ce mode, le module commence à lire le code après avoir appuyé sur le bouton de déclenchement et arrête de lire le code une fois que le code est lu avec succès ou que le bouton de déclenchement est relâché.</p>
-<figure class="align-center" id="id11">
+  <section id="scan-mode">
+<h1>Mode de scan<a class="headerlink" href="#scan-mode" title="Lien vers cette rubrique">#</a></h1>
+<section id="key-trigger-mode">
+<h2>Mode de déclenchement des touches<a class="headerlink" href="#key-trigger-mode" title="Lien vers cette rubrique">#</a></h2>
+<p>Appuyez sur le bouton pour déclencher la numérisation, et relâchez le bouton pour terminer la numérisation. La numérisation se termine lorsque le scan réussit ou que le temps de lecture dépasse le temps de lecture unique.</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/013300.png"><img alt="../../media/013300.png" src="../../media/013300.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mode clé `Par défaut</span><a class="headerlink" href="#id11" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Mode de déclenchement de touche <code class="docutils literal notranslate"><span class="pre">Défaut</span></code></span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Mode continu<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
-<p>Le voyant rouge du module reste allumé pendant une longue période. Lorsqu’un code-barres passe, le module lit automatiquement le code-barres. Le même code-barres ne peut pas être lu plusieurs fois à moins qu’il ne soit retiré et relu.</p>
-<figure class="align-center" id="id12">
+<section id="continuous-mode">
+<h2>Mode continu<a class="headerlink" href="#continuous-mode" title="Lien vers cette rubrique">#</a></h2>
+<p>Le scanner fonctionne en continu. Si le scan est réussi ou si le temps de scan dépasse le temps de travail unique, le scan actuel se termine. Si le temps dépasse le temps spécifié, la prochaine analyse est automatiquement déclenchée.</p>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/013304.png"><img alt="../../media/013304.png" src="../../media/013304.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mode continu</span><a class="headerlink" href="#id12" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Mode continu</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Mode de retard de touche<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
-<p>Une fois le réglage réussi, le voyant rouge du module restera allumé pendant 3 secondes, et le voyant s’éteindra si le code-barres n’est pas lu dans les 3 secondes, ou le voyant s’éteindra une fois le code-barres lu avec succès.</p>
-<figure class="align-center" id="id13">
-<a class="reference internal image-reference" href="../../media/013301.png"><img alt="../../media/013301.png" src="../../media/013301.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Mode de retard de touche</span><a class="headerlink" href="#id13" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id5">
-<h2>Paramètres d’auto-détection<a class="headerlink" href="#id5" title="Lien vers cette rubrique">#</a></h2>
-<section id="ir">
-<h3>Désactiver la détection automatique IR<a class="headerlink" href="#ir" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="auto-sensing-mode">
+<h2>Mode de détection automatique<a class="headerlink" href="#auto-sensing-mode" title="Lien vers cette rubrique">#</a></h2>
+<p>Dans le mode de détection automatique, le scanner détecte la luminosité de l’environnement environnant. Lorsque la luminosité change, le scan est déclenché. Le scan se termine lorsque le scan est réussi ou que le temps de scan dépasse le temps de travail unique. Peu importe si le dernier scan a été réussi ou a échoué, la luminosité de l’environnement environnant sera à nouveau détectée.</p>
+<section id="disable">
+<h3>Désactiver<a class="headerlink" href="#disable" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/02310.png"><img alt="../../media/02310.png" src="../../media/02310.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Désactiver la détection automatique IR  `Par défaut</span><a class="headerlink" href="#id14" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver <code class="docutils literal notranslate"><span class="pre">Défaut</span></code></span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Activer la détection automatique IR<a class="headerlink" href="#id6" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="enable">
+<h3>Activer<a class="headerlink" href="#enable" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/02311.png"><img alt="../../media/02311.png" src="../../media/02311.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer la détection automatique IR</span><a class="headerlink" href="#id15" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id7">
-<h2>Paramètres de détection de code en double<a class="headerlink" href="#id7" title="Lien vers cette rubrique">#</a></h2>
-<section id="id8">
-<h3>Désactiver la détection de code en double<a class="headerlink" href="#id8" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="duplicate-barcode-detection-settings">
+<h2>Dupliquer les paramètres de détection de codes à barres<a class="headerlink" href="#duplicate-barcode-detection-settings" title="Lien vers cette rubrique">#</a></h2>
+<section id="id1">
+<h3>Désactiver<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/02770.png"><img alt="../../media/02770.png" src="../../media/02770.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Désactiver la détection de code en double  `Par défaut</span><a class="headerlink" href="#id16" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver <code class="docutils literal notranslate"><span class="pre">Défaut</span></code></span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Activer la détection de code en double<a class="headerlink" href="#id9" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="id2">
+<h3>Activer<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/02771.png"><img alt="../../media/02771.png" src="../../media/02771.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer la détection de code en double</span><a class="headerlink" href="#id17" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>Intervalle de temps de recodage<a class="headerlink" href="#id10" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="repeat-barcode-interval">
+<h3>Répéter l’intervalle de code-barres<a class="headerlink" href="#repeat-barcode-interval" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/02630A.png"><img alt="../../media/02630A.png" src="../../media/02630A.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">1s</span><a class="headerlink" href="#id18" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">1 s</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id19">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/026314.png"><img alt="../../media/026314.png" src="../../media/026314.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2s</span><a class="headerlink" href="#id19" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">2 secondes</span><a class="headerlink" href="#id10" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/02631E.png"><img alt="../../media/02631E.png" src="../../media/02631E.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">3s</span><a class="headerlink" href="#id20" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">3s</span><a class="headerlink" href="#id11" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../media/026332.png"><img alt="../../media/026332.png" src="../../media/026332.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">5s</span><a class="headerlink" href="#id21" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">5 secondes</span><a class="headerlink" href="#id12" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../media/026364.png"><img alt="../../media/026364.png" src="../../media/026364.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">10s</span><a class="headerlink" href="#id22" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">10s</span><a class="headerlink" href="#id13" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -476,7 +465,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Paramètres système</p>
+        <p class="prev-next-title">Paramètres du système</p>
       </div>
     </a>
     <a class="right-next"
@@ -484,7 +473,7 @@ document.write(`
        title="page suivante">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">suivant</p>
-        <p class="prev-next-title">Paramètre de caractère de fin</p>
+        <p class="prev-next-title">Paramètres de caractère de fin</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -504,18 +493,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Mode clé</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Mode continu</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Mode de retard de touche</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Paramètres d’auto-détection</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir">Désactiver la détection automatique IR</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Activer la détection automatique IR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Mode de déclenchement des touches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Mode continu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Mode de détection automatique</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Paramètres de détection de code en double</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Désactiver la détection de code en double</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Activer la détection de code en double</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Intervalle de temps de recodage</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duplicate-barcode-detection-settings">Dupliquer les paramètres de détection de codes à barres</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Désactiver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Activer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeat-barcode-interval">Répéter l’intervalle de code-barres</a></li>
 </ul>
 </li>
 </ul>

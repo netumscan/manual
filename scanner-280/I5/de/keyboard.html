@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'keyboard';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="Barcode-Einstellungen" href="barcode.html" />
-    <link rel="prev" title="Endzeicheneinstellung" href="character.html" />
+    <link rel="next" title="Barcode Einstellungen" href="barcode.html" />
+    <link rel="prev" title="End-Charakter-Einstellungen" href="character.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -231,9 +242,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan-Modus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Endzeicheneinstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">End-Charakter-Einstellungen</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tastatureinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode-Einstellungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Einstellungen</a></li>
 </ul>
 
     </div>
@@ -382,19 +393,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Beginnen Sie mit der Einrichtung</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Tastatursprache</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">USA</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Großbritannien</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Frankreich</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Deutschland</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Italien</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Portugal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Spanien</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q">Türkisch Q</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Setup starten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-language">Tastatursprache</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#america">Amerika</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#britain">Großbritannien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#france">Frankreich</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#germany">Deutschland</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italy">Italien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#portugal">Portugal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spain">Spanien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turkey-q">Türkei-Q</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Setup beenden</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Ende-Einrichtung</a></li>
 </ul>
             </nav>
         </div>
@@ -406,123 +417,116 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Tastatureinstellungen<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Beginnen Sie mit der Einrichtung<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+  <section id="keyboard-settings">
+<h1>Tastatureinstellungen<a class="headerlink" href="#keyboard-settings" title="Link to this heading">#</a></h1>
+<section id="start-setup">
+<h2>Setup starten<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Erst nach dem Scannen von <a class="reference internal" href="#id2">Start Setup</a> können Sie weitere Funktions-Setup-Codes zur Konfiguration scannen. Sie müssen <a class="reference internal" href="#id11">End Settings</a> scannen, damit die entsprechende Konfiguration wirksam wird.</p>
+<p>Erst nach dem Scannen <a class="reference internal" href="#start-setup">Setup starten</a> können Sie andere Funktions-Setup-Codes nach Konfiguration scannen. Sie müssen <a class="reference internal" href="#end-setup">End Setup</a> durchsuchen, damit die entsprechende Konfiguration wirksam wird.</p>
 </div>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Beginnen Sie mit der Einrichtung</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Setup starten</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Tastatursprache<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<section id="id4">
-<h3>USA<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+<section id="keyboard-language">
+<h2>Tastatursprache<a class="headerlink" href="#keyboard-language" title="Link to this heading">#</a></h2>
+<section id="america">
+<h3>Amerika<a class="headerlink" href="#america" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/KM00.png"><img alt="../../media/KM00.png" src="../../media/KM00.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">USA <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Amerika <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>Großbritannien<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="britain">
+<h3>Großbritannien<a class="headerlink" href="#britain" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/KM02.png"><img alt="../../media/KM02.png" src="../../media/KM02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Großbritannien</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Großbritannien</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Frankreich<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="france">
+<h3>Frankreich<a class="headerlink" href="#france" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/KM04.png"><img alt="../../media/KM04.png" src="../../media/KM04.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Frankreich</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Frankreich</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>Deutschland<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="germany">
+<h3>Deutschland<a class="headerlink" href="#germany" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/KM05.png"><img alt="../../media/KM05.png" src="../../media/KM05.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Deutschland</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Deutschland</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Italien<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="italy">
+<h3>Italien<a class="headerlink" href="#italy" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/KM06.png"><img alt="../../media/KM06.png" src="../../media/KM06.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Italien</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Italien</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Portugal<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="portugal">
+<h3>Portugal<a class="headerlink" href="#portugal" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/KM08.png"><img alt="../../media/KM08.png" src="../../media/KM08.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Portugal</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">Portugal</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>Spanien<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id19">
+<section id="spain">
+<h3>Spanien<a class="headerlink" href="#spain" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/KM09.png"><img alt="../../media/KM09.png" src="../../media/KM09.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Spanien</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">Spanien</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="q">
-<h3>Türkisch Q<a class="headerlink" href="#q" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id20">
+<section id="turkey-q">
+<h3>Türkei-Q<a class="headerlink" href="#turkey-q" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/KM19.png"><img alt="../../media/KM19.png" src="../../media/KM19.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Türkisch Q</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="id21">
-<a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Setup beenden</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">Türkei-Q</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id11">
-<h2>Setup beenden<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="end-setup">
+<h2>Ende-Einrichtung<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Erst nach dem Scannen von <a class="reference internal" href="#id2">Start Setup</a> können Sie weitere Funktions-Setup-Codes zur Konfiguration scannen. Sie müssen <a class="reference internal" href="#id11">End Settings</a> scannen, damit die entsprechende Konfiguration wirksam wird.</p>
+<p>Erst nach dem Scannen <a class="reference internal" href="#start-setup">Setup starten</a> können Sie andere Funktions-Setup-Codes nach Konfiguration scannen. Sie müssen <a class="reference internal" href="#end-setup">End Setup</a> durchsuchen, damit die entsprechende Konfiguration wirksam wird.</p>
 </div>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Setup beenden</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ende-Einrichtung</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -545,7 +549,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">zurück</p>
-        <p class="prev-next-title">Endzeicheneinstellung</p>
+        <p class="prev-next-title">End-Charakter-Einstellungen</p>
       </div>
     </a>
     <a class="right-next"
@@ -553,7 +557,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">Barcode-Einstellungen</p>
+        <p class="prev-next-title">Barcode Einstellungen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -573,19 +577,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Beginnen Sie mit der Einrichtung</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Tastatursprache</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">USA</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Großbritannien</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Frankreich</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Deutschland</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Italien</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Portugal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Spanien</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q">Türkisch Q</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Setup starten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-language">Tastatursprache</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#america">Amerika</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#britain">Großbritannien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#france">Frankreich</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#germany">Deutschland</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italy">Italien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#portugal">Portugal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spain">Spanien</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turkey-q">Türkei-Q</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Setup beenden</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Ende-Einrichtung</a></li>
 </ul>
   </nav></div>
 

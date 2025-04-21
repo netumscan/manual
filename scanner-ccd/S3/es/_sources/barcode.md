@@ -1,20 +1,21 @@
-# 条码设置
-## 反白条码设置
+# Barcode Settings
 
-### 开启反白图像识别
+## Reversal Barcode Settings
+
+### Enable Reversal Barcode Scanning
 
 ```{figure} ../../media/00161.png
 :align: center
 :width: 300px
 
-开启反白图像识别
+Enable Reversal Barcode Scanning
 ```
 
-### 关闭反白图像识别
+### Disable Reversal Barcode Scanning
 
 ```{figure} ../../media/00160.png
 :align: center
 :width: 300px
 
-关闭反白图像识别 `默认`
+Disable Reversal Barcode Scanning `Default`
 ```

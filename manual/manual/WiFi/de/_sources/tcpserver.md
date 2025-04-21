@@ -1,32 +1,32 @@
-# 使用TCP Server传输数据
+# Using TCP Server to Transmit Data
 
-## 快速配置
+## Quick Configuration
 ```{raw} html
     <iframe src="../../plugins/wifi-tcpclient.html" height="700px" width="100%"></iframe>
 
 ```
 ```{note}
-使用第三方软件自建TCP Server时，可以使用此项进行配置。
+When you use third-party software to build a TCP Client, you can use this option for configuration.
 ```
 
 
-## 演示软件
-- 点击下方链接下载演示软件:  
+## Demo software
+- Click the link below to download the demo software:  
 [Netum Wi-Fi TCP Client](https://pan.gzxlscan.cn/s/uli95v)
 
-## 建立连接
-1. 下载演示软件并解压到文件夹。
-2. 打开演示软件，输入扫描器需要连接WiFi信息和扫描枪的IP地址、TCP Server端口，并使用扫描枪扫描下方的二维码。
+## Make a connection
+1. Download the demo software and unzip it to a folder.
+2. Open the demonstration software, enter the WiFi information that the scanner needs to connect to and the scanner's IP address and TCP Server port, and use the scanner to scan the QR code below.
 ```{figure} ../../media/wifi-tcpclient1.png
 :align: center
 ```
-3. 点击启动按钮，或者通过编程开发启动TCP Client去连接扫描枪。
+3. Click the Start button, or start TCP Client through programming to connect to the scanner.
 ```{figure} ../../media/wifi-tcpclient2.png
 :align: center
 ```
-4. 软件建立与扫描器的连接，扫描枪的指示灯常亮。
+4. The software establishes a connection with the scanner, and the indicator light on the scanner is always on.
 
 ```{note}
-- 设备地址为扫描枪在局域网内的IP地址。
-- 设置端口为扫描枪开启的TCP Server的端口号。
+- Device address: The IP address of the scanner in the local area network.
+- Device port: The port number of the TCP Server opened by the scanner.
 ```

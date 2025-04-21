@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Configurazione di rete &#8212; WiFi Scanner User Manual</title>
+    <title>Configurazione Di Rete &#8212; WiFi Scanner User Manual</title>
   
   
   
@@ -49,7 +49,7 @@
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
     <link rel="next" title="Modalità Bluetooth" href="bluetooth.html" />
-    <link rel="prev" title="Utilizzare il protocollo HTTP per trasferire i dati" href="http.html" />
+    <link rel="prev" title="Usa il protocollo HTTP per trasferire i dati" href="http.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,19 +240,19 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni di sistema</a></li>
-<li class="toctree-l1"><a class="reference internal" href="working.html">Modalità di lavoro</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Modalità Wi-Fi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Utilizzo del client TCP per trasmettere dati</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Utilizzo del server TCP per la trasmissione dei dati</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">Utilizzare il protocollo MQTT per trasmettere i dati</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html">Utilizzare il protocollo HTTP per trasferire i dati</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Configurazione di rete</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">Modalità Di Lavoro</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Modalità di trasmissione Wi-Fi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Usa Client TCP per trasferire i dati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Usare il server TCP per trasmettere dati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">Usa il protocollo MQTT per trasmettere i dati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html">Usa il protocollo HTTP per trasferire i dati</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Configurazione Di Rete</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Modalità Bluetooth</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni della tastiera</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Domande frequenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -380,7 +391,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Configurazione di rete</h1>
+    <h1>Configurazione Di Rete</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,21 +401,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ip">Configurazione dell’indirizzo IP dinamico</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">1.恢复WiFi模块默认设置</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.设定静态IP模式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.重启扫描枪</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.配置传输方案</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-ip-address-configuration">Configurazione Dinamica Indirizzo Ip</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-wifi-module-default-settings">Impostazioni predefinite del modulo WiFi 1.Restore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-static-ip-mode">Modalità IP statica 2.Set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restart-scanner">3.Restart Scanner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-transmission-scheme">schema di trasmissione 4.Configure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Configurazione dell’indirizzo IP statico</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.恢复WiFi模块默认设置</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.设定静态IP模式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">3.重启扫描枪</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">4.设定IP地址</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">5.设定网关</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">6.设定子网掩码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">7.配置传输方案</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-ip-address-configuration">Configurazione Indirizzo Ip Statico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Impostazioni predefinite del modulo WiFi 1.Restore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Modalità IP statica 2.Set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.Restart Scanner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-ip-address">4.Set indirizzo IP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-the-gateway">5.Setting il Gateway</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-subnet-mask">6.Set la maschera di sottorete</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">7.Configurare lo schema di trasmissione</a></li>
 </ul>
 </li>
 </ul>
@@ -418,107 +429,107 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Configurazione di rete<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="ip">
-<h2>Configurazione dell’indirizzo IP dinamico<a class="headerlink" href="#ip" title="Link to this heading">#</a></h2>
-<section id="wifi">
-<h3>1.恢复WiFi模块默认设置<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+  <section id="network-configuration">
+<h1>Configurazione Di Rete<a class="headerlink" href="#network-configuration" title="Link to this heading">#</a></h1>
+<section id="dynamic-ip-address-configuration">
+<h2>Configurazione Dinamica Indirizzo Ip<a class="headerlink" href="#dynamic-ip-address-configuration" title="Link to this heading">#</a></h2>
+<section id="restore-wifi-module-default-settings">
+<h3>Impostazioni predefinite del modulo WiFi 1.Restore<a class="headerlink" href="#restore-wifi-module-default-settings" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/AT2BRESTORE.png"><img alt="../../media/AT2BRESTORE.png" src="../../media/AT2BRESTORE.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Ripristinare il modulo WiFi alle impostazioni predefinite</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ripristina le impostazioni predefinite del modulo WiFi</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="set-static-ip-mode">
+<h3>Modalità IP statica 2.Set<a class="headerlink" href="#set-static-ip-mode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../media/AT2BDHCP3D1.png"><img alt="../../media/AT2BDHCP3D1.png" src="../../media/AT2BDHCP3D1.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Imposta la modalità IP statica</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="restart-scanner">
+<h3>3.Restart Scanner<a class="headerlink" href="#restart-scanner" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../media/24POWER23OFF.png"><img alt="../../media/24POWER23OFF.png" src="../../media/24POWER23OFF.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Riavvia Scanner</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="configure-transmission-scheme">
+<h3>schema di trasmissione 4.Configure<a class="headerlink" href="#configure-transmission-scheme" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Dopo aver configurato i parametri di rete, selezionare il metodo di trasmissione qui sotto per configurare</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">Usare il server TCP per trasmettere dati</span></a></p></li>
+<li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">Usare il server TCP per trasmettere dati</span></a></p></li>
+<li><p><a class="reference internal" href="mqtt.html"><span class="std std-doc">Usa il protocollo MQTT per trasmettere i dati</span></a></p></li>
+<li><p><a class="reference internal" href="http.html"><span class="std std-doc">Usa il protocollo HTTP per trasferire i dati</span></a></p></li>
+</ol>
+</section>
+</section>
+<section id="static-ip-address-configuration">
+<h2>Configurazione Indirizzo Ip Statico<a class="headerlink" href="#static-ip-address-configuration" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Impostazioni predefinite del modulo WiFi 1.Restore<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../media/AT2BRESTORE.png"><img alt="../../media/AT2BRESTORE.png" src="../../media/AT2BRESTORE.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Ripristina le impostazioni predefinite del modulo WiFi</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="id2">
-<h3>2.设定静态IP模式<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
-<a class="reference internal image-reference" href="../../media/AT2BDHCP3D1.png"><img alt="../../media/AT2BDHCP3D1.png" src="../../media/AT2BDHCP3D1.png" style="width: 300px;" />
+<h3>Modalità IP statica 2.Set<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../media/AT2BDHCP3D0.png"><img alt="../../media/AT2BDHCP3D0.png" src="../../media/AT2BDHCP3D0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Imposta la modalità IP statico</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Imposta la modalità IP statica</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="id3">
-<h3>3.重启扫描枪<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<h3>3.Restart Scanner<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/24POWER23OFF.png"><img alt="../../media/24POWER23OFF.png" src="../../media/24POWER23OFF.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Riavviare lo scanner</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Riavvia Scanner</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h3>4.配置传输方案<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Dopo aver configurato i parametri di rete, selezionare il metodo di trasmissione qui sotto per configurare</p></li>
-</ul>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">Utilizzo del server TCP per la trasmissione dei dati</span></a></p></li>
-<li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">Utilizzo del server TCP per la trasmissione dei dati</span></a></p></li>
-<li><p><a class="reference internal" href="mqtt.html"><span class="std std-doc">Utilizzare il protocollo MQTT per trasmettere i dati</span></a></p></li>
-<li><p><a class="reference internal" href="http.html"><span class="std std-doc">Utilizzare il protocollo HTTP per trasferire i dati</span></a></p></li>
-</ol>
-</section>
-</section>
-<section id="id5">
-<h2>Configurazione dell’indirizzo IP statico<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<section id="id6">
-<h3>1.恢复WiFi模块默认设置<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
-<a class="reference internal image-reference" href="../../media/AT2BRESTORE.png"><img alt="../../media/AT2BRESTORE.png" src="../../media/AT2BRESTORE.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Ripristinare il modulo WiFi alle impostazioni predefinite</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id7">
-<h3>2.设定静态IP模式<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
-<a class="reference internal image-reference" href="../../media/AT2BDHCP3D0.png"><img alt="../../media/AT2BDHCP3D0.png" src="../../media/AT2BDHCP3D0.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Imposta la modalità IP statico</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id8">
-<h3>3.重启扫描枪<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
-<a class="reference internal image-reference" href="../../media/24POWER23OFF.png"><img alt="../../media/24POWER23OFF.png" src="../../media/24POWER23OFF.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Riavviare lo scanner</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id9">
-<h3>4.设定IP地址<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<section id="set-ip-address">
+<h3>4.Set indirizzo IP<a class="headerlink" href="#set-ip-address" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-network-address.html" height="400px" width="100%"></iframe>
 </section>
-<section id="id10">
-<h3>5.设定网关<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<section id="setting-the-gateway">
+<h3>5.Setting il Gateway<a class="headerlink" href="#setting-the-gateway" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-network-gateway.html" height="400px" width="100%"></iframe>
 </section>
-<section id="id11">
-<h3>6.设定子网掩码<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<section id="set-the-subnet-mask">
+<h3>6.Set la maschera di sottorete<a class="headerlink" href="#set-the-subnet-mask" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-network-mask.html" height="400px" width="100%"></iframe>
 </section>
-<section id="id12">
-<h3>7.配置传输方案<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id4">
+<h3>7.Configurare lo schema di trasmissione<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Dopo aver configurato i parametri di rete, selezionare il metodo di trasmissione qui sotto per configurare</p></li>
 </ul>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">Utilizzo del server TCP per la trasmissione dei dati</span></a></p></li>
-<li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">Utilizzo del server TCP per la trasmissione dei dati</span></a></p></li>
-<li><p><a class="reference internal" href="mqtt.html"><span class="std std-doc">Utilizzare il protocollo MQTT per trasmettere i dati</span></a></p></li>
-<li><p><a class="reference internal" href="http.html"><span class="std std-doc">Utilizzare il protocollo HTTP per trasferire i dati</span></a></p></li>
+<li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">Usare il server TCP per trasmettere dati</span></a></p></li>
+<li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">Usare il server TCP per trasmettere dati</span></a></p></li>
+<li><p><a class="reference internal" href="mqtt.html"><span class="std std-doc">Usa il protocollo MQTT per trasmettere i dati</span></a></p></li>
+<li><p><a class="reference internal" href="http.html"><span class="std std-doc">Usa il protocollo HTTP per trasferire i dati</span></a></p></li>
 </ol>
 </section>
 </section>
@@ -541,7 +552,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title">Utilizzare il protocollo HTTP per trasferire i dati</p>
+        <p class="prev-next-title">Usa il protocollo HTTP per trasferire i dati</p>
       </div>
     </a>
     <a class="right-next"
@@ -569,21 +580,21 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ip">Configurazione dell’indirizzo IP dinamico</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">1.恢复WiFi模块默认设置</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.设定静态IP模式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.重启扫描枪</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.配置传输方案</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-ip-address-configuration">Configurazione Dinamica Indirizzo Ip</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-wifi-module-default-settings">Impostazioni predefinite del modulo WiFi 1.Restore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-static-ip-mode">Modalità IP statica 2.Set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restart-scanner">3.Restart Scanner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-transmission-scheme">schema di trasmissione 4.Configure</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Configurazione dell’indirizzo IP statico</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.恢复WiFi模块默认设置</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.设定静态IP模式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">3.重启扫描枪</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">4.设定IP地址</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">5.设定网关</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">6.设定子网掩码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">7.配置传输方案</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-ip-address-configuration">Configurazione Indirizzo Ip Statico</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Impostazioni predefinite del modulo WiFi 1.Restore</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Modalità IP statica 2.Set</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.Restart Scanner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-ip-address">4.Set indirizzo IP</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-the-gateway">5.Setting il Gateway</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-subnet-mask">6.Set la maschera di sottorete</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">7.Configurare lo schema di trasmissione</a></li>
 </ul>
 </li>
 </ul>

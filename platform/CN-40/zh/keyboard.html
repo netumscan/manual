@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 
 
-<html lang="zh-CN" data-content_root="./" >
+<html lang="zh" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
@@ -38,20 +38,19 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=c893ba89"></script>
+    <script src="_static/documentation_options.js?v=70073429"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script src="_static/translations.js?v=beaddf03"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'keyboard';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="QR网址码" href="qrcodeurl.html" />
-    <link rel="prev" title="结束符设置" href="character.html" />
+    <link rel="prev" title="结束字符设置" href="character.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="zh-CN"/>
+  <meta name="docsearch:language" content="zh"/>
   </head>
   
   
@@ -161,7 +160,7 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">结束符设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">结束字符设置</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">键盘设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">QR网址码</a></li>
 <li class="toctree-l1"><a class="reference internal" href="codedelay.html">同码延时设置</a></li>
@@ -313,15 +312,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">大小写设定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">正常</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-a">大小写互换 (A&lt;-&gt;a)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">全部大写 (a-&gt;A)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">全部小写 (A-&gt;a)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-settings">大小写设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal">正常</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inverted-case-a-a">大小写互换 (A&lt;-&gt;a)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-caps-a-a">全部大写(a-&gt;A)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-lowercase-a-a">全部小写 (A-&gt;a)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">中文设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">原始类型</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character-encoding-settings">字符编码设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#original-types">原始类型</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utf8">UTF8</a></li>
 </ul>
@@ -337,85 +336,85 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>键盘设置<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>大小写设定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>可以通过配置使输出结果为全大写或全小写</p>
-<section id="id3">
-<h3>正常<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+  <section id="keyboard-settings">
+<h1>键盘设置<a class="headerlink" href="#keyboard-settings" title="Link to this heading">#</a></h1>
+<section id="case-settings">
+<h2>大小写设置<a class="headerlink" href="#case-settings" title="Link to this heading">#</a></h2>
+<p>您可以配置输出为所有大写或所有小写</p>
+<section id="normal">
+<h3>正常<a class="headerlink" href="#normal" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3E2100100D0..png"><img alt="../../media/3E2100100D0..png" src="../../media/3E2100100D0..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">正常<code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">正常 <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="a-a">
-<h3>大小写互换 (A&lt;-&gt;a)<a class="headerlink" href="#a-a" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<section id="inverted-case-a-a">
+<h3>大小写互换 (A&lt;-&gt;a)<a class="headerlink" href="#inverted-case-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3E2100100D3..png"><img alt="../../media/3E2100100D3..png" src="../../media/3E2100100D3..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">大小写互换 (A&lt;-&gt;a)</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">大小写互换 (A&lt;-&gt;a)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h3>全部大写 (a-&gt;A)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id10">
+<section id="all-caps-a-a">
+<h3>全部大写(a-&gt;A)<a class="headerlink" href="#all-caps-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3E2100100D1..png"><img alt="../../media/3E2100100D1..png" src="../../media/3E2100100D1..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">全部大写 (a-&gt;A)</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">全部大写(a-&gt;A)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>全部小写 (A-&gt;a)<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id11">
+<section id="all-lowercase-a-a">
+<h3>全部小写 (A-&gt;a)<a class="headerlink" href="#all-lowercase-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3E2100100D2..png"><img alt="../../media/3E2100100D2..png" src="../../media/3E2100100D2..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">全部小写 (A-&gt;a)</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">全部小写 (A-&gt;a)</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id6">
-<h2>中文设置<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="character-encoding-settings">
+<h2>字符编码设置<a class="headerlink" href="#character-encoding-settings" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>GBK</strong>：支持记事本、excel输入中文。</p></li>
-<li><p><strong>UTF8</strong>： 支持word、QQ输入中文。</p></li>
+<li><p><strong>GBK</strong>：支持Notepad 和 Excel中文输入。</p></li>
+<li><p><strong>UTF8</strong>：支持中文输入文字和QQ。</p></li>
 </ul>
-<section id="id7">
-<h3>原始类型<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id12">
+<section id="original-types">
+<h3>原始类型<a class="headerlink" href="#original-types" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3E2100101D0..png"><img alt="../../media/3E2100101D0..png" src="../../media/3E2100101D0..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">原始类型</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">原始类型</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="gbk">
 <h3>GBK<a class="headerlink" href="#gbk" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3E2100101D1..png"><img alt="../../media/3E2100101D1..png" src="../../media/3E2100101D1..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">GBK <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">GBK <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="utf8">
 <h3>UTF8<a class="headerlink" href="#utf8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/3E2100101D2..png"><img alt="../../media/3E2100101D2..png" src="../../media/3E2100101D2..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">UTF8</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">UTF8</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -439,7 +438,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">上一页</p>
-        <p class="prev-next-title">结束符设置</p>
+        <p class="prev-next-title">结束字符设置</p>
       </div>
     </a>
     <a class="right-next"
@@ -467,15 +466,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">大小写设定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">正常</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-a">大小写互换 (A&lt;-&gt;a)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">全部大写 (a-&gt;A)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">全部小写 (A-&gt;a)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-settings">大小写设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal">正常</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inverted-case-a-a">大小写互换 (A&lt;-&gt;a)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-caps-a-a">全部大写(a-&gt;A)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-lowercase-a-a">全部小写 (A-&gt;a)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">中文设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">原始类型</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character-encoding-settings">字符编码设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#original-types">原始类型</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utf8">UTF8</a></li>
 </ul>

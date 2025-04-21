@@ -48,7 +48,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Barcode Settings" href="barcode.html" />
-    <link rel="prev" title="End character setting" href="character.html" />
+    <link rel="prev" title="End Character Settings" href="character.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,7 +241,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan Mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">End character setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">End Character Settings</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Keyboard Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Settings</a></li>
 </ul>
@@ -381,43 +392,43 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Keyboard character set type</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character-encoding-settings">Character Encoding Settings</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk-gb2312">GBK(GB2312)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">UNICODE</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Keyboard language</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Chinese</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">America</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Finland</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Spain</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">French</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Germany</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Italy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Denmark</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Norway</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Czech</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Hungary</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Sweden</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Arab</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Russia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Switzerland_French</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Iceland</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Slovenia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Croatia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Albania</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Serbia_Latin</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Serbian Cyrillic</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qwertz">Czech_QWERTZ</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qwerty">Czech_QWERTY</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Estonia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Lithuania</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Ireland</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Faroese</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f">Turkey_F</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q">Turkey_Q</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Slovak</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Japanese</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-language">Keyboard Language</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chinese">Chinese</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#america">America</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#finland">Finland</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spain">Spain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#france">France</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#germany">Germany</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italy">Italy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#denmark">Denmark</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#norway">Norway</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#czech">Czech</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hungary">Hungary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sweden">Sweden</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arab">Arab</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#russia">Russia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#switzerland-french">Switzerland (French)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iceland">Iceland</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slovenia">Slovenia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#croatia">Croatia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#albania">Albania</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serbia-latin">Serbia (Latin)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serbian-cyrillic">Serbian Cyrillic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#czech-qwertz">Czech-QWERTZ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#czech-qwerty">Czech-QWERTY</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estonia">Estonia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lithuania">Lithuania</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ireland">Ireland</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faroese">Faroese</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turkey-f">Turkey-F</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turkey-q">Turkey-Q</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slovakia">Slovakia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#japanese">Japanese</a></li>
 </ul>
 </li>
 </ul>
@@ -431,348 +442,348 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Keyboard Settings<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Keyboard character set type<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+  <section id="keyboard-settings">
+<h1>Keyboard Settings<a class="headerlink" href="#keyboard-settings" title="Link to this heading">#</a></h1>
+<section id="character-encoding-settings">
+<h2>Character Encoding Settings<a class="headerlink" href="#character-encoding-settings" title="Link to this heading">#</a></h2>
 <section id="gbk-gb2312">
 <h3>GBK(GB2312)<a class="headerlink" href="#gbk-gb2312" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id31">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/8210131..png"><img alt="../../media/8210131..png" src="../../media/8210131..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">GBK(GB2312)</span><a class="headerlink" href="#id31" title="Link to this image">#</a></p>
+<p><span class="caption-text">GBK(GB2312)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>After setting this option, you can upload Chinese in text documents or Excel</p>
+<p>After setting this option, you can upload Chinese in Notepad or Excel</p>
 </div>
 </section>
 <section id="unicode">
 <h3>UNICODE<a class="headerlink" href="#unicode" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id32">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/8210132..png"><img alt="../../media/8210132..png" src="../../media/8210132..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">UNICODE</span><a class="headerlink" href="#id32" title="Link to this image">#</a></p>
+<p><span class="caption-text">UNICODE</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>After setting this option, it is supported to transfer Chinese in word documents or input boxes</p>
+<p>After setting this option, it is supported to transmission Chinese in word documents or input boxes</p>
 </div>
 </section>
 </section>
-<section id="id3">
-<h2>Keyboard language<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<section id="id4">
-<h3>Chinese<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id33">
+<section id="keyboard-language">
+<h2>Keyboard Language<a class="headerlink" href="#keyboard-language" title="Link to this heading">#</a></h2>
+<section id="chinese">
+<h3>Chinese<a class="headerlink" href="#chinese" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Chinese</span><a class="headerlink" href="#id33" title="Link to this image">#</a></p>
+<p><span class="caption-text">Chinese</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>America<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id34">
+<section id="america">
+<h3>America<a class="headerlink" href="#america" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/8210010..png"><img alt="../../media/8210010..png" src="../../media/8210010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">America</span><a class="headerlink" href="#id34" title="Link to this image">#</a></p>
+<p><span class="caption-text">America</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Finland<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id35">
+<section id="finland">
+<h3>Finland<a class="headerlink" href="#finland" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/8210012..png"><img alt="../../media/8210012..png" src="../../media/8210012..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Finland</span><a class="headerlink" href="#id35" title="Link to this image">#</a></p>
+<p><span class="caption-text">Finland</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>Spain<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id36">
+<section id="spain">
+<h3>Spain<a class="headerlink" href="#spain" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/82100110..png"><img alt="../../media/82100110..png" src="../../media/82100110..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Spain</span><a class="headerlink" href="#id36" title="Link to this image">#</a></p>
+<p><span class="caption-text">Spain</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>French<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id37">
+<section id="france">
+<h3>France<a class="headerlink" href="#france" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/8210013..png"><img alt="../../media/8210013..png" src="../../media/8210013..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">French</span><a class="headerlink" href="#id37" title="Link to this image">#</a></p>
+<p><span class="caption-text">France</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Germany<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id38">
+<section id="germany">
+<h3>Germany<a class="headerlink" href="#germany" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/8210014..png"><img alt="../../media/8210014..png" src="../../media/8210014..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Germany</span><a class="headerlink" href="#id38" title="Link to this image">#</a></p>
+<p><span class="caption-text">Germany</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>Italy<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id39">
+<section id="italy">
+<h3>Italy<a class="headerlink" href="#italy" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/8210015..png"><img alt="../../media/8210015..png" src="../../media/8210015..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Italy</span><a class="headerlink" href="#id39" title="Link to this image">#</a></p>
+<p><span class="caption-text">Italy</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>Denmark<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id40">
+<section id="denmark">
+<h3>Denmark<a class="headerlink" href="#denmark" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/8210018..png"><img alt="../../media/8210018..png" src="../../media/8210018..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Denmark</span><a class="headerlink" href="#id40" title="Link to this image">#</a></p>
+<p><span class="caption-text">Denmark</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id12">
-<h3>Norway<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id41">
+<section id="norway">
+<h3>Norway<a class="headerlink" href="#norway" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/8210019..png"><img alt="../../media/8210019..png" src="../../media/8210019..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Norway</span><a class="headerlink" href="#id41" title="Link to this image">#</a></p>
+<p><span class="caption-text">Norway</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id13">
-<h3>Czech<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id42">
+<section id="czech">
+<h3>Czech<a class="headerlink" href="#czech" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../media/82100115..png"><img alt="../../media/82100115..png" src="../../media/82100115..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Czech</span><a class="headerlink" href="#id42" title="Link to this image">#</a></p>
+<p><span class="caption-text">Czech</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id14">
-<h3>Hungary<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id43">
+<section id="hungary">
+<h3>Hungary<a class="headerlink" href="#hungary" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../media/82100119..png"><img alt="../../media/82100119..png" src="../../media/82100119..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Hungary</span><a class="headerlink" href="#id43" title="Link to this image">#</a></p>
+<p><span class="caption-text">Hungary</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id15">
-<h3>Sweden<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id44">
+<section id="sweden">
+<h3>Sweden<a class="headerlink" href="#sweden" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../media/82100123..png"><img alt="../../media/82100123..png" src="../../media/82100123..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sweden</span><a class="headerlink" href="#id44" title="Link to this image">#</a></p>
+<p><span class="caption-text">Sweden</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id16">
-<h3>Arab<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id45">
+<section id="arab">
+<h3>Arab<a class="headerlink" href="#arab" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id15">
 <a class="reference internal image-reference" href="../../media/82100191..png"><img alt="../../media/82100191..png" src="../../media/82100191..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Arab</span><a class="headerlink" href="#id45" title="Link to this image">#</a></p>
+<p><span class="caption-text">Arab</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id17">
-<h3>Russia<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id46">
+<section id="russia">
+<h3>Russia<a class="headerlink" href="#russia" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id16">
 <a class="reference internal image-reference" href="../../media/82100126..png"><img alt="../../media/82100126..png" src="../../media/82100126..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Russia</span><a class="headerlink" href="#id46" title="Link to this image">#</a></p>
+<p><span class="caption-text">Russia</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id18">
-<h3>Switzerland_French<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id47">
+<section id="switzerland-french">
+<h3>Switzerland (French)<a class="headerlink" href="#switzerland-french" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id17">
 <a class="reference internal image-reference" href="../../media/82100129..png"><img alt="../../media/82100129..png" src="../../media/82100129..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Switzerland_French</span><a class="headerlink" href="#id47" title="Link to this image">#</a></p>
+<p><span class="caption-text">Switzerland (French)</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id19">
-<h3>Iceland<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id48">
+<section id="iceland">
+<h3>Iceland<a class="headerlink" href="#iceland" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id18">
 <a class="reference internal image-reference" href="../../media/82100175..png"><img alt="../../media/82100175..png" src="../../media/82100175..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Iceland</span><a class="headerlink" href="#id48" title="Link to this image">#</a></p>
+<p><span class="caption-text">Iceland</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id20">
-<h3>Slovenia<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id49">
+<section id="slovenia">
+<h3>Slovenia<a class="headerlink" href="#slovenia" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id19">
 <a class="reference internal image-reference" href="../../media/82100131..png"><img alt="../../media/82100131..png" src="../../media/82100131..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Slovenia</span><a class="headerlink" href="#id49" title="Link to this image">#</a></p>
+<p><span class="caption-text">Slovenia</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id21">
-<h3>Croatia<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id50">
+<section id="croatia">
+<h3>Croatia<a class="headerlink" href="#croatia" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id20">
 <a class="reference internal image-reference" href="../../media/82100132..png"><img alt="../../media/82100132..png" src="../../media/82100132..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Croatia</span><a class="headerlink" href="#id50" title="Link to this image">#</a></p>
+<p><span class="caption-text">Croatia</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id22">
-<h3>Albania<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id51">
+<section id="albania">
+<h3>Albania<a class="headerlink" href="#albania" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id21">
 <a class="reference internal image-reference" href="../../media/82100135..png"><img alt="../../media/82100135..png" src="../../media/82100135..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Albania</span><a class="headerlink" href="#id51" title="Link to this image">#</a></p>
+<p><span class="caption-text">Albania</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id23">
-<h3>Serbia_Latin<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id52">
+<section id="serbia-latin">
+<h3>Serbia (Latin)<a class="headerlink" href="#serbia-latin" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id22">
 <a class="reference internal image-reference" href="../../media/82100136..png"><img alt="../../media/82100136..png" src="../../media/82100136..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Serbia_Latin</span><a class="headerlink" href="#id52" title="Link to this image">#</a></p>
+<p><span class="caption-text">Serbia (Latin)</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id24">
-<h3>Serbian Cyrillic<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id53">
+<section id="serbian-cyrillic">
+<h3>Serbian Cyrillic<a class="headerlink" href="#serbian-cyrillic" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id23">
 <a class="reference internal image-reference" href="../../media/82100137..png"><img alt="../../media/82100137..png" src="../../media/82100137..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Serbian Cyrillic</span><a class="headerlink" href="#id53" title="Link to this image">#</a></p>
+<p><span class="caption-text">Serbian Cyrillic</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="qwertz">
-<h3>Czech_QWERTZ<a class="headerlink" href="#qwertz" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id54">
+<section id="czech-qwertz">
+<h3>Czech-QWERTZ<a class="headerlink" href="#czech-qwertz" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id24">
 <a class="reference internal image-reference" href="../../media/82100138..png"><img alt="../../media/82100138..png" src="../../media/82100138..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Czech_QWERTZ</span><a class="headerlink" href="#id54" title="Link to this image">#</a></p>
+<p><span class="caption-text">Czech-QWERTZ</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="qwerty">
-<h3>Czech_QWERTY<a class="headerlink" href="#qwerty" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id55">
+<section id="czech-qwerty">
+<h3>Czech-QWERTY<a class="headerlink" href="#czech-qwerty" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id25">
 <a class="reference internal image-reference" href="../../media/82100139..png"><img alt="../../media/82100139..png" src="../../media/82100139..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Czech_QWERTY</span><a class="headerlink" href="#id55" title="Link to this image">#</a></p>
+<p><span class="caption-text">Czech-QWERTY</span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id25">
-<h3>Estonia<a class="headerlink" href="#id25" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id56">
+<section id="estonia">
+<h3>Estonia<a class="headerlink" href="#estonia" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id26">
 <a class="reference internal image-reference" href="../../media/82100141..png"><img alt="../../media/82100141..png" src="../../media/82100141..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Estonia</span><a class="headerlink" href="#id56" title="Link to this image">#</a></p>
+<p><span class="caption-text">Estonia</span><a class="headerlink" href="#id26" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id26">
-<h3>Lithuania<a class="headerlink" href="#id26" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id57">
+<section id="lithuania">
+<h3>Lithuania<a class="headerlink" href="#lithuania" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id27">
 <a class="reference internal image-reference" href="../../media/82100144..png"><img alt="../../media/82100144..png" src="../../media/82100144..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Lithuania</span><a class="headerlink" href="#id57" title="Link to this image">#</a></p>
+<p><span class="caption-text">Lithuania</span><a class="headerlink" href="#id27" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id27">
-<h3>Ireland<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id58">
+<section id="ireland">
+<h3>Ireland<a class="headerlink" href="#ireland" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id28">
 <a class="reference internal image-reference" href="../../media/82100173..png"><img alt="../../media/82100173..png" src="../../media/82100173..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Ireland</span><a class="headerlink" href="#id58" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ireland</span><a class="headerlink" href="#id28" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id28">
-<h3>Faroese<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id59">
+<section id="faroese">
+<h3>Faroese<a class="headerlink" href="#faroese" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id29">
 <a class="reference internal image-reference" href="../../media/82100183..png"><img alt="../../media/82100183..png" src="../../media/82100183..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Faroese</span><a class="headerlink" href="#id59" title="Link to this image">#</a></p>
+<p><span class="caption-text">Faroese</span><a class="headerlink" href="#id29" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="f">
-<h3>Turkey_F<a class="headerlink" href="#f" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id60">
+<section id="turkey-f">
+<h3>Turkey-F<a class="headerlink" href="#turkey-f" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id30">
 <a class="reference internal image-reference" href="../../media/82100127..png"><img alt="../../media/82100127..png" src="../../media/82100127..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Turkey_F</span><a class="headerlink" href="#id60" title="Link to this image">#</a></p>
+<p><span class="caption-text">Turkey-F</span><a class="headerlink" href="#id30" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="q">
-<h3>Turkey_Q<a class="headerlink" href="#q" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id61">
+<section id="turkey-q">
+<h3>Turkey-Q<a class="headerlink" href="#turkey-q" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id31">
 <a class="reference internal image-reference" href="../../media/82100124..png"><img alt="../../media/82100124..png" src="../../media/82100124..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Turkey_Q</span><a class="headerlink" href="#id61" title="Link to this image">#</a></p>
+<p><span class="caption-text">Turkey-Q</span><a class="headerlink" href="#id31" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id29">
-<h3>Slovak<a class="headerlink" href="#id29" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id62">
+<section id="slovakia">
+<h3>Slovakia<a class="headerlink" href="#slovakia" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id32">
 <a class="reference internal image-reference" href="../../media/82100122..png"><img alt="../../media/82100122..png" src="../../media/82100122..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Slovak</span><a class="headerlink" href="#id62" title="Link to this image">#</a></p>
+<p><span class="caption-text">Slovakia</span><a class="headerlink" href="#id32" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id30">
-<h3>Japanese<a class="headerlink" href="#id30" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id63">
+<section id="japanese">
+<h3>Japanese<a class="headerlink" href="#japanese" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id33">
 <a class="reference internal image-reference" href="../../media/82100128..png"><img alt="../../media/82100128..png" src="../../media/82100128..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Japanese</span><a class="headerlink" href="#id63" title="Link to this image">#</a></p>
+<p><span class="caption-text">Japanese</span><a class="headerlink" href="#id33" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -796,7 +807,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">End character setting</p>
+        <p class="prev-next-title">End Character Settings</p>
       </div>
     </a>
     <a class="right-next"
@@ -824,43 +835,43 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Keyboard character set type</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character-encoding-settings">Character Encoding Settings</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk-gb2312">GBK(GB2312)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">UNICODE</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Keyboard language</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Chinese</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">America</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Finland</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Spain</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">French</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Germany</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Italy</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Denmark</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Norway</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Czech</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Hungary</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Sweden</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Arab</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Russia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Switzerland_French</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Iceland</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Slovenia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Croatia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Albania</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Serbia_Latin</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Serbian Cyrillic</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qwertz">Czech_QWERTZ</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qwerty">Czech_QWERTY</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Estonia</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Lithuania</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Ireland</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Faroese</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#f">Turkey_F</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q">Turkey_Q</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Slovak</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Japanese</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keyboard-language">Keyboard Language</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chinese">Chinese</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#america">America</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#finland">Finland</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#spain">Spain</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#france">France</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#germany">Germany</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#italy">Italy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#denmark">Denmark</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#norway">Norway</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#czech">Czech</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hungary">Hungary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sweden">Sweden</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arab">Arab</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#russia">Russia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#switzerland-french">Switzerland (French)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iceland">Iceland</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slovenia">Slovenia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#croatia">Croatia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#albania">Albania</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serbia-latin">Serbia (Latin)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#serbian-cyrillic">Serbian Cyrillic</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#czech-qwertz">Czech-QWERTZ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#czech-qwerty">Czech-QWERTY</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estonia">Estonia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lithuania">Lithuania</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ireland">Ireland</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#faroese">Faroese</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turkey-f">Turkey-F</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#turkey-q">Turkey-Q</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slovakia">Slovakia</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#japanese">Japanese</a></li>
 </ul>
 </li>
 </ul>

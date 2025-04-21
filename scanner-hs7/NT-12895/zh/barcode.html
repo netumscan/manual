@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>条码开关 &#8212; NT-12895 Scanner User Manual</title>
+    <title>条码设置 &#8212; NT-12895 Scanner User Manual</title>
   
   
   
@@ -161,9 +161,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">扫描模式</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">结束符设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">结束字符设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">条码开关</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">条码设置</a></li>
 </ul>
 
     </div>
@@ -302,7 +302,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>条码开关</h1>
+    <h1>条码设置</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -312,34 +312,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">禁止一维码扫描</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">使能一维码扫描</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">禁止二维码扫描</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">使能二维码扫描</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">条码反白</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">不支持反白</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">只支持反白</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">全部支持</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">禁用所有一维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">启用所有一维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">禁用所有二维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">启用所有二维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">反白条码设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">不支持反白条码</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">仅支持反白条码</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">全部支持</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">QR网址码设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">禁用</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">启用</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">支付宝开票功能</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK 格式开票</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">开启步骤一</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">开启步骤二</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">开启步骤三</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">关闭开票</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">UNICODE 格式开票</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">开启步骤一</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">开启步骤二</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">开启步骤三</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">关闭开票</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QR网址码</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">禁用</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">启用</a></li>
 </ul>
 </li>
 </ul>
@@ -353,195 +338,105 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>条码开关<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>禁止一维码扫描<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id21">
+  <section id="barcode-settings">
+<h1>条码设置<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
+<section id="disable-all-1d-codes">
+<h2>禁用所有一维码<a class="headerlink" href="#disable-all-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/9950041..png"><img alt="../../media/9950041..png" src="../../media/9950041..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁止一维码扫描</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用所有一维码</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>使能一维码扫描<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id22">
+<section id="enable-all-1d-codes">
+<h2>启用所有一维码<a class="headerlink" href="#enable-all-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/9950040..png"><img alt="../../media/9950040..png" src="../../media/9950040..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">使能一维码扫描</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+<p><span class="caption-text">启用所有一维码</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>禁止二维码扫描<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id23">
+<section id="disable-all-2d-codes">
+<h2>禁用所有二维码<a class="headerlink" href="#disable-all-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/9950071..png"><img alt="../../media/9950071..png" src="../../media/9950071..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁止二维码扫描</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用所有二维码</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>使能二维码扫描<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id24">
+<section id="enable-all-2d-codes">
+<h2>启用所有二维码<a class="headerlink" href="#enable-all-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/9950070..png"><img alt="../../media/9950070..png" src="../../media/9950070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">使能二维码扫描</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
+<p><span class="caption-text">启用所有二维码</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>条码反白<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<section id="id7">
-<h3>不支持反白<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id25">
+<section id="reversal-barcode-settings">
+<h2>反白条码设置<a class="headerlink" href="#reversal-barcode-settings" title="Link to this heading">#</a></h2>
+<section id="no-support-reversal-barcode">
+<h3>不支持反白条码<a class="headerlink" href="#no-support-reversal-barcode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/8910010..png"><img alt="../../media/8910010..png" src="../../media/8910010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">不支持反白</span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
+<p><span class="caption-text">不支持反白条码</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>只支持反白<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id26">
+<section id="only-supports-reversal-barcode">
+<h3>仅支持反白条码<a class="headerlink" href="#only-supports-reversal-barcode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/8910011..png"><img alt="../../media/8910011..png" src="../../media/8910011..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">只支持反白</span><a class="headerlink" href="#id26" title="Link to this image">#</a></p>
+<p><span class="caption-text">仅支持反白条码</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>全部支持<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id27">
+<section id="all-supported">
+<h3>全部支持<a class="headerlink" href="#all-supported" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/8910012..png"><img alt="../../media/8910012..png" src="../../media/8910012..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">全部支持</span><a class="headerlink" href="#id27" title="Link to this image">#</a></p>
+<p><span class="caption-text">全部支持</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>如设备已配置为<a class="reference internal" href="#id8">只支持反白</a>时，想配置同时支持普通码，扫描反白码配置为<a class="reference internal" href="#id9">全部支持</a></p>
+<p>如果扫描枪配置为 <a class="reference internal" href="#only-supports-reversal-barcode">仅支持反白条码</a>, 您想要配置它来支持普通条码和反白条码，将其配置为<a class="reference internal" href="#all-supported">全部支持</a></p>
 </div>
 </section>
 </section>
-<section id="qr">
-<h2>QR网址码设置<a class="headerlink" href="#qr" title="Link to this heading">#</a></h2>
-<p>屏蔽<code class="docutils literal notranslate"><span class="pre">http://</span></code>和<code class="docutils literal notranslate"><span class="pre">https://</span></code>开头的网址</p>
-<section id="id10">
-<h3>禁用<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id28">
+<section id="qr-code-url-settings">
+<h2>QR网址码<a class="headerlink" href="#qr-code-url-settings" title="Link to this heading">#</a></h2>
+<p>屏蔽识读 <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code> 开头的QR网址码</p>
+<section id="disable">
+<h3>禁用<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/9950061..png"><img alt="../../media/9950061..png" src="../../media/9950061..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁用</span><a class="headerlink" href="#id28" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>启用<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id29">
+<section id="enable">
+<h3>启用<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/9950060..png"><img alt="../../media/9950060..png" src="../../media/9950060..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">启用</span><a class="headerlink" href="#id29" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="id12">
-<h2>支付宝开票功能<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
-<p>支付宝开票按照输出格式，分 GBK 跟 UNICODE 两种设置方式</p>
-<section id="gbk">
-<h3>GBK 格式开票<a class="headerlink" href="#gbk" title="Link to this heading">#</a></h3>
-</section>
-<section id="id13">
-<h3>开启步骤一<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id30">
-<a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">开启步骤一</span><a class="headerlink" href="#id30" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id14">
-<h3>开启步骤二<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id31">
-<a class="reference internal image-reference" href="../../media/8210141..png"><img alt="../../media/8210141..png" src="../../media/8210141..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">开启步骤二</span><a class="headerlink" href="#id31" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id15">
-<h3>开启步骤三<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id32">
-<a class="reference internal image-reference" href="../../media/8210131..png"><img alt="../../media/8210131..png" src="../../media/8210131..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">开启步骤三</span><a class="headerlink" href="#id32" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id16">
-<h3>关闭开票<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id33">
-<a class="reference internal image-reference" href="../../media/8210140..png"><img alt="../../media/8210140..png" src="../../media/8210140..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">关闭开票</span><a class="headerlink" href="#id33" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="unicode">
-<h2>UNICODE 格式开票<a class="headerlink" href="#unicode" title="Link to this heading">#</a></h2>
-<section id="id17">
-<h3>开启步骤一<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id34">
-<a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">开启步骤一</span><a class="headerlink" href="#id34" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id18">
-<h3>开启步骤二<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id35">
-<a class="reference internal image-reference" href="../../media/8210141..png"><img alt="../../media/8210141..png" src="../../media/8210141..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">开启步骤二</span><a class="headerlink" href="#id35" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id19">
-<h3>开启步骤三<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id36">
-<a class="reference internal image-reference" href="../../media/8210132..png"><img alt="../../media/8210132..png" src="../../media/8210132..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">开启步骤三</span><a class="headerlink" href="#id36" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id20">
-<h3>关闭开票<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id37">
-<a class="reference internal image-reference" href="../../media/8210140..png"><img alt="../../media/8210140..png" src="../../media/8210140..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">关闭开票</span><a class="headerlink" href="#id37" title="Link to this image">#</a></p>
+<p><span class="caption-text">启用</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -584,34 +479,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">禁止一维码扫描</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">使能一维码扫描</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">禁止二维码扫描</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">使能二维码扫描</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">条码反白</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">不支持反白</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">只支持反白</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">全部支持</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">禁用所有一维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">启用所有一维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">禁用所有二维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">启用所有二维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">反白条码设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">不支持反白条码</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">仅支持反白条码</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">全部支持</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">QR网址码设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">禁用</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">启用</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">支付宝开票功能</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK 格式开票</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">开启步骤一</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">开启步骤二</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">开启步骤三</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">关闭开票</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">UNICODE 格式开票</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">开启步骤一</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">开启步骤二</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">开启步骤三</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">关闭开票</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QR网址码</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">禁用</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">启用</a></li>
 </ul>
 </li>
 </ul>

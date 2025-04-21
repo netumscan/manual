@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Barcode-Einstellungen &#8212; W9 Scanner User Manual</title>
+    <title>Barcode Einstellungen &#8212; W9 Scanner User Manual</title>
   
   
   
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,9 +241,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan-Modus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Endzeicheneinstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">End-Charakter-Einstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Barcode-Einstellungen</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Barcode Einstellungen</a></li>
 </ul>
 
     </div>
@@ -371,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Barcode-Einstellungen</h1>
+    <h1>Barcode Einstellungen</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,19 +392,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Beginnen Sie mit der Einrichtung</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Barcode-Schalter</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Alle Barcodes öffnen</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Aktivieren Sie ausschließlich 1D-Code</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Aktivieren Sie ausschließlich 2D-Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Setup starten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-barcodes">Alle Barcodes aktivieren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-1d-codes">Nur 1D-Codes aktivieren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-2d-codes">Nur 2D-Codes aktivieren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QR-Code-URL-Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Deaktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Aktivieren</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">Website-QR-Code</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Verschluss</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Offen</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Setup beenden</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Ende-Einrichtung</a></li>
 </ul>
             </nav>
         </div>
@@ -405,96 +413,87 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Barcode-Einstellungen<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Beginnen Sie mit der Einrichtung<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+  <section id="barcode-settings">
+<h1>Barcode Einstellungen<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
+<section id="start-setup">
+<h2>Setup starten<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Erst nach dem Scannen von <a class="reference internal" href="#id2">Start Setup</a> können Sie weitere Funktions-Setup-Codes zur Konfiguration scannen. Sie müssen <a class="reference internal" href="#id9">End Settings</a> scannen, damit die entsprechende Konfiguration wirksam wird.</p>
+<p>Erst nach dem Scannen <a class="reference internal" href="#start-setup">Setup starten</a> können Sie andere Funktions-Setup-Codes nach Konfiguration scannen. Sie müssen <a class="reference internal" href="#end-setup">End Setup</a> durchsuchen, damit die entsprechende Konfiguration wirksam wird.</p>
 </div>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Beginnen Sie mit der Einrichtung</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Setup starten</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Barcode-Schalter<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id11">
-<a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Beginnen Sie mit der Einrichtung</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-<section id="id4">
-<h3>Alle Barcodes öffnen<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id12">
+<section id="enable-all-barcodes">
+<h2>Alle Barcodes aktivieren<a class="headerlink" href="#enable-all-barcodes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/EC00.png"><img alt="../../media/EC00.png" src="../../media/EC00.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Alle Barcodes öffnen</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Alle Barcodes aktivieren</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>Aktivieren Sie ausschließlich 1D-Code<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+<section id="only-enable-1d-codes">
+<h2>Nur 1D-Codes aktivieren<a class="headerlink" href="#only-enable-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/OE1D.png"><img alt="../../media/OE1D.png" src="../../media/OE1D.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Aktivieren Sie ausschließlich 1D-Code</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Nur 1D-Codes aktivieren</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Aktivieren Sie ausschließlich 2D-Code<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="only-enable-2d-codes">
+<h2>Nur 2D-Codes aktivieren<a class="headerlink" href="#only-enable-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/OE2D.png"><img alt="../../media/OE2D.png" src="../../media/OE2D.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Aktivieren Sie ausschließlich 2D-Code</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Nur 2D-Codes aktivieren</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-</section>
-<section id="qr">
-<h2>Website-QR-Code<a class="headerlink" href="#qr" title="Link to this heading">#</a></h2>
-<section id="id7">
-<h3>Verschluss<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="qr-code-url-settings">
+<h2>QR-Code-URL-Einstellungen<a class="headerlink" href="#qr-code-url-settings" title="Link to this heading">#</a></h2>
+<p>Blockiere das Scannen von URL-QR-Codes, beginnend mit <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
+<section id="disable">
+<h3>Deaktivieren<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/25DISABLE_WEB25.png"><img alt="../../media/25DISABLE_WEB25.png" src="../../media/25DISABLE_WEB25.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Verschluss</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Deaktivieren</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Offen<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="enable">
+<h3>Aktivieren<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/25ENABLE_WEB25.png"><img alt="../../media/25ENABLE_WEB25.png" src="../../media/25ENABLE_WEB25.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Aktivieren Sie <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Standard</span></code> aktivieren</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id9">
-<h2>Setup beenden<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<section id="end-setup">
+<h2>Ende-Einrichtung<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Erst nach dem Scannen von <a class="reference internal" href="#id2">Start Setup</a> können Sie weitere Funktions-Setup-Codes zur Konfiguration scannen. Sie müssen <a class="reference internal" href="#id9">End Settings</a> scannen, damit die entsprechende Konfiguration wirksam wird.</p>
+<p>Erst nach dem Scannen <a class="reference internal" href="#start-setup">Setup starten</a> können Sie andere Funktions-Setup-Codes nach Konfiguration scannen. Sie müssen <a class="reference internal" href="#end-setup">End Setup</a> durchsuchen, damit die entsprechende Konfiguration wirksam wird.</p>
 </div>
-<figure class="align-center" id="id17">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Setup beenden</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ende-Einrichtung</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -536,19 +535,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Beginnen Sie mit der Einrichtung</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Barcode-Schalter</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Alle Barcodes öffnen</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Aktivieren Sie ausschließlich 1D-Code</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Aktivieren Sie ausschließlich 2D-Code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Setup starten</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-barcodes">Alle Barcodes aktivieren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-1d-codes">Nur 1D-Codes aktivieren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-2d-codes">Nur 2D-Codes aktivieren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QR-Code-URL-Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Deaktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Aktivieren</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">Website-QR-Code</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Verschluss</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Offen</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Setup beenden</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Ende-Einrichtung</a></li>
 </ul>
   </nav></div>
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Paramètres système &#8212; NT-12895 Scanner User Manual</title>
+    <title>Paramètres du système &#8212; NT-12895 Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'system';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
-    <link rel="next" title="Mode de numérisation" href="scanmode.html" />
+    <link rel="next" title="Mode de scan" href="scanmode.html" />
     <link rel="prev" title="Guide d’installation rapide du scanner filaire NT-12895" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres système</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de numérisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètre de caractère de fin</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres du système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Commutateur de code-barres</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Paramètres du code-barres</a></li>
 </ul>
 
     </div>
@@ -372,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Paramètres système</h1>
+    <h1>Paramètres du système</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,28 +393,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Restaurer les paramètres par défaut</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Obtenir la version du firmware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usb">Mode USB</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-keyboard">clavier USB</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-com">USB COM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">Restaurer les paramètres par défaut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">Obtenir la version du Firmware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">Réglages du volume</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">Volume faible</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">Volume moyen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">Volume élevé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Paramètres sonores</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">basse</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Milieu de gamme</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Tripler</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">éteindre le son</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lighting-light">Lumière lumineuse</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Désactiver</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#led">Éclairage LED</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Allumer la lumière</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Éteignez les lumières</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aiming-light">Lumière visée</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Activer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Désactiver</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aimer">Lumière de visée</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Allumez la lumière de visée</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Désactiver la lumière de visée</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-mode">Mode USB</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-keyboard">Clavier USB</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-serial-port">Port Série USB</a></li>
 </ul>
 </li>
 </ul>
@@ -417,143 +428,143 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Paramètres système<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<section id="id2">
-<h2>Restaurer les paramètres par défaut<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
+  <section id="system-settings">
+<h1>Paramètres du système<a class="headerlink" href="#system-settings" title="Lien vers cette rubrique">#</a></h1>
+<section id="restore-default-settings">
+<h2>Restaurer les paramètres par défaut<a class="headerlink" href="#restore-default-settings" title="Lien vers cette rubrique">#</a></h2>
 <p>Lorsqu’une erreur inconnue se produit sur le scanner, vous pouvez réinitialiser le scanner en restaurant les paramètres par défaut.</p>
-<figure class="align-center" id="id13">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/800006..png"><img alt="../../media/800006..png" src="../../media/800006..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Restaurer les paramètres par défaut</span><a class="headerlink" href="#id13" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Restaurer les paramètres par défaut</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="get-firmware-version">
+<h2>Obtenir la version du Firmware<a class="headerlink" href="#get-firmware-version" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../media/809005..png"><img alt="../../media/809005..png" src="../../media/809005..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Obtenir la version du Firmware</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="volume-settings">
+<h2>Réglages du volume<a class="headerlink" href="#volume-settings" title="Lien vers cette rubrique">#</a></h2>
+<section id="low-volume">
+<h3>Volume faible<a class="headerlink" href="#low-volume" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../media/8410091..png"><img alt="../../media/8410091..png" src="../../media/8410091..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Volume faible</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="medium-volume">
+<h3>Volume moyen<a class="headerlink" href="#medium-volume" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../media/8410092..png"><img alt="../../media/8410092..png" src="../../media/8410092..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Volume moyen</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="high-volume">
+<h3>Volume élevé<a class="headerlink" href="#high-volume" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../media/8410093..png"><img alt="../../media/8410093..png" src="../../media/8410093..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code> à grand volume</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="disable">
+<h3>Désactiver<a class="headerlink" href="#disable" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../media/8410090..png"><img alt="../../media/8410090..png" src="../../media/8410090..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="lighting-light">
+<h2>Lumière lumineuse<a class="headerlink" href="#lighting-light" title="Lien vers cette rubrique">#</a></h2>
+<section id="enable">
+<h3>Activer<a class="headerlink" href="#enable" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../media/8980051..png"><img alt="../../media/8980051..png" src="../../media/8980051..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id10" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h3>Désactiver<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../../media/8980050..png"><img alt="../../media/8980050..png" src="../../media/8980050..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id11" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="aiming-light">
+<h2>Lumière visée<a class="headerlink" href="#aiming-light" title="Lien vers cette rubrique">#</a></h2>
+<section id="id2">
+<h3>Activer<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../../media/8980022..png"><img alt="../../media/8980022..png" src="../../media/8980022..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id12" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="id3">
-<h2>Obtenir la version du firmware<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id14">
-<a class="reference internal image-reference" href="../../media/809005..png"><img alt="../../media/809005..png" src="../../media/809005..png" style="width: 300px;" />
+<h3>Désactiver<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="../../media/8980020..png"><img alt="../../media/8980020..png" src="../../media/8980020..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Obtenir la version du firmware</span><a class="headerlink" href="#id14" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id13" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="usb">
-<h2>Mode USB<a class="headerlink" href="#usb" title="Lien vers cette rubrique">#</a></h2>
+</section>
+<section id="usb-mode">
+<h2>Mode USB<a class="headerlink" href="#usb-mode" title="Lien vers cette rubrique">#</a></h2>
 <section id="usb-keyboard">
-<h3>clavier USB<a class="headerlink" href="#usb-keyboard" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id15">
+<h3>Clavier USB<a class="headerlink" href="#usb-keyboard" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../media/881001124..png"><img alt="../../media/881001124..png" src="../../media/881001124..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">clavier USB</span><a class="headerlink" href="#id15" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Clavier USB</span><a class="headerlink" href="#id14" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="usb-com">
-<h3>USB COM<a class="headerlink" href="#usb-com" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="usb-serial-port">
+<h3>Port Série USB<a class="headerlink" href="#usb-serial-port" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id15">
 <a class="reference internal image-reference" href="../../media/881001133..png"><img alt="../../media/881001133..png" src="../../media/881001133..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">USB COM</span><a class="headerlink" href="#id16" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Port Série USB</span><a class="headerlink" href="#id15" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Connectez l’appareil à un ordinateur et scannez le code-barres <a class="reference internal" href="#usb-keyboard">Clavier USB</a> pour configurer l’appareil comme clavier USB.   Dans un environnement où le logiciel d’application nécessite un port série, scannez <a class="reference internal" href="#usb-com">USB COM</a> et identifiez-le comme un type USB COM. L’utilisateur doit installer le pilote (la configuration par défaut de ce code-barres est : débit en bauds de 115200, 8 bits de données, aucun bit de parité, 1 bit d’arrêt).</p>
+<p>Connectez-vous à l’ordinateur et scannez le [Clavier USB] (#usb-keyboard) code-barres pour configurer le scanner en mode clavier. Dans l’environnement logiciel d’application où le port série est requis, scanner le [port série USB] (#usb-serial-port) et il sera identifié comme un type de COM USB, obligeant l’utilisateur à installer le pilote (la configuration par défaut de ce code-barres est : débit en bauds 115200, 8 bits de données, pas de bit de parité, 1 bit d’arrêt).</p>
 </div>
-</section>
-</section>
-<section id="id4">
-<h2>Paramètres sonores<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
-<section id="id5">
-<h3>basse<a class="headerlink" href="#id5" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id17">
-<a class="reference internal image-reference" href="../../media/8410091..png"><img alt="../../media/8410091..png" src="../../media/8410091..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">basse</span><a class="headerlink" href="#id17" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id6">
-<h3>Milieu de gamme<a class="headerlink" href="#id6" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id18">
-<a class="reference internal image-reference" href="../../media/8410092..png"><img alt="../../media/8410092..png" src="../../media/8410092..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Milieu de gamme</span><a class="headerlink" href="#id18" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id7">
-<h3>Tripler<a class="headerlink" href="#id7" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id19">
-<a class="reference internal image-reference" href="../../media/8410093..png"><img alt="../../media/8410093..png" src="../../media/8410093..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Aigus <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id19" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id8">
-<h3>éteindre le son<a class="headerlink" href="#id8" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id20">
-<a class="reference internal image-reference" href="../../media/8410090..png"><img alt="../../media/8410090..png" src="../../media/8410090..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">éteindre le son</span><a class="headerlink" href="#id20" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="led">
-<h2>Éclairage LED<a class="headerlink" href="#led" title="Lien vers cette rubrique">#</a></h2>
-<section id="id9">
-<h3>Allumer la lumière<a class="headerlink" href="#id9" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id21">
-<a class="reference internal image-reference" href="../../media/8980051..png"><img alt="../../media/8980051..png" src="../../media/8980051..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Allumer la lumière</span><a class="headerlink" href="#id21" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id10">
-<h3>Éteignez les lumières<a class="headerlink" href="#id10" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id22">
-<a class="reference internal image-reference" href="../../media/8980050..png"><img alt="../../media/8980050..png" src="../../media/8980050..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Éteignez les lumières</span><a class="headerlink" href="#id22" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="aimer">
-<h2>Lumière de visée<a class="headerlink" href="#aimer" title="Lien vers cette rubrique">#</a></h2>
-<section id="id11">
-<h3>Allumez la lumière de visée<a class="headerlink" href="#id11" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id23">
-<a class="reference internal image-reference" href="../../media/8980022..png"><img alt="../../media/8980022..png" src="../../media/8980022..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Allumez la lumière de visée</span><a class="headerlink" href="#id23" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id12">
-<h3>Désactiver la lumière de visée<a class="headerlink" href="#id12" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id24">
-<a class="reference internal image-reference" href="../../media/8980020..png"><img alt="../../media/8980020..png" src="../../media/8980020..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Désactiver la lumière de visée</span><a class="headerlink" href="#id24" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
 </section>
 </section>
 </section>
@@ -583,7 +594,7 @@ document.write(`
        title="page suivante">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">suivant</p>
-        <p class="prev-next-title">Mode de numérisation</p>
+        <p class="prev-next-title">Mode de scan</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -603,28 +614,28 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Restaurer les paramètres par défaut</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Obtenir la version du firmware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usb">Mode USB</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-keyboard">clavier USB</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-com">USB COM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">Restaurer les paramètres par défaut</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">Obtenir la version du Firmware</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">Réglages du volume</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">Volume faible</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">Volume moyen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">Volume élevé</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Paramètres sonores</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">basse</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Milieu de gamme</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Tripler</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">éteindre le son</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lighting-light">Lumière lumineuse</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Désactiver</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#led">Éclairage LED</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Allumer la lumière</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Éteignez les lumières</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aiming-light">Lumière visée</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Activer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Désactiver</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aimer">Lumière de visée</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Allumez la lumière de visée</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Désactiver la lumière de visée</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-mode">Mode USB</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-keyboard">Clavier USB</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-serial-port">Port Série USB</a></li>
 </ul>
 </li>
 </ul>

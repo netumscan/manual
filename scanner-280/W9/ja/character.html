@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="キーボード設定" href="keyboard.html" />
-    <link rel="prev" title="扫描模式" href="scanmode.html" />
+    <link rel="next" title="キーボードの設定" href="keyboard.html" />
+    <link rel="prev" title="スキャンモード" href="scanmode.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,10 +241,10 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scanmode.html">扫描模式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">終了文字設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">バーコード設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">バーコードの設定</a></li>
 </ul>
 
     </div>
@@ -382,11 +393,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">セットアップを開始する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">終了文字なし</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-lf">CR LF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr">CR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">セットアップ終了</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">セットアップを開始</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">セットアップを終了</a></li>
 </ul>
             </nav>
         </div>
@@ -398,64 +409,64 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>終了文字設定<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>エンドキャラクタは、デコードデータの後に付加される文字形式（デコードデータ＋エンドキャラクタ）です。</p>
-<section id="id2">
-<h2>セットアップを開始する<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+  <section id="end-character-settings">
+<h1>終了文字設定<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
+<p>デコードされたデータ+エンド・キャラクターのフォーマットでデコードされたデータの後に、エンド・キャラクターが追加されます。</p>
+<section id="start-setup">
+<h2>セットアップを開始<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p><a class="reference internal" href="#id2">設定開始</a>をスキャンした後でのみ、他の機能設定コードをスキャンして設定することができます。対応する設定を有効にするには、<a class="reference internal" href="#id4">設定の終了</a>をスキャンする必要があります。</p>
+<p><a class="reference internal" href="#start-setup">Start Setup</a>をスキャンした後にのみ、設定用の他の関数設定コードをスキャンすることができます。 対応する設定を有効にするには、<a class="reference internal" href="#end-setup">End Setup</a>をスキャンする必要があります。</p>
 </div>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">セットアップを開始する</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">セットアップを開始</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>終了文字なし<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id6">
+<section id="no-end-character">
+<h2>終了文字なし<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/TC01.png"><img alt="../../media/TC01.png" src="../../media/TC01.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">終了文字なし</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">終了文字なし</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="cr-lf">
-<h2>CR LF<a class="headerlink" href="#cr-lf" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id7">
+<section id="enter-new-line-crlf">
+<h2>Enter+New Line(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/TC02.png"><img alt="../../media/TC02.png" src="../../media/TC02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">CR LF</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Enter+New Line(CRLF)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="cr">
-<h2>CR<a class="headerlink" href="#cr" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id8">
+<section id="enter-cr">
+<h2>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/TC03.png"><img alt="../../media/TC03.png" src="../../media/TC03.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">CR <code class="docutils literal notranslate"><span class="pre">デフォルト</span></code></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Enter(CR) <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>セットアップ終了<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="end-setup">
+<h2>セットアップを終了<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p><a class="reference internal" href="#id2">設定開始</a>をスキャンした後でのみ、他の機能設定コードをスキャンして設定することができます。対応する設定を有効にするには、<a class="reference internal" href="#id4">設定の終了</a>をスキャンする必要があります。</p>
+<p><a class="reference internal" href="#start-setup">Start Setup</a>をスキャンした後にのみ、設定用の他の関数設定コードをスキャンすることができます。 対応する設定を有効にするには、<a class="reference internal" href="#end-setup">End Setup</a>をスキャンする必要があります。</p>
 </div>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">セットアップ終了</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">セットアップを終了</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -478,7 +489,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">前へ</p>
-        <p class="prev-next-title">扫描模式</p>
+        <p class="prev-next-title">スキャンモード</p>
       </div>
     </a>
     <a class="right-next"
@@ -486,7 +497,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">次へ</p>
-        <p class="prev-next-title">キーボード設定</p>
+        <p class="prev-next-title">キーボードの設定</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -506,11 +517,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">セットアップを開始する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">終了文字なし</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-lf">CR LF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr">CR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">セットアップ終了</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">セットアップを開始</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">セットアップを終了</a></li>
 </ul>
   </nav></div>
 

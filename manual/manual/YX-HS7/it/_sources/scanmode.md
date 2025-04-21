@@ -1,46 +1,45 @@
-# 扫描模式
+# Scan Mode
 
-## 按键保持(电平)
-按下按键触发识读，松开按键则结束识读。识读成功或者识读时间超过单次识读时间则结束识读。
+## Key Trigger Mode
+Press the button to trigger scanning, and release the button to end scanning. Scanning ends when the scan is successful or the reading time exceeds the single reading time.
 
 
 ```{figure} ../../media/8610020..png
 :align: center
 :width: 300px
 
-按键保持(电平) `默认`
+Key Trigger Mode `Default`
 ```
 
-## 连续模式
-识读引擎进行连续的工作。识读成功或者读时间超过单次识读时间结束本次识读，超过规定的时间自动触发下次识读。
+## Continuous Mode
+The scanner works continuously. If the scan is successful or the scan time exceeds the single working time, the current scan ends. If the time exceeds the specified time, the next scan is automatically triggered.
 
 ```{figure} ../../media/8610028..png
 :align: center
 :width: 300px
 
-连续模式
+Continuous Mode
 ```
 
-
-## 自动感应模式
-在自动感应模式下，识读引擎会检测周围环境的亮度，当亮度发生变化时，触发识读，识读成功或者识读时间超过单次识读时间结束识读。不论上次识读成功或失败，重新进入检测周围环境的亮度。
+## Auto Sensing Mode
+In the auto sensing mode, the scanner will detect the brightness of the surrounding environment. When the brightness changes, the scan is triggered. The scan ends when the scan is successful or the scan time exceeds the single working time. Regardless of whether the last scan was successful or failed, the brightness of the surrounding environment will be detected again.
 
 ```{figure} ../../media/8610023..png
 :align: center
 :width: 300px
 
-自动感应模式
+Auto Sensing Mode
 ```
 
-## 时间间隔
-不同条码在读取时的读码延时
+## Scanning Interval
+Working delay when scanning different barcodes
 
-### 无时间间隔
+### No Time Interval
 ```{figure} ../../media/8510070..png
 :align: center
 :width: 300px
 
-无时间间隔
+No Time Interval
 ```
 
 ### 500ms

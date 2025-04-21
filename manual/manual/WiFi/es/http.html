@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Utilice el protocolo HTTP para transferir datos &#8212; WiFi Scanner User Manual</title>
+    <title>Usar protocolo HTTP para transferir datos &#8212; WiFi Scanner User Manual</title>
   
   
   
@@ -49,7 +49,7 @@
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
     <link rel="next" title="Configuración de red" href="network.html" />
-    <link rel="prev" title="Utilice el protocolo MQTT para transmitir datos" href="mqtt.html" />
+    <link rel="prev" title="Usar protocolo MQTT para transmitir datos" href="mqtt.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,19 +240,19 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Configuración del sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Modo de trabajo</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Modo WiFi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Uso del cliente TCP para transmitir datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Uso del servidor TCP para transmitir datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">Utilice el protocolo MQTT para transmitir datos</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Utilice el protocolo HTTP para transferir datos</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Modo de transmisión Wi-Fi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Usar cliente TCP para transferir datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Utilizando el servidor TCP para datos de Transmit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">Usar protocolo MQTT para transmitir datos</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Usar protocolo HTTP para transferir datos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network.html">Configuración de red</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Modo Bluetooth</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configuración del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Preguntas frecuentes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -380,7 +391,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Utilice el protocolo HTTP para transferir datos</h1>
+    <h1>Usar protocolo HTTP para transferir datos</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,18 +401,18 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rest-api">Creación de una API REST</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Breve descripción</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#url">URL de solicitud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Método de solicitud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Parámetros de la solicitud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Parámetro de retorno</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-rest-api">Crear API REST</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-description">Breve descripción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-url">Solicitar URL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-mode">Modo de solicitud</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-parameters">Parámetros de solicitud</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#return-parameter">Parámetro de devolución</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Configuración del escáner</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-type">Establecer el tipo de contenido de la solicitud del escáner</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Establecer el formato del mensaje enviado por el escáner</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">Configurar direcciones de interfaz y WiFi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">Configurar Scanner</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-content-type-of-the-scanner-request">Establece el Tipo de Contenido de la solicitud de escáner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-data-format-sent-by-the-scanner">Establecer el formato de datos enviado por el escáner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-api-url-address">Configurar la dirección URL de WiFi y API</a></li>
 </ul>
 </li>
 </ul>
@@ -415,30 +426,30 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="http">
-<h1>Utilice el protocolo HTTP para transferir datos<a class="headerlink" href="#http" title="Link to this heading">#</a></h1>
-<section id="rest-api">
-<h2>Creación de una API REST<a class="headerlink" href="#rest-api" title="Link to this heading">#</a></h2>
-<section id="id1">
-<h3>Breve descripción<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+  <section id="use-http-protocol-to-transfer-data">
+<h1>Usar protocolo HTTP para transferir datos<a class="headerlink" href="#use-http-protocol-to-transfer-data" title="Link to this heading">#</a></h1>
+<section id="create-rest-api">
+<h2>Crear API REST<a class="headerlink" href="#create-rest-api" title="Link to this heading">#</a></h2>
+<section id="brief-description">
+<h3>Breve descripción<a class="headerlink" href="#brief-description" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Interfaz de carga de datos del escáner</p></li>
+<li><p>Interfaz de subida de datos del escáner</p></li>
 </ul>
 </section>
-<section id="url">
-<h3>URL de solicitud<a class="headerlink" href="#url" title="Link to this heading">#</a></h3>
+<section id="request-url">
+<h3>Solicitar URL<a class="headerlink" href="#request-url" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>https://httpbin.org/post</p></li>
 </ul>
 </section>
-<section id="id2">
-<h3>Método de solicitud<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="request-mode">
+<h3>Modo de solicitud<a class="headerlink" href="#request-mode" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>POST</p></li>
 </ul>
 </section>
-<section id="id3">
-<h3>Parámetros de la solicitud<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<section id="request-parameters">
+<h3>Parámetros de solicitud<a class="headerlink" href="#request-parameters" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 25.0%" />
@@ -448,61 +459,61 @@ document.write(`
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Nombre del parámetro</p></th>
-<th class="head"><p>Requerido</p></th>
-<th class="head"><p>Categoría</p></th>
-<th class="head"><p>ilustrar</p></th>
+<th class="head"><p>requerido</p></th>
+<th class="head"><p>tipo</p></th>
+<th class="head"><p>descripción</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>id</p></td>
-<td><p>Sí</p></td>
-<td><p>string</p></td>
-<td><p>ID del dispositivo</p></td>
+<td><p>sí</p></td>
+<td><p>cadena</p></td>
+<td><p>Id del dispositivo</p></td>
 </tr>
 <tr class="row-odd"><td><p>msg</p></td>
-<td><p>Sí</p></td>
-<td><p>string</p></td>
+<td><p>sí</p></td>
+<td><p>cadena</p></td>
 <td><p>Escanear contenido</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-text">Ejemplo de solicitud</span><a class="headerlink" href="#id7" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Ejemplo de solicitud</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p">{</span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;04B9023A&quot;</span><span class="p">,</span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="s2">&quot;1234567890&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
 </section>
-<section id="id4">
-<h3>Parámetro de retorno<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<p>Para obtener más detalles, consulte <a class="reference internal" href="wireless.html#id10"><span class="std std-ref">Formato de recepción de datos</span></a></p>
+<section id="return-parameter">
+<h3>Parámetro de devolución<a class="headerlink" href="#return-parameter" title="Link to this heading">#</a></h3>
+<p>Para más detalles, vea <a class="reference internal" href="wireless.html#data-rceiving-format"><span class="std std-ref">Formato de recepción de datos</span></a></p>
 </section>
 </section>
-<section id="id5">
-<h2>Configuración del escáner<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<section id="content-type">
-<h3>Establecer el tipo de contenido de la solicitud del escáner<a class="headerlink" href="#content-type" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+<section id="configure-scanner">
+<h2>Configurar Scanner<a class="headerlink" href="#configure-scanner" title="Link to this heading">#</a></h2>
+<section id="set-the-content-type-of-the-scanner-request">
+<h3>Establece el Tipo de Contenido de la solicitud de escáner<a class="headerlink" href="#set-the-content-type-of-the-scanner-request" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/application-json.png"><img alt="../../media/application-json.png" src="../../media/application-json.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Application/Json</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Aplicación/Json</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Establecer el formato del mensaje enviado por el escáner<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<section id="set-the-data-format-sent-by-the-scanner">
+<h3>Establecer el formato de datos enviado por el escáner<a class="headerlink" href="#set-the-data-format-sent-by-the-scanner" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S1.png"><img alt="../../media/25WFCOMMPM23S1.png" src="../../media/25WFCOMMPM23S1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Formato JSON</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Json Format</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="wifi">
-<h3>Configurar direcciones de interfaz y WiFi<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h3>
+<section id="configure-wifi-and-api-url-address">
+<h3>Configurar la dirección URL de WiFi y API<a class="headerlink" href="#configure-wifi-and-api-url-address" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-https.html" height="650px" width="100%"></iframe></section>
 </section>
 </section>
@@ -524,7 +535,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Utilice el protocolo MQTT para transmitir datos</p>
+        <p class="prev-next-title">Usar protocolo MQTT para transmitir datos</p>
       </div>
     </a>
     <a class="right-next"
@@ -552,18 +563,18 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rest-api">Creación de una API REST</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Breve descripción</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#url">URL de solicitud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Método de solicitud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Parámetros de la solicitud</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Parámetro de retorno</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#create-rest-api">Crear API REST</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#brief-description">Breve descripción</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-url">Solicitar URL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-mode">Modo de solicitud</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#request-parameters">Parámetros de solicitud</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#return-parameter">Parámetro de devolución</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Configuración del escáner</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-type">Establecer el tipo de contenido de la solicitud del escáner</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Establecer el formato del mensaje enviado por el escáner</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">Configurar direcciones de interfaz y WiFi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">Configurar Scanner</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-content-type-of-the-scanner-request">Establece el Tipo de Contenido de la solicitud de escáner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-data-format-sent-by-the-scanner">Establecer el formato de datos enviado por el escáner</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-api-url-address">Configurar la dirección URL de WiFi y API</a></li>
 </ul>
 </li>
 </ul>

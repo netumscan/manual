@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Même réglage de délai de code &#8212; NT-2055M Scanner User Manual</title>
+    <title>Réglages de délai du même code &#8212; NT-2055M Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'codedelay';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
-    <link rel="prev" title="Code URL QR" href="qrcodeurl.html" />
+    <link rel="prev" title="Paramètres de l’URL du QR Code" href="qrcodeurl.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -228,11 +239,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètre de caractère de fin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">Code URL QR</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Même réglage de délai de code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">Paramètres de l’URL du QR Code</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Réglages de délai du même code</a></li>
 </ul>
 
     </div>
@@ -371,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Même réglage de délai de code</h1>
+    <h1>Réglages de délai du même code</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,10 +392,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ms">0ms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">500ms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3000ms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Interdire la lecture du même code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ms">0 ms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">500ms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3000 ms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-same-code-scanning">Désactiver le balayage du même code</a></li>
 </ul>
             </nav>
         </div>
@@ -396,46 +407,46 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Même réglage de délai de code<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<p>Pour éviter que le même code-barres ne soit lu plusieurs fois de suite lors de la numérisation, vous pouvez définir une limite de temps avant d’autoriser la lecture du même code-barres.</p>
+  <section id="same-code-delay-settings">
+<h1>Réglages de délai du même code<a class="headerlink" href="#same-code-delay-settings" title="Lien vers cette rubrique">#</a></h1>
+<p>Pour éviter que le même code-barres ne soit lu plusieurs fois dans une ligne lors de la numérisation, vous pouvez définir une limite de temps avant de permettre la lecture du même code-barres.</p>
 <section id="ms">
-<h2>0ms<a class="headerlink" href="#ms" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id5">
+<h2>0 ms<a class="headerlink" href="#ms" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3E210010030..png"><img alt="../../media/3E210010030..png" src="../../media/3E210010030..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">0ms</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">0 ms</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h2>500ms<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../media/3E21001003500..png"><img alt="../../media/3E21001003500..png" src="../../media/3E21001003500..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">500ms</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="id2">
-<h2>500ms<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id6">
-<a class="reference internal image-reference" href="../../media/3E21001003500..png"><img alt="../../media/3E21001003500..png" src="../../media/3E21001003500..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">500ms</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id3">
-<h2>3000ms<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id7">
+<h2>3000 ms<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3E210010033000..png"><img alt="../../media/3E210010033000..png" src="../../media/3E210010033000..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">3000ms</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">3000 ms</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Interdire la lecture du même code<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id8">
+<section id="disable-same-code-scanning">
+<h2>Désactiver le balayage du même code<a class="headerlink" href="#disable-same-code-scanning" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3E2100100365535..png"><img alt="../../media/3E2100100365535..png" src="../../media/3E2100100365535..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Interdire la lecture du même code</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver le balayage du même code</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -458,7 +469,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Code URL QR</p>
+        <p class="prev-next-title">Paramètres de l’URL du QR Code</p>
       </div>
     </a>
 </div>
@@ -477,10 +488,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ms">0ms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">500ms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3000ms</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Interdire la lecture du même code</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ms">0 ms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">500ms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3000 ms</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-same-code-scanning">Désactiver le balayage du même code</a></li>
 </ul>
   </nav></div>
 

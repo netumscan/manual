@@ -1,63 +1,63 @@
-# 系统设置
+# System Settings
 
-## 恢复默认设置
-当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。
+## Restore Default Settings
+When an unknown error occurs on the scanner, you can reset the scanner by restoring the default settings.
 
 ```{figure} ../../media/303FFF0.png
 :align: center
 :width: 300px
 
-恢复默认设置
+Restore Default Settings
 ```
 
 
-## 获取固件版本
+## Get Firmware Version
 
 ```{figure} ../../media/4040010.png
 :align: center
 :width: 300px
 
-获取固件版本
+Get Firmware Version
 ```
 
-## 声音设置
+## Volume Settings
 
-### 低音
+### Low Volume
 ```{figure} ../../media/2050802.png
 :align: center
 :width: 300px
 
-低音
+Low Volume
 ```
   
-### 中音
+### Medium Volume
 ```{figure} ../../media/2050801.png
 :align: center
 :width: 300px
 
-中音
+Medium Volume
 ```
   
-### 高音
+### High Volume
 ```{figure} ../../media/2050800.png
 :align: center
 :width: 300px
 
-高音
+High Volume
 ```
   
-### 启用声音
+### Enable Sound
 ```{figure} ../../media/30300C0.png
 :align: center
 :width: 300px
 
-启用声音
+Enable Sound
 ```
   
-### 禁用声音
+### Disable Sound
 ```{figure} ../../media/30300C1.png
 :align: center
 :width: 300px
 
-禁用声音
+Disable Sound
 ```

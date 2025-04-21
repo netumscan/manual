@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Interruptor de código de barras &#8212; NT-2028-PS Scanner User Manual</title>
+    <title>Ajustes de código de barras &#8212; NT-2028-PS Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="prev" title="Configuración del teclado" href="keyboard.html" />
+    <link rel="prev" title="Ajustes del teclado" href="keyboard.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -228,11 +239,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Configuración del sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Fin de la configuración del personaje</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configuración del teclado</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Interruptor de código de barras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Ajustes de código de barras</a></li>
 </ul>
 
     </div>
@@ -371,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Interruptor de código de barras</h1>
+    <h1>Ajustes de código de barras</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,13 +392,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Prohibir el escaneo de códigos 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Habilitar el escaneo de código 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Prohibir el escaneo de códigos 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Habilitar el escaneo de código 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Configuración de bloqueo de URL</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Desactivar</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Permitir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-1d-codes">Desactivar el escaneo de códigos 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-1d-codes">Habilitar el escaneo de códigos 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-2d-codes">Desactivar el escaneo de códigos 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-2d-codes">Habilitar el escaneo de códigos 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Configuración de URL del código QR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Desactivar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activar</a></li>
 </ul>
 </li>
 </ul>
@@ -401,68 +412,68 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Interruptor de código de barras<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Prohibir el escaneo de códigos 1D<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id9">
+  <section id="barcode-settings">
+<h1>Ajustes de código de barras<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
+<section id="disable-scanning-1d-codes">
+<h2>Desactivar el escaneo de códigos 1D<a class="headerlink" href="#disable-scanning-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3030110.png"><img alt="../../media/3030110.png" src="../../media/3030110.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Prohibir el escaneo de códigos 1D</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Desactivar el escaneo de códigos 1D</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Habilitar el escaneo de código 1D<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id10">
+<section id="enable-scanning-1d-codes">
+<h2>Habilitar el escaneo de códigos 1D<a class="headerlink" href="#enable-scanning-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3030111.png"><img alt="../../media/3030111.png" src="../../media/3030111.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Habilitar el escaneo de código 1D</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Habilitar el escaneo de códigos 1D</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Prohibir el escaneo de códigos 2D<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id11">
+<section id="disable-scanning-2d-codes">
+<h2>Desactivar el escaneo de códigos 2D<a class="headerlink" href="#disable-scanning-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3030500.png"><img alt="../../media/3030500.png" src="../../media/3030500.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Prohibir el escaneo de códigos 2D</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Desactivar el escaneo de códigos 2D</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Habilitar el escaneo de código 2D<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id12">
+<section id="enable-scanning-2d-codes">
+<h2>Habilitar el escaneo de códigos 2D<a class="headerlink" href="#enable-scanning-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030501.png"><img alt="../../media/3030501.png" src="../../media/3030501.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Habilitar el escaneo de código 2D</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Habilitar el escaneo de códigos 2D</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>Configuración de bloqueo de URL<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<p>Bloquear URL que comiencen con <code class="docutils literal notranslate"><span class="pre">http://</span></code> y <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
-<section id="id7">
-<h3>Desactivar<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+<section id="qr-code-url-settings">
+<h2>Configuración de URL del código QR<a class="headerlink" href="#qr-code-url-settings" title="Link to this heading">#</a></h2>
+<p>Bloquea el escaneo de códigos QR URL comenzando con <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
+<section id="disable">
+<h3>Desactivar<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030EA0.png"><img alt="../../media/3030EA0.png" src="../../media/3030EA0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Desactivar</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Desactivar</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Permitir<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="enable">
+<h3>Activar<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3030EA1.png"><img alt="../../media/3030EA1.png" src="../../media/3030EA1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Permitir</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Activar</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -486,7 +497,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Configuración del teclado</p>
+        <p class="prev-next-title">Ajustes del teclado</p>
       </div>
     </a>
 </div>
@@ -505,13 +516,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Prohibir el escaneo de códigos 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Habilitar el escaneo de código 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Prohibir el escaneo de códigos 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Habilitar el escaneo de código 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Configuración de bloqueo de URL</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Desactivar</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Permitir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-1d-codes">Desactivar el escaneo de códigos 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-1d-codes">Habilitar el escaneo de códigos 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-2d-codes">Desactivar el escaneo de códigos 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-2d-codes">Habilitar el escaneo de códigos 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Configuración de URL del código QR</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Desactivar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activar</a></li>
 </ul>
 </li>
 </ul>

@@ -1,58 +1,58 @@
-# 使用MQTT协议传输数据
+# Use MQTT protocol to transmit data
 
 
-## 搭建代理（Broker）服务器
-- 使用一台服务器搭建MQTT Broker ,扫描枪上传条码都是通过这台服务器中转。
+## Build Broker Server
+- Use a server to build MQTT Broker, and the barcodes uploaded by the scanner are transferred through this server.
 
-### 演示软件
-EMQX 开源版,下载地址：[EMQX](https://github.com/emqx/emqx/releases)
+### Demo software
+EMQX open source version, download address: [EMQX](https://github.com/emqx/emqx/releases)
 
-### 测试服务
+### Testing Services
 
 ```{figure} ../../media/wifi-emqx.png
 :align: center
 ```
 
 ```{note}
-**服务器连接信息** 
+**Server Connection Information** 
 - Host：mqtt.handy.pub
 - Port：1883
 - Username：netum
 - Password：netum@2022
   
-  仅供测试使用，严禁用于生产环境。
+  For testing use only and strictly prohibited for use in production environments.
 ```
 
-## 配置扫描枪
+## Configure Scanner
 
-### 配置WiFi和服务信息
+### Configure WiFi and Broker
 ```{raw} html
     <iframe src="../../plugins/wifi-mqtt.html" height="900px" width="100%"></iframe>
 ```
 
 ```{note}
-- 扫描枪连接MQTT Broker 默认使用的是1883端口。
-- 扫描枪订阅的主题内容为设备ID。
+- The scanner connects to the MQTT Broker using port 1883 by default.
+- The topic content subscribed by the scanner is the device ID.
 ```
 
-### 修改MQTT连接端口号
+### Modify the MQTT connection port
 ```{raw} html
     <iframe src="../../plugins/wifi-mqtt-ConnectPort.html" height="500px" width="100%"></iframe>
 ```
 
-### 修改扫描枪发布主题
+### Modify the scanner publishing topic
 ```{raw} html
     <iframe src="../../plugins/wifi-mqtt-PublishTopic.html" height="500px" width="100%"></iframe>
 ```
 
-### 修改扫描枪订阅主题
+### Modify the scanner subscription topic
 ```{raw} html
     <iframe src="../../plugins/wifi-mqtt-SubscribeTopic.html" height="500px" width="100%"></iframe>
 ```
 
-## 接收数据
+## Receiving Data
 
-- 使用MQTT客户端软件[[MQTTX](https://mqttx.app/)]连接Broker服务器，并订阅扫描枪发布消息的主题。
+- Use the MQTT client software [[MQTTX](https://mqttx.app/)] to connect to the Broker server and subscribe to the topic where the scanner publishes messages.
 
 
 ```{figure} ../../media/wifi-mqttx.png
@@ -60,6 +60,6 @@ EMQX 开源版,下载地址：[EMQX](https://github.com/emqx/emqx/releases)
 ```
 
 
-## 开发参考
-- [MQTT 客户端库](https://www.emqx.com/zh/mqtt-client-sdk)
-- [MQTT 教程](https://www.emqx.com/zh/mqtt-guide)
+## Development Reference
+- [MQTT Client Library](https://www.emqx.com/zh/mqtt-client-sdk)
+- [MQTT Tutorial(https://www.emqx.com/zh/mqtt-guide)

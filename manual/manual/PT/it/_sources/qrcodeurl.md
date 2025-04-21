@@ -1,18 +1,18 @@
-# QR网址码
-屏蔽 `http://`，`https://`，`www.`开头的网址
+# QR Code URL Settings
+Block scanning of URL QR codes starting with `http://`, `https://`, `www.`
 
-## 开启网址码
+## Enable URL Code
 ```{figure} ../../media/3E210010330..png
 :align: center
 :width: 300px
 
-开启网址码
+Enable URL Code
 ```
 
-## 关闭网址码
+## Disable URL Code
 ```{figure} ../../media/3E210010331..png
 :align: center
 :width: 300px
 
-关闭网址码
+Disable URL Code
 ```

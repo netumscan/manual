@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>MQTTプロトコルを使用してデータを送信する &#8212; DS2800 Scanner User Manual</title>
+    <title>MQTT プロトコルを使ってデータを送信する &#8212; DS2800 Scanner User Manual</title>
   
   
   
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,19 +240,19 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFiモード</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用TCP Client传输数据</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi 通信モード</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">TCPクライアントを使用してデータを転送する</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tcpserver.html">TCPサーバーを使用してデータを送信する</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">MQTTプロトコルを使用してデータを送信する</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">MQTT プロトコルを使ってデータを送信する</a></li>
 <li class="toctree-l2"><a class="reference internal" href="http.html">HTTPプロトコルを使用してデータを転送する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="network.html">ネットワーク構成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">ネットワーク設定</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetoothモード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">よくある質問</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -380,7 +391,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>MQTTプロトコルを使用してデータを送信する</h1>
+    <h1>MQTT プロトコルを使ってデータを送信する</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,20 +401,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#broker">プロキシ (Broker) サーバーを構築する</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">デモソフトウェア</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">テストサービス</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-broker-server">Broker Serverを構築</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">デモソフトウェア</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-services">テストサービス</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">スキャナーの設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">WiFiとサービス情報を設定する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">MQTT接続ポート番号を変更する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">スキャナ公開トピックを変更する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">スキャナーサブスクリプショントピックを変更する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">スキャナの設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-broker">WiFiとブローカーを設定する</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-mqtt-connection-port">MQTT コネクションポートの変更</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-publishing-topic">スキャナ公開トピックを修正</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-subscription-topic">スキャナ購読のトピックを変更する</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">データの受信</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">開発リファレンス</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiving-data">データを受信中</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-reference">開発の参照</a></li>
 </ul>
             </nav>
         </div>
@@ -415,19 +426,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="mqtt">
-<h1>MQTTプロトコルを使用してデータを送信する<a class="headerlink" href="#mqtt" title="Link to this heading">#</a></h1>
-<section id="broker">
-<h2>プロキシ (Broker) サーバーを構築する<a class="headerlink" href="#broker" title="Link to this heading">#</a></h2>
+  <section id="use-mqtt-protocol-to-transmit-data">
+<h1>MQTT プロトコルを使ってデータを送信する<a class="headerlink" href="#use-mqtt-protocol-to-transmit-data" title="Link to this heading">#</a></h1>
+<section id="build-broker-server">
+<h2>Broker Serverを構築<a class="headerlink" href="#build-broker-server" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>サーバーを使用して MQTT ブローカーを構築し、スキャナーによってアップロードされたバーコードはこのサーバーを介して転送されます。</p></li>
+<li><p>サーバーを使用してMQTTブローカーを構築し,スキャナからアップロードされたバーコードをこのサーバー経由で転送します。</p></li>
 </ul>
-<section id="id1">
-<h3>デモソフトウェア<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>EMQXオープンソース版、ダウンロードアドレス: <a class="reference external" href="https://github.com/emqx/emqx/releases">EMQX</a></p>
+<section id="demo-software">
+<h3>デモソフトウェア<a class="headerlink" href="#demo-software" title="Link to this heading">#</a></h3>
+<p>EMQXオープンソースバージョン、ダウンロードアドレス: <a class="reference external" href="https://github.com/emqx/emqx/releases">EMQX</a></p>
 </section>
-<section id="id2">
-<h3>テストサービス<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="testing-services">
+<h3>テストサービス<a class="headerlink" href="#testing-services" title="Link to this heading">#</a></h3>
 <figure class="align-center">
 <img alt="../../media/wifi-emqx.png" src="../../media/wifi-emqx.png" />
 </figure>
@@ -435,52 +446,52 @@ document.write(`
 <p class="admonition-title">注釈</p>
 <p><strong>サーバー接続情報</strong></p>
 <ul>
-<li><p>Host：mqtt.handy.pub</p></li>
-<li><p>Port：1883</p></li>
+<li><p>ホスト：mqtt.handy.pub</p></li>
+<li><p>ポート：1883</p></li>
 <li><p>Username：netum</p></li>
-<li><p>Password：netum&#64;2022</p>
-<p>テスト用途のみであり、実稼働環境での使用は固く禁止されています。</p>
+<li><p>パスワード：netum&#64;2022</p>
+<p>本番環境での使用のみ、かつ厳格に禁止されているテスト用。</p>
 </li>
 </ul>
 </div>
 </section>
 </section>
-<section id="id3">
-<h2>スキャナーの設定<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<section id="wifi">
-<h3>WiFiとサービス情報を設定する<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h3>
+<section id="configure-scanner">
+<h2>スキャナの設定<a class="headerlink" href="#configure-scanner" title="Link to this heading">#</a></h2>
+<section id="configure-wifi-and-broker">
+<h3>WiFiとブローカーを設定する<a class="headerlink" href="#configure-wifi-and-broker" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt.html" height="900px" width="100%"></iframe><div class="admonition note">
 <p class="admonition-title">注釈</p>
 <ul class="simple">
-<li><p>スキャナーは、デフォルトでポート 1883 を使用して MQTT ブローカーに接続します。</p></li>
-<li><p>スキャナーによってサブスクライブされるトピック コンテンツはデバイス ID です。</p></li>
+<li><p>スキャナはデフォルトで、MQTT ブローカーにポート1883を使用して接続します。</p></li>
+<li><p>スキャナが購読しているトピックコンテンツはデバイスIDです。</p></li>
 </ul>
 </div>
 </section>
-<section id="id4">
-<h3>MQTT接続ポート番号を変更する<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<section id="modify-the-mqtt-connection-port">
+<h3>MQTT コネクションポートの変更<a class="headerlink" href="#modify-the-mqtt-connection-port" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-ConnectPort.html" height="500px" width="100%"></iframe></section>
-<section id="id5">
-<h3>スキャナ公開トピックを変更する<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<section id="modify-the-scanner-publishing-topic">
+<h3>スキャナ公開トピックを修正<a class="headerlink" href="#modify-the-scanner-publishing-topic" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-PublishTopic.html" height="500px" width="100%"></iframe></section>
-<section id="id6">
-<h3>スキャナーサブスクリプショントピックを変更する<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<section id="modify-the-scanner-subscription-topic">
+<h3>スキャナ購読のトピックを変更する<a class="headerlink" href="#modify-the-scanner-subscription-topic" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-SubscribeTopic.html" height="500px" width="100%"></iframe></section>
 </section>
-<section id="id7">
-<h2>データの受信<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="receiving-data">
+<h2>データを受信中<a class="headerlink" href="#receiving-data" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>MQTT クライアント ソフトウェア [<a class="reference external" href="https://mqttx.app/">MQTTX</a>] を使用してブローカー サーバーに接続し、スキャナーがメッセージを公開するトピックをサブスクライブします。</p></li>
+<li><p>Brokerサーバーに接続し、スキャナがメッセージを公開するトピックを購読するには、MQTTクライアントソフトウェア[<a class="reference external" href="https://mqttx.app/">MQTTX</a>] を使用します。</p></li>
 </ul>
 <figure class="align-center">
 <img alt="../../media/wifi-mqttx.png" src="../../media/wifi-mqttx.png" />
 </figure>
 </section>
-<section id="id8">
-<h2>開発リファレンス<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<section id="development-reference">
+<h2>開発の参照<a class="headerlink" href="#development-reference" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.emqx.com/zh/mqtt-client-sdk">MQTT クライアントライブラリ</a></p></li>
-<li><p><a class="reference external" href="https://www.emqx.com/zh/mqtt-guide">MQTT チュートリアル</a></p></li>
+<li><p>[MQTT チュートリアル(https://www.emqx.com/zh/mqtt-ガイド)</p></li>
 </ul>
 </section>
 </section>
@@ -530,20 +541,20 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#broker">プロキシ (Broker) サーバーを構築する</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">デモソフトウェア</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">テストサービス</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-broker-server">Broker Serverを構築</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">デモソフトウェア</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-services">テストサービス</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">スキャナーの設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">WiFiとサービス情報を設定する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">MQTT接続ポート番号を変更する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">スキャナ公開トピックを変更する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">スキャナーサブスクリプショントピックを変更する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">スキャナの設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-broker">WiFiとブローカーを設定する</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-mqtt-connection-port">MQTT コネクションポートの変更</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-publishing-topic">スキャナ公開トピックを修正</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-subscription-topic">スキャナ購読のトピックを変更する</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">データの受信</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">開発リファレンス</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiving-data">データを受信中</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-reference">開発の参照</a></li>
 </ul>
   </nav></div>
 

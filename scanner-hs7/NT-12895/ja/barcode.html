@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>バーコードスイッチ &#8212; NT-12895 Scanner User Manual</title>
+    <title>バーコードの設定 &#8212; NT-12895 Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="prev" title="キーボード設定" href="keyboard.html" />
+    <link rel="prev" title="キーボードの設定" href="keyboard.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
   </head>
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -231,8 +242,8 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">バーコードスイッチ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">バーコードの設定</a></li>
 </ul>
 
     </div>
@@ -371,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>バーコードスイッチ</h1>
+    <h1>バーコードの設定</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,34 +392,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1Dコードのスキャンを禁止する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1Dコードスキャンを有効にする</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2Dコードのスキャンを禁止する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2Dコードスキャンを有効にする</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">バーコード反転白</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">白反転はサポートされていません</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">反転した白のみをサポート</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">すべてサポートされています</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">すべての1Dコードを無効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">すべての1Dコードを有効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">すべての 2D コードを無効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">すべての2Dコードを有効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">バーコードを破棄する</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">バーコードのサポートがありません</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">逆転バーコードのみサポート</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">サポートされているすべて</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">QR URLコード設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">無効にする</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">有効にする</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Alipay請求書機能</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK形式の請求書</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">ステップ1を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">ステップ2を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">ステップ3を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">請求書を閉じる</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">UNICODE形式での請求書</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">ステップ1を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">ステップ2を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">ステップ3を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">請求書を閉じる</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QRコードのURL設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">無効</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">有効にする</a></li>
 </ul>
 </li>
 </ul>
@@ -422,195 +418,105 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>バーコードスイッチ<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>1Dコードのスキャンを禁止する<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id21">
+  <section id="barcode-settings">
+<h1>バーコードの設定<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
+<section id="disable-all-1d-codes">
+<h2>すべての1Dコードを無効にする<a class="headerlink" href="#disable-all-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/9950041..png"><img alt="../../media/9950041..png" src="../../media/9950041..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">1Dコードのスキャンを禁止する</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">すべての1Dコードを無効にする</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>1Dコードスキャンを有効にする<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id22">
+<section id="enable-all-1d-codes">
+<h2>すべての1Dコードを有効にする<a class="headerlink" href="#enable-all-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/9950040..png"><img alt="../../media/9950040..png" src="../../media/9950040..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">1Dコードスキャンを有効にする</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+<p><span class="caption-text">すべての1Dコードを有効にする</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>2Dコードのスキャンを禁止する<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id23">
+<section id="disable-all-2d-codes">
+<h2>すべての 2D コードを無効にする<a class="headerlink" href="#disable-all-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/9950071..png"><img alt="../../media/9950071..png" src="../../media/9950071..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2Dコードのスキャンを禁止する</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
+<p><span class="caption-text">すべての 2D コードを無効にする</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>2Dコードスキャンを有効にする<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id24">
+<section id="enable-all-2d-codes">
+<h2>すべての2Dコードを有効にする<a class="headerlink" href="#enable-all-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/9950070..png"><img alt="../../media/9950070..png" src="../../media/9950070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2Dコードスキャンを有効にする</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
+<p><span class="caption-text">すべての2Dコードを有効にする</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>バーコード反転白<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<section id="id7">
-<h3>白反転はサポートされていません<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id25">
+<section id="reversal-barcode-settings">
+<h2>バーコードを破棄する<a class="headerlink" href="#reversal-barcode-settings" title="Link to this heading">#</a></h2>
+<section id="no-support-reversal-barcode">
+<h3>バーコードのサポートがありません<a class="headerlink" href="#no-support-reversal-barcode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/8910010..png"><img alt="../../media/8910010..png" src="../../media/8910010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">白反転はサポートされていません</span><a class="headerlink" href="#id25" title="Link to this image">#</a></p>
+<p><span class="caption-text">バーコードのサポートがありません</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>反転した白のみをサポート<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id26">
+<section id="only-supports-reversal-barcode">
+<h3>逆転バーコードのみサポート<a class="headerlink" href="#only-supports-reversal-barcode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/8910011..png"><img alt="../../media/8910011..png" src="../../media/8910011..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">反転した白のみをサポート</span><a class="headerlink" href="#id26" title="Link to this image">#</a></p>
+<p><span class="caption-text">逆転バーコードのみサポート</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>すべてサポートされています<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id27">
+<section id="all-supported">
+<h3>サポートされているすべて<a class="headerlink" href="#all-supported" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/8910012..png"><img alt="../../media/8910012..png" src="../../media/8910012..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">すべてサポートされています</span><a class="headerlink" href="#id27" title="Link to this image">#</a></p>
+<p><span class="caption-text">サポートされているすべて</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>デバイスが<a class="reference internal" href="#id8">逆バーコードのみサポート</a>に設定されている場合、同時に通常のバーコードをサポートするように設定するには、逆バーコードをスキャンして<a class="reference internal" href="#id9">すべてサポート</a>に設定してください。</p>
+<p>スキャナーが<a class="reference internal" href="#only-supports-reversal-barcode">反転バーコードのみをサポート</a>に設定されていて、通常のバーコードと反転バーコードの両方をサポートするように設定したい場合は、<a class="reference internal" href="#all-supported">すべてサポート</a>に設定してください。</p>
 </div>
 </section>
 </section>
-<section id="qr">
-<h2>QR URLコード設定<a class="headerlink" href="#qr" title="Link to this heading">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">http://</span></code> および <code class="docutils literal notranslate"><span class="pre">https://</span></code> で始まる URL をブロックします</p>
-<section id="id10">
-<h3>無効にする<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id28">
+<section id="qr-code-url-settings">
+<h2>QRコードのURL設定<a class="headerlink" href="#qr-code-url-settings" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">http://</span></code>,<code class="docutils literal notranslate"><span class="pre">https://</span></code>で始まるURLQRコードのスキャンをブロックする</p>
+<section id="disable">
+<h3>無効<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/9950061..png"><img alt="../../media/9950061..png" src="../../media/9950061..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">無効にする</span><a class="headerlink" href="#id28" title="Link to this image">#</a></p>
+<p><span class="caption-text">無効</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>有効にする<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id29">
+<section id="enable">
+<h3>有効にする<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/9950060..png"><img alt="../../media/9950060..png" src="../../media/9950060..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">有効にする</span><a class="headerlink" href="#id29" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="id12">
-<h2>Alipay請求書機能<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
-<p>Alipay請求書は、出力形式に応じてGBKとUNICODEの2つの設定に分かれています。</p>
-<section id="gbk">
-<h3>GBK形式の請求書<a class="headerlink" href="#gbk" title="Link to this heading">#</a></h3>
-</section>
-<section id="id13">
-<h3>ステップ1を開始<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id30">
-<a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">ステップ1を開始</span><a class="headerlink" href="#id30" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id14">
-<h3>ステップ2を開始<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id31">
-<a class="reference internal image-reference" href="../../media/8210141..png"><img alt="../../media/8210141..png" src="../../media/8210141..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">ステップ2を開始</span><a class="headerlink" href="#id31" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id15">
-<h3>ステップ3を開始<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id32">
-<a class="reference internal image-reference" href="../../media/8210131..png"><img alt="../../media/8210131..png" src="../../media/8210131..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">ステップ3を開始</span><a class="headerlink" href="#id32" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id16">
-<h3>請求書を閉じる<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id33">
-<a class="reference internal image-reference" href="../../media/8210140..png"><img alt="../../media/8210140..png" src="../../media/8210140..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">請求書を閉じる</span><a class="headerlink" href="#id33" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="unicode">
-<h2>UNICODE形式での請求書<a class="headerlink" href="#unicode" title="Link to this heading">#</a></h2>
-<section id="id17">
-<h3>ステップ1を開始<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id34">
-<a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">ステップ1を開始</span><a class="headerlink" href="#id34" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id18">
-<h3>ステップ2を開始<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id35">
-<a class="reference internal image-reference" href="../../media/8210141..png"><img alt="../../media/8210141..png" src="../../media/8210141..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">ステップ2を開始</span><a class="headerlink" href="#id35" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id19">
-<h3>ステップ3を開始<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id36">
-<a class="reference internal image-reference" href="../../media/8210132..png"><img alt="../../media/8210132..png" src="../../media/8210132..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">ステップ3を開始</span><a class="headerlink" href="#id36" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id20">
-<h3>請求書を閉じる<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id37">
-<a class="reference internal image-reference" href="../../media/8210140..png"><img alt="../../media/8210140..png" src="../../media/8210140..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">請求書を閉じる</span><a class="headerlink" href="#id37" title="Link to this image">#</a></p>
+<p><span class="caption-text">有効にする</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -634,7 +540,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">前へ</p>
-        <p class="prev-next-title">キーボード設定</p>
+        <p class="prev-next-title">キーボードの設定</p>
       </div>
     </a>
 </div>
@@ -653,34 +559,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1Dコードのスキャンを禁止する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1Dコードスキャンを有効にする</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2Dコードのスキャンを禁止する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2Dコードスキャンを有効にする</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">バーコード反転白</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">白反転はサポートされていません</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">反転した白のみをサポート</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">すべてサポートされています</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">すべての1Dコードを無効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">すべての1Dコードを有効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">すべての 2D コードを無効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">すべての2Dコードを有効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">バーコードを破棄する</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">バーコードのサポートがありません</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">逆転バーコードのみサポート</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">サポートされているすべて</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">QR URLコード設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">無効にする</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">有効にする</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Alipay請求書機能</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK形式の請求書</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">ステップ1を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">ステップ2を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">ステップ3を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">請求書を閉じる</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">UNICODE形式での請求書</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">ステップ1を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">ステップ2を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">ステップ3を開始</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">請求書を閉じる</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QRコードのURL設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">無効</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">有効にする</a></li>
 </ul>
 </li>
 </ul>

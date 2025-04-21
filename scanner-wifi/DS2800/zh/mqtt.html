@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>使用MQTT协议传输数据 &#8212; DS2800 Scanner User Manual</title>
+    <title>使用 MQTT 协议传输数据 &#8212; DS2800 Scanner User Manual</title>
   
   
   
@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'mqtt';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="使用HTTP协议传输数据" href="http.html" />
-    <link rel="prev" title="使用TCP Server传输数据" href="tcpserver.html" />
+    <link rel="next" title="使用 HTTP 协议传输数据" href="http.html" />
+    <link rel="prev" title="使用 TCP 服务端传输数据" href="tcpserver.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="zh-CN"/>
   </head>
@@ -162,11 +162,11 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">工作模式</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFi模式</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用TCP Client传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">使用TCP Server传输数据</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">使用MQTT协议传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html">使用HTTP协议传输数据</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi 传输模式</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用 TCP 客户端来传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">使用 TCP 服务端传输数据</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">使用 MQTT 协议传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html">使用 HTTP 协议传输数据</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network.html">网络配置</a></li>
 </ul>
 </details></li>
@@ -311,7 +311,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>使用MQTT协议传输数据</h1>
+    <h1>使用 MQTT 协议传输数据</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -321,20 +321,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#broker">搭建代理（Broker）服务器</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">演示软件</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">测试服务</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-broker-server">构建 Broker 服务器</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">演示软件</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-services">测试服务</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">配置扫描枪</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">配置WiFi和服务信息</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">修改MQTT连接端口号</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">修改扫描枪发布主题</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">修改扫描枪订阅主题</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">配置扫描枪</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-broker">配置 WiFi 和 Broker</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-mqtt-connection-port">修改 MQTT 连接端口</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-publishing-topic">修改扫描枪发布主题</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-subscription-topic">修改扫描枪订阅主题</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">接收数据</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">开发参考</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiving-data">接收数据</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-reference">开发参考</a></li>
 </ul>
             </nav>
         </div>
@@ -346,19 +346,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="mqtt">
-<h1>使用MQTT协议传输数据<a class="headerlink" href="#mqtt" title="Link to this heading">#</a></h1>
-<section id="broker">
-<h2>搭建代理（Broker）服务器<a class="headerlink" href="#broker" title="Link to this heading">#</a></h2>
+  <section id="use-mqtt-protocol-to-transmit-data">
+<h1>使用 MQTT 协议传输数据<a class="headerlink" href="#use-mqtt-protocol-to-transmit-data" title="Link to this heading">#</a></h1>
+<section id="build-broker-server">
+<h2>构建 Broker 服务器<a class="headerlink" href="#build-broker-server" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>使用一台服务器搭建MQTT Broker ,扫描枪上传条码都是通过这台服务器中转。</p></li>
+<li><p>使用服务器构建MQTT Broker，扫描枪上传的条形码通过此服务器传输。</p></li>
 </ul>
-<section id="id1">
-<h3>演示软件<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>EMQX 开源版,下载地址：<a class="reference external" href="https://github.com/emqx/emqx/releases">EMQX</a></p>
+<section id="demo-software">
+<h3>演示软件<a class="headerlink" href="#demo-software" title="Link to this heading">#</a></h3>
+<p>EMQX 开源版本，下载地址： <a class="reference external" href="https://github.com/emqx/emqx/releases">EMQX</a></p>
 </section>
-<section id="id2">
-<h3>测试服务<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="testing-services">
+<h3>测试服务<a class="headerlink" href="#testing-services" title="Link to this heading">#</a></h3>
 <figure class="align-center">
 <img alt="../../media/wifi-emqx.png" src="../../media/wifi-emqx.png" />
 </figure>
@@ -370,48 +370,48 @@ document.write(`
 <li><p>Port：1883</p></li>
 <li><p>Username：netum</p></li>
 <li><p>Password：netum&#64;2022</p>
-<p>仅供测试使用，严禁用于生产环境。</p>
+<p>仅供测试使用，严禁在生产环境中使用。</p>
 </li>
 </ul>
 </div>
 </section>
 </section>
-<section id="id3">
-<h2>配置扫描枪<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<section id="wifi">
-<h3>配置WiFi和服务信息<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h3>
+<section id="configure-scanner">
+<h2>配置扫描枪<a class="headerlink" href="#configure-scanner" title="Link to this heading">#</a></h2>
+<section id="configure-wifi-and-broker">
+<h3>配置 WiFi 和 Broker<a class="headerlink" href="#configure-wifi-and-broker" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt.html" height="900px" width="100%"></iframe><div class="admonition note">
 <p class="admonition-title">备注</p>
 <ul class="simple">
-<li><p>扫描枪连接MQTT Broker 默认使用的是1883端口。</p></li>
-<li><p>扫描枪订阅的主题内容为设备ID。</p></li>
+<li><p>扫描枪默认使用端口 1883 连接到 MQTT Broker。</p></li>
+<li><p>扫描枪订阅的主题内容是device ID。</p></li>
 </ul>
 </div>
 </section>
-<section id="id4">
-<h3>修改MQTT连接端口号<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<section id="modify-the-mqtt-connection-port">
+<h3>修改 MQTT 连接端口<a class="headerlink" href="#modify-the-mqtt-connection-port" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-ConnectPort.html" height="500px" width="100%"></iframe></section>
-<section id="id5">
-<h3>修改扫描枪发布主题<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<section id="modify-the-scanner-publishing-topic">
+<h3>修改扫描枪发布主题<a class="headerlink" href="#modify-the-scanner-publishing-topic" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-PublishTopic.html" height="500px" width="100%"></iframe></section>
-<section id="id6">
-<h3>修改扫描枪订阅主题<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<section id="modify-the-scanner-subscription-topic">
+<h3>修改扫描枪订阅主题<a class="headerlink" href="#modify-the-scanner-subscription-topic" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-mqtt-SubscribeTopic.html" height="500px" width="100%"></iframe></section>
 </section>
-<section id="id7">
-<h2>接收数据<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="receiving-data">
+<h2>接收数据<a class="headerlink" href="#receiving-data" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>使用MQTT客户端软件[<a class="reference external" href="https://mqttx.app/">MQTTX</a>]连接Broker服务器，并订阅扫描枪发布消息的主题。</p></li>
+<li><p>使用 MQTT 客户端软件 [<a class="reference external" href="https://mqttx.app/">MQTTX</a>] 连接到Broker服务器并订阅扫描枪发布消息的主题。</p></li>
 </ul>
 <figure class="align-center">
 <img alt="../../media/wifi-mqttx.png" src="../../media/wifi-mqttx.png" />
 </figure>
 </section>
-<section id="id8">
-<h2>开发参考<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<section id="development-reference">
+<h2>开发参考<a class="headerlink" href="#development-reference" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.emqx.com/zh/mqtt-client-sdk">MQTT 客户端库</a></p></li>
-<li><p><a class="reference external" href="https://www.emqx.com/zh/mqtt-guide">MQTT 教程</a></p></li>
+<li><p>[MQTT教程(https://www.emqx.com/zh/mqt-guide)</p></li>
 </ul>
 </section>
 </section>
@@ -433,7 +433,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">上一页</p>
-        <p class="prev-next-title">使用TCP Server传输数据</p>
+        <p class="prev-next-title">使用 TCP 服务端传输数据</p>
       </div>
     </a>
     <a class="right-next"
@@ -441,7 +441,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">使用HTTP协议传输数据</p>
+        <p class="prev-next-title">使用 HTTP 协议传输数据</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -461,20 +461,20 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#broker">搭建代理（Broker）服务器</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">演示软件</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">测试服务</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#build-broker-server">构建 Broker 服务器</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">演示软件</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#testing-services">测试服务</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">配置扫描枪</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">配置WiFi和服务信息</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">修改MQTT连接端口号</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">修改扫描枪发布主题</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">修改扫描枪订阅主题</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-scanner">配置扫描枪</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-wifi-and-broker">配置 WiFi 和 Broker</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-mqtt-connection-port">修改 MQTT 连接端口</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-publishing-topic">修改扫描枪发布主题</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-the-scanner-subscription-topic">修改扫描枪订阅主题</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">接收数据</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">开发参考</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#receiving-data">接收数据</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#development-reference">开发参考</a></li>
 </ul>
   </nav></div>
 

@@ -1,78 +1,69 @@
-# 扫描模式
+# Scan Mode
 
-## 按键模式
-在该模式下，模块在按下触发按键后开始读码，读码成功或松开触发按键后停止读码。
-
+## Key Trigger Mode
+Press the button to trigger scanning, and release the button to end scanning. Scanning ends when the scan is successful or the reading time exceeds the single reading time.
 
 ```{figure} ../../media/013300.png
 :align: center
 :width: 300px
 
-按键模式 `默认`
+Key Trigger Mode `Default`
 ```
 
-## 连续模式
-模块红光灯处于长亮状态，有条码经过时，模块自动读取条码。相同条码不可重复读取除非移开重新读取。
+## Continuous Mode
+The scanner works continuously. If the scan is successful or the scan time exceeds the single working time, the current scan ends. If the time exceeds the specified time, the next scan is automatically triggered.
 
 ```{figure} ../../media/013304.png
 :align: center
 :width: 300px
 
-连续模式
+Continuous Mode
 ```
 
-## 按键延时模式
-设置成功后，模块红光灯长亮3S，超时3S未读码灯灭，或者读取条码成功后灯灭。
 
-```{figure} ../../media/013301.png
-:align: center
-:width: 300px
+## Auto Sensing Mode
+In the auto sensing mode, the scanner will detect the brightness of the surrounding environment. When the brightness changes, the scan is triggered. The scan ends when the scan is successful or the scan time exceeds the single working time. Regardless of whether the last scan was successful or failed, the brightness of the surrounding environment will be detected again.
 
-按键延时模式
-```
-
-## 自感应设置
-
-### 关闭IR自动感应
+### Disable
 
 ```{figure} ../../media/02310.png
 :align: center
 :width: 300px
 
-关闭IR自动感应 `默认`
+Disable `Default`
 ```
 
 
-### 开启IR自动感应
+### Enable
 
 ```{figure} ../../media/02311.png
 :align: center
 :width: 300px
 
-开启IR自动感应
+Enable
 ```
 
-## 重码检测设置
+## Duplicate Barcode Detection Settings
 
-### 关闭重码检测
+### Disable
 
 ```{figure} ../../media/02770.png
 :align: center
 :width: 300px
 
-关闭重码检测 `默认`
+Disable `Default`
 ```
 
-### 开启重码检测
+### Enable
 
 ```{figure} ../../media/02771.png
 :align: center
 :width: 300px
 
-开启重码检测
+Enable
 ```
 
-### 重码间隔时间
+### Repeat Barcode Interval
 
 ```{figure} ../../media/02630A.png
 :align: center

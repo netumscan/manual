@@ -1,26 +1,105 @@
-# 系统设置
+# System Settings
 
-## 恢复默认设置
-当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。
+## Restore Default Settings
+When an unknown error occurs on the scanner, you can reset the scanner by restoring the default settings.
 
 ```{figure} ../../media/800006..png
 :align: center
 :width: 300px
 
-恢复默认设置
+Restore Default Settings
 ```
 
 
-## 获取固件版本
+## Get Firmware Version
 
 ```{figure} ../../media/809005..png
 :align: center
 :width: 300px
 
-获取固件版本
+Get Firmware Version
 ```
 
-## USB 模式
+## Volume Settings
+
+### Low Volume
+```{figure} ../../media/8410091..png
+:align: center
+:width: 300px
+
+Low Volume
+```
+  
+### Medium Volume
+```{figure} ../../media/8410092..png
+:align: center
+:width: 300px
+
+Medium Volume
+```
+  
+### High Volume
+```{figure} ../../media/8410093..png
+:align: center
+:width: 300px
+
+High Volume `Default`
+```
+  
+### Disable
+```{figure} ../../media/8410090..png
+:align: center
+:width: 300px
+
+Disable
+```
+
+
+## Lighting Light
+
+### Enable
+```{figure} ../../media/8980051..png
+:align: center
+:width: 300px
+
+Enable
+```
+
+
+
+### Disable
+```{figure} ../../media/8980050..png
+:align: center
+:width: 300px
+
+Disable
+```
+
+
+
+## Aiming Light
+
+
+### Enable
+```{figure} ../../media/8980022..png
+:align: center
+:width: 300px
+
+Enable
+```
+
+
+
+### Disable
+```{figure} ../../media/8980020..png
+:align: center
+:width: 300px
+
+Disable
+```
+
+
+## USB Mode
 ### USB Keyboard
 
 ```{figure} ../../media/881001124..png
@@ -31,94 +110,16 @@ USB Keyboard
 ```
 
 
-### USB COM
+### USB Serial Port
 
 ```{figure} ../../media/881001133..png
 :align: center
 :width: 300px
 
-USB COM
+USB Serial Port
 ```
 
 ```{note}
-连接电脑，扫描[USB Keyboard](#usb-keyboard)条码，即可把设备配置为 USB 键盘模式。  
-在应用端软件需求串口的使用环境下，扫描[USB COM](#usb-com)，识别为 USB COM 类型，需要用户安装驱动，（此条码默认配置为：115200 波特率，8位数据位，无校验位，1 位停止位）。
-```
-
-## 声音设置
-
-### 低音
-```{figure} ../../media/8410091..png
-:align: center
-:width: 300px
-
-低音
-```
-  
-### 中音
-```{figure} ../../media/8410092..png
-:align: center
-:width: 300px
-
-中音
-```
-  
-### 高音
-```{figure} ../../media/8410093..png
-:align: center
-:width: 300px
-
-高音 `默认`
-```
-  
-### 关闭声音
-```{figure} ../../media/8410090..png
-:align: center
-:width: 300px
-
-关闭声音
-```
-
-
-## LED 照明灯
-
-### 打开照明灯
-```{figure} ../../media/8980051..png
-:align: center
-:width: 300px
-
-打开照明灯
-```
-
-
-
-### 关闭照明灯
-```{figure} ../../media/8980050..png
-:align: center
-:width: 300px
-
-关闭照明灯
-```
-
-
-
-## Aimer 指示
-
-
-### 打开指示
-```{figure} ../../media/8980022..png
-:align: center
-:width: 300px
-
-打开指示
-```
-
-
-
-### 关闭指示
-```{figure} ../../media/8980020..png
-:align: center
-:width: 300px
-
-关闭指示
+Connect to the computer and scan the [USB Keyboard](#usb-keyboard) barcode to configure the scanner to keyboard mode.
+In the application software environment where the serial port is required, scan [USB Serial Port](#usb-serial-port) and it will be identified as USB COM type, requiring the user to install the driver (the default configuration of this barcode is: 115200 baud rate, 8 data bits, no parity bit, 1 stop bit).
 ```

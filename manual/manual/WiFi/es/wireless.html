@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Modo WiFi &#8212; WiFi Scanner User Manual</title>
+    <title>Modo de transmisión Wi-Fi &#8212; WiFi Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'wireless';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Uso del cliente TCP para transmitir datos" href="tcpclient.html" />
+    <link rel="next" title="Usar cliente TCP para transferir datos" href="tcpclient.html" />
     <link rel="prev" title="Modo de trabajo" href="working.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,19 +240,19 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Configuración del sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Modo de trabajo</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Modo WiFi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Uso del cliente TCP para transmitir datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Uso del servidor TCP para transmitir datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">Utilice el protocolo MQTT para transmitir datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html">Utilice el protocolo HTTP para transferir datos</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Modo de transmisión Wi-Fi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Usar cliente TCP para transferir datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Utilizando el servidor TCP para datos de Transmit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">Usar protocolo MQTT para transmitir datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html">Usar protocolo HTTP para transferir datos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network.html">Configuración de red</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Modo Bluetooth</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configuración del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Preguntas frecuentes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -380,7 +391,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Modo WiFi</h1>
+    <h1>Modo de transmisión Wi-Fi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,19 +401,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Modificar el número de dispositivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Formato de carga de datos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Contenido del código de barras original</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#josn2">Contenido en formato JSON</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#josn-3">Formato JSON + comillas dobles más caracteres de escape en el contenido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-device-id">Modificar ID del dispositivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-upload-format">Formato de subida de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#original-barcode-content1">Contenido de código de barras original</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-format-content2">Json Format Content</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-format-double-quotes-plus-escape-characters-in-content3">Formato Json + comillas dobles más caracteres de escape en el contenido</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Formato de recepción de datos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Código de voz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-rceiving-format">Formato de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voice-code">Código de voz</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Protocolo de transmisión de datos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Método de configuración de red</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transmission-protocol">Protocolo de transmisión de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-configuration">Configuración de red</a></li>
 </ul>
             </nav>
         </div>
@@ -414,47 +425,47 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="wifi">
-<h1>Modo WiFi<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h1>
-<section id="id1">
-<h2>Modificar el número de dispositivo<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+  <section id="wi-fi-transmission-mode">
+<h1>Modo de transmisión Wi-Fi<a class="headerlink" href="#wi-fi-transmission-mode" title="Link to this heading">#</a></h1>
+<section id="modify-device-id">
+<h2>Modificar ID del dispositivo<a class="headerlink" href="#modify-device-id" title="Link to this heading">#</a></h2>
     <iframe src="../../plugins/wifi-clientId.html" height="400px" width="100%"></iframe>
 </section>
-<section id="id2">
-<h2>Formato de carga de datos<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<section id="id4">
-<h3>Contenido del código de barras original<a class="footnote-reference brackets" href="#id5" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="data-upload-format">
+<h2>Formato de subida de datos<a class="headerlink" href="#data-upload-format" title="Link to this heading">#</a></h2>
+<section id="original-barcode-content1">
+<h3>Contenido de código de barras original<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#original-barcode-content1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S0.png"><img alt="../../media/25WFCOMMPM23S0.png" src="../../media/25WFCOMMPM23S0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Contenido del código de barras original</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Contenido original de código de barras</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="josn2">
-<h3>Contenido en formato JSON<a class="footnote-reference brackets" href="#id7" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#josn2" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="json-format-content2">
+<h3>Json Format Content<a class="footnote-reference brackets" href="#id4" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#json-format-content2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S1.png"><img alt="../../media/25WFCOMMPM23S1.png" src="../../media/25WFCOMMPM23S1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Contenido en formato JSON</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Json Format Content</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="josn-3">
-<h3>Formato JSON + comillas dobles más caracteres de escape en el contenido<a class="footnote-reference brackets" href="#id9" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a><a class="headerlink" href="#josn-3" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="json-format-double-quotes-plus-escape-characters-in-content3">
+<h3>Formato Json + comillas dobles más caracteres de escape en el contenido<a class="footnote-reference brackets" href="#id6" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a><a class="headerlink" href="#json-format-double-quotes-plus-escape-characters-in-content3" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S2.png"><img alt="../../media/25WFCOMMPM23S2.png" src="../../media/25WFCOMMPM23S2.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Formato JSON + comillas dobles más caracteres de escape en el contenido</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Formato Json + comillas dobles más caracteres de escape en el contenido</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id10">
-<h2>Formato de recepción de datos<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<section id="data-rceiving-format">
+<h2>Formato de datos<a class="headerlink" href="#data-rceiving-format" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -463,30 +474,30 @@ document.write(`
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Nombre del parámetro</p></th>
-<th class="head"><p>Categoría</p></th>
-<th class="head"><p>describir</p></th>
+<th class="head"><p>tipo</p></th>
+<th class="head"><p>descripción</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>ply</p></td>
-<td><p>Int</p></td>
+<tr class="row-even"><td><p>plata</p></td>
+<td><p>Ent</p></td>
 <td><p>Código de voz</p></td>
 </tr>
 <tr class="row-odd"><td><p>msg</p></td>
-<td><p>String</p></td>
+<td><p>Cadena</p></td>
 <td><p>Contenido del mensaje</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text">Volver al ejemplo</span><a class="headerlink" href="#id17" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">Ejemplo de retorno</span><a class="headerlink" href="#id10" title="Link to this code">#</a></div>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p">{</span><span class="nt">&quot;ply&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="s2">&quot;ABEF&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
-<section id="id11">
-<h3>Código de voz<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<section id="voice-code">
+<h3>Código de voz<a class="headerlink" href="#voice-code" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 50.0%" />
@@ -499,57 +510,57 @@ document.write(`
 </thead>
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
-<td><p>El timbre suena una vez</p></td>
+<td><p>El zumbido suena una vez</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>El timbre suena dos veces</p></td>
+<td><p>El zumbido suena dos veces</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
-<td><p>El timbre suena tres veces</p></td>
+<td><p>El zumbido suena tres</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 </section>
-<section id="id12">
-<h2>Protocolo de transmisión de datos<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<section id="data-transmission-protocol">
+<h2>Protocolo de transmisión de datos<a class="headerlink" href="#data-transmission-protocol" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="tcpclient.html">Uso del cliente TCP para transmitir datos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#id1">Configuración rápida</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#id2">Software de demostración</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#id3">Establecer una conexión</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tcpclient.html">Usar cliente TCP para transferir datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#quick-configuration">Configuración rápida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#demo-software">Software Demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#make-a-connection">Hacer una conexión</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tcpserver.html">Uso del servidor TCP para transmitir datos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#id1">Configuración rápida</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#id2">Software de demostración</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#id3">Establecer una conexión</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tcpserver.html">Utilizando el servidor TCP para datos de Transmit</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#quick-configuration">Configuración rápida</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#demo-software">Software demo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#make-a-connection">Hacer una conexión</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="mqtt.html">Utilice el protocolo MQTT para transmitir datos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html#broker">Construir un servidor de broker</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html#id3">Configuración del escáner</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html#id7">Recibiendo datos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html#id8">Referencia de desarrollo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mqtt.html">Usar protocolo MQTT para transmitir datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html#build-broker-server">Construir servidor Broker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html#configure-scanner">Configurar Scanner</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html#receiving-data">Recibiendo datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html#development-reference">Referencia de desarrollo</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="http.html">Utilice el protocolo HTTP para transferir datos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="http.html#rest-api">Creación de una API REST</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html#id5">Configuración del escáner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="http.html">Usar protocolo HTTP para transferir datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http.html#create-rest-api">Crear API REST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html#configure-scanner">Configurar Scanner</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </section>
-<section id="id13">
-<h2>Método de configuración de red<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<section id="network-configuration">
+<h2>Configuración de red<a class="headerlink" href="#network-configuration" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="network.html">Configuración de red</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="network.html#ip">Configuración de dirección IP dinámica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="network.html#id5">Configuración de dirección IP estática</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html#dynamic-ip-address-configuration">Configuración de dirección IP dinámica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html#static-ip-address-configuration">Configuración de dirección IP estática</a></li>
 </ul>
 </li>
 </ul>
@@ -558,17 +569,17 @@ document.write(`
 </section>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id5" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">1</a><span class="fn-bracket">]</span></span>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>Contenido original del código de barras: {«ID»:»680870»}</p>
 </aside>
-<aside class="footnote brackets" id="id7" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">2</a><span class="fn-bracket">]</span></span>
-<p>Contenido en formato JSON: {«id»:»C143F123»,»msg»:»{«ID»:»680870»}»}</p>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>Json format content: {«id»:»C143F123»,»msg»:»{«ID»:»680870»}»}</p>
 </aside>
-<aside class="footnote brackets" id="id9" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">3</a><span class="fn-bracket">]</span></span>
-<p>Formato JSON + comillas dobles con caracteres de escape en el contenido: {«id»:»C143F123»,»msg»:»{«ID»:»680870»}»}</p>
+<aside class="footnote brackets" id="id6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">3</a><span class="fn-bracket">]</span></span>
+<p>Formato Json + comillas dobles más caracteres de escape en el contenido: {«id»:»C143F123»,»msg»:»{«ID»:»680870»}»}</p>
 </aside>
 </aside>
 
@@ -597,7 +608,7 @@ document.write(`
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Uso del cliente TCP para transmitir datos</p>
+        <p class="prev-next-title">Usar cliente TCP para transferir datos</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -617,19 +628,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Modificar el número de dispositivo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Formato de carga de datos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Contenido del código de barras original</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#josn2">Contenido en formato JSON</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#josn-3">Formato JSON + comillas dobles más caracteres de escape en el contenido</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-device-id">Modificar ID del dispositivo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-upload-format">Formato de subida de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#original-barcode-content1">Contenido de código de barras original</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-format-content2">Json Format Content</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-format-double-quotes-plus-escape-characters-in-content3">Formato Json + comillas dobles más caracteres de escape en el contenido</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Formato de recepción de datos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Código de voz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-rceiving-format">Formato de datos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voice-code">Código de voz</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Protocolo de transmisión de datos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Método de configuración de red</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transmission-protocol">Protocolo de transmisión de datos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-configuration">Configuración de red</a></li>
 </ul>
   </nav></div>
 

@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="结束符设置" href="character.html" />
+    <link rel="next" title="结束字符设置" href="character.html" />
     <link rel="prev" title="系统设置" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="zh-CN"/>
@@ -162,9 +162,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">扫描模式</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">结束符设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">结束字符设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">条码开关</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">条码设置</a></li>
 </ul>
 
     </div>
@@ -313,16 +313,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">按键保持(电平)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">连续模式</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">自动感应模式</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">同码延时设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">无延时</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s">延时1s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">延时3s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">延时5s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">延时7s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">无限延时（禁止同码识读）</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">按键触发模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">连续模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">自动感应模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#same-code-delay-settings">同码延时设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-delay">无延迟</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-1s">延迟1秒</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-3s">延迟3秒</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-5s">延时5秒</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-7s">延迟7秒</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-delay-disable-same-code-scanning">无限延时 (禁用同码扫描)</a></li>
 </ul>
 </li>
 </ul>
@@ -336,101 +336,101 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>扫描模式<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>按键保持(电平)<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>按下按键触发识读，松开按键则结束识读。识读成功或者识读时间超过单次识读时间则结束识读。</p>
-<figure class="align-center" id="id11">
+  <section id="scan-mode">
+<h1>扫描模式<a class="headerlink" href="#scan-mode" title="Link to this heading">#</a></h1>
+<section id="key-trigger-mode">
+<h2>按键触发模式<a class="headerlink" href="#key-trigger-mode" title="Link to this heading">#</a></h2>
+<p>按下按钮触发扫描，松开按钮结束扫描。扫描成功或扫描时间超过单次读取时间时，扫描结束。</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/2050200.png"><img alt="../../media/2050200.png" src="../../media/2050200.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">按键保持(电平) <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">按键触发模式 <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>连续模式<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>识读引擎进行连续的工作。识读成功或者读时间超过单次识读时间结束本次识读，超过规定的时间自动触发下次识读。</p>
-<figure class="align-center" id="id12">
+<section id="continuous-mode">
+<h2>连续模式<a class="headerlink" href="#continuous-mode" title="Link to this heading">#</a></h2>
+<p>扫描枪连续工作，若扫描成功或扫描时间超过单次工作时间，则结束本次扫描，若超过指定时间，则自动触发下次扫描。</p>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/2050204.png"><img alt="../../media/2050204.png" src="../../media/2050204.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">连续模式</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">连续模式</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>自动感应模式<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>在自动感应模式下，识读引擎会检测周围环境的亮度，当亮度发生变化时，触发识读，识读成功或者识读时间超过单次识读时间结束识读。不论上次识读成功或失败，重新进入检测周围环境的亮度。</p>
-<figure class="align-center" id="id13">
+<section id="auto-sensing-mode">
+<h2>自动感应模式<a class="headerlink" href="#auto-sensing-mode" title="Link to this heading">#</a></h2>
+<p>在自动感应模式下，扫描枪会检测周围环境的亮度。当亮度发生变化时，触发扫描。扫描成功或扫描时间超过单次工作时间后，扫描结束。无论上次扫描成功还是失败，都会再次检测周围环境的亮度。</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/2050209.png"><img alt="../../media/2050209.png" src="../../media/2050209.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">自动感应模式</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">自动感应模式</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>同码延时设置<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<p>为避免在<a class="reference internal" href="#id3">连续模式</a>和<a class="reference internal" href="#id4">自动感应模式</a>中同一条码被连续识读多次，可以要求识读引擎在延时设定时长后才允许 识读相同条码。</p>
-<section id="id6">
-<h3>无延时<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="same-code-delay-settings">
+<h2>同码延时设置<a class="headerlink" href="#same-code-delay-settings" title="Link to this heading">#</a></h2>
+<p>为了防止在<a class="reference internal" href="#continuous-mode">连续模式</a> 和 <a class="reference internal" href="#auto-sensing-mode">自动遥感模式</a> 中多次扫描同一条码。 您可以要求扫描枪等待设置的延迟时间，然后才允许扫描同一条码。</p>
+<section id="no-delay">
+<h3>无延迟<a class="headerlink" href="#no-delay" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030C90.png"><img alt="../../media/3030C90.png" src="../../media/3030C90.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">无延时</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">无延迟</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="s">
-<h3>延时1s<a class="headerlink" href="#s" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="delay-1s">
+<h3>延迟1秒<a class="headerlink" href="#delay-1s" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030C91.png"><img alt="../../media/3030C91.png" src="../../media/3030C91.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">延时1s</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">延迟1秒</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>延时3s<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="delay-3s">
+<h3>延迟3秒<a class="headerlink" href="#delay-3s" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3030C93.png"><img alt="../../media/3030C93.png" src="../../media/3030C93.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">延时3s</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">延迟3秒</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>延时5s<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="delay-5s">
+<h3>延时5秒<a class="headerlink" href="#delay-5s" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/3030C95.png"><img alt="../../media/3030C95.png" src="../../media/3030C95.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">延时5s</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">延时5秒</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>延时7s<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="delay-7s">
+<h3>延迟7秒<a class="headerlink" href="#delay-7s" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/3030C97.png"><img alt="../../media/3030C97.png" src="../../media/3030C97.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">延时7s</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">延迟7秒</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>无限延时（禁止同码识读）<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id19">
+<section id="infinite-delay-disable-same-code-scanning">
+<h3>无限延时 (禁用同码扫描)<a class="headerlink" href="#infinite-delay-disable-same-code-scanning" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/3030C99.png"><img alt="../../media/3030C99.png" src="../../media/3030C99.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">无限延时（禁止同码识读）</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">无限延时 (禁用同码扫描)</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -462,7 +462,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">结束符设置</p>
+        <p class="prev-next-title">结束字符设置</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -482,16 +482,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">按键保持(电平)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">连续模式</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">自动感应模式</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">同码延时设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">无延时</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s">延时1s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">延时3s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">延时5s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">延时7s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">无限延时（禁止同码识读）</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">按键触发模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">连续模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">自动感应模式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#same-code-delay-settings">同码延时设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-delay">无延迟</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-1s">延迟1秒</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-3s">延迟3秒</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-5s">延时5秒</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-7s">延迟7秒</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-delay-disable-same-code-scanning">无限延时 (禁用同码扫描)</a></li>
 </ul>
 </li>
 </ul>

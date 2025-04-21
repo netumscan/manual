@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Modalità di scansione &#8212; HZ Scanner User Manual</title>
+    <title>Modalità Scansione &#8212; HZ Scanner User Manual</title>
   
   
   
@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Messaggi vocali" href="prompts.html" />
-    <link rel="prev" title="Impostazioni di sistema" href="system.html" />
+    <link rel="next" title="Prompts Vocali" href="prompts.html" />
+    <link rel="prev" title="Impostazioni Di Sistema" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,9 +240,9 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni di sistema</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Modalità di scansione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="prompts.html">Messaggi vocali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Modalità Scansione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prompts.html">Prompts Vocali</a></li>
 </ul>
 
     </div>
@@ -370,7 +381,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Modalità di scansione</h1>
+    <h1>Modalità Scansione</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,12 +391,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Inizia la configurazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Scansione continua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Rilevamento automatico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">Consenti la lettura del codice QR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Non leggere il codice QR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Fine configurazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Avvia Configurazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Modalità Continua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Modalità Di Sensibilità Automatica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-qr">Abilita Scansione QR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-qr">Disabilita Scansione QR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Termina L’Impostazione</a></li>
 </ul>
             </nav>
         </div>
@@ -397,73 +408,73 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Modalità di scansione<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Inizia la configurazione<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+  <section id="scan-mode">
+<h1>Modalità Scansione<a class="headerlink" href="#scan-mode" title="Link to this heading">#</a></h1>
+<section id="start-setup">
+<h2>Avvia Configurazione<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Solo dopo aver scansionato <a class="reference internal" href="#id2">Start Setup</a> è possibile scansionare altri codici di configurazione delle funzioni. È necessario eseguire la scansione di <a class="reference internal" href="#id6">Impostazioni finali</a> affinché la configurazione corrispondente abbia effetto.</p>
+<p>Solo dopo la scansione <a class="reference internal" href="#start-setup">Start Setup</a> è possibile eseguire la scansione di altri codici di configurazione delle funzioni. È necessario eseguire la scansione <a class="reference internal" href="#end-setup">Fine installazione</a> affinché la configurazione corrispondente abbia effetto.</p>
 </div>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/S_CMD_0001.png"><img alt="../../media/S_CMD_0001.png" src="../../media/S_CMD_0001.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Inizia la configurazione</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Avvia Configurazione</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Scansione continua<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id8">
+<section id="continuous-mode">
+<h2>Modalità Continua<a class="headerlink" href="#continuous-mode" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/S_CMD_020E.png"><img alt="../../media/S_CMD_020E.png" src="../../media/S_CMD_020E.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Scansione continua</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modalità Continua</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Rilevamento automatico<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id9">
+<section id="auto-sensing-mode">
+<h2>Modalità Di Sensibilità Automatica<a class="headerlink" href="#auto-sensing-mode" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/S_CMD_020F.png"><img alt="../../media/S_CMD_020F.png" src="../../media/S_CMD_020F.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Rilevamento automatico</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modalità Di Sensibilità Automatica</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="qr">
-<h2>Consenti la lettura del codice QR<a class="headerlink" href="#qr" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id10">
+<section id="enable-scanning-qr">
+<h2>Abilita Scansione QR<a class="headerlink" href="#enable-scanning-qr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/C_CMD_QR01.png"><img alt="../../media/C_CMD_QR01.png" src="../../media/C_CMD_QR01.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Consenti la lettura del codice QR <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Abilita Scansione QR <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Non leggere il codice QR<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id11">
+<section id="disable-scanning-qr">
+<h2>Disabilita Scansione QR<a class="headerlink" href="#disable-scanning-qr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/C_CMD_QR00.png"><img alt="../../media/C_CMD_QR00.png" src="../../media/C_CMD_QR00.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Non leggere il codice QR</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disabilita Scansione QR</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>Fine configurazione<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="end-setup">
+<h2>Termina L’Impostazione<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Solo dopo aver scansionato <a class="reference internal" href="#id2">Start Setup</a> è possibile scansionare altri codici di configurazione delle funzioni. È necessario eseguire la scansione di <a class="reference internal" href="#id6">Impostazioni finali</a> affinché la configurazione corrispondente abbia effetto.</p>
+<p>Solo dopo la scansione <a class="reference internal" href="#start-setup">Start Setup</a> è possibile eseguire la scansione di altri codici di configurazione delle funzioni. È necessario eseguire la scansione <a class="reference internal" href="#end-setup">Fine installazione</a> affinché la configurazione corrispondente abbia effetto.</p>
 </div>
-<figure class="align-center" id="id12">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/S_CMD_0000.png"><img alt="../../media/S_CMD_0000.png" src="../../media/S_CMD_0000.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Fine configurazione</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Termina L’Impostazione</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -486,7 +497,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title">Impostazioni di sistema</p>
+        <p class="prev-next-title">Impostazioni Di Sistema</p>
       </div>
     </a>
     <a class="right-next"
@@ -494,7 +505,7 @@ document.write(`
        title="pagina seguente">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title">Messaggi vocali</p>
+        <p class="prev-next-title">Prompts Vocali</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -514,12 +525,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Inizia la configurazione</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Scansione continua</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Rilevamento automatico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">Consenti la lettura del codice QR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Non leggere il codice QR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Fine configurazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Avvia Configurazione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Modalità Continua</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Modalità Di Sensibilità Automatica</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-qr">Abilita Scansione QR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-qr">Disabilita Scansione QR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Termina L’Impostazione</a></li>
 </ul>
   </nav></div>
 

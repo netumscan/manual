@@ -1,79 +1,74 @@
-# 条码设置
+# Barcode Settings
 
-## 开始设置
+## Start Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 ```{figure} ../../media/252B24.24.png
 :align: center
 :width: 300px
 
-开始设置
-```
-## 条码开关
-```{figure} ../../media/252B24.24.png
-:align: center
-:width: 300px
-
-开始设置
+Start Setup
 ```
 
-### 开启所有条码
+
+## Enable All Barcodes
 
 ```{figure} ../../media/EC00.png
 :align: center
 :width: 300px
 
-开启所有条码
+Enable All Barcodes
 ```
 
-### 只开启一维码
+## Only Enable 1D Codes
 
 ```{figure} ../../media/OE1D.png
 :align: center
 :width: 300px
 
-只开启一维码
+Only Enable 1D Codes
 ```
 
-### 只开启二维码
+## Only Enable 2D Codes
 
 ```{figure} ../../media/OE2D.png
 :align: center
 :width: 300px
 
-只开启二维码
+Only Enable 2D Codes
 ```
 
-## QR网址二维码
+## QR Code URL Settings
+Block scanning of URL QR codes starting with `http://`, `https://`
 
-### 关闭
+### Disable
 
 ```{figure} ../../media/25DISABLE_WEB25.png
 :align: center
 :width: 300px
 
-关闭
+Disable
 ```
 
-### 开启
+### Enable
 
 ```{figure} ../../media/25ENABLE_WEB25.png
 :align: center
 :width: 300px
 
-开启 `默认`
+Enable `Default`
 ```
 
 
-## 结束设置
+## End Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/25242425.png
 :align: center
 :width: 300px
 
-结束设置
+End Setup
 ```

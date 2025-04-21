@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'system';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="Endzeicheneinstellung" href="character.html" />
-    <link rel="prev" title="NT-2055M Desktop-Scanner Kurzanleitung" href="index.html" />
+    <link rel="next" title="End-Charakter-Einstellungen" href="character.html" />
+    <link rel="prev" title="NT-2055M Kurzanleitung zur Einrichtung der Zahlungsplattform" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,10 +241,10 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Systemeinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Endzeicheneinstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">End-Charakter-Einstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">QR-URL-Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="codedelay.html">Gleiche Codeverzögerungseinstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">QR-Code-URL-Einstellungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codedelay.html">Gleiche Code-Verzögerung Einstellungen</a></li>
 </ul>
 
     </div>
@@ -382,9 +393,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Standardeinstellungen wiederherstellen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Holen Sie sich die Firmware-Version</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Toneinstellungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">Standardeinstellungen wiederherstellen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">Holen Sie sich die Firmware-Version</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">Lautstärke-Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mute">Stumm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">Geringe Lautstärke</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">Mittlere Lautstärke</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">Hohe Lautstärke</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -396,60 +413,72 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Systemeinstellungen<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Standardeinstellungen wiederherstellen<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Wenn beim Scanner ein unbekannter Fehler auftritt, können Sie den Scanner zurücksetzen, indem Sie die Standardeinstellungen wiederherstellen.</p>
-<figure class="align-center" id="id5">
+  <section id="system-settings">
+<h1>Systemeinstellungen<a class="headerlink" href="#system-settings" title="Link to this heading">#</a></h1>
+<section id="restore-default-settings">
+<h2>Standardeinstellungen wiederherstellen<a class="headerlink" href="#restore-default-settings" title="Link to this heading">#</a></h2>
+<p>Wenn ein unbekannter Fehler auf dem Scanner auftritt, können Sie den Scanner zurücksetzen, indem Sie die Standardeinstellungen wiederherstellen.</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3E210016000..png"><img alt="../../media/3E210016000..png" src="../../media/3E210016000..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Standardeinstellungen wiederherstellen</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Standardeinstellungen wiederherstellen</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Holen Sie sich die Firmware-Version<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id6">
+<section id="get-firmware-version">
+<h2>Holen Sie sich die Firmware-Version<a class="headerlink" href="#get-firmware-version" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3E210006000..png"><img alt="../../media/3E210006000..png" src="../../media/3E210006000..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Holen Sie sich die Firmware-Version</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">Holen Sie sich die Firmware-Version</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Toneinstellungen<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>Sie können die Summerlautstärke entsprechend der Anwendungsumgebung und Ihren persönlichen Gewohnheiten anpassen, indem Sie den folgenden Einstellungscode lesen. Standard: Höhen</p>
-<figure class="align-center" id="id7">
+<section id="volume-settings">
+<h2>Lautstärke-Einstellungen<a class="headerlink" href="#volume-settings" title="Link to this heading">#</a></h2>
+<p>Sie können die Bussenlautstärke anpassen, indem Sie den folgenden Einstellungscode entsprechend der Anwendungsumgebung und den persönlichen Gewohnheiten scannen.</p>
+<section id="mute">
+<h3>Stumm<a class="headerlink" href="#mute" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3E210010100..png"><img alt="../../media/3E210010100..png" src="../../media/3E210010100..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Stumm</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Stumm</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id8">
+</section>
+<section id="low-volume">
+<h3>Geringe Lautstärke<a class="headerlink" href="#low-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3E2100101010..png"><img alt="../../media/3E2100101010..png" src="../../media/3E2100101010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bass</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Geringe Lautstärke</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id9">
+</section>
+<section id="medium-volume">
+<h3>Mittlere Lautstärke<a class="headerlink" href="#medium-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3E2100101050..png"><img alt="../../media/3E2100101050..png" src="../../media/3E2100101050..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mitteltöner</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Mittlere Lautstärke</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id10">
+</section>
+<section id="high-volume">
+<h3>Hohe Lautstärke<a class="headerlink" href="#high-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3E21001010100..png"><img alt="../../media/3E21001010100..png" src="../../media/3E21001010100..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Höhen <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Hochlautstärke <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
 </section>
 </section>
 
@@ -470,7 +499,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">zurück</p>
-        <p class="prev-next-title"><strong>NT-2055M</strong> Desktop-Scanner Kurzanleitung</p>
+        <p class="prev-next-title"><strong>NT-2055M</strong> Kurzanleitung zur Einrichtung der Zahlungsplattform</p>
       </div>
     </a>
     <a class="right-next"
@@ -478,7 +507,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">Endzeicheneinstellung</p>
+        <p class="prev-next-title">End-Charakter-Einstellungen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -498,9 +527,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Standardeinstellungen wiederherstellen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Holen Sie sich die Firmware-Version</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Toneinstellungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">Standardeinstellungen wiederherstellen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">Holen Sie sich die Firmware-Version</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">Lautstärke-Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mute">Stumm</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">Geringe Lautstärke</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">Mittlere Lautstärke</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">Hohe Lautstärke</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

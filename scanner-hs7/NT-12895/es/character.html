@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Fin de la configuración del personaje &#8212; NT-12895 Scanner User Manual</title>
+    <title>Configuración de End Caracter &#8212; NT-12895 Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Configuración del teclado" href="keyboard.html" />
+    <link rel="next" title="Ajustes del teclado" href="keyboard.html" />
     <link rel="prev" title="Modo de escaneo" href="scanmode.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Configuración del sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Fin de la configuración del personaje</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configuración del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Interruptor de código de barras</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Configuración de End Caracter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Ajustes de código de barras</a></li>
 </ul>
 
     </div>
@@ -372,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Fin de la configuración del personaje</h1>
+    <h1>Configuración de End Caracter</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,10 +393,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Añadir retorno de carro</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Cancelar retorno de carro</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Agregar retorno de carro y avance de línea</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Cancelar el retorno de carro y el avance de línea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-enter-cr">Añadir Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancel-enter-cr">Cancelar Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-enter-new-line-crlf">Añadir entrada+nueva línea (CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancel-enter-new-line-crlf">Cancelar Enter+Nueva Línea (CRLF)</a></li>
 </ul>
             </nav>
         </div>
@@ -397,46 +408,46 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Fin de la configuración del personaje<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>El carácter final se agrega después de los datos decodificados en el formato de datos decodificados + carácter final.</p>
-<section id="id2">
-<h2>Añadir retorno de carro<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id6">
+  <section id="end-character-settings">
+<h1>Configuración de End Caracter<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
+<p>El carácter final se añade después de los datos decodificados en el formato de datos decodificados + carácter final.</p>
+<section id="add-enter-cr">
+<h2>Añadir Enter(CR)<a class="headerlink" href="#add-enter-cr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/890000..png"><img alt="../../media/890000..png" src="../../media/890000..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Añadir retorno de carro</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">Añadir Enter(CR)</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Cancelar retorno de carro<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id7">
+<section id="cancel-enter-cr">
+<h2>Cancelar Enter(CR)<a class="headerlink" href="#cancel-enter-cr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/888003..png"><img alt="../../media/888003..png" src="../../media/888003..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Cancelar retorno de carro</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Cancelar Enter(CR)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Agregar retorno de carro y avance de línea<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id8">
+<section id="add-enter-new-line-crlf">
+<h2>Añadir entrada+nueva línea (CRLF)<a class="headerlink" href="#add-enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/890001..png"><img alt="../../media/890001..png" src="../../media/890001..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Agregar retorno de carro y avance de línea</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Añadir entrada+nueva línea (CRLF)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Cancelar el retorno de carro y el avance de línea<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id9">
+<section id="cancel-enter-new-line-crlf">
+<h2>Cancelar Enter+Nueva Línea (CRLF)<a class="headerlink" href="#cancel-enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/888003..png"><img alt="../../media/888003..png" src="../../media/888003..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Cancelar el retorno de carro y el avance de línea</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Cancelar Enter+Nueva Línea (CRLF)</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -467,7 +478,7 @@ document.write(`
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Configuración del teclado</p>
+        <p class="prev-next-title">Ajustes del teclado</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -487,10 +498,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Añadir retorno de carro</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Cancelar retorno de carro</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Agregar retorno de carro y avance de línea</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Cancelar el retorno de carro y el avance de línea</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-enter-cr">Añadir Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancel-enter-cr">Cancelar Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#add-enter-new-line-crlf">Añadir entrada+nueva línea (CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cancel-enter-new-line-crlf">Cancelar Enter+Nueva Línea (CRLF)</a></li>
 </ul>
   </nav></div>
 

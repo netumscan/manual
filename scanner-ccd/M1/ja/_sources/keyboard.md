@@ -1,245 +1,245 @@
-# 键盘设置
+# Keyboard Settings
 
-## 键盘语言
+## Keyboard Language
 
 
-### 美国/中国（美式英语）
+### American
 
 
 ```{figure} ../../media/0005000.png
 :align: center
 :width: 300px
 
-美国/中国（美式英语）`默认`
+American `Default`
 ```
 
-### 加拿大（法语） 
+### Canada (French)
 
 ```{figure} ../../media/0005001.png
 :align: center
 :width: 300px
 
-加拿大（法语） 
+Canada (French)
 ```
 
-### 荷兰（荷兰语）
+### Netherlands
 
 ```{figure} ../../media/0005002.png
 :align: center
 :width: 300px
 
-荷兰（荷兰语）
+Netherlands
 ```
 
 
-### 西班牙（西班牙语）
+### Spain
 
 ```{figure} ../../media/0005003.png
 :align: center
 :width: 300px
 
-西班牙（西班牙语）
+Spain
 ```
   
 
-### 拉丁美洲（西班牙语）
+### Latin America (Spanish)
 
 ```{figure} ../../media/0005004.png
 :align: center
 :width: 300px
 
-拉丁美洲（西班牙语）
+Latin America (Spanish)
 ```
   
 
-### 巴西（葡萄牙语）
+### Brazil (Portuguese)
 
 ```{figure} ../../media/0005005.png
 :align: center
 :width: 300px
 
-巴西（葡萄牙语）
+Brazil (Portuguese)
 ```
 
   
 
-### 丹麦（丹麦语）
+### Denmark
 
 ```{figure} ../../media/0005006.png
 :align: center
 :width: 300px
 
-丹麦（丹麦语）
+Denmark
 ```
 
-### 英国（英式英语）
+### Britain
 
 ```{figure} ../../media/0005007.png
 :align: center
 :width: 300px
 
-英国（英式英语）
+Britain
 ```
 
-### 意大利（意大利语）
+### Italy
 
 ```{figure} ../../media/0005008.png
 :align: center
 :width: 300px
 
-意大利（意大利语）
+Italy
 ```
 
-### 法国（法语）
+### France
 
 ```{figure} ../../media/0005009.png
 :align: center
 :width: 300px
 
-法国（法语）
+France
 ```
 
-### 德国（徳语）
+### Germany
 
 ```{figure} ../../media/0005010.png
 :align: center
 :width: 300px
 
-德国（徳语）
+Germany
 ```
 
-### 挪威语
+### Norway
 
 ```{figure} ../../media/0005011.png
 :align: center
 :width: 300px
 
-挪威语
+Norway
 ```
 
-### 瑞典（瑞典语）
+### Sweden
 
 ```{figure} ../../media/0005012.png
 :align: center
 :width: 300px
 
-瑞典（瑞典语）
+Sweden
 ```
 
-### 斯洛伐克（斯洛伐克语）
+### Slovakia
 
 ```{figure} ../../media/0005013.png
 :align: center
 :width: 300px
 
-斯洛伐克（斯洛伐克语）
+Slovakia
 ```
 
-### 葡萄牙（葡萄牙语）
+### Portugal
 
 ```{figure} ../../media/0005014.png
 :align: center
 :width: 300px
 
-葡萄牙（葡萄牙语）
+Portugal
 ```
 
-### 捷克共和国（捷克语）
+### Czech
 
 ```{figure} ../../media/0005015.png
 :align: center
 :width: 300px
 
-捷克共和国（捷克语）
+Czech
 ```
 
-### 比利时（法语）
+### Belgium (French)
 
 ```{figure} ../../media/0005016.png
 :align: center
 :width: 300px
 
-比利时（法语）
+Belgium (French)
 ```
 
-### 土耳其语-F
+### Turkey-F
 
 ```{figure} ../../media/0005017.png
 :align: center
 :width: 300px
 
-土耳其语-F
+Turkey-F
 ```
 
-### 土耳其语-Q
+### Turkey-Q
 
 ```{figure} ../../media/0005018.png
 :align: center
 :width: 300px
 
-土耳其语-Q
+Turkey-Q
 ```
 
-### 波兰（波兰语）
+### Poland
 
 ```{figure} ../../media/0005019.png
 :align: center
 :width: 300px
 
-波兰（波兰语）
+Poland
 ```
 
-### 瑞士（德语）
+### Switzerland (German)
 
 ```{figure} ../../media/0005020.png
 :align: center
 :width: 300px
 
-瑞士（德语）
+Switzerland (German)
 ```
 
-### 克罗地亚（克罗地亚语）
+### Croatia
 
 ```{figure} ../../media/0005021.png
 :align: center
 :width: 300px
 
-克罗地亚（克罗地亚语）
+Croatia
 ```
 
-### 匈牙利（匈牙利语）
+### Hungary
 
 ```{figure} ../../media/0005022.png
 :align: center
 :width: 300px
 
-匈牙利（匈牙利语）
+Hungary
 ```
 
-### 日本（日本语）
+### Japanese
 
 ```{figure} ../../media/0005023.png
 :align: center
 :width: 300px
 
-日本（日本语）
+Japanese
 ```
 
-### 俄罗斯（俄语）
+### Russia
 
 ```{figure} ../../media/0005024.png
 :align: center
 :width: 300px
 
-俄罗斯（俄语）
+Russia
 ```
 
-### 泰语
+### Thai
 
 ```{figure} ../../media/0005025.png
 :align: center
 :width: 300px
 
-泰语
+Thai
 ```
   

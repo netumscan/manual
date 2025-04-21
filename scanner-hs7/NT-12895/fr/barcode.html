@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Commutateur de code-barres &#8212; NT-12895 Scanner User Manual</title>
+    <title>Paramètres du code-barres &#8212; NT-12895 Scanner User Manual</title>
   
   
   
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -228,11 +239,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de numérisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètre de caractère de fin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Commutateur de code-barres</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres du code-barres</a></li>
 </ul>
 
     </div>
@@ -371,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Commutateur de code-barres</h1>
+    <h1>Paramètres du code-barres</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,34 +392,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Interdire la lecture de codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Activer la numérisation de code 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Interdire la lecture de codes 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Activer la numérisation de code 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Code-barres inversé blanc</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Ne prend pas en charge le blanc inversé</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Prend uniquement en charge le blanc inversé</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Tous supportés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">Désactiver tous les codes 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">Activer tous les codes 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">Désactiver tous les codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">Activer tous les codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">Inverser les paramètres du code-barres</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">Pas de code-barres d’inversion de support</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">Supporte uniquement le code-barres d’inversion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">Tous supportés</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">Paramètres du code QR-URL</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Désactiver</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Activer</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Fonction de facturation Alipay</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">Facturation au format GBK</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Démarrer l’étape 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Démarrer l’étape 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Démarrer l’étape 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Clôture de la facturation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">Facturation au format UNICODE</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Démarrer l’étape 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Démarrer l’étape 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Démarrer l’étape 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Clôture de la facturation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Paramètres de l’URL du QR Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
 </ul>
 </li>
 </ul>
@@ -422,195 +418,105 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Commutateur de code-barres<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<section id="id2">
-<h2>Interdire la lecture de codes 1D<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id21">
+  <section id="barcode-settings">
+<h1>Paramètres du code-barres<a class="headerlink" href="#barcode-settings" title="Lien vers cette rubrique">#</a></h1>
+<section id="disable-all-1d-codes">
+<h2>Désactiver tous les codes 1D<a class="headerlink" href="#disable-all-1d-codes" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/9950041..png"><img alt="../../media/9950041..png" src="../../media/9950041..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Interdire la lecture de codes 1D</span><a class="headerlink" href="#id21" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver tous les codes 1D</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Activer la numérisation de code 1D<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id22">
+<section id="enable-all-1d-codes">
+<h2>Activer tous les codes 1D<a class="headerlink" href="#enable-all-1d-codes" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/9950040..png"><img alt="../../media/9950040..png" src="../../media/9950040..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer la numérisation de code 1D</span><a class="headerlink" href="#id22" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer tous les codes 1D</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Interdire la lecture de codes 2D<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id23">
+<section id="disable-all-2d-codes">
+<h2>Désactiver tous les codes 2D<a class="headerlink" href="#disable-all-2d-codes" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/9950071..png"><img alt="../../media/9950071..png" src="../../media/9950071..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Interdire la lecture de codes 2D</span><a class="headerlink" href="#id23" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver tous les codes 2D</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Activer la numérisation de code 2D<a class="headerlink" href="#id5" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id24">
+<section id="enable-all-2d-codes">
+<h2>Activer tous les codes 2D<a class="headerlink" href="#enable-all-2d-codes" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/9950070..png"><img alt="../../media/9950070..png" src="../../media/9950070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer la numérisation de code 2D</span><a class="headerlink" href="#id24" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer tous les codes 2D</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>Code-barres inversé blanc<a class="headerlink" href="#id6" title="Lien vers cette rubrique">#</a></h2>
-<section id="id7">
-<h3>Ne prend pas en charge le blanc inversé<a class="headerlink" href="#id7" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id25">
+<section id="reversal-barcode-settings">
+<h2>Inverser les paramètres du code-barres<a class="headerlink" href="#reversal-barcode-settings" title="Lien vers cette rubrique">#</a></h2>
+<section id="no-support-reversal-barcode">
+<h3>Pas de code-barres d’inversion de support<a class="headerlink" href="#no-support-reversal-barcode" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/8910010..png"><img alt="../../media/8910010..png" src="../../media/8910010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Ne prend pas en charge le blanc inversé</span><a class="headerlink" href="#id25" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Pas de code-barres d’inversion de support</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Prend uniquement en charge le blanc inversé<a class="headerlink" href="#id8" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id26">
+<section id="only-supports-reversal-barcode">
+<h3>Supporte uniquement le code-barres d’inversion<a class="headerlink" href="#only-supports-reversal-barcode" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/8910011..png"><img alt="../../media/8910011..png" src="../../media/8910011..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Prend uniquement en charge le blanc inversé</span><a class="headerlink" href="#id26" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Supporte uniquement le code-barres d’inversion</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Tous supportés<a class="headerlink" href="#id9" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id27">
+<section id="all-supported">
+<h3>Tous supportés<a class="headerlink" href="#all-supported" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/8910012..png"><img alt="../../media/8910012..png" src="../../media/8910012..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Tous supportés</span><a class="headerlink" href="#id27" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Tous supportés</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Si l’appareil est configuré pour <a class="reference internal" href="#id8">Prendre en charge uniquement l’inversion</a>, si vous souhaitez le configurer pour prendre en charge les codes-barres normaux en même temps, scannez les codes-barres inversés et configurez-le pour <a class="reference internal" href="#id9">Prendre en charge tous</a></p>
+<p>Si le scanner est configuré comme [Supporte uniquement le code à barres inverse] (#only-supports-reversal-barcode), et vous voulez le configurer pour prendre en charge à la fois les codes-barres normaux et les codes-barres inverse, le configurer comme <a class="reference internal" href="#all-supported">Tous pris en charge</a></p>
 </div>
 </section>
 </section>
-<section id="qr">
-<h2>Paramètres du code QR-URL<a class="headerlink" href="#qr" title="Lien vers cette rubrique">#</a></h2>
-<p>Bloquer les URL commençant par <code class="docutils literal notranslate"><span class="pre">http://</span></code> et <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
-<section id="id10">
-<h3>Désactiver<a class="headerlink" href="#id10" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id28">
+<section id="qr-code-url-settings">
+<h2>Paramètres de l’URL du QR Code<a class="headerlink" href="#qr-code-url-settings" title="Lien vers cette rubrique">#</a></h2>
+<p>Bloquer la numérisation des codes QR URL commençant par <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
+<section id="disable">
+<h3>Désactiver<a class="headerlink" href="#disable" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/9950061..png"><img alt="../../media/9950061..png" src="../../media/9950061..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id28" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h3>Activer<a class="headerlink" href="#id11" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id29">
+<section id="enable">
+<h3>Activer<a class="headerlink" href="#enable" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/9950060..png"><img alt="../../media/9950060..png" src="../../media/9950060..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer</span><a class="headerlink" href="#id29" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="id12">
-<h2>Fonction de facturation Alipay<a class="headerlink" href="#id12" title="Lien vers cette rubrique">#</a></h2>
-<p>Les factures Alipay sont divisées en deux paramètres selon le format de sortie : GBK et UNICODE</p>
-<section id="gbk">
-<h3>Facturation au format GBK<a class="headerlink" href="#gbk" title="Lien vers cette rubrique">#</a></h3>
-</section>
-<section id="id13">
-<h3>Démarrer l’étape 1<a class="headerlink" href="#id13" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id30">
-<a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Démarrer l’étape 1</span><a class="headerlink" href="#id30" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id14">
-<h3>Démarrer l’étape 2<a class="headerlink" href="#id14" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id31">
-<a class="reference internal image-reference" href="../../media/8210141..png"><img alt="../../media/8210141..png" src="../../media/8210141..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Démarrer l’étape 2</span><a class="headerlink" href="#id31" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id15">
-<h3>Démarrer l’étape 3<a class="headerlink" href="#id15" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id32">
-<a class="reference internal image-reference" href="../../media/8210131..png"><img alt="../../media/8210131..png" src="../../media/8210131..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Démarrer l’étape 3</span><a class="headerlink" href="#id32" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id16">
-<h3>Clôture de la facturation<a class="headerlink" href="#id16" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id33">
-<a class="reference internal image-reference" href="../../media/8210140..png"><img alt="../../media/8210140..png" src="../../media/8210140..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Clôture de la facturation</span><a class="headerlink" href="#id33" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="unicode">
-<h2>Facturation au format UNICODE<a class="headerlink" href="#unicode" title="Lien vers cette rubrique">#</a></h2>
-<section id="id17">
-<h3>Démarrer l’étape 1<a class="headerlink" href="#id17" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id34">
-<a class="reference internal image-reference" href="../../media/82100190..png"><img alt="../../media/82100190..png" src="../../media/82100190..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Démarrer l’étape 1</span><a class="headerlink" href="#id34" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id18">
-<h3>Démarrer l’étape 2<a class="headerlink" href="#id18" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id35">
-<a class="reference internal image-reference" href="../../media/8210141..png"><img alt="../../media/8210141..png" src="../../media/8210141..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Démarrer l’étape 2</span><a class="headerlink" href="#id35" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id19">
-<h3>Démarrer l’étape 3<a class="headerlink" href="#id19" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id36">
-<a class="reference internal image-reference" href="../../media/8210132..png"><img alt="../../media/8210132..png" src="../../media/8210132..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Démarrer l’étape 3</span><a class="headerlink" href="#id36" title="Lien vers cette image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id20">
-<h3>Clôture de la facturation<a class="headerlink" href="#id20" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id37">
-<a class="reference internal image-reference" href="../../media/8210140..png"><img alt="../../media/8210140..png" src="../../media/8210140..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Clôture de la facturation</span><a class="headerlink" href="#id37" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -653,34 +559,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Interdire la lecture de codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Activer la numérisation de code 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Interdire la lecture de codes 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Activer la numérisation de code 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Code-barres inversé blanc</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Ne prend pas en charge le blanc inversé</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Prend uniquement en charge le blanc inversé</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Tous supportés</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">Désactiver tous les codes 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">Activer tous les codes 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">Désactiver tous les codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">Activer tous les codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">Inverser les paramètres du code-barres</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">Pas de code-barres d’inversion de support</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">Supporte uniquement le code-barres d’inversion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">Tous supportés</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr">Paramètres du code QR-URL</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Désactiver</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Activer</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Fonction de facturation Alipay</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">Facturation au format GBK</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Démarrer l’étape 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Démarrer l’étape 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Démarrer l’étape 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Clôture de la facturation</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#unicode">Facturation au format UNICODE</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Démarrer l’étape 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Démarrer l’étape 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Démarrer l’étape 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Clôture de la facturation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Paramètres de l’URL du QR Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
 </ul>
 </li>
 </ul>

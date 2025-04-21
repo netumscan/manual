@@ -49,7 +49,7 @@
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
     <link rel="next" title="終了文字設定" href="character.html" />
-    <link rel="prev" title="A8 決済プラットフォームクイックセットアップガイド" href="index.html" />
+    <link rel="prev" title="A8 支払いプラットフォームのクイックセットアップガイド" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -231,9 +242,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">QR URLコード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="codedelay.html">同じコード遅延設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">QRコードのURL設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codedelay.html">同じコードの遅延設定</a></li>
 </ul>
 
     </div>
@@ -382,9 +393,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">デフォルト設定を復元</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ファームウェアのバージョンを取得する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">サウンド設定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">既定の設定に戻す</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">ファームウェアのバージョンを取得</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">音量の設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mute">ミュート</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">音量が少ないです</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">中音量</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">ボリュームが高い</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -396,60 +413,72 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>システム設定<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>デフォルト設定を復元<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>スキャナーで不明なエラーが発生した場合は、デフォルト設定を復元してスキャナーをリセットできます。</p>
-<figure class="align-center" id="id5">
+  <section id="system-settings">
+<h1>システム設定<a class="headerlink" href="#system-settings" title="Link to this heading">#</a></h1>
+<section id="restore-default-settings">
+<h2>既定の設定に戻す<a class="headerlink" href="#restore-default-settings" title="Link to this heading">#</a></h2>
+<p>スキャナーで不明なエラーが発生した場合は、デフォルトの設定を復元して、スキャナーをリセットできます。</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3E210016000..png"><img alt="../../media/3E210016000..png" src="../../media/3E210016000..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">デフォルト設定を復元</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">既定の設定に戻す</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>ファームウェアのバージョンを取得する<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id6">
+<section id="get-firmware-version">
+<h2>ファームウェアのバージョンを取得<a class="headerlink" href="#get-firmware-version" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3E210006000..png"><img alt="../../media/3E210006000..png" src="../../media/3E210006000..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ファームウェアのバージョンを取得する</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">ファームウェアのバージョンを取得</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>サウンド設定<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>以下の設定コードを読み取ることで、アプリケーション環境や個人の習慣に応じてブザーの音量を調整できます。デフォルト: 高音</p>
-<figure class="align-center" id="id7">
+<section id="volume-settings">
+<h2>音量の設定<a class="headerlink" href="#volume-settings" title="Link to this heading">#</a></h2>
+<p>ブザーの音量は、アプリケーション環境や個人の習慣に合わせて以下の設定コードをスキャンすることで調整できます。</p>
+<section id="mute">
+<h3>ミュート<a class="headerlink" href="#mute" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3E210010100..png"><img alt="../../media/3E210010100..png" src="../../media/3E210010100..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ミュート</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">ミュート</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id8">
+</section>
+<section id="low-volume">
+<h3>音量が少ないです<a class="headerlink" href="#low-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3E2100101010..png"><img alt="../../media/3E2100101010..png" src="../../media/3E2100101010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ベース</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">音量が少ないです</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id9">
+</section>
+<section id="medium-volume">
+<h3>中音量<a class="headerlink" href="#medium-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3E2100101050..png"><img alt="../../media/3E2100101050..png" src="../../media/3E2100101050..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ミッドレンジ</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">中音量</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id10">
+</section>
+<section id="high-volume">
+<h3>ボリュームが高い<a class="headerlink" href="#high-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3E21001010100..png"><img alt="../../media/3E21001010100..png" src="../../media/3E21001010100..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">トレブル <code class="docutils literal notranslate"><span class="pre">デフォルト</span></code></span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">高音量 <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
 </section>
 </section>
 
@@ -470,7 +499,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">前へ</p>
-        <p class="prev-next-title"><strong>A8</strong> 決済プラットフォームクイックセットアップガイド</p>
+        <p class="prev-next-title"><strong>A8</strong> 支払いプラットフォームのクイックセットアップガイド</p>
       </div>
     </a>
     <a class="right-next"
@@ -498,9 +527,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">デフォルト設定を復元</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ファームウェアのバージョンを取得する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">サウンド設定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">既定の設定に戻す</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">ファームウェアのバージョンを取得</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">音量の設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mute">ミュート</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">音量が少ないです</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">中音量</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">ボリュームが高い</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

@@ -163,8 +163,8 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">バーコード設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">バーコードの設定</a></li>
 </ul>
 
     </div>
@@ -313,18 +313,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">キーモード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">連続モード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">キー遅延モード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">セルフセンシング設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir">IR自動検知をオフにする</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">IR自動検知をオンにする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">キートリガーモード</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">連続モード</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">自動検出モード</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">無効</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">有効にする</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">重複コード検出設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">重複コード検出を無効にする</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">重複コード検出を有効にする</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">間隔時間を再コードする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duplicate-barcode-detection-settings">バーコード検出設定が重複しています</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">無効</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">有効にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeat-barcode-interval">バーコード間隔を繰り返します</a></li>
 </ul>
 </li>
 </ul>
@@ -338,121 +337,111 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>スキャンモード<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>キーモード<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>このモードでは、トリガー ボタンが押された後にモジュールはコードの読み取りを開始し、コードが正常に読み取られるかトリガー ボタンが放されるとコードの読み取りを停止します。</p>
-<figure class="align-center" id="id11">
+  <section id="scan-mode">
+<h1>スキャンモード<a class="headerlink" href="#scan-mode" title="Link to this heading">#</a></h1>
+<section id="key-trigger-mode">
+<h2>キートリガーモード<a class="headerlink" href="#key-trigger-mode" title="Link to this heading">#</a></h2>
+<p>ボタンを押してスキャンをトリガーし、ボタンを離してスキャンを終了します。 スキャンが成功した場合、または読み取り時間が単一の読み取り時間を超えるとスキャンは終了します。</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/013300.png"><img alt="../../media/013300.png" src="../../media/013300.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">キーモード <code class="docutils literal notranslate"><span class="pre">デフォルト</span></code></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">キートリガーモード<code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>連続モード<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>モジュールの赤いライトが長時間点灯しています。バーコードが通過すると、モジュールが自動的にバーコードを読み取ります。バーコードを取り外して再度読み取らない限り、同じバーコードを繰り返し読み取ることはできません。</p>
-<figure class="align-center" id="id12">
+<section id="continuous-mode">
+<h2>連続モード<a class="headerlink" href="#continuous-mode" title="Link to this heading">#</a></h2>
+<p>スキャンが成功した場合、またはスキャン時間が単一の作業時間を超えた場合、現在のスキャンは終了します。 時間が指定した時間を超えると、次のスキャンが自動的にトリガーされます。</p>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/013304.png"><img alt="../../media/013304.png" src="../../media/013304.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">連続モード</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">連続モード</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>キー遅延モード<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>設定が成功すると、モジュールの赤色のライトが 3 秒間点灯し、3 秒以内にバーコードが読み取られない場合はライトが消灯し、バーコードが正常に読み取られた場合はライトが消灯します。</p>
-<figure class="align-center" id="id13">
-<a class="reference internal image-reference" href="../../media/013301.png"><img alt="../../media/013301.png" src="../../media/013301.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">キー遅延モード</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id5">
-<h2>セルフセンシング設定<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<section id="ir">
-<h3>IR自動検知をオフにする<a class="headerlink" href="#ir" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="auto-sensing-mode">
+<h2>自動検出モード<a class="headerlink" href="#auto-sensing-mode" title="Link to this heading">#</a></h2>
+<p>自動検出モードでは、スキャナーは周囲の環境の明るさを検出します。明るさが変わるとスキャンがトリガーされます。 スキャンが成功した場合、またはスキャン時間が単一の作業時間を超えるとスキャンは終了します。 最後のスキャンが成功したか失敗したかにかかわらず、周囲の環境の明るさが再び検出されます。</p>
+<section id="disable">
+<h3>無効<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/02310.png"><img alt="../../media/02310.png" src="../../media/02310.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">IR自動検知をオフにする <code class="docutils literal notranslate"><span class="pre">デフォルト</span></code></span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Default</span></code> を無効化</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>IR自動検知をオンにする<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="enable">
+<h3>有効にする<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/02311.png"><img alt="../../media/02311.png" src="../../media/02311.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">IR自動検知をオンにする</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">有効にする</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id7">
-<h2>重複コード検出設定<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<section id="id8">
-<h3>重複コード検出を無効にする<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="duplicate-barcode-detection-settings">
+<h2>バーコード検出設定が重複しています<a class="headerlink" href="#duplicate-barcode-detection-settings" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>無効<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/02770.png"><img alt="../../media/02770.png" src="../../media/02770.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">重複コード検出を無効にする <code class="docutils literal notranslate"><span class="pre">デフォルト</span></code></span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Default</span></code> を無効化</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>重複コード検出を有効にする<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="id2">
+<h3>有効にする<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/02771.png"><img alt="../../media/02771.png" src="../../media/02771.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">重複コード検出を有効にする</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">有効にする</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>間隔時間を再コードする<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="repeat-barcode-interval">
+<h3>バーコード間隔を繰り返します<a class="headerlink" href="#repeat-barcode-interval" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/02630A.png"><img alt="../../media/02630A.png" src="../../media/02630A.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">1s</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">1s</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id19">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/026314.png"><img alt="../../media/026314.png" src="../../media/026314.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2s</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">秒</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/02631E.png"><img alt="../../media/02631E.png" src="../../media/02631E.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">3s</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
+<p><span class="caption-text">3分</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../media/026332.png"><img alt="../../media/026332.png" src="../../media/026332.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">5s</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">5分</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../media/026364.png"><img alt="../../media/026364.png" src="../../media/026364.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">10s</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+<p><span class="caption-text">10分</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -504,18 +493,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">キーモード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">連続モード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">キー遅延モード</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">セルフセンシング設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir">IR自動検知をオフにする</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">IR自動検知をオンにする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">キートリガーモード</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">連続モード</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">自動検出モード</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">無効</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">有効にする</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">重複コード検出設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">重複コード検出を無効にする</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">重複コード検出を有効にする</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">間隔時間を再コードする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duplicate-barcode-detection-settings">バーコード検出設定が重複しています</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">無効</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">有効にする</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeat-barcode-interval">バーコード間隔を繰り返します</a></li>
 </ul>
 </li>
 </ul>

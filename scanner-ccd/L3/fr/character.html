@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Paramètre de caractère de fin &#8212; L3 Scanner User Manual</title>
+    <title>Paramètres de caractère de fin &#8212; L3 Scanner User Manual</title>
   
   
   
@@ -49,7 +49,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
     <link rel="next" title="Paramètres du clavier" href="keyboard.html" />
-    <link rel="prev" title="Mode de numérisation" href="scanmode.html" />
+    <link rel="prev" title="Mode de scan" href="scanmode.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -160,9 +160,9 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de numérisation</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètre de caractère de fin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Paramètres du code-barres</a></li>
 </ul>
@@ -303,7 +303,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Paramètre de caractère de fin</h1>
+    <h1>Paramètres de caractère de fin</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -313,12 +313,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Pas de caractère de fin</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-lf">CR LF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr">CR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lf">LF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab">TAB</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-cr">CR CR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Aucun caractère de fin</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Entrée+Nouvelle ligne(CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Entrée(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">Nouvelle ligne (LF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Entrée+Entrée(CRCR)</a></li>
 </ul>
             </nav>
         </div>
@@ -330,66 +330,66 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Paramètre de caractère de fin<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<p>Le caractère de fin est ajouté après les données décodées au format données décodées + caractère de fin.</p>
-<section id="id2">
-<h2>Pas de caractère de fin<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id3">
+  <section id="end-character-settings">
+<h1>Paramètres de caractère de fin<a class="headerlink" href="#end-character-settings" title="Lien vers cette rubrique">#</a></h1>
+<p>Le caractère de fin est ajouté après le décodage des données au format des données décodées + caractère de fin.</p>
+<section id="no-end-character">
+<h2>Aucun caractère de fin<a class="headerlink" href="#no-end-character" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/021040.png"><img alt="../../media/021040.png" src="../../media/021040.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Pas de caractère de fin</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Aucun caractère de fin</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="cr-lf">
-<h2>CR LF<a class="headerlink" href="#cr-lf" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id4">
+<section id="enter-new-line-crlf">
+<h2>Entrée+Nouvelle ligne(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/0213405Cr5Cn.png"><img alt="../../media/0213405Cr5Cn.png" src="../../media/0213405Cr5Cn.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">CR LF</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Entrée+Nouvelle ligne(CRLF)</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="cr">
-<h2>CR<a class="headerlink" href="#cr" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id5">
+<section id="enter-cr">
+<h2>Entrée(CR)<a class="headerlink" href="#enter-cr" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/0212405Cr.png"><img alt="../../media/0212405Cr.png" src="../../media/0212405Cr.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">CR <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Entrée(CR) <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="lf">
-<h2>LF<a class="headerlink" href="#lf" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id6">
+<section id="new-line-lf">
+<h2>Nouvelle ligne (LF)<a class="headerlink" href="#new-line-lf" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/0212405Cn.png"><img alt="../../media/0212405Cn.png" src="../../media/0212405Cn.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">CR <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Nouvelle ligne (LF)</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="tab">
-<h2>TAB<a class="headerlink" href="#tab" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id7">
+<section id="tab-tab">
+<h2>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/0212405Ct.png"><img alt="../../media/0212405Ct.png" src="../../media/0212405Ct.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">TAB</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Tab(TAB)</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="cr-cr">
-<h2>CR CR<a class="headerlink" href="#cr-cr" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id8">
+<section id="enter-enter-crcr">
+<h2>Entrée+Entrée(CRCR)<a class="headerlink" href="#enter-enter-crcr" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/0211405Cr5Cr.png"><img alt="../../media/0211405Cr5Cr.png" src="../../media/0211405Cr5Cr.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">CR CR</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Entrée+Entrée(CRCR)</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -412,7 +412,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Mode de numérisation</p>
+        <p class="prev-next-title">Mode de scan</p>
       </div>
     </a>
     <a class="right-next"
@@ -440,12 +440,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Pas de caractère de fin</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-lf">CR LF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr">CR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lf">LF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab">TAB</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-cr">CR CR</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Aucun caractère de fin</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Entrée+Nouvelle ligne(CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Entrée(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">Nouvelle ligne (LF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Entrée+Entrée(CRCR)</a></li>
 </ul>
   </nav></div>
 

@@ -1,65 +1,63 @@
-# 条码设置
+# Barcode Settings
 
 
-## 开始设置
-
+## Start Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/23SETUPE1.png
 :align: center
 :width: 300px
 
-开始设置
+Start Setup
 ```
 
-### 开启所有一维码
+### Enable All 1D Codes
 
 ```{figure} ../../media/40ENABLE_ALL1D.png
 :align: center
 :width: 300px
 
-开启所有一维码
+Enable All 1D Codes
 ```
 
-### 关闭所有一维码
+### Disable All 1D Codes
 
 ```{figure} ../../media/40DISABLE_ALL1D.png
 :align: center
 :width: 300px
 
-关闭所有一维码
+Disable All 1D Codes
 ```
 
-### 开启所有二维码
+### Enable All 2D Codes
 
 ```{figure} ../../media/40ENABLE_ALL2D.png
 :align: center
 :width: 300px
 
-开启所有二维码
+Enable All 2D Codes
 ```
 
-### 关闭所有二维码
+### Disable All 2D Codes
 
 ```{figure} ../../media/40DISABLE_ALL2D.png
 :align: center
 :width: 300px
 
-关闭所有二维码
+Disable All 2D Codes
 ```
 
 
-## 结束设置
-
+## End Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/23SETUPE0.png
 :align: center
 :width: 300px
 
-结束设置
+End Setup
 ```

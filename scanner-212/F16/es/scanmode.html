@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Fin de la configuración del personaje" href="character.html" />
-    <link rel="prev" title="Configuración del sistema" href="system.html" />
+    <link rel="next" title="Configuración de End Caracter" href="character.html" />
+    <link rel="prev" title="Ajustes del sistema" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Configuración del sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Modo de escaneo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Fin de la configuración del personaje</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configuración del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Interruptor de código de barras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Ajustes de código de barras</a></li>
 </ul>
 
     </div>
@@ -382,16 +393,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Mantener pulsado el botón (Nivel)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Modo continuo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Modo de detección automática</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Configuración de retardo del mismo código</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Sin demora</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s">Retraso de 1 s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Retraso de 3 s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Retraso de 5 s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Retraso de 7 s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Retraso infinito (se prohíbe la lectura del mismo código)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Modo lanzador de teclas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Modo continuo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Modo de autodetección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#same-code-delay-settings">Configuración del mismo código de retraso</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-delay">Sin demora</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-1s">Retraso 1s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-3s">Retardo 3s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-5s">Retardo 5s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-7s">Retardo 7s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-delay-disable-same-code-scanning">Retraso infinito (deshabilitar escaneo del mismo código)</a></li>
 </ul>
 </li>
 </ul>
@@ -405,101 +416,101 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Modo de escaneo<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Mantener pulsado el botón (Nivel)<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Presione el botón para iniciar la lectura y suéltelo para finalizarla. Si la lectura es exitosa o el tiempo de lectura excede el tiempo de lectura individual, la lectura finaliza.</p>
-<figure class="align-center" id="id11">
+  <section id="scan-mode">
+<h1>Modo de escaneo<a class="headerlink" href="#scan-mode" title="Link to this heading">#</a></h1>
+<section id="key-trigger-mode">
+<h2>Modo lanzador de teclas<a class="headerlink" href="#key-trigger-mode" title="Link to this heading">#</a></h2>
+<p>Pulse el botón para activar el escaneo, y suelte el botón para finalizar la exploración. El escaneo termina cuando el escaneo es exitoso o el tiempo de lectura excede el tiempo de lectura simple.</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/2050200.png"><img alt="../../media/2050200.png" src="../../media/2050200.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mantener pulsado el botón (Nivel) <code class="docutils literal notranslate"><span class="pre">Predeterminado</span></code></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modo de activación de teclas <code class="docutils literal notranslate"><span class="pre">por</span> <span class="pre">defecto</span></code></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Modo continuo<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>El motor de lectura funciona continuamente. Si la lectura es exitosa o el tiempo de lectura excede el tiempo de lectura individual, la lectura actual finaliza. Si el tiempo excede el tiempo especificado, la siguiente lectura se activa automáticamente.</p>
-<figure class="align-center" id="id12">
+<section id="continuous-mode">
+<h2>Modo continuo<a class="headerlink" href="#continuous-mode" title="Link to this heading">#</a></h2>
+<p>El escáner funciona continuamente. Si el escaneo tiene éxito o el tiempo de escaneo excede el tiempo de trabajo único, el escaneo actual termina. Si el tiempo excede el tiempo especificado, el siguiente escaneo se activa automáticamente.</p>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/2050204.png"><img alt="../../media/2050204.png" src="../../media/2050204.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Modo continuo</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modo continuo</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Modo de detección automática<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>En el modo de detección automática, el motor de lectura detecta el brillo del entorno circundante. Cuando cambia el brillo, se activa la lectura y esta finaliza cuando la lectura es exitosa o el tiempo de lectura excede el tiempo de lectura única. Independientemente de si la última lectura fue exitosa o fallida, vuelva a ingresar la detección del brillo del entorno circundante.</p>
-<figure class="align-center" id="id13">
+<section id="auto-sensing-mode">
+<h2>Modo de autodetección<a class="headerlink" href="#auto-sensing-mode" title="Link to this heading">#</a></h2>
+<p>En el modo de detección automática, el escáner detectará el brillo del entorno circundante. Cuando el brillo cambia, el escaneo se activa. El escaneo termina cuando el escaneo es exitoso o el tiempo de escaneo excede el tiempo de trabajo único. Independientemente de si el último escaneo fue exitoso o falló, se volverá a detectar el brillo del entorno circundante.</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/2050209.png"><img alt="../../media/2050209.png" src="../../media/2050209.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Modo de detección automática</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modo de autodetección</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Configuración de retardo del mismo código<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<p>Para evitar que el mismo código de barras se lea varias veces en [Modo continuo](#Modo continuo) y [Modo de detección automática](#Modo de detección automática), puede requerir que el motor de lectura se demore un período de tiempo determinado antes de permitir la lectura del mismo código de barras.</p>
-<section id="id6">
-<h3>Sin demora<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="same-code-delay-settings">
+<h2>Configuración del mismo código de retraso<a class="headerlink" href="#same-code-delay-settings" title="Link to this heading">#</a></h2>
+<p>Para evitar que el mismo código de barras se escanee varias veces en <a class="reference internal" href="#continuous-mode">Modo Continuo</a> y <a class="reference internal" href="#auto-sensing-mode">Modo de detección Automática</a>, puede requerir que el escáner espere un retardo antes de permitir que el mismo código de barras sea escaneado.</p>
+<section id="no-delay">
+<h3>Sin demora<a class="headerlink" href="#no-delay" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030C90.png"><img alt="../../media/3030C90.png" src="../../media/3030C90.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sin demora</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Sin demora</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="s">
-<h3>Retraso de 1 s<a class="headerlink" href="#s" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="delay-1s">
+<h3>Retraso 1s<a class="headerlink" href="#delay-1s" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030C91.png"><img alt="../../media/3030C91.png" src="../../media/3030C91.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Retraso de 1 s</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Retraso 1s</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>Retraso de 3 s<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="delay-3s">
+<h3>Retardo 3s<a class="headerlink" href="#delay-3s" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3030C93.png"><img alt="../../media/3030C93.png" src="../../media/3030C93.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Retraso de 3 s</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Retardo 3s</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Retraso de 5 s<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="delay-5s">
+<h3>Retardo 5s<a class="headerlink" href="#delay-5s" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/3030C95.png"><img alt="../../media/3030C95.png" src="../../media/3030C95.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Retraso de 5 s</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Retardo 5s</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Retraso de 7 s<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="delay-7s">
+<h3>Retardo 7s<a class="headerlink" href="#delay-7s" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/3030C97.png"><img alt="../../media/3030C97.png" src="../../media/3030C97.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Retraso de 7 s</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">Retardo 7s</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>Retraso infinito (se prohíbe la lectura del mismo código)<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id19">
+<section id="infinite-delay-disable-same-code-scanning">
+<h3>Retraso infinito (deshabilitar escaneo del mismo código)<a class="headerlink" href="#infinite-delay-disable-same-code-scanning" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/3030C99.png"><img alt="../../media/3030C99.png" src="../../media/3030C99.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Retraso infinito (se prohíbe la lectura del mismo código)</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">Retraso infinito (deshabilitar escaneo del mismo código)</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -523,7 +534,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Configuración del sistema</p>
+        <p class="prev-next-title">Ajustes del sistema</p>
       </div>
     </a>
     <a class="right-next"
@@ -531,7 +542,7 @@ document.write(`
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Fin de la configuración del personaje</p>
+        <p class="prev-next-title">Configuración de End Caracter</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -551,16 +562,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Mantener pulsado el botón (Nivel)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Modo continuo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Modo de detección automática</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Configuración de retardo del mismo código</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Sin demora</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s">Retraso de 1 s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Retraso de 3 s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Retraso de 5 s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Retraso de 7 s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Retraso infinito (se prohíbe la lectura del mismo código)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Modo lanzador de teclas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Modo continuo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Modo de autodetección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#same-code-delay-settings">Configuración del mismo código de retraso</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-delay">Sin demora</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-1s">Retraso 1s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-3s">Retardo 3s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-5s">Retardo 5s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-7s">Retardo 7s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-delay-disable-same-code-scanning">Retraso infinito (deshabilitar escaneo del mismo código)</a></li>
 </ul>
 </li>
 </ul>

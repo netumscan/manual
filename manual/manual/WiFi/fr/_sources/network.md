@@ -1,37 +1,37 @@
-# 网络配置
+# Network Configuration
 
-## 动态IP地址配置
+## Dynamic IP Address Configuration
 
-### 1.恢复WiFi模块默认设置
+### 1.Restore WiFi module default settings
 
 ```{figure} ../../media/AT2BRESTORE.png
 :align: center
 :width: 300px
 
-恢复WiFi模块默认设置
+Restore WiFi module default settings
 ```
 
-### 2.设定静态IP模式
+### 2.Set static IP mode
 
 ```{figure} ../../media/AT2BDHCP3D1.png
 :align: center
 :width: 300px
 
-设定静态IP模式
+Set static IP mode
 ```
 
 
-### 3.重启扫描枪
+### 3.Restart Scanner
 
 ```{figure} ../../media/24POWER23OFF.png
 :align: center
 :width: 300px
 
-重启扫描枪
+Restart Scanner
 ```
 
-### 4.配置传输方案
-- 配置网络参数后，选项下方的传输方式进行配置
+### 4.Configure transmission scheme
+- After configuring the network parameters, select the transmission method below to configure
 1. <project:tcpserver.md>
 2. <project:tcpserver.md>
 3. <project:mqtt.md>
@@ -39,52 +39,52 @@
 
 
 
-## 静态IP地址配置
+## Static IP Address Configuration
 
-### 1.恢复WiFi模块默认设置
+### 1.Restore WiFi module default settings
 
 ```{figure} ../../media/AT2BRESTORE.png
 :align: center
 :width: 300px
 
-恢复WiFi模块默认设置
+Restore WiFi module default settings
 ```
 
-### 2.设定静态IP模式
+### 2.Set static IP mode
 
 ```{figure} ../../media/AT2BDHCP3D0.png
 :align: center
 :width: 300px
 
-设定静态IP模式
+Set static IP mode
 ```
 
 
-### 3.重启扫描枪
+### 3.Restart Scanner
 
 ```{figure} ../../media/24POWER23OFF.png
 :align: center
 :width: 300px
 
-重启扫描枪
+Restart Scanner
 ```
 
 
-### 4.设定IP地址
+### 4.Set IP address
 
 ```{raw} html
 
     <iframe src="../../plugins/wifi-network-address.html" height="400px" width="100%"></iframe>
 
 ```
-### 5.设定网关
+### 5.Setting the Gateway
 
 ```{raw} html
 
     <iframe src="../../plugins/wifi-network-gateway.html" height="400px" width="100%"></iframe>
 
 ```
-### 6.设定子网掩码
+### 6.Set the subnet mask
 
 ```{raw} html
 
@@ -92,8 +92,8 @@
 
 ```
 
-### 7.配置传输方案
-- 配置网络参数后，选项下方的传输方式进行配置
+### 7.Configure transmission scheme
+- After configuring the network parameters, select the transmission method below to configure
 1. <project:tcpserver.md>
 2. <project:tcpserver.md>
 3. <project:mqtt.md>

@@ -1,55 +1,55 @@
-# 条码开关
-## 禁止一维码扫描
+# Barcode Settings
+## Disable Scanning 1D Codes
 
 ```{figure} ../../media/3030110.png
 :align: center
 :width: 300px
 
-禁止一维码扫描
+Disable Scanning 1D Codes
 ```
 
-## 使能一维码扫描
+## Enable Scanning 1D Codes
 
 ```{figure} ../../media/3030111.png
 :align: center
 :width: 300px
 
-使能一维码扫描
+Enable Scanning 1D Codes
 ```
 
-## 禁止二维码扫描
+## Disable Scanning 2D Codes
 
 ```{figure} ../../media/3030500.png
 :align: center
 :width: 300px
 
-禁止二维码扫描
+Disable Scanning 2D Codes
 ```
 
-## 使能二维码扫描 
+## Enable Scanning 2D Codes
 
 ```{figure} ../../media/3030501.png
 :align: center
 :width: 300px
 
-使能二维码扫描
+Enable Scanning 2D Codes
 ```
 
-## 网址屏蔽设置
-屏蔽`http://`和`https://`开头的网址
+## QR Code URL Settings
+Block scanning of URL QR codes starting with `http://`, `https://`
 
-### 禁止
+### Disable
 ```{figure} ../../media/3030EA0.png
 :align: center
 :width: 300px
 
-禁止
+Disable
 ```
 
-### 开启
+### Enable
 ```{figure} ../../media/3030EA1.png
 :align: center
 :width: 300px
 
-开启
+Enable
 ```

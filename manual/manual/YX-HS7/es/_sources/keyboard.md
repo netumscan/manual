@@ -1,6 +1,6 @@
-# 键盘设置
+# Keyboard Settings
 
-## 键盘字符集类型
+## Character Encoding Settings
 ### GBK(GB2312)
 
 ```{figure} ../../media/8210131..png
@@ -11,7 +11,7 @@ GBK(GB2312)
 ```
 
 ```{note}
-设置此项后支持在文本文档或Excel上传中文
+After setting this option, you can upload Chinese in Notepad or Excel
 ```
 
 ### UNICODE
@@ -23,297 +23,297 @@ UNICODE
 ```
 
 ```{note}
-设置此项后支持在word文档或者输入框传输中文
+After setting this option, it is supported to transmission Chinese in word documents or input boxes
 ```
 
 
-## 键盘语言
+## Keyboard Language
 
 
-### 中文
+### Chinese
 
 ```{figure} ../../media/82100190..png
 :align: center
 :width: 300px
 
-中文
+Chinese
 ```
 
-### 美国
+### America
 
 
 ```{figure} ../../media/8210010..png
 :align: center
 :width: 300px
 
-美国
+America
 ```
 
-### 芬兰 
+### Finland 
 
 ```{figure} ../../media/8210012..png
 :align: center
 :width: 300px
 
-芬兰 
+Finland 
 ```
 
-### 西班牙
+### Spain
 
 ```{figure} ../../media/82100110..png
 :align: center
 :width: 300px
 
-西班牙
+Spain
 ```
 
 
-### 法国
+### France
 
 ```{figure} ../../media/8210013..png
 :align: center
 :width: 300px
 
-法国
+France
 ```
   
 
-### 德国
+### Germany
 
 ```{figure} ../../media/8210014..png
 :align: center
 :width: 300px
 
-德国
+Germany
 ```
   
 
-### 意大利
+### Italy
 
 ```{figure} ../../media/8210015..png
 :align: center
 :width: 300px
 
-意大利
+Italy
 ```
   
 
-### 丹麦
+### Denmark
 
 ```{figure} ../../media/8210018..png
 :align: center
 :width: 300px
 
-丹麦
+Denmark
 ```
 
   
 
-### 挪威
+### Norway
 
 ```{figure} ../../media/8210019..png
 :align: center
 :width: 300px
 
-挪威
+Norway
 ```
 
-### 捷克
+### Czech
 
 ```{figure} ../../media/82100115..png
 :align: center
 :width: 300px
 
-捷克
+Czech
 ```
   
 
-### 匈牙利
+### Hungary
 
 ```{figure} ../../media/82100119..png
 :align: center
 :width: 300px
 
-匈牙利
+Hungary
 ```
 
-### 瑞典
+### Sweden
 
 ```{figure} ../../media/82100123..png
 :align: center
 :width: 300px
 
-瑞典
+Sweden
 ```
 
-### 阿拉伯
+### Arab
 
 ```{figure} ../../media/82100191..png
 :align: center
 :width: 300px
 
-阿拉伯
+Arab
 ```
 
-### 俄罗斯
+### Russia
 
 ```{figure} ../../media/82100126..png
 :align: center
 :width: 300px
 
-俄罗斯
+Russia
 ```
 
-### 瑞士_法语
+### Switzerland (French)
 
 ```{figure} ../../media/82100129..png
 :align: center
 :width: 300px
 
-瑞士_法语
+Switzerland (French)
 ```
 
-### 冰岛
+### Iceland
 
 ```{figure} ../../media/82100175..png
 :align: center
 :width: 300px
 
-冰岛
+Iceland
 ```
 
-### 斯洛文尼亚
+### Slovenia
 
 ```{figure} ../../media/82100131..png
 :align: center
 :width: 300px
 
-斯洛文尼亚
+Slovenia
 ```
 
-### 克罗地亚
+### Croatia
 
 ```{figure} ../../media/82100132..png
 :align: center
 :width: 300px
 
-克罗地亚
+Croatia
 ```
 
-### 阿尔巴尼亚
+### Albania
 
 ```{figure} ../../media/82100135..png
 :align: center
 :width: 300px
 
-阿尔巴尼亚
+Albania
 ```
 
-### 塞尔维亚_拉丁
+### Serbia (Latin)
 
 ```{figure} ../../media/82100136..png
 :align: center
 :width: 300px
 
-塞尔维亚_拉丁
+Serbia (Latin)
 ```
 
-### 塞尔维亚西里尔文
+### Serbian Cyrillic
 
 ```{figure} ../../media/82100137..png
 :align: center
 :width: 300px
 
-塞尔维亚西里尔文
+Serbian Cyrillic
 ```
 
-### 捷克_QWERTZ
+### Czech-QWERTZ
 
 ```{figure} ../../media/82100138..png
 :align: center
 :width: 300px
 
-捷克_QWERTZ
+Czech-QWERTZ
 ```
 
-### 捷克_QWERTY
+### Czech-QWERTY
 
 ```{figure} ../../media/82100139..png
 :align: center
 :width: 300px
 
-捷克_QWERTY
+Czech-QWERTY
 ```
 
-### 爱沙尼亚
+### Estonia
 
 ```{figure} ../../media/82100141..png
 :align: center
 :width: 300px
 
-爱沙尼亚
+Estonia
 ```
 
 
-### 立陶宛
+### Lithuania
 
 ```{figure} ../../media/82100144..png
 :align: center
 :width: 300px
 
-立陶宛
+Lithuania
 ```
 
-### 爱尔兰
+### Ireland
 
 ```{figure} ../../media/82100173..png
 :align: center
 :width: 300px
 
-爱尔兰
+Ireland
 ```
 
-### 法罗语
+### Faroese
 
 ```{figure} ../../media/82100183..png
 :align: center
 :width: 300px
 
-法罗语
+Faroese
 ```
 
-### 土耳其_F
+### Turkey-F
 
 ```{figure} ../../media/82100127..png
 :align: center
 :width: 300px
 
-土耳其_F
+Turkey-F
 ```
 
-### 土耳其_Q
+### Turkey-Q
 
 ```{figure} ../../media/82100124..png
 :align: center
 :width: 300px
 
-土耳其_Q
+Turkey-Q
 ```
 
-### 斯洛伐克
+### Slovakia
 
 ```{figure} ../../media/82100122..png
 :align: center
 :width: 300px
 
-斯洛伐克
+Slovakia
 ```
 
-### 日语 
+### Japanese 
 
 ```{figure} ../../media/82100128..png
 :align: center
 :width: 300px
 
-日语
+Japanese
 ```

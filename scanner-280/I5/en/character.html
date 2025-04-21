@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>End character setting &#8212; I5 Scanner User Manual</title>
+    <title>End Character Settings &#8212; I5 Scanner User Manual</title>
   
   
   
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,7 +241,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan Mode</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">End character setting</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">End Character Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Settings</a></li>
 </ul>
@@ -371,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>End character setting</h1>
+    <h1>End Character Settings</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,11 +392,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Start setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">No end character</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-lf">CR LF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr">CR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">End setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Start Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">No End Character</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">End Setup</a></li>
 </ul>
             </nav>
         </div>
@@ -397,64 +408,64 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>End character setting<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+  <section id="end-character-settings">
+<h1>End Character Settings<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
 <p>The end character is added after the decoded data in the format of decoded data + end character.</p>
-<section id="id2">
-<h2>Start setup<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="start-setup">
+<h2>Start Setup<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only after scanning <a class="reference internal" href="#id2">Start Setting</a> can you scan other function setting codes for configuration. You need to scan <a class="reference internal" href="#id4">End Setting</a> for the corresponding configuration to take effect.</p>
+<p>Only after scanning <a class="reference internal" href="#start-setup">Start Setup</a> can you scan other function setup codes for configuration. You need to scan <a class="reference internal" href="#end-setup">End Setup</a> for the corresponding configuration to take effect.</p>
 </div>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Start setup</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Start Setup</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>No end character<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id6">
+<section id="no-end-character">
+<h2>No End Character<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/TC01.png"><img alt="../../media/TC01.png" src="../../media/TC01.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">No end character</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">No End Character</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="cr-lf">
-<h2>CR LF<a class="headerlink" href="#cr-lf" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id7">
+<section id="enter-new-line-crlf">
+<h2>Enter+New Line(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/TC02.png"><img alt="../../media/TC02.png" src="../../media/TC02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">CR LF</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Enter+New Line(CRLF)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="cr">
-<h2>CR<a class="headerlink" href="#cr" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id8">
+<section id="enter-cr">
+<h2>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/TC03.png"><img alt="../../media/TC03.png" src="../../media/TC03.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">CR <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Enter(CR)  <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>End setup<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="end-setup">
+<h2>End Setup<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only after scanning <a class="reference internal" href="#id2">Start Setting</a> can you scan other function setting codes for configuration. You need to scan <a class="reference internal" href="#id4">End Setting</a> for the corresponding configuration to take effect.</p>
+<p>Only after scanning <a class="reference internal" href="#start-setup">Start Setup</a> can you scan other function setup codes for configuration. You need to scan <a class="reference internal" href="#end-setup">End Setup</a> for the corresponding configuration to take effect.</p>
 </div>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">End setup</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">End Setup</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -505,11 +516,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Start setup</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">No end character</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr-lf">CR LF</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr">CR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">End setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Start Setup</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">No End Character</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">End Setup</a></li>
 </ul>
   </nav></div>
 

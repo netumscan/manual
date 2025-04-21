@@ -1,40 +1,40 @@
-# 使用HTTP协议传输数据
+# Use HTTP protocol to transfer data
 
-## 创建REST API
-### 简要描述
-- 扫描枪数据上传接口
+## Create REST API
+### Brief Description
+- Scanner data upload interface
 
-### 请求URL
+### Request URL
 - https://httpbin.org/post
 
-### 请求方式
+### Request Mode
 - POST
 
-### 请求参数
+### Request Parameters
 
 ```{csv-table}
 :widths: 20 20 20 20
 :header-rows: 1
 
-参数名,必选,类型,说明
-id,是,string,设备Id
-msg,是,string,扫描内容
+Parameter name,required,type,description
+id,yes,string,device Id
+msg,yes,string,Scan Content
 ```
 ```{code-block} json
-:caption: 请求示例
+:caption: Request Example
 :lineno-start: 1
 
 {"id": "04B9023A","msg":"1234567890"}
 ```
 
-### 返回参数
+### Return Parameter
 
-详情见[数据接收格式](wireless.md#数据接收格式)
+For details, see [Data receiving format](wireless.md#data-rceiving-format)
 
 
-## 配置扫描枪
+## Configure Scanner
 
-### 设定扫描枪请求的Content-Type
+### Set the Content-Type of the scanner request
 
 
 ```{figure} ../../media/application-json.png
@@ -44,18 +44,18 @@ msg,是,string,扫描内容
 Application/Json
 ```
 
-### 设定扫描枪发送的消息格式
+### Set the data format sent by the scanner
 
 
 ```{figure} ../../media/25WFCOMMPM23S1.png
 :align: center
 :width: 300px
 
-Json格式
+Json Format
 ```
 
 
-### 配置WiFi和接口地址
+### Configure WiFi and API URL address
 ```{raw} html
     <iframe src="../../plugins/wifi-https.html" height="650px" width="100%"></iframe>
 ```

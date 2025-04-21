@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Utilizzo del client TCP per trasmettere dati &#8212; DS2800 Scanner User Manual</title>
+    <title>Usa Client TCP per trasferire i dati &#8212; DS2800 Scanner User Manual</title>
   
   
   
@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'tcpclient';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Utilizzo del server TCP per la trasmissione dei dati" href="tcpserver.html" />
-    <link rel="prev" title="Modalità Wi-Fi" href="wireless.html" />
+    <link rel="next" title="Usare il server TCP per trasmettere dati" href="tcpserver.html" />
+    <link rel="prev" title="Modalità di trasmissione Wi-Fi" href="wireless.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,19 +240,19 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni di sistema</a></li>
-<li class="toctree-l1"><a class="reference internal" href="working.html">Modalità di lavoro</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Modalità Wi-Fi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Utilizzo del client TCP per trasmettere dati</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Utilizzo del server TCP per la trasmissione dei dati</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">Utilizzare il protocollo MQTT per trasmettere i dati</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html">Utilizzare il protocollo HTTP per trasferire i dati</a></li>
-<li class="toctree-l2"><a class="reference internal" href="network.html">Configurazione di rete</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">Modalità Di Lavoro</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Modalità di trasmissione Wi-Fi</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Usa Client TCP per trasferire i dati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Usare il server TCP per trasmettere dati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">Usa il protocollo MQTT per trasmettere i dati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html">Usa il protocollo HTTP per trasferire i dati</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">Configurazione Di Rete</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Modalità Bluetooth</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni della tastiera</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">Domande frequenti</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -380,7 +391,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Utilizzo del client TCP per trasmettere dati</h1>
+    <h1>Usa Client TCP per trasferire i dati</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,9 +401,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Configurazione rapida</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Software dimostrativo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Stabilire una connessione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-configuration">Configurazione Rapida</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">Software Demo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-connection">Crea una connessione</a></li>
 </ul>
             </nav>
         </div>
@@ -404,34 +415,34 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="tcp-client">
-<h1>Utilizzo del client TCP per trasmettere dati<a class="headerlink" href="#tcp-client" title="Link to this heading">#</a></h1>
-<section id="id1">
-<h2>Configurazione rapida<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+  <section id="use-tcp-client-to-transfer-data">
+<h1>Usa Client TCP per trasferire i dati<a class="headerlink" href="#use-tcp-client-to-transfer-data" title="Link to this heading">#</a></h1>
+<section id="quick-configuration">
+<h2>Configurazione Rapida<a class="headerlink" href="#quick-configuration" title="Link to this heading">#</a></h2>
     <iframe src="../../plugins/wifi-tcpserver.html" height="700px" width="100%"></iframe>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Se si utilizza un software di terze parti per creare un client TCP, è possibile utilizzare questa opzione per la configurazione.</p>
+<p>Quando si utilizza un software di terze parti per costruire un server TCP, è possibile utilizzare questa opzione per la configurazione.</p>
 </div>
 </section>
-<section id="id2">
-<h2>Software dimostrativo<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="demo-software">
+<h2>Software Demo<a class="headerlink" href="#demo-software" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Fare clic sul collegamento sottostante per scaricare il software demo: <a class="reference external" href="https://pan.gzxlscan.cn/s/gh8hye">Netum Wi-Fi TCP Server</a></p></li>
+<li><p>Clicca sul link qui sotto per scaricare il software demo: <a class="reference external" href="https://pan.gzxlscan.cn/s/gh8hye">Netum Wi-Fi TCP Server</a></p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>Stabilire una connessione<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="make-a-connection">
+<h2>Crea una connessione<a class="headerlink" href="#make-a-connection" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Scarica il software demo e decomprimilo in una cartella.</p></li>
-<li><p>Aprire il software dimostrativo, immettere le informazioni WiFi e quelle del server TCP a cui lo scanner deve connettersi e utilizzare uno scanner per scansionare il codice QR riportato di seguito.</p></li>
+<li><p>Aprire il software di dimostrazione, inserire le informazioni WiFi e TCP Server informazioni a cui lo scanner deve connettersi, e utilizzare uno scanner per scansionare il codice QR qui sotto.</p></li>
 </ol>
 <figure class="align-center">
 <img alt="../../media/wifi-tcpserver1.png" src="../../media/wifi-tcpserver1.png" />
 </figure>
 <ol class="arabic simple" start="3">
-<li><p>Fare clic per avviare il servizio oppure avviare TCP Server tramite programmazione.</p></li>
-<li><p>Attendere che lo scanner si connetta attivamente al servizio TCP Server del software.</p></li>
+<li><p>Fare clic per avviare il servizio, o avviare il server TCP attraverso la programmazione.</p></li>
+<li><p>Attendere che lo scanner si connetta attivamente al servizio Server TCP del software.</p></li>
 </ol>
 <figure class="align-center">
 <img alt="../../media/wifi-tcpserver2.png" src="../../media/wifi-tcpserver2.png" />
@@ -439,8 +450,8 @@ document.write(`
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <ul class="simple">
-<li><p>L’indirizzo host è l’indirizzo IP del computer su cui si trova il servizio TCP Server.</p></li>
-<li><p>La porta host è il numero di porta aperta dal servizio TCP Server.</p></li>
+<li><p>Indirizzo host: l’indirizzo IP del computer in cui si trova il servizio Server TCP.</p></li>
+<li><p>Porta host: il numero di porta aperto dal servizio Server TCP.</p></li>
 </ul>
 </div>
 </section>
@@ -463,7 +474,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">precedente</p>
-        <p class="prev-next-title">Modalità Wi-Fi</p>
+        <p class="prev-next-title">Modalità di trasmissione Wi-Fi</p>
       </div>
     </a>
     <a class="right-next"
@@ -471,7 +482,7 @@ document.write(`
        title="pagina seguente">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title">Utilizzo del server TCP per la trasmissione dei dati</p>
+        <p class="prev-next-title">Usare il server TCP per trasmettere dati</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -491,9 +502,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Configurazione rapida</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Software dimostrativo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Stabilire una connessione</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-configuration">Configurazione Rapida</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">Software Demo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-connection">Crea una connessione</a></li>
 </ul>
   </nav></div>
 

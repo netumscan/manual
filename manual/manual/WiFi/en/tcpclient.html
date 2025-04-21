@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Using TCP Client to transmit data &#8212; WiFi Scanner User Manual</title>
+    <title>Use TCP Client to transfer data &#8212; WiFi Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Using TCP Server to Transmit Data" href="tcpserver.html" />
-    <link rel="prev" title="WiFi Mode" href="wireless.html" />
+    <link rel="prev" title="Wi-Fi Transmission mode" href="wireless.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,8 +241,8 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">Working Mode</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFi Mode</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Using TCP Client to transmit data</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi Transmission mode</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Use TCP Client to transfer data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Using TCP Server to Transmit Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mqtt.html">Use MQTT protocol to transmit data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="http.html">Use HTTP protocol to transfer data</a></li>
@@ -379,7 +390,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Using TCP Client to transmit data</h1>
+    <h1>Use TCP Client to transfer data</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -389,9 +400,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Quick Configuration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Demo software</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Make a connection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-configuration">Quick Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">Demo Software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-connection">Make a connection</a></li>
 </ul>
             </nav>
         </div>
@@ -403,24 +414,25 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="tcp-client">
-<h1>Using TCP Client to transmit data<a class="headerlink" href="#tcp-client" title="Link to this heading">#</a></h1>
-<section id="id1">
-<h2>Quick Configuration<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+  <section id="use-tcp-client-to-transfer-data">
+<h1>Use TCP Client to transfer data<a class="headerlink" href="#use-tcp-client-to-transfer-data" title="Link to this heading">#</a></h1>
+<section id="quick-configuration">
+<h2>Quick Configuration<a class="headerlink" href="#quick-configuration" title="Link to this heading">#</a></h2>
     <iframe src="../../plugins/wifi-tcpserver.html" height="700px" width="100%"></iframe>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When you use third-party software to build a TCP Client, you can use this option for configuration.</p>
+<p>When you use third-party software to build a TCP Server, you can use this option for configuration.</p>
 </div>
 </section>
-<section id="id2">
-<h2>Demo software<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="demo-software">
+<h2>Demo Software<a class="headerlink" href="#demo-software" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Click the link below to download the demo software: <a class="reference external" href="https://pan.gzxlscan.cn/s/gh8hye">Netum Wi-Fi TCP Server</a></p></li>
+<li><p>Click the link below to download the demo software:<br />
+<a class="reference external" href="https://pan.gzxlscan.cn/s/gh8hye">Netum Wi-Fi TCP Server</a></p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>Make a connection<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="make-a-connection">
+<h2>Make a connection<a class="headerlink" href="#make-a-connection" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Download the demo software and unzip it to a folder.</p></li>
 <li><p>Open the demonstration software, enter the WiFi information and TCP Server information that the scanner needs to connect to, and use a scanner to scan the QR code below.</p></li>
@@ -438,8 +450,8 @@ document.write(`
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
-<li><p>The host address is the IP address of the computer where the TCP Server service is located.</p></li>
-<li><p>The host port is the port number opened by the TCP Server service.</p></li>
+<li><p>Host address: The IP address of the computer where the TCP Server service is located.</p></li>
+<li><p>Host port: The port number opened by the TCP Server service.</p></li>
 </ul>
 </div>
 </section>
@@ -462,7 +474,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">WiFi Mode</p>
+        <p class="prev-next-title">Wi-Fi Transmission mode</p>
       </div>
     </a>
     <a class="right-next"
@@ -490,9 +502,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Quick Configuration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Demo software</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Make a connection</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-configuration">Quick Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">Demo Software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-connection">Make a connection</a></li>
 </ul>
   </nav></div>
 

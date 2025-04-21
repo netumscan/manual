@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>バーコードスイッチ &#8212; W22 Scanner User Manual</title>
+    <title>バーコードの設定 &#8212; W22 Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="prev" title="キーボード設定" href="keyboard.html" />
+    <link rel="prev" title="キーボードの設定" href="keyboard.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
   </head>
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -231,8 +242,8 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">バーコードスイッチ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">バーコードの設定</a></li>
 </ul>
 
     </div>
@@ -371,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>バーコードスイッチ</h1>
+    <h1>バーコードの設定</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,13 +392,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1Dコードのスキャンを禁止する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1Dコードスキャンを有効にする</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2Dコードのスキャンを禁止する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2Dコードスキャンを有効にする</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">URLブロック設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">禁止する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">開ける</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-1d-codes">スキャン中 1 D コードを無効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-1d-codes">スキャンする 1 D コードを有効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-2d-codes">2Dコードのスキャンを無効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-2d-codes">2Dコードのスキャンを有効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QRコードのURL設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">無効</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">有効にする</a></li>
 </ul>
 </li>
 </ul>
@@ -401,68 +412,68 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>バーコードスイッチ<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>1Dコードのスキャンを禁止する<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id9">
+  <section id="barcode-settings">
+<h1>バーコードの設定<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
+<section id="disable-scanning-1d-codes">
+<h2>スキャン中 1 D コードを無効にする<a class="headerlink" href="#disable-scanning-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3030110.png"><img alt="../../media/3030110.png" src="../../media/3030110.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">1Dコードのスキャンを禁止する</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">スキャン中 1 D コードを無効にする</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>1Dコードスキャンを有効にする<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id10">
+<section id="enable-scanning-1d-codes">
+<h2>スキャンする 1 D コードを有効にする<a class="headerlink" href="#enable-scanning-1d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3030111.png"><img alt="../../media/3030111.png" src="../../media/3030111.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">1Dコードスキャンを有効にする</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">スキャンする 1 D コードを有効にする</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>2Dコードのスキャンを禁止する<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id11">
+<section id="disable-scanning-2d-codes">
+<h2>2Dコードのスキャンを無効にする<a class="headerlink" href="#disable-scanning-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3030500.png"><img alt="../../media/3030500.png" src="../../media/3030500.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2Dコードのスキャンを禁止する</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">2Dコードのスキャンを無効にする</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>2Dコードスキャンを有効にする<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id12">
+<section id="enable-scanning-2d-codes">
+<h2>2Dコードのスキャンを有効にする<a class="headerlink" href="#enable-scanning-2d-codes" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030501.png"><img alt="../../media/3030501.png" src="../../media/3030501.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2Dコードスキャンを有効にする</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">2Dコードのスキャンを有効にする</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>URLブロック設定<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">http://</span></code> および <code class="docutils literal notranslate"><span class="pre">https://</span></code> で始まる URL をブロックします</p>
-<section id="id7">
-<h3>禁止する<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+<section id="qr-code-url-settings">
+<h2>QRコードのURL設定<a class="headerlink" href="#qr-code-url-settings" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">http://</span></code>,<code class="docutils literal notranslate"><span class="pre">https://</span></code>で始まるURLQRコードのスキャンをブロックする</p>
+<section id="disable">
+<h3>無効<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030EA0.png"><img alt="../../media/3030EA0.png" src="../../media/3030EA0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁止する</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">無効</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>開ける<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="enable">
+<h3>有効にする<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3030EA1.png"><img alt="../../media/3030EA1.png" src="../../media/3030EA1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">開ける</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">有効にする</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -486,7 +497,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">前へ</p>
-        <p class="prev-next-title">キーボード設定</p>
+        <p class="prev-next-title">キーボードの設定</p>
       </div>
     </a>
 </div>
@@ -505,13 +516,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1Dコードのスキャンを禁止する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1Dコードスキャンを有効にする</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2Dコードのスキャンを禁止する</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2Dコードスキャンを有効にする</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">URLブロック設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">禁止する</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">開ける</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-1d-codes">スキャン中 1 D コードを無効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-1d-codes">スキャンする 1 D コードを有効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-2d-codes">2Dコードのスキャンを無効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-2d-codes">2Dコードのスキャンを有効にする</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QRコードのURL設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">無効</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">有効にする</a></li>
 </ul>
 </li>
 </ul>

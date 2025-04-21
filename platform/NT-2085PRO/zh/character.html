@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="zh-CN" data-content_root="./" >
+<html lang="zh" data-content_root="./" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>结束符设置 &#8212; NT-2085PRO Scanner User Manual</title>
+    <title>结束字符设置 &#8212; NT-2085PRO Scanner User Manual</title>
   
   
   
@@ -38,20 +38,19 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=c893ba89"></script>
+    <script src="_static/documentation_options.js?v=70073429"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
-    <script src="_static/translations.js?v=beaddf03"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
     <link rel="next" title="键盘设置" href="keyboard.html" />
     <link rel="prev" title="系统设置" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="zh-CN"/>
+  <meta name="docsearch:language" content="zh"/>
   </head>
   
   
@@ -161,7 +160,7 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">结束符设置</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">结束字符设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">QR网址码</a></li>
 <li class="toctree-l1"><a class="reference internal" href="codedelay.html">同码延时设置</a></li>
@@ -303,7 +302,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>结束符设置</h1>
+    <h1>结束字符设置</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -313,10 +312,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">无结束符</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr">回车 CR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab">跳格 TAB</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crlf">回车换行 CRLF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">无结束字符</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">回车符(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">制表符(TAB)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">回车符+换行符(CRLF)</a></li>
 </ul>
             </nav>
         </div>
@@ -328,46 +327,46 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>结束符设置<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>结束字符是在解码数据后面添加字符格式: 解码数据+结束字符。（默认回车）</p>
-<section id="id2">
-<h2>无结束符<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id3">
+  <section id="end-character-settings">
+<h1>结束字符设置<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
+<p>结束字符是在解码的数据后添加的，格式为解码的数据+结束字符。</p>
+<section id="no-end-character">
+<h2>无结束字符<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3E210010200..png"><img alt="../../media/3E210010200..png" src="../../media/3E210010200..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">无结束符</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">无结束字符</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="cr">
-<h2>回车 CR<a class="headerlink" href="#cr" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id4">
+<section id="enter-cr">
+<h2>回车符(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3E210010202..png"><img alt="../../media/3E210010202..png" src="../../media/3E210010202..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">回车 CR</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">回车符(CR)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="tab">
-<h2>跳格 TAB<a class="headerlink" href="#tab" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id5">
+<section id="tab-tab">
+<h2>制表符(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3E210010203..png"><img alt="../../media/3E210010203..png" src="../../media/3E210010203..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">跳格 TAB</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">制表符(TAB)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="crlf">
-<h2>回车换行 CRLF<a class="headerlink" href="#crlf" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id6">
+<section id="enter-new-line-crlf">
+<h2>回车符+换行符(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3E210010201..png"><img alt="../../media/3E210010201..png" src="../../media/3E210010201..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">回车换行 CRLF</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">回车符+换行符(CRLF)</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -418,10 +417,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">无结束符</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cr">回车 CR</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab">跳格 TAB</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#crlf">回车换行 CRLF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">无结束字符</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">回车符(CR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">制表符(TAB)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">回车符+换行符(CRLF)</a></li>
 </ul>
   </nav></div>
 

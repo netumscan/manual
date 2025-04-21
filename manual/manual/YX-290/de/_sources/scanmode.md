@@ -1,61 +1,56 @@
-# 扫描模式
+# Scan Mode
 
-## 开始设置
-
+## Start Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/23SETUPE1.png
 :align: center
 :width: 300px
 
-开始设置
+Start Setup
 ```
 
-## 按键触发模式
-按下按键触发识读，松开按键则结束识读。识读成功或者识读时间超过单次识读时间则结束识读。
-
+## Key Trigger Mode
+Press the button to trigger scanning, and release the button to end scanning. Scanning ends when the scan is successful or the reading time exceeds the single reading time.
 
 ```{figure} ../../media/40TRIGGERKEY5.png
 :align: center
 :width: 300px
 
-按键触发模式 `默认`
+Key Trigger Mode `Default`
 ```
 
-
-## 自动感应模式
-在自动感应模式下，识读引擎会检测周围环境的亮度，当亮度发生变化时，触发识读，识读成功或者识读时间超过单次识读时间结束识读。不论上次识读成功或失败，重新进入检测周围环境的亮度。
+## Auto Sensing Mode
+In the auto sensing mode, the scanner will detect the brightness of the surrounding environment. When the brightness changes, the scan is triggered. The scan ends when the scan is successful or the scan time exceeds the single working time. Regardless of whether the last scan was successful or failed, the brightness of the surrounding environment will be detected again.
 
 ```{figure} ../../media/40BRIGHTNESS1.png
 :align: center
 :width: 300px
 
-自动感应模式
+Auto Sensing Mode
 ```
 
-## 连续扫描模式
-识读引擎进行连续的工作。识读成功或者读时间超过单次识读时间结束本次识读，超过规定的时间自动触发下次识读。
+## Continuous Mode
+The scanner works continuously. If the scan is successful or the scan time exceeds the single working time, the current scan ends. If the time exceeds the specified time, the next scan is automatically triggered.
 
 ```{figure} ../../media/40TRIGGEROFF6.png
 :align: center
 :width: 300px
 
-连续扫描模式
+Continuous Mode
 ```
 
 
-## 结束设置
-
+## End Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/23SETUPE0.png
 :align: center
 :width: 300px
 
-结束设置
+End Setup
 ```
-

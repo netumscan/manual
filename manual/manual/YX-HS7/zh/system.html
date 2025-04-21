@@ -162,9 +162,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">扫描模式</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">结束符设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">结束字符设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">条码开关</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">条码设置</a></li>
 </ul>
 
     </div>
@@ -313,28 +313,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">恢复默认设置</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">获取固件版本</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usb">USB 模式</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-keyboard">USB Keyboard</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-com">USB COM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">恢复默认设置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">获取固件版本</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">音量设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">低音</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">中音</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">高音</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">禁用</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">声音设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">低音</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">中音</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">高音</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">关闭声音</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lighting-light">照明灯</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">启用</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">禁用</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#led">LED 照明灯</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">打开照明灯</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">关闭照明灯</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aiming-light">瞄准灯</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">启用</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">禁用</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aimer">Aimer 指示</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">打开指示</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">关闭指示</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-mode">USB 模式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-keyboard">USB 键盘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-serial-port">USB 串口</a></li>
 </ul>
 </li>
 </ul>
@@ -348,144 +348,143 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>系统设置<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>恢复默认设置<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。</p>
-<figure class="align-center" id="id13">
+  <section id="system-settings">
+<h1>系统设置<a class="headerlink" href="#system-settings" title="Link to this heading">#</a></h1>
+<section id="restore-default-settings">
+<h2>恢复默认设置<a class="headerlink" href="#restore-default-settings" title="Link to this heading">#</a></h2>
+<p>当扫描枪发生未知错误时，您可以通过恢复默认设置来重置扫描枪。</p>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/800006..png"><img alt="../../media/800006..png" src="../../media/800006..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">恢复默认设置</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">恢复默认设置</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="get-firmware-version">
+<h2>获取固件版本<a class="headerlink" href="#get-firmware-version" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../media/809005..png"><img alt="../../media/809005..png" src="../../media/809005..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">获取固件版本</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="volume-settings">
+<h2>音量设置<a class="headerlink" href="#volume-settings" title="Link to this heading">#</a></h2>
+<section id="low-volume">
+<h3>低音<a class="headerlink" href="#low-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../media/8410091..png"><img alt="../../media/8410091..png" src="../../media/8410091..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">低音</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="medium-volume">
+<h3>中音<a class="headerlink" href="#medium-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../media/8410092..png"><img alt="../../media/8410092..png" src="../../media/8410092..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">中音</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="high-volume">
+<h3>高音<a class="headerlink" href="#high-volume" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../media/8410093..png"><img alt="../../media/8410093..png" src="../../media/8410093..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">高音 <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="disable">
+<h3>禁用<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../media/8410090..png"><img alt="../../media/8410090..png" src="../../media/8410090..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="lighting-light">
+<h2>照明灯<a class="headerlink" href="#lighting-light" title="Link to this heading">#</a></h2>
+<section id="enable">
+<h3>启用<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../media/8980051..png"><img alt="../../media/8980051..png" src="../../media/8980051..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">启用</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id1">
+<h3>禁用<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id11">
+<a class="reference internal image-reference" href="../../media/8980050..png"><img alt="../../media/8980050..png" src="../../media/8980050..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="aiming-light">
+<h2>瞄准灯<a class="headerlink" href="#aiming-light" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>启用<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../../media/8980022..png"><img alt="../../media/8980022..png" src="../../media/8980022..png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">启用</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="id3">
-<h2>获取固件版本<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id14">
-<a class="reference internal image-reference" href="../../media/809005..png"><img alt="../../media/809005..png" src="../../media/809005..png" style="width: 300px;" />
+<h3>禁用<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id13">
+<a class="reference internal image-reference" href="../../media/8980020..png"><img alt="../../media/8980020..png" src="../../media/8980020..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">获取固件版本</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="usb">
-<h2>USB 模式<a class="headerlink" href="#usb" title="Link to this heading">#</a></h2>
+</section>
+<section id="usb-mode">
+<h2>USB 模式<a class="headerlink" href="#usb-mode" title="Link to this heading">#</a></h2>
 <section id="usb-keyboard">
-<h3>USB Keyboard<a class="headerlink" href="#usb-keyboard" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<h3>USB 键盘<a class="headerlink" href="#usb-keyboard" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id14">
 <a class="reference internal image-reference" href="../../media/881001124..png"><img alt="../../media/881001124..png" src="../../media/881001124..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">USB Keyboard</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">USB 键盘</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="usb-com">
-<h3>USB COM<a class="headerlink" href="#usb-com" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="usb-serial-port">
+<h3>USB 串口<a class="headerlink" href="#usb-serial-port" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id15">
 <a class="reference internal image-reference" href="../../media/881001133..png"><img alt="../../media/881001133..png" src="../../media/881001133..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">USB COM</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">USB 串口</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>连接电脑，扫描<a class="reference internal" href="#usb-keyboard">USB Keyboard</a>条码，即可把设备配置为 USB 键盘模式。<br />
-在应用端软件需求串口的使用环境下，扫描<a class="reference internal" href="#usb-com">USB COM</a>，识别为 USB COM 类型，需要用户安装驱动，（此条码默认配置为：115200 波特率，8位数据位，无校验位，1 位停止位）。</p>
+<p>连接电脑，扫描 <a class="reference internal" href="#usb-keyboard">USB 键盘</a> 条码，将扫描枪配置为键盘模式。在需要使用串口的应用软件环境中，扫描 <a class="reference internal" href="#usb-serial-port">USB 串口</a> 条码，会被识别为 USB COM 类型，需要用户安装驱动程序（该条码默认配置为：波特率 115200、数据位 8、无校验位、停止位 1）。</p>
 </div>
-</section>
-</section>
-<section id="id4">
-<h2>声音设置<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<section id="id5">
-<h3>低音<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
-<a class="reference internal image-reference" href="../../media/8410091..png"><img alt="../../media/8410091..png" src="../../media/8410091..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">低音</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id6">
-<h3>中音<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
-<a class="reference internal image-reference" href="../../media/8410092..png"><img alt="../../media/8410092..png" src="../../media/8410092..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">中音</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id7">
-<h3>高音<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id19">
-<a class="reference internal image-reference" href="../../media/8410093..png"><img alt="../../media/8410093..png" src="../../media/8410093..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">高音 <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id8">
-<h3>关闭声音<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id20">
-<a class="reference internal image-reference" href="../../media/8410090..png"><img alt="../../media/8410090..png" src="../../media/8410090..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">关闭声音</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="led">
-<h2>LED 照明灯<a class="headerlink" href="#led" title="Link to this heading">#</a></h2>
-<section id="id9">
-<h3>打开照明灯<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id21">
-<a class="reference internal image-reference" href="../../media/8980051..png"><img alt="../../media/8980051..png" src="../../media/8980051..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">打开照明灯</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id10">
-<h3>关闭照明灯<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id22">
-<a class="reference internal image-reference" href="../../media/8980050..png"><img alt="../../media/8980050..png" src="../../media/8980050..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">关闭照明灯</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="aimer">
-<h2>Aimer 指示<a class="headerlink" href="#aimer" title="Link to this heading">#</a></h2>
-<section id="id11">
-<h3>打开指示<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id23">
-<a class="reference internal image-reference" href="../../media/8980022..png"><img alt="../../media/8980022..png" src="../../media/8980022..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">打开指示</span><a class="headerlink" href="#id23" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id12">
-<h3>关闭指示<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id24">
-<a class="reference internal image-reference" href="../../media/8980020..png"><img alt="../../media/8980020..png" src="../../media/8980020..png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">关闭指示</span><a class="headerlink" href="#id24" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
 </section>
 </section>
 </section>
@@ -535,28 +534,28 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">恢复默认设置</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">获取固件版本</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usb">USB 模式</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-keyboard">USB Keyboard</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-com">USB COM</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-default-settings">恢复默认设置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-firmware-version">获取固件版本</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#volume-settings">音量设置</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#low-volume">低音</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medium-volume">中音</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#high-volume">高音</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">禁用</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">声音设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">低音</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">中音</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">高音</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">关闭声音</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lighting-light">照明灯</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">启用</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">禁用</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#led">LED 照明灯</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">打开照明灯</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">关闭照明灯</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aiming-light">瞄准灯</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">启用</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">禁用</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aimer">Aimer 指示</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">打开指示</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">关闭指示</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-mode">USB 模式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-keyboard">USB 键盘</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usb-serial-port">USB 串口</a></li>
 </ul>
 </li>
 </ul>

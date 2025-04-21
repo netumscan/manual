@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>使用TCP Server传输数据 &#8212; WiFi Scanner User Manual</title>
+    <title>使用 TCP 服务端传输数据 &#8212; WiFi Scanner User Manual</title>
   
   
   
@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'tcpserver';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="使用MQTT协议传输数据" href="mqtt.html" />
-    <link rel="prev" title="使用TCP Client传输数据" href="tcpclient.html" />
+    <link rel="next" title="使用 MQTT 协议传输数据" href="mqtt.html" />
+    <link rel="prev" title="使用 TCP 客户端来传输数据" href="tcpclient.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="zh-CN"/>
   </head>
@@ -162,11 +162,11 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">工作模式</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFi模式</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用TCP Client传输数据</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">使用TCP Server传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">使用MQTT协议传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html">使用HTTP协议传输数据</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi 传输模式</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用 TCP 客户端来传输数据</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">使用 TCP 服务端传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">使用 MQTT 协议传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html">使用 HTTP 协议传输数据</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network.html">网络配置</a></li>
 </ul>
 </details></li>
@@ -311,7 +311,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>使用TCP Server传输数据</h1>
+    <h1>使用 TCP 服务端传输数据</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -321,9 +321,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">快速配置</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">演示软件</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">建立连接</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-configuration">快速配置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">演示软件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-connection">建立连接</a></li>
 </ul>
             </nav>
         </div>
@@ -335,46 +335,45 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="tcp-server">
-<h1>使用TCP Server传输数据<a class="headerlink" href="#tcp-server" title="Link to this heading">#</a></h1>
-<section id="id1">
-<h2>快速配置<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+  <section id="using-tcp-server-to-transmit-data">
+<h1>使用 TCP 服务端传输数据<a class="headerlink" href="#using-tcp-server-to-transmit-data" title="Link to this heading">#</a></h1>
+<section id="quick-configuration">
+<h2>快速配置<a class="headerlink" href="#quick-configuration" title="Link to this heading">#</a></h2>
     <iframe src="../../plugins/wifi-tcpclient.html" height="700px" width="100%"></iframe>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
-<p>使用第三方软件自建TCP Server时，可以使用此项进行配置。</p>
+<p>当您使用第三方软件构建TCP客户端时，您可以使用此选项进行配置。</p>
 </div>
 </section>
-<section id="id2">
-<h2>演示软件<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="demo-software">
+<h2>演示软件<a class="headerlink" href="#demo-software" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>点击下方链接下载演示软件:<br />
-<a class="reference external" href="https://pan.gzxlscan.cn/s/uli95v">Netum Wi-Fi TCP Client</a></p></li>
+<li><p>点击下面的链接下载演示软件：<a class="reference external" href="https://pan.gzxlscan.cn/s/uli95v">Netum Wi-Fi TCP Client</a></p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>建立连接<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="make-a-connection">
+<h2>建立连接<a class="headerlink" href="#make-a-connection" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>下载演示软件并解压到文件夹。</p></li>
-<li><p>打开演示软件，输入扫描器需要连接WiFi信息和扫描枪的IP地址、TCP Server端口，并使用扫描枪扫描下方的二维码。</p></li>
+<li><p>下载演示软件并解压缩到文件夹。</p></li>
+<li><p>打开演示软件，输入扫描枪需要连接的 WiFi 信息以及扫描枪的 IP 地址和TCP 服务器端口 并使用扫描枪扫描下面的二维码。</p></li>
 </ol>
 <figure class="align-center">
 <img alt="../../media/wifi-tcpclient1.png" src="../../media/wifi-tcpclient1.png" />
 </figure>
 <ol class="arabic simple" start="3">
-<li><p>点击启动按钮，或者通过编程开发启动TCP Client去连接扫描枪。</p></li>
+<li><p>点击启动按钮，或通过程序启动TCP客户端以连接扫描枪。</p></li>
 </ol>
 <figure class="align-center">
 <img alt="../../media/wifi-tcpclient2.png" src="../../media/wifi-tcpclient2.png" />
 </figure>
 <ol class="arabic simple" start="4">
-<li><p>软件建立与扫描器的连接，扫描枪的指示灯常亮。</p></li>
+<li><p>软件与扫描枪建立连接，扫描枪上的指示灯常亮。</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <ul class="simple">
-<li><p>设备地址为扫描枪在局域网内的IP地址。</p></li>
-<li><p>设置端口为扫描枪开启的TCP Server的端口号。</p></li>
+<li><p>Device address：本地区域网络中扫描枪的 IP 地址。</p></li>
+<li><p>Device port：由扫描枪打开的 TCP 服务器端口。</p></li>
 </ul>
 </div>
 </section>
@@ -397,7 +396,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">上一页</p>
-        <p class="prev-next-title">使用TCP Client传输数据</p>
+        <p class="prev-next-title">使用 TCP 客户端来传输数据</p>
       </div>
     </a>
     <a class="right-next"
@@ -405,7 +404,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">使用MQTT协议传输数据</p>
+        <p class="prev-next-title">使用 MQTT 协议传输数据</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -425,9 +424,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">快速配置</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">演示软件</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">建立连接</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-configuration">快速配置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">演示软件</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-connection">建立连接</a></li>
 </ul>
   </nav></div>
 

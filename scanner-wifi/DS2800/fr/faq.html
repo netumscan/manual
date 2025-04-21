@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Questions fréquemment posées &#8212; DS2800 Scanner User Manual</title>
+    <title>Foire Aux Questions &#8212; DS2800 Scanner User Manual</title>
   
   
   
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -228,11 +239,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1"><a class="reference internal" href="working.html">Mode de fonctionnement</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="wireless.html">Mode Wi-Fi</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Utilisation du client TCP pour transmettre des données</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Utilisation du serveur TCP pour transmettre des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="working.html">Mode de travail</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="wireless.html">Mode de transmission Wi-Fi</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">Utiliser le client TCP pour transférer des données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">Utiliser le serveur TCP pour transmettre des données</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mqtt.html">Utiliser le protocole MQTT pour transmettre des données</a></li>
 <li class="toctree-l2"><a class="reference internal" href="http.html">Utiliser le protocole HTTP pour transférer des données</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network.html">Configuration du réseau</a></li>
@@ -240,7 +251,7 @@
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Mode Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Questions fréquemment posées</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Foire Aux Questions</a></li>
 </ul>
 
     </div>
@@ -379,7 +390,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Questions fréquemment posées</h1>
+    <h1>Foire Aux Questions</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -389,10 +400,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Question 1 : Lors de la numérisation du code QR, un bip retentit mais aucune donnée n’est téléchargée ?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Question 2 : Après avoir scanné le code, il émettra deux bips. Puis-je télécharger les données ?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Question 3 : Le scanner émet cinq bips lorsqu’un bouton est enfoncé ?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Question 4 : Les données téléchargées en scannant le code QR sont incorrectes ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-1-the-scan-is-successful-the-buzzer-sounds-once-but-no-data-is-uploaded">Question 1 : Le scan est réussi, le buzzer sonne une fois, mais aucune donnée n’est téléchargée ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-2-the-scanner-scans-successfully-beeps-twice-and-can-upload-data-normally-what-is-going-on">Question 2 : Le scanner scanne avec succès, bips deux fois et peut télécharger des données normalement. Que se passe-t-il ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-3-the-scanner-beeps-five-times-when-a-button-is-pressed-how-can-i-solve-this-problem">Question 3:Le scanner bip cinq fois quand on appuie sur un bouton, comment puis-je résoudre ce problème?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-4-scan-successful-uploaded-data-incorrect">Question 4:Scan réussi, données téléchargées incorrectes?</a></li>
 </ul>
             </nav>
         </div>
@@ -404,26 +415,26 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Questions fréquemment posées<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<section id="id2">
-<h2>Question 1 : Lors de la numérisation du code QR, un bip retentit mais aucune donnée n’est téléchargée ?<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<p><strong>Réponse :</strong> Le scanner est entré en mode de stockage et doit analyser <a class="reference internal" href="working.html#id2"><span class="std std-ref">Mode normal</span></a> pour récupérer.</p>
+  <section id="faq">
+<h1>Foire Aux Questions<a class="headerlink" href="#faq" title="Lien vers cette rubrique">#</a></h1>
+<section id="question-1-the-scan-is-successful-the-buzzer-sounds-once-but-no-data-is-uploaded">
+<h2>Question 1 : Le scan est réussi, le buzzer sonne une fois, mais aucune donnée n’est téléchargée ?<a class="headerlink" href="#question-1-the-scan-is-successful-the-buzzer-sounds-once-but-no-data-is-uploaded" title="Lien vers cette rubrique">#</a></h2>
+<p><strong>Réponse:</strong> Le scanner est entré en mode stockage et doit scanner <a class="reference internal" href="working.html#normal-mode"><span class="std std-ref">Mode Normal</span></a> pour récupérer.</p>
 </section>
-<section id="id3">
-<h2>Question 2 : Après avoir scanné le code, il émettra deux bips. Puis-je télécharger les données ?<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
-<p><strong>Réponse :</strong> Le niveau de batterie du scanner est faible et un message indique qu’il doit être chargé.</p>
+<section id="question-2-the-scanner-scans-successfully-beeps-twice-and-can-upload-data-normally-what-is-going-on">
+<h2>Question 2 : Le scanner scanne avec succès, bips deux fois et peut télécharger des données normalement. Que se passe-t-il ?<a class="headerlink" href="#question-2-the-scanner-scans-successfully-beeps-twice-and-can-upload-data-normally-what-is-going-on" title="Lien vers cette rubrique">#</a></h2>
+<p><strong>Réponse:</strong> La batterie du pistolet du scanner est faible et il invite à le recharger.</p>
 </section>
-<section id="id4">
-<h2>Question 3 : Le scanner émet cinq bips lorsqu’un bouton est enfoncé ?<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
-<p><strong>Réponse :</strong> La batterie est faible et doit être chargée avant de pouvoir être réutilisée</p>
+<section id="question-3-the-scanner-beeps-five-times-when-a-button-is-pressed-how-can-i-solve-this-problem">
+<h2>Question 3:Le scanner bip cinq fois quand on appuie sur un bouton, comment puis-je résoudre ce problème?<a class="headerlink" href="#question-3-the-scanner-beeps-five-times-when-a-button-is-pressed-how-can-i-solve-this-problem" title="Lien vers cette rubrique">#</a></h2>
+<p><strong>Réponse:</strong> La batterie est faible et doit être rechargée avant de pouvoir être réutilisée.</p>
 </section>
-<section id="id5">
-<h2>Question 4 : Les données téléchargées en scannant le code QR sont incorrectes ?<a class="headerlink" href="#id5" title="Lien vers cette rubrique">#</a></h2>
-<p><strong>répondre:</strong></p>
+<section id="question-4-scan-successful-uploaded-data-incorrect">
+<h2>Question 4:Scan réussi, données téléchargées incorrectes?<a class="headerlink" href="#question-4-scan-successful-uploaded-data-incorrect" title="Lien vers cette rubrique">#</a></h2>
+<p><strong>Réponse:</strong></p>
 <ul class="simple">
 <li><p>La méthode de saisie chinoise doit être basculée vers la méthode de saisie anglaise</p></li>
-<li><p>Instructions de numérisation Paramètre de langue américaine</p></li>
+<li><p>Paramétrage de la langue des instructions de scan US</p></li>
 </ul>
 </section>
 </section>
@@ -464,10 +475,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Question 1 : Lors de la numérisation du code QR, un bip retentit mais aucune donnée n’est téléchargée ?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Question 2 : Après avoir scanné le code, il émettra deux bips. Puis-je télécharger les données ?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Question 3 : Le scanner émet cinq bips lorsqu’un bouton est enfoncé ?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Question 4 : Les données téléchargées en scannant le code QR sont incorrectes ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-1-the-scan-is-successful-the-buzzer-sounds-once-but-no-data-is-uploaded">Question 1 : Le scan est réussi, le buzzer sonne une fois, mais aucune donnée n’est téléchargée ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-2-the-scanner-scans-successfully-beeps-twice-and-can-upload-data-normally-what-is-going-on">Question 2 : Le scanner scanne avec succès, bips deux fois et peut télécharger des données normalement. Que se passe-t-il ?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-3-the-scanner-beeps-five-times-when-a-button-is-pressed-how-can-i-solve-this-problem">Question 3:Le scanner bip cinq fois quand on appuie sur un bouton, comment puis-je résoudre ce problème?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#question-4-scan-successful-uploaded-data-incorrect">Question 4:Scan réussi, données téléchargées incorrectes?</a></li>
 </ul>
   </nav></div>
 

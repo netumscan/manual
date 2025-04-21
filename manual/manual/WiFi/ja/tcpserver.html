@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'tcpserver';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="MQTTプロトコルを使用してデータを送信する" href="mqtt.html" />
-    <link rel="prev" title="使用TCP Client传输数据" href="tcpclient.html" />
+    <link rel="next" title="MQTT プロトコルを使ってデータを送信する" href="mqtt.html" />
+    <link rel="prev" title="TCPクライアントを使用してデータを転送する" href="tcpclient.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,19 +240,19 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFiモード</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用TCP Client传输数据</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi 通信モード</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">TCPクライアントを使用してデータを転送する</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">TCPサーバーを使用してデータを送信する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">MQTTプロトコルを使用してデータを送信する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">MQTT プロトコルを使ってデータを送信する</a></li>
 <li class="toctree-l2"><a class="reference internal" href="http.html">HTTPプロトコルを使用してデータを転送する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="network.html">ネットワーク構成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html">ネットワーク設定</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetoothモード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">よくある質問</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -390,9 +401,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">クイック設定</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">デモソフトウェア</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">接続を確立する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-configuration">クイック設定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">デモソフトウェア</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-connection">コネクションを作成</a></li>
 </ul>
             </nav>
         </div>
@@ -404,45 +415,45 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="tcp-server">
-<h1>TCPサーバーを使用してデータを送信する<a class="headerlink" href="#tcp-server" title="Link to this heading">#</a></h1>
-<section id="id1">
-<h2>クイック設定<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+  <section id="using-tcp-server-to-transmit-data">
+<h1>TCPサーバーを使用してデータを送信する<a class="headerlink" href="#using-tcp-server-to-transmit-data" title="Link to this heading">#</a></h1>
+<section id="quick-configuration">
+<h2>クイック設定<a class="headerlink" href="#quick-configuration" title="Link to this heading">#</a></h2>
     <iframe src="../../plugins/wifi-tcpclient.html" height="700px" width="100%"></iframe>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>サードパーティのソフトウェアを使用して独自の TCP サーバーを構築する場合は、この項目を使用して構成できます。</p>
+<p>サードパーティ製のソフトウェアを使用して TCP クライアントを構築する場合、このオプションを設定に使用できます。</p>
 </div>
 </section>
-<section id="id2">
-<h2>デモソフトウェア<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="demo-software">
+<h2>デモソフトウェア<a class="headerlink" href="#demo-software" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>デモ ソフトウェアをダウンロードするには、以下のリンクをクリックしてください: <a class="reference external" href="https://pan.gzxlscan.cn/s/uli95v">Netum Wi-Fi TCP クライアント</a></p></li>
+<li><p>以下のリンクをクリックしてデモソフトをダウンロードしてください: <a class="reference external" href="https://pan.gzxlscan.cn/s/uli95v">Netum Wi-Fi TCP Client</a></p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>接続を確立する<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="make-a-connection">
+<h2>コネクションを作成<a class="headerlink" href="#make-a-connection" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>デモ ソフトウェアをダウンロードし、フォルダーに解凍します。</p></li>
-<li><p>デモ ソフトウェアを開き、スキャナーが接続する必要がある WiFi 情報とスキャナーの IP アドレスおよび TCP サーバー ポートを入力し、スキャナーを使用して以下の QR コードをスキャンします。</p></li>
+<li><p>デモソフトウェアをダウンロードし、フォルダに解凍します。</p></li>
+<li><p>デモソフトウェアを開き、スキャナーが接続する必要があるWiFi情報とスキャナーのIPアドレスとTCPサーバーポートを入力します。 下記のQRコードをスキャンするためにスキャナを使用してください。</p></li>
 </ol>
 <figure class="align-center">
 <img alt="../../media/wifi-tcpclient1.png" src="../../media/wifi-tcpclient1.png" />
 </figure>
 <ol class="arabic simple" start="3">
-<li><p>[スタート] ボタンをクリックするか、プログラミングを通じて TCP クライアントを起動してスキャナーに接続します。</p></li>
+<li><p>スタートボタンをクリックするか、プログラミングを通じてTCPクライアントを起動してスキャナーに接続します。</p></li>
 </ol>
 <figure class="align-center">
 <img alt="../../media/wifi-tcpclient2.png" src="../../media/wifi-tcpclient2.png" />
 </figure>
 <ol class="arabic simple" start="4">
-<li><p>ソフトウェアはスキャナーとの接続を確立し、スキャナーのインジケーター ライトが常に点灯します。</p></li>
+<li><p>ソフトウェアはスキャナとの接続を確立し、スキャナのインジケータライトは常にオンです。</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <ul class="simple">
-<li><p>デバイス アドレスは、ローカル エリア ネットワーク内のスキャナーの IP アドレスです。</p></li>
-<li><p>ポートを、スキャナーによって開かれた TCP サーバーのポート番号に設定します。</p></li>
+<li><p>デバイスアドレス:ローカルエリアネットワーク内のスキャナのIPアドレス。</p></li>
+<li><p>デバイスポート:スキャナーが開いたTCPサーバーのポート番号。</p></li>
 </ul>
 </div>
 </section>
@@ -465,7 +476,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">前へ</p>
-        <p class="prev-next-title">使用TCP Client传输数据</p>
+        <p class="prev-next-title">TCPクライアントを使用してデータを転送する</p>
       </div>
     </a>
     <a class="right-next"
@@ -473,7 +484,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">次へ</p>
-        <p class="prev-next-title">MQTTプロトコルを使用してデータを送信する</p>
+        <p class="prev-next-title">MQTT プロトコルを使ってデータを送信する</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -493,9 +504,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">クイック設定</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">デモソフトウェア</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">接続を確立する</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quick-configuration">クイック設定</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-software">デモソフトウェア</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-a-connection">コネクションを作成</a></li>
 </ul>
   </nav></div>
 

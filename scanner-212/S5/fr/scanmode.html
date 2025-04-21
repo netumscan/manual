@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Mode de numérisation &#8212; S5 Scanner User Manual</title>
+    <title>Mode de scan &#8212; S5 Scanner User Manual</title>
   
   
   
@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
-    <link rel="next" title="Paramètre de caractère de fin" href="character.html" />
-    <link rel="prev" title="Paramètres système" href="system.html" />
+    <link rel="next" title="Paramètres de caractère de fin" href="character.html" />
+    <link rel="prev" title="Paramètres du système" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="fr"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Mode de numérisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètre de caractère de fin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Mode de scan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Commutateur de code-barres</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Paramètres du code-barres</a></li>
 </ul>
 
     </div>
@@ -372,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Mode de numérisation</h1>
+    <h1>Mode de scan</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -382,16 +393,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Maintien de la touche (niveau)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Mode continu</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Mode de détection automatique</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Même réglage de délai de code</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Pas de retard</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s">Délai 1s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Délai 3s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Délai 5s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Délai 7s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Délai infini (lecture du même code interdite)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Mode de déclenchement des touches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Mode continu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Mode de détection automatique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#same-code-delay-settings">Réglages de délai du même code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-delay">Pas de délai</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-1s">Délai 1s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-3s">Délai 3s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-5s">Délai 5s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-7s">Délai 7s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-delay-disable-same-code-scanning">Délai infini (Désactiver le scan du même code)</a></li>
 </ul>
 </li>
 </ul>
@@ -405,101 +416,101 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Mode de numérisation<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<section id="id2">
-<h2>Maintien de la touche (niveau)<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<p>Appuyez sur le bouton pour déclencher la lecture et relâchez le bouton pour terminer la lecture. Si la lecture est réussie ou si le temps de lecture dépasse le temps de lecture unique, la lecture se termine.</p>
-<figure class="align-center" id="id11">
+  <section id="scan-mode">
+<h1>Mode de scan<a class="headerlink" href="#scan-mode" title="Lien vers cette rubrique">#</a></h1>
+<section id="key-trigger-mode">
+<h2>Mode de déclenchement des touches<a class="headerlink" href="#key-trigger-mode" title="Lien vers cette rubrique">#</a></h2>
+<p>Appuyez sur le bouton pour déclencher la numérisation, et relâchez le bouton pour terminer la numérisation. La numérisation se termine lorsque le scan réussit ou que le temps de lecture dépasse le temps de lecture unique.</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/2050200.png"><img alt="../../media/2050200.png" src="../../media/2050200.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Maintenir le bouton (niveau) <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id11" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Mode de déclenchement de touche <code class="docutils literal notranslate"><span class="pre">Défaut</span></code></span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Mode continu<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
-<p>Le moteur de lecture fonctionne en continu. Si la lecture est réussie ou si le temps de lecture dépasse le temps de lecture unique, la lecture en cours se termine. Si le temps dépasse le temps spécifié, la lecture suivante est automatiquement déclenchée.</p>
-<figure class="align-center" id="id12">
+<section id="continuous-mode">
+<h2>Mode continu<a class="headerlink" href="#continuous-mode" title="Lien vers cette rubrique">#</a></h2>
+<p>Le scanner fonctionne en continu. Si le scan est réussi ou si le temps de scan dépasse le temps de travail unique, le scan actuel se termine. Si le temps dépasse le temps spécifié, la prochaine analyse est automatiquement déclenchée.</p>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/2050204.png"><img alt="../../media/2050204.png" src="../../media/2050204.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mode continu</span><a class="headerlink" href="#id12" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Mode continu</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Mode de détection automatique<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
-<p>En mode de détection automatique, le moteur de lecture détecte la luminosité de l’environnement environnant. Lorsque la luminosité change, la lecture est déclenchée et la lecture se termine lorsque la lecture est réussie ou que le temps de lecture dépasse le temps de lecture unique. Que la dernière lecture ait réussi ou échoué, réintroduisez la détection de la luminosité de l’environnement environnant.</p>
-<figure class="align-center" id="id13">
+<section id="auto-sensing-mode">
+<h2>Mode de détection automatique<a class="headerlink" href="#auto-sensing-mode" title="Lien vers cette rubrique">#</a></h2>
+<p>Dans le mode de détection automatique, le scanner détecte la luminosité de l’environnement environnant. Lorsque la luminosité change, le scan est déclenché. Le scan se termine lorsque le scan est réussi ou que le temps de scan dépasse le temps de travail unique. Peu importe si le dernier scan a été réussi ou a échoué, la luminosité de l’environnement environnant sera à nouveau détectée.</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/2050209.png"><img alt="../../media/2050209.png" src="../../media/2050209.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mode de détection automatique</span><a class="headerlink" href="#id13" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Mode de détection automatique</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Même réglage de délai de code<a class="headerlink" href="#id5" title="Lien vers cette rubrique">#</a></h2>
-<p>Pour éviter que le même code-barres ne soit lu plusieurs fois en <a class="reference internal" href="#id3">Mode continu</a> et en <a class="reference internal" href="#id4">Mode de détection automatique</a>, vous pouvez demander au moteur de lecture de retarder pendant une période définie avant d’autoriser la lecture du même code-barres.</p>
-<section id="id6">
-<h3>Pas de retard<a class="headerlink" href="#id6" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="same-code-delay-settings">
+<h2>Réglages de délai du même code<a class="headerlink" href="#same-code-delay-settings" title="Lien vers cette rubrique">#</a></h2>
+<p>Pour éviter que le même code-barres ne soit scanné plusieurs fois en <a class="reference internal" href="#continuous-mode">Mode Continue</a> et en <a class="reference internal" href="#auto-sensing-mode">Mode Détection Automatique</a>, vous pouvez demander au scanner d’attendre un délai avant de pouvoir scanner le même code-barres.</p>
+<section id="no-delay">
+<h3>Pas de délai<a class="headerlink" href="#no-delay" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030C90.png"><img alt="../../media/3030C90.png" src="../../media/3030C90.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Pas de retard</span><a class="headerlink" href="#id14" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Pas de délai</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="s">
-<h3>Délai 1s<a class="headerlink" href="#s" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="delay-1s">
+<h3>Délai 1s<a class="headerlink" href="#delay-1s" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030C91.png"><img alt="../../media/3030C91.png" src="../../media/3030C91.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Délai 1s</span><a class="headerlink" href="#id15" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Délai 1s</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>Délai 3s<a class="headerlink" href="#id7" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="delay-3s">
+<h3>Délai 3s<a class="headerlink" href="#delay-3s" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3030C93.png"><img alt="../../media/3030C93.png" src="../../media/3030C93.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Délai 3s</span><a class="headerlink" href="#id16" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Délai 3s</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Délai 5s<a class="headerlink" href="#id8" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="delay-5s">
+<h3>Délai 5s<a class="headerlink" href="#delay-5s" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/3030C95.png"><img alt="../../media/3030C95.png" src="../../media/3030C95.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Délai 5s</span><a class="headerlink" href="#id17" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Délai 5s</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Délai 7s<a class="headerlink" href="#id9" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="delay-7s">
+<h3>Délai 7s<a class="headerlink" href="#delay-7s" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/3030C97.png"><img alt="../../media/3030C97.png" src="../../media/3030C97.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Délai 7s</span><a class="headerlink" href="#id18" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Délai 7s</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>Délai infini (lecture du même code interdite)<a class="headerlink" href="#id10" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id19">
+<section id="infinite-delay-disable-same-code-scanning">
+<h3>Délai infini (Désactiver le scan du même code)<a class="headerlink" href="#infinite-delay-disable-same-code-scanning" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/3030C99.png"><img alt="../../media/3030C99.png" src="../../media/3030C99.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Délai infini (lecture du même code interdite)</span><a class="headerlink" href="#id19" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Délai infini (Désactiver le scan du même code)</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -523,7 +534,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">précédent</p>
-        <p class="prev-next-title">Paramètres système</p>
+        <p class="prev-next-title">Paramètres du système</p>
       </div>
     </a>
     <a class="right-next"
@@ -531,7 +542,7 @@ document.write(`
        title="page suivante">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">suivant</p>
-        <p class="prev-next-title">Paramètre de caractère de fin</p>
+        <p class="prev-next-title">Paramètres de caractère de fin</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -551,16 +562,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Maintien de la touche (niveau)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Mode continu</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Mode de détection automatique</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Même réglage de délai de code</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Pas de retard</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#s">Délai 1s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Délai 3s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Délai 5s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Délai 7s</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Délai infini (lecture du même code interdite)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Mode de déclenchement des touches</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Mode continu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Mode de détection automatique</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#same-code-delay-settings">Réglages de délai du même code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-delay">Pas de délai</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-1s">Délai 1s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-3s">Délai 3s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-5s">Délai 5s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#delay-7s">Délai 7s</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-delay-disable-same-code-scanning">Délai infini (Désactiver le scan du même code)</a></li>
 </ul>
 </li>
 </ul>

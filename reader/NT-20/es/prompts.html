@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Indicaciones de voz &#8212; NT-20 Scanner User Manual</title>
+    <title>Prompts de voz &#8212; NT-20 Scanner User Manual</title>
   
   
   
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -228,9 +239,9 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Configuración del sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Indicaciones de voz</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Prompts de voz</a></li>
 </ul>
 
     </div>
@@ -369,7 +380,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Indicaciones de voz</h1>
+    <h1>Prompts de voz</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -379,16 +390,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Empezar a configurar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Habilitar indicaciones de voz</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Desactivar las indicaciones de voz</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Desactivar la voz del código de barras de pago</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Ding dong</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Escanear el código exitosamente</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Solución de voz para pago exitoso 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Solución de voz para pago exitoso 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Bienvenido a Voice Solution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Finalizar configuración</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Iniciar configuración</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-voice-prompts">Habilitar Prompts de Voz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-voice-prompts">Desactivar Prompts de Voz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-payment-voice">Desactivar voz de pago</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ding-dong">Ding Dong</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scan-code-successfully">Escanear código con éxito</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#payment-success-voice-solution-1">Solución de voz de pago con éxito 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#payment-success-voice-solution-2">Solución de voz de pago con éxito 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-use-voice-solution">Solución de Voz de Bienvenida</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Finalizar configuración</a></li>
 </ul>
             </nav>
         </div>
@@ -400,114 +411,114 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Indicaciones de voz<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Empezar a configurar<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id12">
+  <section id="voice-prompts">
+<h1>Prompts de voz<a class="headerlink" href="#voice-prompts" title="Link to this heading">#</a></h1>
+<section id="start-setup">
+<h2>Iniciar configuración<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/S_CMD_0001.png"><img alt="../../media/S_CMD_0001.png" src="../../media/S_CMD_0001.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Empezar a configurar</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Iniciar configuración</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Solo después de escanear <a class="reference internal" href="#id2">Iniciar configuración</a> podrá escanear otros códigos de configuración de funciones para la configuración. Es necesario escanear <a class="reference internal" href="#id11">Fin de configuración</a> para que la configuración correspondiente tenga efecto.</p>
+<p>Sólo después de escanear <a class="reference internal" href="#start-setup">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
 </div>
 </section>
-<section id="id3">
-<h2>Habilitar indicaciones de voz<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id13">
+<section id="enable-voice-prompts">
+<h2>Habilitar Prompts de Voz<a class="headerlink" href="#enable-voice-prompts" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/S_CMD_040A.png"><img alt="../../media/S_CMD_040A.png" src="../../media/S_CMD_040A.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Habilitar indicaciones de voz <code class="docutils literal notranslate"><span class="pre">Predeterminado</span></code></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">Activar Prompts de voz <code class="docutils literal notranslate"><span class="pre">por</span> <span class="pre">defecto</span></code></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Desactivar las indicaciones de voz<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id14">
+<section id="disable-voice-prompts">
+<h2>Desactivar Prompts de Voz<a class="headerlink" href="#disable-voice-prompts" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/S_CMD_040B.png"><img alt="../../media/S_CMD_040B.png" src="../../media/S_CMD_040B.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Desactivar las indicaciones de voz</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">Desactivar Prompts de Voz</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Desactivar la voz del código de barras de pago<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id15">
+<section id="disable-payment-voice">
+<h2>Desactivar voz de pago<a class="headerlink" href="#disable-payment-voice" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/S_CMD_040F.png"><img alt="../../media/S_CMD_040F.png" src="../../media/S_CMD_040F.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Desactivar la voz del código de barras de pago</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Desactivar voz de pago</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>Ding dong<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id16">
+<section id="ding-dong">
+<h2>Ding Dong<a class="headerlink" href="#ding-dong" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/S_CMD_2002.png"><img alt="../../media/S_CMD_2002.png" src="../../media/S_CMD_2002.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Ding dong</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ding Dong</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h2>Escanear el código exitosamente<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id17">
+<section id="scan-code-successfully">
+<h2>Escanear código con éxito<a class="headerlink" href="#scan-code-successfully" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/S_CMD_2003.png"><img alt="../../media/S_CMD_2003.png" src="../../media/S_CMD_2003.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Escanear el código exitosamente</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Escanear código con éxito</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h2>Solución de voz para pago exitoso 1<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id18">
+<section id="payment-success-voice-solution-1">
+<h2>Solución de voz de pago con éxito 1<a class="headerlink" href="#payment-success-voice-solution-1" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/S_CMD_2004.png"><img alt="../../media/S_CMD_2004.png" src="../../media/S_CMD_2004.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Pago exitoso, por favor espere   Ding Dong</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">Pago exitoso, por favor espere<br>Ding Dong</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h2>Solución de voz para pago exitoso 2<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id19">
+<section id="payment-success-voice-solution-2">
+<h2>Solución de voz de pago con éxito 2<a class="headerlink" href="#payment-success-voice-solution-2" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/S_CMD_2005.png"><img alt="../../media/S_CMD_2005.png" src="../../media/S_CMD_2005.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Pago de WeChat exitoso   Pago de Alipay exitoso   Pago de UnionPay exitoso   Escaneo exitoso</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">Pago de WeChat exitoso<br>Pago de Alipay exitoso<br>Pago de UnionPay exitoso<br>Escanear con éxito</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h2>Bienvenido a Voice Solution<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id20">
+<section id="welcome-use-voice-solution">
+<h2>Solución de Voz de Bienvenida<a class="headerlink" href="#welcome-use-voice-solution" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/S_CMD_2006.png"><img alt="../../media/S_CMD_2006.png" src="../../media/S_CMD_2006.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Bienvenido a WeChat Pay   Bienvenido a Alipay   Bienvenido a UnionPay   DingDong</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
+<p><span class="caption-text">Bienvenido a WeChat Pay<br>Bienvenido a Alipay<br>Bienvenido a UnionPay<br> Ding Dong</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id11">
-<h2>Finalizar configuración<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id21">
+<section id="end-setup">
+<h2>Finalizar configuración<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/S_CMD_0000.png"><img alt="../../media/S_CMD_0000.png" src="../../media/S_CMD_0000.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Finalizar configuración</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">Finalizar configuración</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Solo después de escanear <a class="reference internal" href="#id2">Iniciar configuración</a> podrá escanear otros códigos de configuración de funciones para la configuración. Es necesario escanear <a class="reference internal" href="#id11">Fin de configuración</a> para que la configuración correspondiente tenga efecto.</p>
+<p>Sólo después de escanear <a class="reference internal" href="#start-setup">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
 </div>
 </section>
 </section>
@@ -548,16 +559,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Empezar a configurar</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Habilitar indicaciones de voz</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Desactivar las indicaciones de voz</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Desactivar la voz del código de barras de pago</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Ding dong</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Escanear el código exitosamente</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Solución de voz para pago exitoso 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Solución de voz para pago exitoso 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Bienvenido a Voice Solution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Finalizar configuración</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Iniciar configuración</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-voice-prompts">Habilitar Prompts de Voz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-voice-prompts">Desactivar Prompts de Voz</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-payment-voice">Desactivar voz de pago</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ding-dong">Ding Dong</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scan-code-successfully">Escanear código con éxito</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#payment-success-voice-solution-1">Solución de voz de pago con éxito 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#payment-success-voice-solution-2">Solución de voz de pago con éxito 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#welcome-use-voice-solution">Solución de Voz de Bienvenida</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Finalizar configuración</a></li>
 </ul>
   </nav></div>
 

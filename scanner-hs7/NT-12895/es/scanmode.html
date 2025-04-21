@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Fin de la configuración del personaje" href="character.html" />
-    <link rel="prev" title="Configuración del sistema" href="system.html" />
+    <link rel="next" title="Configuración de End Caracter" href="character.html" />
+    <link rel="prev" title="Ajustes del sistema" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,11 +240,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Configuración del sistema</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Modo de escaneo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Fin de la configuración del personaje</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Configuración del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Interruptor de código de barras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Ajustes de código de barras</a></li>
 </ul>
 
     </div>
@@ -382,11 +393,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Mantener pulsado el botón (Nivel)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Modo continuo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Modo de detección automática</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Intervalo de tiempo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Sin intervalo de tiempo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Modo lanzador de teclas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Modo continuo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Modo de autodetección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scanning-interval">Intervalo de escaneo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-time-interval">Sin intervalo de tiempo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ms">500ms</a></li>
 </ul>
 </li>
@@ -401,61 +412,61 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Modo de escaneo<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Mantener pulsado el botón (Nivel)<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Presione el botón para iniciar la lectura y suéltelo para finalizarla. Si la lectura es exitosa o el tiempo de lectura excede el tiempo de lectura individual, la lectura finaliza.</p>
-<figure class="align-center" id="id7">
+  <section id="scan-mode">
+<h1>Modo de escaneo<a class="headerlink" href="#scan-mode" title="Link to this heading">#</a></h1>
+<section id="key-trigger-mode">
+<h2>Modo lanzador de teclas<a class="headerlink" href="#key-trigger-mode" title="Link to this heading">#</a></h2>
+<p>Pulse el botón para activar el escaneo, y suelte el botón para finalizar la exploración. El escaneo termina cuando el escaneo es exitoso o el tiempo de lectura excede el tiempo de lectura simple.</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/8610020..png"><img alt="../../media/8610020..png" src="../../media/8610020..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mantener pulsado el botón (Nivel) <code class="docutils literal notranslate"><span class="pre">Predeterminado</span></code></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modo de activación de teclas <code class="docutils literal notranslate"><span class="pre">por</span> <span class="pre">defecto</span></code></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Modo continuo<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>El motor de lectura funciona continuamente. Si la lectura es exitosa o el tiempo de lectura excede el tiempo de lectura individual, la lectura actual finaliza. Si el tiempo excede el tiempo especificado, la siguiente lectura se activa automáticamente.</p>
-<figure class="align-center" id="id8">
+<section id="continuous-mode">
+<h2>Modo continuo<a class="headerlink" href="#continuous-mode" title="Link to this heading">#</a></h2>
+<p>El escáner funciona continuamente. Si el escaneo tiene éxito o el tiempo de escaneo excede el tiempo de trabajo único, el escaneo actual termina. Si el tiempo excede el tiempo especificado, el siguiente escaneo se activa automáticamente.</p>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/8610028..png"><img alt="../../media/8610028..png" src="../../media/8610028..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Modo continuo</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modo continuo</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Modo de detección automática<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>En el modo de detección automática, el motor de lectura detecta el brillo del entorno circundante. Cuando cambia el brillo, se activa la lectura y esta finaliza cuando la lectura es exitosa o el tiempo de lectura excede el tiempo de lectura única. Independientemente de si la última lectura fue exitosa o fallida, vuelva a ingresar la detección del brillo del entorno circundante.</p>
-<figure class="align-center" id="id9">
+<section id="auto-sensing-mode">
+<h2>Modo de autodetección<a class="headerlink" href="#auto-sensing-mode" title="Link to this heading">#</a></h2>
+<p>En el modo de detección automática, el escáner detectará el brillo del entorno circundante. Cuando el brillo cambia, el escaneo se activa. El escaneo termina cuando el escaneo es exitoso o el tiempo de escaneo excede el tiempo de trabajo único. Independientemente de si el último escaneo fue exitoso o falló, se volverá a detectar el brillo del entorno circundante.</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/8610023..png"><img alt="../../media/8610023..png" src="../../media/8610023..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Modo de detección automática</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Modo de autodetección</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Intervalo de tiempo<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<p>Retraso en la lectura de diferentes códigos de barras</p>
-<section id="id6">
-<h3>Sin intervalo de tiempo<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id10">
+<section id="scanning-interval">
+<h2>Intervalo de escaneo<a class="headerlink" href="#scanning-interval" title="Link to this heading">#</a></h2>
+<p>Retraso de trabajo al escanear diferentes códigos de barras</p>
+<section id="no-time-interval">
+<h3>Sin intervalo de tiempo<a class="headerlink" href="#no-time-interval" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/8510070..png"><img alt="../../media/8510070..png" src="../../media/8510070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sin intervalo de tiempo</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Sin intervalo de tiempo</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="ms">
 <h3>500ms<a class="headerlink" href="#ms" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/851007500..png"><img alt="../../media/851007500..png" src="../../media/851007500..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">500ms</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">500ms</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -479,7 +490,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Configuración del sistema</p>
+        <p class="prev-next-title">Ajustes del sistema</p>
       </div>
     </a>
     <a class="right-next"
@@ -487,7 +498,7 @@ document.write(`
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Fin de la configuración del personaje</p>
+        <p class="prev-next-title">Configuración de End Caracter</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -507,11 +518,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Mantener pulsado el botón (Nivel)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Modo continuo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Modo de detección automática</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Intervalo de tiempo</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Sin intervalo de tiempo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Modo lanzador de teclas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Modo continuo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Modo de autodetección</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scanning-interval">Intervalo de escaneo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-time-interval">Sin intervalo de tiempo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ms">500ms</a></li>
 </ul>
 </li>

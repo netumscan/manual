@@ -1,18 +1,16 @@
-# 常见问题
+# FAQ
 
-## 问题 1：扫码响一声，不上传数据？
-**回答：** 扫描枪进入了储存模式，需要扫描[普通模式](working.md#普通模式)进行恢复。
+## Question 1: The scan is successful, the buzzer sounds once, but no data is uploaded?
+**Answer:** The scanner has entered storage mode and needs to scan [Normal Mode](working.md#normal-mode) to recover.
 
-## 问题 2：扫码响两声，可以上传数据？
-**回答：** 扫描枪电量低，提示需要充电。
+## Question 2:The scanner scans successfully, beeps twice, and can upload data normally. What is going on?
+**Answer:** The battery of the scanner gun is low and it prompts that it needs to be recharged.
 
-## 问题 3：扫描枪按按键响五声？
-**回答：** 电量不足，需要充电才可以继续使用
+## Question 3:The scanner beeps five times when a button is pressed. How can I solve this problem?
+**Answer:** The battery is low and needs to be charged before it can be used again.
 
-## 问题 4：扫码上传数据不对？
-**回答：** 
-- 中文输入法需要切换到英文输入法
-- 扫描说明书美国语言设置
-
-
+## Question 4:Scan successful, uploaded data incorrect?
+**Answer:** 
+- The Chinese input method needs to be switched to the English input method
+- Scan Instructions US Language Setting
 

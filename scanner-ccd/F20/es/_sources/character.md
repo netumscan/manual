@@ -1,61 +1,61 @@
-# 结束符设置
-结束字符是在解码数据后面添加字符格式: 解码数据+结束字符。
+# End Character Settings
+The end character is added after the decoded data in the format of decoded data + end character.
 
-## 无结束符
+## No End Character
 
 ```{figure} ../../media/021040.png
 :align: center
 :width: 300px
 
-无结束符
+No End Character
 ```
 
 
-## 回车换行 CR LF
+## Enter+New Line(CRLF)
 
 ```{figure} ../../media/0213405Cr5Cn.png
 :align: center
 :width: 300px
 
-回车换行 CR LF
+Enter+New Line(CRLF)
 ```
 
 
-## 回车 CR
+## Enter(CR)
 
 ```{figure} ../../media/0212405Cr.png
 :align: center
 :width: 300px
 
-回车 CR`默认`
+Enter(CR) `Default`
 ```
 
 
-## 换行 LF
+## New Line(LF)
 
 ```{figure} ../../media/0212405Cn.png
 :align: center
 :width: 300px
 
-回车 CR`默认`
+New Line(LF)
 ```
 
 
-## 跳格 TAB
+## Tab(TAB)
 
 ```{figure} ../../media/0212405Ct.png
 :align: center
 :width: 300px
 
-跳格 TAB
+Tab(TAB)
 ```
 
 
-## 回车回车 CR CR
+## Enter+Enter(CRCR)
 
 ```{figure} ../../media/0211405Cr5Cr.png
 :align: center
 :width: 300px
 
-回车回车 CR CR
+Enter+Enter(CRCR)
 ```

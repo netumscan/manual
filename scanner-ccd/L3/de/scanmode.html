@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="Endzeicheneinstellung" href="character.html" />
+    <link rel="next" title="End-Charakter-Einstellungen" href="character.html" />
     <link rel="prev" title="Systemeinstellungen" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
@@ -162,9 +162,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Scan-Modus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Endzeicheneinstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">End-Charakter-Einstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode-Einstellungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Einstellungen</a></li>
 </ul>
 
     </div>
@@ -313,18 +313,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Tastenmodus</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Kontinuierlicher Modus</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Tastenverzögerungsmodus</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Selbsterkennende Einstellungen</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir">Deaktivieren Sie die automatische IR-Erkennung</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Aktivieren Sie die automatische IR-Erkennung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Tastentrigger-Modus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Kontinuierlicher Modus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Automatischer Sensormodus</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Deaktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Aktivieren</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Einstellungen zur Erkennung doppelter Codes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Deaktivieren Sie die Erkennung doppelten Codes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Aktivieren Sie die Erkennung doppelten Codes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Code-Intervallzeit wiederholen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duplicate-barcode-detection-settings">Barcode-Erkennungseinstellungen duplizieren</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Deaktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Aktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeat-barcode-interval">Barcode-Intervall wiederholen</a></li>
 </ul>
 </li>
 </ul>
@@ -338,121 +337,111 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Scan-Modus<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Tastenmodus<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>In diesem Modus beginnt das Modul mit dem Lesen des Codes, nachdem die Auslösetaste gedrückt wurde, und stoppt das Lesen des Codes, nachdem der Code erfolgreich gelesen wurde oder die Auslösetaste losgelassen wurde.</p>
-<figure class="align-center" id="id11">
+  <section id="scan-mode">
+<h1>Scan-Modus<a class="headerlink" href="#scan-mode" title="Link to this heading">#</a></h1>
+<section id="key-trigger-mode">
+<h2>Tastentrigger-Modus<a class="headerlink" href="#key-trigger-mode" title="Link to this heading">#</a></h2>
+<p>Drücken Sie die Schaltfläche, um das Scannen auszulösen, und lassen Sie die Taste zum Scannen frei. Das Scannen endet wenn der Scan erfolgreich ist oder die Lesezeit die einzelne Lesezeit übersteigt.</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/013300.png"><img alt="../../media/013300.png" src="../../media/013300.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Tastenmodus <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Tastendrigger-Modus <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Kontinuierlicher Modus<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>Das rote Licht des Moduls leuchtet lange. Beim Vorbeigehen eines Barcodes liest das Modul den Barcode automatisch. Derselbe Barcode kann nicht wiederholt gelesen werden, es sei denn, er wird entfernt und erneut gelesen.</p>
-<figure class="align-center" id="id12">
+<section id="continuous-mode">
+<h2>Kontinuierlicher Modus<a class="headerlink" href="#continuous-mode" title="Link to this heading">#</a></h2>
+<p>Wenn der Scanner erfolgreich ist oder die Scanzeit die Arbeitszeit überschreitet, endet der aktuelle Scanner. Wenn die Zeit die angegebene Zeit überschreitet, wird der nächste Scan automatisch ausgelöst.</p>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/013304.png"><img alt="../../media/013304.png" src="../../media/013304.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Kontinuierlicher Modus</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Kontinuierlicher Modus</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Tastenverzögerungsmodus<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>Nachdem die Einstellung erfolgreich war, leuchtet das rote Licht des Moduls 3 Sekunden lang und erlischt, wenn der Barcode nicht innerhalb von 3 Sekunden gelesen wird, oder erlischt, nachdem der Barcode erfolgreich gelesen wurde.</p>
-<figure class="align-center" id="id13">
-<a class="reference internal image-reference" href="../../media/013301.png"><img alt="../../media/013301.png" src="../../media/013301.png" style="width: 300px;" />
-</a>
-<figcaption>
-<p><span class="caption-text">Tastenverzögerungsmodus</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
-</figcaption>
-</figure>
-</section>
-<section id="id5">
-<h2>Selbsterkennende Einstellungen<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<section id="ir">
-<h3>Deaktivieren Sie die automatische IR-Erkennung<a class="headerlink" href="#ir" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="auto-sensing-mode">
+<h2>Automatischer Sensormodus<a class="headerlink" href="#auto-sensing-mode" title="Link to this heading">#</a></h2>
+<p>Im Automatik-Sensing-Modus erkennt der Scanner die Helligkeit der umgebenden Umgebung. Wenn sich die Helligkeit ändert, wird der Scan ausgelöst. Der Scan endet wenn der Scan erfolgreich ist oder die Scanzeit die Arbeitszeit übersteigt. Unabhängig davon, ob der letzte Scan erfolgreich war oder fehlgeschlagen ist, wird die Helligkeit der umgebenden Umgebung erneut erkannt.</p>
+<section id="disable">
+<h3>Deaktivieren<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/02310.png"><img alt="../../media/02310.png" src="../../media/02310.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Deaktivieren Sie die automatische IR-Erkennung <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Standard</span></code> deaktivieren</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h3>Aktivieren Sie die automatische IR-Erkennung<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="enable">
+<h3>Aktivieren<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/02311.png"><img alt="../../media/02311.png" src="../../media/02311.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Aktivieren Sie die automatische IR-Erkennung</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Aktivieren</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id7">
-<h2>Einstellungen zur Erkennung doppelter Codes<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<section id="id8">
-<h3>Deaktivieren Sie die Erkennung doppelten Codes<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="duplicate-barcode-detection-settings">
+<h2>Barcode-Erkennungseinstellungen duplizieren<a class="headerlink" href="#duplicate-barcode-detection-settings" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Deaktivieren<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/02770.png"><img alt="../../media/02770.png" src="../../media/02770.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Deaktivieren Sie die Erkennung doppelten Codes <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">Standard</span></code> deaktivieren</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>Aktivieren Sie die Erkennung doppelten Codes<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="id2">
+<h3>Aktivieren<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/02771.png"><img alt="../../media/02771.png" src="../../media/02771.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Aktivieren Sie die Erkennung doppelten Codes</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">Aktivieren</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id10">
-<h3>Code-Intervallzeit wiederholen<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="repeat-barcode-interval">
+<h3>Barcode-Intervall wiederholen<a class="headerlink" href="#repeat-barcode-interval" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/02630A.png"><img alt="../../media/02630A.png" src="../../media/02630A.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">1s</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">1 s</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id19">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/026314.png"><img alt="../../media/026314.png" src="../../media/026314.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">2s</span><a class="headerlink" href="#id19" title="Link to this image">#</a></p>
+<p><span class="caption-text">2 s</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id20">
+<figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="../../media/02631E.png"><img alt="../../media/02631E.png" src="../../media/02631E.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">3s</span><a class="headerlink" href="#id20" title="Link to this image">#</a></p>
+<p><span class="caption-text">3 s</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id21">
+<figure class="align-center" id="id12">
 <a class="reference internal image-reference" href="../../media/026332.png"><img alt="../../media/026332.png" src="../../media/026332.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">5s</span><a class="headerlink" href="#id21" title="Link to this image">#</a></p>
+<p><span class="caption-text">5 s</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<figure class="align-center" id="id22">
+<figure class="align-center" id="id13">
 <a class="reference internal image-reference" href="../../media/026364.png"><img alt="../../media/026364.png" src="../../media/026364.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">10s</span><a class="headerlink" href="#id22" title="Link to this image">#</a></p>
+<p><span class="caption-text">10 s</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -484,7 +473,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">Endzeicheneinstellung</p>
+        <p class="prev-next-title">End-Charakter-Einstellungen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -504,18 +493,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Tastenmodus</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Kontinuierlicher Modus</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Tastenverzögerungsmodus</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Selbsterkennende Einstellungen</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ir">Deaktivieren Sie die automatische IR-Erkennung</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Aktivieren Sie die automatische IR-Erkennung</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Tastentrigger-Modus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Kontinuierlicher Modus</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Automatischer Sensormodus</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Deaktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Aktivieren</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Einstellungen zur Erkennung doppelter Codes</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Deaktivieren Sie die Erkennung doppelten Codes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Aktivieren Sie die Erkennung doppelten Codes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Code-Intervallzeit wiederholen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duplicate-barcode-detection-settings">Barcode-Erkennungseinstellungen duplizieren</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Deaktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Aktivieren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#repeat-barcode-interval">Barcode-Intervall wiederholen</a></li>
 </ul>
 </li>
 </ul>

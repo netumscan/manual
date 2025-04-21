@@ -1,57 +1,57 @@
-# 系统设置
+# System Settings
 
-## 开始设置
+## Start Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 ```{figure} ../../media/252B24.24.png
 :align: center
 :width: 300px
 
-开始设置
+Start Setup
 ```
 
-## 恢复默认设置
-当扫描枪发生未知错误时，可以通过恢复默认设置复位扫描枪。
+## Restore Default Settings
+When an unknown error occurs on the scanner, you can reset the scanner by restoring the default settings.
 
 
 ```{figure} ../../media/252B2B25.png
 :align: center
 :width: 300px
 
-恢复默认设置
+Restore Default Settings
 ```
 
 
 
-## 声音设置
+## Volume Settings
 
-### 开启
+### Enable
 
 ```{figure} ../../media/SND1.png
 :align: center
 :width: 300px
 
-开启 `默认 `
+Enable `Default`
 ```
   
-### 关闭
+### Disable
 ```{figure} ../../media/SND0.png
 :align: center
 :width: 300px
 
-关闭
+Disable
 ```
 
-## 结束设置
 
+## End Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/25242425.png
 :align: center
 :width: 300px
 
-结束设置
+End Setup
 ```

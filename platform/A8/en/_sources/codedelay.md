@@ -1,5 +1,5 @@
-# 同码延时设置
-为避免在扫描过程中同一条码被连续识读多次，可以设定时长后才允许识读相同条码。
+# Same Code Delay Settings
+To prevent the same barcode from being read multiple times in a row during scanning, you can set a time limit before allowing the same barcode to be read.
 
 ## 0ms
 
@@ -28,11 +28,11 @@
 3000ms
 ```
 
-## 禁止同码扫描
+## Disable Same Code Scanning
 
 ```{figure} ../../media/3E2100100365535..png
 :align: center
 :width: 300px
 
-禁止同码扫描
+Disable Same Code Scanning
 ```

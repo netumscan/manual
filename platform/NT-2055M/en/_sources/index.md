@@ -1,4 +1,4 @@
-# {{ model }} 支付平台快速设置手册
+# {{ model }} Payment Platform Quick Setup Guide
 ```{toctree}
 :maxdepth: 2
 

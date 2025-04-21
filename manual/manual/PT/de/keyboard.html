@@ -48,8 +48,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'keyboard';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="QR-URL-Code" href="qrcodeurl.html" />
-    <link rel="prev" title="Endzeicheneinstellung" href="character.html" />
+    <link rel="next" title="QR-Code-URL-Einstellungen" href="qrcodeurl.html" />
+    <link rel="prev" title="End-Charakter-Einstellungen" href="character.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="de"/>
   </head>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,10 +241,10 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Endzeicheneinstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">End-Charakter-Einstellungen</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tastatureinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">QR-URL-Code</a></li>
-<li class="toctree-l1"><a class="reference internal" href="codedelay.html">Gleiche Codeverzögerungseinstellung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">QR-Code-URL-Einstellungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codedelay.html">Gleiche Code-Verzögerung Einstellungen</a></li>
 </ul>
 
     </div>
@@ -382,15 +393,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Falleinstellung</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Normaler</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-a">Groß- und Kleinschreibung (A&lt;-&gt;a)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Alles in Großbuchstaben (a-&gt;A)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Alles kleingeschrieben (A-&gt;a)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-settings">Fall Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal">Normal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inverted-case-a-a">Invertierte Fall (A&lt;-&gt;a)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-caps-a-a">Alle Caps (a-&gt;A)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-lowercase-a-a">Alle Kleinbuchstaben (A-&gt;a)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Chinesische Einstellungen</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Primitive Typen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character-encoding-settings">Zeichenkodierungseinstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#original-types">Ursprüngliche Typen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utf8">UTF8</a></li>
 </ul>
@@ -406,85 +417,85 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Tastatureinstellungen<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Falleinstellung<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Sie können die Ausgabe so konfigurieren, dass sie ausschließlich in Großbuchstaben oder in Kleinbuchstaben erfolgt.</p>
-<section id="id3">
-<h3>Normaler<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+  <section id="keyboard-settings">
+<h1>Tastatureinstellungen<a class="headerlink" href="#keyboard-settings" title="Link to this heading">#</a></h1>
+<section id="case-settings">
+<h2>Fall Einstellungen<a class="headerlink" href="#case-settings" title="Link to this heading">#</a></h2>
+<p>Sie können die Ausgabe in Groß- oder Kleinbuchstaben konfigurieren</p>
+<section id="normal">
+<h3>Normal<a class="headerlink" href="#normal" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3E2100100D0..png"><img alt="../../media/3E2100100D0..png" src="../../media/3E2100100D0..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Normaler <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Normale <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="a-a">
-<h3>Groß- und Kleinschreibung (A&lt;-&gt;a)<a class="headerlink" href="#a-a" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<section id="inverted-case-a-a">
+<h3>Invertierte Fall (A&lt;-&gt;a)<a class="headerlink" href="#inverted-case-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3E2100100D3..png"><img alt="../../media/3E2100100D3..png" src="../../media/3E2100100D3..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Groß- und Kleinschreibung (A&lt;-&gt;a)</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Invertierte Fall (A&lt;-&gt;a)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h3>Alles in Großbuchstaben (a-&gt;A)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id10">
+<section id="all-caps-a-a">
+<h3>Alle Caps (a-&gt;A)<a class="headerlink" href="#all-caps-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3E2100100D1..png"><img alt="../../media/3E2100100D1..png" src="../../media/3E2100100D1..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Alles in Großbuchstaben (a-&gt;A)</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Alle Caps (a-&gt;A)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h3>Alles kleingeschrieben (A-&gt;a)<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id11">
+<section id="all-lowercase-a-a">
+<h3>Alle Kleinbuchstaben (A-&gt;a)<a class="headerlink" href="#all-lowercase-a-a" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3E2100100D2..png"><img alt="../../media/3E2100100D2..png" src="../../media/3E2100100D2..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Alles kleingeschrieben (A-&gt;a)</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">Alle Kleinbuchstaben (A-&gt;a)</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id6">
-<h2>Chinesische Einstellungen<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="character-encoding-settings">
+<h2>Zeichenkodierungseinstellungen<a class="headerlink" href="#character-encoding-settings" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>GBK</strong>: Unterstützt chinesische Eingaben in Notepad und Excel.</p></li>
-<li><p><strong>UTF8</strong>: Unterstützt chinesische Eingabe in Word und QQ.</p></li>
+<li><p><strong>GBK</strong>：unterstützt chinesische Eingaben in Notepad und Excel.</p></li>
+<li><p><strong>UTF8</strong>：chinesische Eingabe in Word und QQ unterstützen.</p></li>
 </ul>
-<section id="id7">
-<h3>Primitive Typen<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id12">
+<section id="original-types">
+<h3>Ursprüngliche Typen<a class="headerlink" href="#original-types" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3E2100101D0..png"><img alt="../../media/3E2100101D0..png" src="../../media/3E2100101D0..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Primitive Typen</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ursprüngliche Typen</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="gbk">
 <h3>GBK<a class="headerlink" href="#gbk" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3E2100101D1..png"><img alt="../../media/3E2100101D1..png" src="../../media/3E2100101D1..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">GBK <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">GBK <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="utf8">
 <h3>UTF8<a class="headerlink" href="#utf8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/3E2100101D2..png"><img alt="../../media/3E2100101D2..png" src="../../media/3E2100101D2..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">UTF8</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">UTF8</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -508,7 +519,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">zurück</p>
-        <p class="prev-next-title">Endzeicheneinstellung</p>
+        <p class="prev-next-title">End-Charakter-Einstellungen</p>
       </div>
     </a>
     <a class="right-next"
@@ -516,7 +527,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">weiter</p>
-        <p class="prev-next-title">QR-URL-Code</p>
+        <p class="prev-next-title">QR-Code-URL-Einstellungen</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -536,15 +547,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Falleinstellung</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Normaler</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-a">Groß- und Kleinschreibung (A&lt;-&gt;a)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Alles in Großbuchstaben (a-&gt;A)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Alles kleingeschrieben (A-&gt;a)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#case-settings">Fall Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#normal">Normal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inverted-case-a-a">Invertierte Fall (A&lt;-&gt;a)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-caps-a-a">Alle Caps (a-&gt;A)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-lowercase-a-a">Alle Kleinbuchstaben (A-&gt;a)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Chinesische Einstellungen</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Primitive Typen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#character-encoding-settings">Zeichenkodierungseinstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#original-types">Ursprüngliche Typen</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#gbk">GBK</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utf8">UTF8</a></li>
 </ul>

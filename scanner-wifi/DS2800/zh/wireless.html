@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>WiFi模式 &#8212; DS2800 Scanner User Manual</title>
+    <title>Wi-Fi 传输模式 &#8212; DS2800 Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'wireless';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="使用TCP Client传输数据" href="tcpclient.html" />
+    <link rel="next" title="使用 TCP 客户端来传输数据" href="tcpclient.html" />
     <link rel="prev" title="工作模式" href="working.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="zh-CN"/>
@@ -162,11 +162,11 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">工作模式</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">WiFi模式</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用TCP Client传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">使用TCP Server传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">使用MQTT协议传输数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html">使用HTTP协议传输数据</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Wi-Fi 传输模式</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用 TCP 客户端来传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html">使用 TCP 服务端传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">使用 MQTT 协议传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html">使用 HTTP 协议传输数据</a></li>
 <li class="toctree-l2"><a class="reference internal" href="network.html">网络配置</a></li>
 </ul>
 </details></li>
@@ -311,7 +311,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>WiFi模式</h1>
+    <h1>Wi-Fi 传输模式</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -321,19 +321,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">修改设备编号</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">数据上传格式</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">原始条码内容</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#josn2">Josn格式内容</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#josn-3">Josn格式+内容中双引号加转义符</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-device-id">修改设备 ID</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-upload-format">数据上传格式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#original-barcode-content1">原始条码内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-format-content2">Json 格式内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-format-double-quotes-plus-escape-characters-in-content3">Json 格式 + 双引号加上内容中的转义字符 </a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">数据接收格式</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">语音代码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-rceiving-format">数据接收格式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voice-code">语音代码</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">数据传输协议</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">网络配置方式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transmission-protocol">数据传输协议</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-configuration">网络配置</a></li>
 </ul>
             </nav>
         </div>
@@ -345,47 +345,47 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="wifi">
-<h1>WiFi模式<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h1>
-<section id="id1">
-<h2>修改设备编号<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+  <section id="wi-fi-transmission-mode">
+<h1>Wi-Fi 传输模式<a class="headerlink" href="#wi-fi-transmission-mode" title="Link to this heading">#</a></h1>
+<section id="modify-device-id">
+<h2>修改设备 ID<a class="headerlink" href="#modify-device-id" title="Link to this heading">#</a></h2>
     <iframe src="../../plugins/wifi-clientId.html" height="400px" width="100%"></iframe>
 </section>
-<section id="id2">
-<h2>数据上传格式<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<section id="id4">
-<h3>原始条码内容<a class="footnote-reference brackets" href="#id5" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="data-upload-format">
+<h2>数据上传格式<a class="headerlink" href="#data-upload-format" title="Link to this heading">#</a></h2>
+<section id="original-barcode-content1">
+<h3>原始条码内容<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#original-barcode-content1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S0.png"><img alt="../../media/25WFCOMMPM23S0.png" src="../../media/25WFCOMMPM23S0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">原始条码内容</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">原始条码内容</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="josn2">
-<h3>Josn格式内容<a class="footnote-reference brackets" href="#id7" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#josn2" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="json-format-content2">
+<h3>Json 格式内容<a class="footnote-reference brackets" href="#id4" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a><a class="headerlink" href="#json-format-content2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S1.png"><img alt="../../media/25WFCOMMPM23S1.png" src="../../media/25WFCOMMPM23S1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Josn格式内容</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">Json 格式内容</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="josn-3">
-<h3>Josn格式+内容中双引号加转义符<a class="footnote-reference brackets" href="#id9" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a><a class="headerlink" href="#josn-3" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="json-format-double-quotes-plus-escape-characters-in-content3">
+<h3>Json 格式 + 双引号加上内容中的转义字符 <a class="footnote-reference brackets" href="#id6" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a><a class="headerlink" href="#json-format-double-quotes-plus-escape-characters-in-content3" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/25WFCOMMPM23S2.png"><img alt="../../media/25WFCOMMPM23S2.png" src="../../media/25WFCOMMPM23S2.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Josn格式+内容中双引号加转义符</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">Json 格式 + 双引号加上内容中的转义字符</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
-<section id="id10">
-<h2>数据接收格式<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<section id="data-rceiving-format">
+<h2>数据接收格式<a class="headerlink" href="#data-rceiving-format" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 30.0%" />
@@ -393,7 +393,7 @@ document.write(`
 <col style="width: 40.0%" />
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>参数名</p></th>
+<tr class="row-odd"><th class="head"><p>参数名称</p></th>
 <th class="head"><p>类型</p></th>
 <th class="head"><p>描述</p></th>
 </tr>
@@ -410,14 +410,14 @@ document.write(`
 </tbody>
 </table>
 </div>
-<div class="literal-block-wrapper docutils container" id="id17">
-<div class="code-block-caption"><span class="caption-text">返回示例</span><a class="headerlink" href="#id17" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-text">返回示例</span><a class="headerlink" href="#id10" title="Link to this code">#</a></div>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p">{</span><span class="nt">&quot;ply&quot;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="nt">&quot;msg&quot;</span><span class="p">:</span><span class="s2">&quot;ABEF&quot;</span><span class="p">}</span>
 </pre></div>
 </div>
 </div>
-<section id="id11">
-<h3>语音代码<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<section id="voice-code">
+<h3>语音代码<a class="headerlink" href="#voice-code" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <colgroup>
 <col style="width: 50.0%" />
@@ -433,7 +433,7 @@ document.write(`
 <td><p>蜂鸣器响一声</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
-<td><p>蜂鸣器响二声</p></td>
+<td><p>蜂鸣器响两声</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>蜂鸣器响三声</p></td>
@@ -443,44 +443,44 @@ document.write(`
 </div>
 </section>
 </section>
-<section id="id12">
-<h2>数据传输协议<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<section id="data-transmission-protocol">
+<h2>数据传输协议<a class="headerlink" href="#data-transmission-protocol" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="tcpclient.html">使用TCP Client传输数据</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#id1">快速配置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#id2">演示软件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#id3">建立连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tcpclient.html">使用 TCP 客户端来传输数据</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#quick-configuration">快速配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#demo-software">演示软件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html#make-a-connection">建立连接</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="tcpserver.html">使用TCP Server传输数据</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#id1">快速配置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#id2">演示软件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#id3">建立连接</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tcpserver.html">使用 TCP 服务端传输数据</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#quick-configuration">快速配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#demo-software">演示软件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpserver.html#make-a-connection">建立连接</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="mqtt.html">使用MQTT协议传输数据</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html#broker">搭建代理（Broker）服务器</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html#id3">配置扫描枪</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html#id7">接收数据</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html#id8">开发参考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mqtt.html">使用 MQTT 协议传输数据</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html#build-broker-server">构建 Broker 服务器</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html#configure-scanner">配置扫描枪</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html#receiving-data">接收数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html#development-reference">开发参考</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="http.html">使用HTTP协议传输数据</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="http.html#rest-api">创建REST API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="http.html#id5">配置扫描枪</a></li>
+<li class="toctree-l1"><a class="reference internal" href="http.html">使用 HTTP 协议传输数据</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="http.html#create-rest-api">创建 REST API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="http.html#configure-scanner">配置扫描枪</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </section>
-<section id="id13">
-<h2>网络配置方式<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<section id="network-configuration">
+<h2>网络配置<a class="headerlink" href="#network-configuration" title="Link to this heading">#</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="network.html">网络配置</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="network.html#ip">动态IP地址配置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="network.html#id5">静态IP地址配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html#dynamic-ip-address-configuration">动态IP地址配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="network.html#static-ip-address-configuration">静态IP地址配置</a></li>
 </ul>
 </li>
 </ul>
@@ -489,17 +489,17 @@ document.write(`
 </section>
 <hr class="footnotes docutils" />
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id5" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">1</a><span class="fn-bracket">]</span></span>
-<p>原始条码内容： {&quot;ID&quot;:&quot;680870&quot;}</p>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>原始条码内容: {&quot;ID&quot;:&quot;60870&quot;}</p>
 </aside>
-<aside class="footnote brackets" id="id7" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">2</a><span class="fn-bracket">]</span></span>
-<p>Josn格式内容： {&quot;id&quot;:&quot;C143F123&quot;,&quot;msg&quot;:&quot;{&quot;ID&quot;:&quot;680870&quot;}&quot;}</p>
+<aside class="footnote brackets" id="id4" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>Json 格式内容: {&quot;id&quot;:&quot;C143F123&quot;,&quot;msg&quot;:&quot;{&quot;ID&quot;:&quot;680870&quot;}&quot;}</p>
 </aside>
-<aside class="footnote brackets" id="id9" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">3</a><span class="fn-bracket">]</span></span>
-<p>Josn格式+内容中双引号加转义符： {&quot;id&quot;:&quot;C143F123&quot;,&quot;msg&quot;:&quot;{&quot;ID&quot;:&quot;680870&quot;}&quot;}</p>
+<aside class="footnote brackets" id="id6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">3</a><span class="fn-bracket">]</span></span>
+<p>Json 格式 + 内容中双引号加转义字符: {&quot;id&quot;:&quot;C143F123&quot;,&quot;msg&quot;:&quot;{&quot;ID&quot;:&quot;680870&quot;}&quot;}</p>
 </aside>
 </aside>
 
@@ -528,7 +528,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">下一页</p>
-        <p class="prev-next-title">使用TCP Client传输数据</p>
+        <p class="prev-next-title">使用 TCP 客户端来传输数据</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -548,19 +548,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">修改设备编号</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">数据上传格式</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">原始条码内容</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#josn2">Josn格式内容</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#josn-3">Josn格式+内容中双引号加转义符</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modify-device-id">修改设备 ID</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-upload-format">数据上传格式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#original-barcode-content1">原始条码内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-format-content2">Json 格式内容</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#json-format-double-quotes-plus-escape-characters-in-content3">Json 格式 + 双引号加上内容中的转义字符 </a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">数据接收格式</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">语音代码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-rceiving-format">数据接收格式</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#voice-code">语音代码</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">数据传输协议</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">网络配置方式</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-transmission-protocol">数据传输协议</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-configuration">网络配置</a></li>
 </ul>
   </nav></div>
 

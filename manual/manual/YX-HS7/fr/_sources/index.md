@@ -1,4 +1,4 @@
-# {{ model }} 有线扫描枪快速设置手册
+# {{ model }} Wired Scanner Quick Setup Guide
 
 
 ```{toctree}

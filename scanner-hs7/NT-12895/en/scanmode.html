@@ -47,7 +47,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="End character setting" href="character.html" />
+    <link rel="next" title="End Character Settings" href="character.html" />
     <link rel="prev" title="System Settings" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -230,7 +241,7 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Scan Mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">End character setting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">End Character Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Settings</a></li>
 </ul>
@@ -381,11 +392,11 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Key Hold (Level)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Continuous Mode</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Automatic sensing mode</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Time interval</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">No time interval</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Key Trigger Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Continuous Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Auto Sensing Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scanning-interval">Scanning Interval</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-time-interval">No Time Interval</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ms">500ms</a></li>
 </ul>
 </li>
@@ -400,61 +411,61 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Scan Mode<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>Key Hold (Level)<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Press the button to trigger the reading, and release the button to end the reading. The reading ends when the reading is successful or the reading time exceeds the single reading time.</p>
-<figure class="align-center" id="id7">
+  <section id="scan-mode">
+<h1>Scan Mode<a class="headerlink" href="#scan-mode" title="Link to this heading">#</a></h1>
+<section id="key-trigger-mode">
+<h2>Key Trigger Mode<a class="headerlink" href="#key-trigger-mode" title="Link to this heading">#</a></h2>
+<p>Press the button to trigger scanning, and release the button to end scanning. Scanning ends when the scan is successful or the reading time exceeds the single reading time.</p>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/8610020..png"><img alt="../../media/8610020..png" src="../../media/8610020..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Key Hold (Level) <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Key Trigger Mode <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Continuous Mode<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>The reading engine works continuously. If the reading is successful or the reading time exceeds the single reading time, the current reading ends. If the reading time exceeds the specified time, the next reading is automatically triggered.</p>
-<figure class="align-center" id="id8">
+<section id="continuous-mode">
+<h2>Continuous Mode<a class="headerlink" href="#continuous-mode" title="Link to this heading">#</a></h2>
+<p>The scanner works continuously. If the scan is successful or the scan time exceeds the single working time, the current scan ends. If the time exceeds the specified time, the next scan is automatically triggered.</p>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/8610028..png"><img alt="../../media/8610028..png" src="../../media/8610028..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Continuous Mode</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Continuous Mode</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Automatic sensing mode<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>In the automatic sensing mode, the reading engine will detect the brightness of the surrounding environment. When the brightness changes, the reading is triggered, and the reading ends when the reading is successful or the reading time exceeds the single reading time. Regardless of whether the last reading was successful or failed, the brightness of the surrounding environment will be detected again.</p>
-<figure class="align-center" id="id9">
+<section id="auto-sensing-mode">
+<h2>Auto Sensing Mode<a class="headerlink" href="#auto-sensing-mode" title="Link to this heading">#</a></h2>
+<p>In the auto sensing mode, the scanner will detect the brightness of the surrounding environment. When the brightness changes, the scan is triggered. The scan ends when the scan is successful or the scan time exceeds the single working time. Regardless of whether the last scan was successful or failed, the brightness of the surrounding environment will be detected again.</p>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/8610023..png"><img alt="../../media/8610023..png" src="../../media/8610023..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Automatic sensing mode</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Auto Sensing Mode</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Time interval<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<p>Delay in reading different barcodes</p>
-<section id="id6">
-<h3>No time interval<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id10">
+<section id="scanning-interval">
+<h2>Scanning Interval<a class="headerlink" href="#scanning-interval" title="Link to this heading">#</a></h2>
+<p>Working delay when scanning different barcodes</p>
+<section id="no-time-interval">
+<h3>No Time Interval<a class="headerlink" href="#no-time-interval" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/8510070..png"><img alt="../../media/8510070..png" src="../../media/8510070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">No time interval</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">No Time Interval</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="ms">
 <h3>500ms<a class="headerlink" href="#ms" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id11">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/851007500..png"><img alt="../../media/851007500..png" src="../../media/851007500..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">500ms</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+<p><span class="caption-text">500ms</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -486,7 +497,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">End character setting</p>
+        <p class="prev-next-title">End Character Settings</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -506,11 +517,11 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Key Hold (Level)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Continuous Mode</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Automatic sensing mode</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Time interval</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">No time interval</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-trigger-mode">Key Trigger Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#continuous-mode">Continuous Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#auto-sensing-mode">Auto Sensing Mode</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scanning-interval">Scanning Interval</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-time-interval">No Time Interval</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ms">500ms</a></li>
 </ul>
 </li>

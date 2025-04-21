@@ -1,113 +1,105 @@
-# 键盘设置
-## 开始设置
+# Keyboard Settings
+## Start Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 ```{figure} ../../media/252B24.24.png
 :align: center
 :width: 300px
 
-开始设置
+Start Setup
 ```
 
-## 键盘语言
+## Keyboard Language
 
-### 美国
+### America
 
 
 ```{figure} ../../media/KM00.png
 :align: center
 :width: 300px
 
-美国 `默认`
+America `Default`
 ```
 
-### 英国 
+### Britain 
 
 ```{figure} ../../media/KM02.png
 :align: center
 :width: 300px
 
-英国 
+Britain 
 ```
 
-### 法国
+### France
 
 ```{figure} ../../media/KM04.png
 :align: center
 :width: 300px
 
-法国 
+France 
 ```
 
 
-### 德国
+### Germany
 
 ```{figure} ../../media/KM05.png
 :align: center
 :width: 300px
 
-德国
+Germany
 ```
   
 
-### 意大利
+### Italy
 
 ```{figure} ../../media/KM06.png
 :align: center
 :width: 300px
 
-意大利
+Italy
 ```
   
 
-### 葡萄牙
+### Portugal
 
 ```{figure} ../../media/KM08.png
 :align: center
 :width: 300px
 
-葡萄牙
+Portugal
 ```
   
 
-### 西班牙
+### Spain
 
 ```{figure} ../../media/KM09.png
 :align: center
 :width: 300px
 
-西班牙
+Spain
 ```
 
   
 
-### 土耳其Q
+### Turkey-Q
 
 ```{figure} ../../media/KM19.png
 :align: center
 :width: 300px
 
-土耳其Q
+Turkey-Q
 ```
 
   
-
-```{figure} ../../media/25242425.png
-:align: center
-:width: 300px
-
-结束设置
-```
-
-## 结束设置
+## End Setup
 ```{note}
-只有扫描[开始设置](#开始设置)后，才能扫描其他功能设置码进行配置。需要扫描[结束设置](#结束设置)，相应的配置才生效。
+Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/25242425.png
 :align: center
 :width: 300px
 
-结束设置
+End Setup
 ```

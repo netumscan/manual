@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Commutateur de code-barres &#8212; F16 Scanner User Manual</title>
+    <title>Paramètres du code-barres &#8212; F16 Scanner User Manual</title>
   
   
   
@@ -213,6 +213,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -228,11 +239,11 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres système</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de numérisation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètre de caractère de fin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Commutateur de code-barres</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres du code-barres</a></li>
 </ul>
 
     </div>
@@ -371,7 +382,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Commutateur de code-barres</h1>
+    <h1>Paramètres du code-barres</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,13 +392,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Interdire la lecture de codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Activer la numérisation de code 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Interdire la lecture de codes 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Activer la numérisation de code 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Paramètres de blocage d’URL</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">interdire</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Ouvrir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-1d-codes">Désactiver la numérisation des codes 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-1d-codes">Activer la numérisation des codes 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-2d-codes">Désactiver la numérisation des codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-2d-codes">Activer la numérisation des codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Paramètres de l’URL du QR Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
 </ul>
 </li>
 </ul>
@@ -401,68 +412,68 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>Commutateur de code-barres<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h1>
-<section id="id2">
-<h2>Interdire la lecture de codes 1D<a class="headerlink" href="#id2" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id9">
+  <section id="barcode-settings">
+<h1>Paramètres du code-barres<a class="headerlink" href="#barcode-settings" title="Lien vers cette rubrique">#</a></h1>
+<section id="disable-scanning-1d-codes">
+<h2>Désactiver la numérisation des codes 1D<a class="headerlink" href="#disable-scanning-1d-codes" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3030110.png"><img alt="../../media/3030110.png" src="../../media/3030110.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Interdire la lecture de codes 1D</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver la numérisation des codes 1D</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h2>Activer la numérisation de code 1D<a class="headerlink" href="#id3" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id10">
+<section id="enable-scanning-1d-codes">
+<h2>Activer la numérisation des codes 1D<a class="headerlink" href="#enable-scanning-1d-codes" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3030111.png"><img alt="../../media/3030111.png" src="../../media/3030111.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer la numérisation de code 1D</span><a class="headerlink" href="#id10" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer la numérisation des codes 1D</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h2>Interdire la lecture de codes 2D<a class="headerlink" href="#id4" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id11">
+<section id="disable-scanning-2d-codes">
+<h2>Désactiver la numérisation des codes 2D<a class="headerlink" href="#disable-scanning-2d-codes" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3030500.png"><img alt="../../media/3030500.png" src="../../media/3030500.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Interdire la lecture de codes 2D</span><a class="headerlink" href="#id11" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver la numérisation des codes 2D</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id5">
-<h2>Activer la numérisation de code 2D<a class="headerlink" href="#id5" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id12">
+<section id="enable-scanning-2d-codes">
+<h2>Activer la numérisation des codes 2D<a class="headerlink" href="#enable-scanning-2d-codes" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030501.png"><img alt="../../media/3030501.png" src="../../media/3030501.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer la numérisation de code 2D</span><a class="headerlink" href="#id12" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer la numérisation des codes 2D</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id6">
-<h2>Paramètres de blocage d’URL<a class="headerlink" href="#id6" title="Lien vers cette rubrique">#</a></h2>
-<p>Bloquer les URL commençant par <code class="docutils literal notranslate"><span class="pre">http://</span></code> et <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
-<section id="id7">
-<h3>interdire<a class="headerlink" href="#id7" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id13">
+<section id="qr-code-url-settings">
+<h2>Paramètres de l’URL du QR Code<a class="headerlink" href="#qr-code-url-settings" title="Lien vers cette rubrique">#</a></h2>
+<p>Bloquer la numérisation des codes QR URL commençant par <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
+<section id="disable">
+<h3>Désactiver<a class="headerlink" href="#disable" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030EA0.png"><img alt="../../media/3030EA0.png" src="../../media/3030EA0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">interdire</span><a class="headerlink" href="#id13" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>Ouvrir<a class="headerlink" href="#id8" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="enable">
+<h3>Activer<a class="headerlink" href="#enable" title="Lien vers cette rubrique">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/3030EA1.png"><img alt="../../media/3030EA1.png" src="../../media/3030EA1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Ouvrir</span><a class="headerlink" href="#id14" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -505,13 +516,13 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Interdire la lecture de codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Activer la numérisation de code 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Interdire la lecture de codes 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Activer la numérisation de code 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Paramètres de blocage d’URL</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">interdire</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Ouvrir</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-1d-codes">Désactiver la numérisation des codes 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-1d-codes">Activer la numérisation des codes 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-scanning-2d-codes">Désactiver la numérisation des codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-scanning-2d-codes">Activer la numérisation des codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Paramètres de l’URL du QR Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
 </ul>
 </li>
 </ul>

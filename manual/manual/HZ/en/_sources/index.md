@@ -1,4 +1,4 @@
-# {{ model }} 支付盒子快速设置手册
+# {{ model }} Payment Box Quick Setup Guide
 ```{toctree}
 :maxdepth: 2
 

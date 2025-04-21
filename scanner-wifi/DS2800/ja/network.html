@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ネットワーク構成 &#8212; DS2800 Scanner User Manual</title>
+    <title>ネットワーク設定 &#8212; DS2800 Scanner User Manual</title>
   
   
   
@@ -48,7 +48,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'network';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="Bluetoothモード" href="bluetooth.html" />
+    <link rel="next" title="Bluetooth モード" href="bluetooth.html" />
     <link rel="prev" title="HTTPプロトコルを使用してデータを転送する" href="http.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
@@ -214,6 +214,17 @@
           
           <a href="../ja" title="Japanese" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/ja.png" class="icon-link-image" alt="Japanese"/></a>
         </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://crowdin.com/project/scanner-docs" title="Crowdin" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="https://badges.crowdin.net/scanner-docs/localized.svg" class="icon-link-image" alt="Crowdin"/></a>
+        </li>
 </ul></div>
         <div class="sidebar-primary-item">
 
@@ -229,19 +240,19 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">作業モード</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">WiFiモード</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用TCP Client传输数据</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="wireless.html">Wi-Fi 通信モード</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">TCPクライアントを使用してデータを転送する</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tcpserver.html">TCPサーバーを使用してデータを送信する</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mqtt.html">MQTTプロトコルを使用してデータを送信する</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mqtt.html">MQTT プロトコルを使ってデータを送信する</a></li>
 <li class="toctree-l2"><a class="reference internal" href="http.html">HTTPプロトコルを使用してデータを転送する</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">ネットワーク構成</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">ネットワーク設定</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetoothモード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボード設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">よくある質問</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Bluetooth モード</a></li>
+<li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
     </div>
@@ -380,7 +391,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>ネットワーク構成</h1>
+    <h1>ネットワーク設定</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -390,21 +401,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ip">動的IPアドレス設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">1.恢复WiFi模块默认设置</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.设定静态IP模式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.重启扫描枪</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.配置传输方案</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-ip-address-configuration">動的IPアドレス設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-wifi-module-default-settings">1.WiFiモジュールのデフォルト設定を復元</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-static-ip-mode">静的IPモードの設定</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restart-scanner">3.Scannerを再起動</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-transmission-scheme">4.送信スキームを設定</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">静的IPアドレスの設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.恢复WiFi模块默认设置</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.设定静态IP模式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">3.重启扫描枪</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">4.设定IP地址</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">5.设定网关</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">6.设定子网掩码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">7.配置传输方案</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-ip-address-configuration">静的IPアドレスの設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.WiFiモジュールのデフォルト設定を復元</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">静的IPモードの設定</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.Scannerを再起動</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-ip-address">4.Set IP address</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-the-gateway">5.Setting the Gateway</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-subnet-mask">6.Set the subnet mask</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">7.Configure transmission scheme</a></li>
 </ul>
 </li>
 </ul>
@@ -418,106 +429,106 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>ネットワーク構成<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="ip">
-<h2>動的IPアドレス設定<a class="headerlink" href="#ip" title="Link to this heading">#</a></h2>
-<section id="wifi">
-<h3>1.恢复WiFi模块默认设置<a class="headerlink" href="#wifi" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id13">
+  <section id="network-configuration">
+<h1>ネットワーク設定<a class="headerlink" href="#network-configuration" title="Link to this heading">#</a></h1>
+<section id="dynamic-ip-address-configuration">
+<h2>動的IPアドレス設定<a class="headerlink" href="#dynamic-ip-address-configuration" title="Link to this heading">#</a></h2>
+<section id="restore-wifi-module-default-settings">
+<h3>1.WiFiモジュールのデフォルト設定を復元<a class="headerlink" href="#restore-wifi-module-default-settings" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/AT2BRESTORE.png"><img alt="../../media/AT2BRESTORE.png" src="../../media/AT2BRESTORE.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">WiFiモジュールをデフォルト設定に復元する</span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+<p><span class="caption-text">WiFiモジュールのデフォルト設定を復元</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id2">
-<h3>2.设定静态IP模式<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id14">
+<section id="set-static-ip-mode">
+<h3>静的IPモードの設定<a class="headerlink" href="#set-static-ip-mode" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/AT2BDHCP3D1.png"><img alt="../../media/AT2BDHCP3D1.png" src="../../media/AT2BDHCP3D1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">静的IPモードを設定する</span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+<p><span class="caption-text">静的IPモードを設定</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id3">
-<h3>3.重启扫描枪<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id15">
+<section id="restart-scanner">
+<h3>3.Scannerを再起動<a class="headerlink" href="#restart-scanner" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/24POWER23OFF.png"><img alt="../../media/24POWER23OFF.png" src="../../media/24POWER23OFF.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">スキャナーを再起動します</span><a class="headerlink" href="#id15" title="Link to this image">#</a></p>
+<p><span class="caption-text">スキャナーを再起動</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id4">
-<h3>4.配置传输方案<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<section id="configure-transmission-scheme">
+<h3>4.送信スキームを設定<a class="headerlink" href="#configure-transmission-scheme" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>ネットワークパラメータを設定したら、以下の送信方法を選択して設定します。</p></li>
+<li><p>ネットワークパラメータを設定した後、以下の送信方法を選択して設定します</p></li>
 </ul>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">TCPサーバーを使用してデータを送信する</span></a></p></li>
 <li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">TCPサーバーを使用してデータを送信する</span></a></p></li>
-<li><p><a class="reference internal" href="mqtt.html"><span class="std std-doc">MQTTプロトコルを使用してデータを送信する</span></a></p></li>
+<li><p><a class="reference internal" href="mqtt.html"><span class="std std-doc">MQTT プロトコルを使ってデータを送信する</span></a></p></li>
 <li><p><a class="reference internal" href="http.html"><span class="std std-doc">HTTPプロトコルを使用してデータを転送する</span></a></p></li>
 </ol>
 </section>
 </section>
-<section id="id5">
-<h2>静的IPアドレスの設定<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
-<section id="id6">
-<h3>1.恢复WiFi模块默认设置<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id16">
+<section id="static-ip-address-configuration">
+<h2>静的IPアドレスの設定<a class="headerlink" href="#static-ip-address-configuration" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>1.WiFiモジュールのデフォルト設定を復元<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/AT2BRESTORE.png"><img alt="../../media/AT2BRESTORE.png" src="../../media/AT2BRESTORE.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">WiFiモジュールをデフォルト設定に復元する</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<p><span class="caption-text">WiFiモジュールのデフォルト設定を復元</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id7">
-<h3>2.设定静态IP模式<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id17">
+<section id="id2">
+<h3>静的IPモードの設定<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/AT2BDHCP3D0.png"><img alt="../../media/AT2BDHCP3D0.png" src="../../media/AT2BDHCP3D0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">静的IPモードを設定する</span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<p><span class="caption-text">静的IPモードを設定</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id8">
-<h3>3.重启扫描枪<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id18">
+<section id="id3">
+<h3>3.Scannerを再起動<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/24POWER23OFF.png"><img alt="../../media/24POWER23OFF.png" src="../../media/24POWER23OFF.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">スキャナーを再起動します</span><a class="headerlink" href="#id18" title="Link to this image">#</a></p>
+<p><span class="caption-text">スキャナーを再起動</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="id9">
-<h3>4.设定IP地址<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<section id="set-ip-address">
+<h3>4.Set IP address<a class="headerlink" href="#set-ip-address" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-network-address.html" height="400px" width="100%"></iframe>
 </section>
-<section id="id10">
-<h3>5.设定网关<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<section id="setting-the-gateway">
+<h3>5.Setting the Gateway<a class="headerlink" href="#setting-the-gateway" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-network-gateway.html" height="400px" width="100%"></iframe>
 </section>
-<section id="id11">
-<h3>6.设定子网掩码<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<section id="set-the-subnet-mask">
+<h3>6.Set the subnet mask<a class="headerlink" href="#set-the-subnet-mask" title="Link to this heading">#</a></h3>
     <iframe src="../../plugins/wifi-network-mask.html" height="400px" width="100%"></iframe>
 </section>
-<section id="id12">
-<h3>7.配置传输方案<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id4">
+<h3>7.Configure transmission scheme<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>ネットワークパラメータを設定したら、以下の送信方法を選択して設定します。</p></li>
+<li><p>ネットワークパラメータを設定した後、以下の送信方法を選択して設定します</p></li>
 </ul>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">TCPサーバーを使用してデータを送信する</span></a></p></li>
 <li><p><a class="reference internal" href="tcpserver.html"><span class="std std-doc">TCPサーバーを使用してデータを送信する</span></a></p></li>
-<li><p><a class="reference internal" href="mqtt.html"><span class="std std-doc">MQTTプロトコルを使用してデータを送信する</span></a></p></li>
+<li><p><a class="reference internal" href="mqtt.html"><span class="std std-doc">MQTT プロトコルを使ってデータを送信する</span></a></p></li>
 <li><p><a class="reference internal" href="http.html"><span class="std std-doc">HTTPプロトコルを使用してデータを転送する</span></a></p></li>
 </ol>
 </section>
@@ -549,7 +560,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">次へ</p>
-        <p class="prev-next-title">Bluetoothモード</p>
+        <p class="prev-next-title">Bluetooth モード</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -569,21 +580,21 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ip">動的IPアドレス設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wifi">1.恢复WiFi模块默认设置</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.设定静态IP模式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.重启扫描枪</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">4.配置传输方案</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-ip-address-configuration">動的IPアドレス設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restore-wifi-module-default-settings">1.WiFiモジュールのデフォルト設定を復元</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-static-ip-mode">静的IPモードの設定</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#restart-scanner">3.Scannerを再起動</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configure-transmission-scheme">4.送信スキームを設定</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">静的IPアドレスの設定</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.恢复WiFi模块默认设置</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">2.设定静态IP模式</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">3.重启扫描枪</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">4.设定IP地址</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">5.设定网关</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">6.设定子网掩码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">7.配置传输方案</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-ip-address-configuration">静的IPアドレスの設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">1.WiFiモジュールのデフォルト設定を復元</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">静的IPモードの設定</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">3.Scannerを再起動</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-ip-address">4.Set IP address</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#setting-the-gateway">5.Setting the Gateway</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#set-the-subnet-mask">6.Set the subnet mask</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">7.Configure transmission scheme</a></li>
 </ul>
 </li>
 </ul>

@@ -1,31 +1,31 @@
-# 使用TCP Client传输数据
+# Use TCP Client to transfer data
 
-## 快速配置
+## Quick Configuration
 ```{raw} html
     <iframe src="../../plugins/wifi-tcpserver.html" height="700px" width="100%"></iframe>
 
 ```
 ```{note}
-使用第三方软件自建TCP Client时，可以使用此项进行配置。
+When you use third-party software to build a TCP Server, you can use this option for configuration.
 ```
 
-## 演示软件
-- 点击下方链接下载演示软件:  
+## Demo Software
+- Click the link below to download the demo software:  
 [Netum Wi-Fi TCP Server](https://pan.gzxlscan.cn/s/gh8hye)
 
-## 建立连接
-1. 下载演示软件并解压到文件夹。
-2. 打开演示软件，输入扫描器需要连接WiFi信息和TCP Server信息，并使用扫描枪扫描下方的二维码。
+## Make a connection
+1. Download the demo software and unzip it to a folder.
+2. Open the demonstration software, enter the WiFi information and TCP Server information that the scanner needs to connect to, and use a scanner to scan the QR code below.
 ```{figure} ../../media/wifi-tcpserver1.png
 :align: center
 ```
-3. 点击启动服务，或者通过编程开发启动TCP Server。
-4. 等待扫描枪主动连接软件的TCP Server服务。
+3. Click to start the service, or start TCP Server through programming.
+4. Wait for the scanner to actively connect to the TCP Server service of the software.
 ```{figure} ../../media/wifi-tcpserver2.png
 :align: center
 ```
 
 ```{note}
-- 主机地址为TCP Server服务所在电脑的IP地址。
-- 主机端口为TCP Server服务开放的端口号。
+- Host address: The IP address of the computer where the TCP Server service is located.
+- Host port: The port number opened by the TCP Server service.
 ```
