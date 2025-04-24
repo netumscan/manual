@@ -1,4 +1,4 @@
-# 系统设置
+# System Settings
 
 ## Start Setup
 ```{note}
