@@ -4,40 +4,40 @@ hide-toc: true
 
 # DS系列扫描枪
 
-## [DS2800](https://scanner-wifi.pages.dev/DS2800/zh)
+## [DS2800](https://scanner-wifi.handy.pub/DS2800/zh)
 
 ```{figure} ../media/series/DS2800.jpg
 :align: center
-:target: https://scanner-wifi.pages.dev/DS2800/zh
+:target: https://scanner-wifi.handy.pub/DS2800/zh
 
-[DS2800](https://scanner-wifi.pages.dev/DS2800/zh)
+[DS2800](https://scanner-wifi.handy.pub/DS2800/zh)
 ```
 
-## [DS7500](https://scanner-wx1.pages.dev/DS7500/zh)
+## [DS7500](https://scanner-wx1.handy.pub/DS7500/zh)
 
 ```{figure} ../media/series/DS7500.jpg
 :align: center
-:target: https://scanner-wx1.pages.dev/DS7500/zh
+:target: https://scanner-wx1.handy.pub/DS7500/zh
 
-[DS7500](https://scanner-wx1.pages.dev/DS7500/zh)
+[DS7500](https://scanner-wx1.handy.pub/DS7500/zh)
 ```
 
-## [DS-8100](https://scanner-wx1.pages.dev/DS-8100/zh)
+## [DS-8100](https://scanner-wx1.handy.pub/DS-8100/zh)
 
 
 ```{figure} ../media/series/DS-8100.jpg
 :align: center
-:target: https://scanner-wx1.pages.dev/DS-8100/zh
+:target: https://scanner-wx1.handy.pub/DS-8100/zh
 
-[DS-8100](https://scanner-wx1.pages.dev/DS-8100/zh)
+[DS-8100](https://scanner-wx1.handy.pub/DS-8100/zh)
 ```
 
-## [DS-8500](https://scanner-wx1.pages.dev/DS-8500/zh)
+## [DS-8500](https://scanner-wx1.handy.pub/DS-8500/zh)
 
 
 ```{figure} ../media/series/DS-8500.jpg
 :align: center
-:target: https://scanner-wx1.pages.dev/DS-8500/zh
+:target: https://scanner-wx1.handy.pub/DS-8500/zh
 
-[DS-8500](https://scanner-wx1.pages.dev/DS-8500/zh)
+[DS-8500](https://scanner-wx1.handy.pub/DS-8500/zh)
 ```

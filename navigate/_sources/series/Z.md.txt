@@ -4,32 +4,32 @@ hide-toc: true
 
 # Z Series Scanner
 
-## [NT-2100](https://scanner-wx4.pages.dev/NT-2100/en)
+## [NT-2100](https://scanner-wx4.handy.pub/NT-2100/en)
 
 ```{figure} ../media/series/NT-2100.jpg
 :align: center
-:target: https://scanner-wx4.pages.dev/NT-2100/en
+:target: https://scanner-wx4.handy.pub/NT-2100/en
 
-[NT-2100](https://scanner-wx4.pages.dev/NT-2100/en)
+[NT-2100](https://scanner-wx4.handy.pub/NT-2100/en)
 ```
 
 
-## [M9](https://scanner-wx3.pages.dev/M9/en)
+## [M9](https://scanner-wx3.handy.pub/M9/en)
 
 
 ```{figure} ../media/series/M9.jpg
 :align: center
-:target: https://scanner-wx3.pages.dev/M9/en
+:target: https://scanner-wx3.handy.pub/M9/en
 
-[M9](https://scanner-wx3.pages.dev/M9/en)
+[M9](https://scanner-wx3.handy.pub/M9/en)
 ```
 
-## [Z3S](https://scanner-wx5.pages.dev/Z3S/en)
+## [Z3S](https://scanner-wx5.handy.pub/Z3S/en)
 
 
 ```{figure} ../media/series/Z3S.jpg
 :align: center
-:target: https://scanner-wx5.pages.dev/Z3S/en
+:target: https://scanner-wx5.handy.pub/Z3S/en
 
-[Z3S](https://scanner-wx5.pages.dev/Z3S/en)
+[Z3S](https://scanner-wx5.handy.pub/Z3S/en)
 ```

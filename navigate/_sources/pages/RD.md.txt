@@ -4,85 +4,85 @@ hide-toc: true
 
 # RD系列扫描枪
 
-## [NT-1202](https://scanner-280.pages.dev/NT-1202/zh)
+## [NT-1202](https://scanner-280.handy.pub/NT-1202/zh)
 
 ```{figure} ../media/series/NT-1202.jpg
 :align: center
-:target: https://scanner-280.pages.dev/NT-1202/zh
+:target: https://scanner-280.handy.pub/NT-1202/zh
 
-[NT-1202](https://scanner-280.pages.dev/NT-1202/zh)
+[NT-1202](https://scanner-280.handy.pub/NT-1202/zh)
 ```
 
 
-## [NT-1202W](https://scanner-wx4.pages.dev/NT-1202W/zh)
+## [NT-1202W](https://scanner-wx4.handy.pub/NT-1202W/zh)
 
 
 ```{figure} ../media/series/NT-1202W.jpg
 :align: center
-:target: https://scanner-wx4.pages.dev/NT-1202W/zh
+:target: https://scanner-wx4.handy.pub/NT-1202W/zh
 
-[NT-1202W](https://scanner-wx4.pages.dev/NT-1202W/zh)
+[NT-1202W](https://scanner-wx4.handy.pub/NT-1202W/zh)
 ```
 
-## [NT-1203L](https://scanner-wx4.pages.dev/NT-1203L/zh)
+## [NT-1203L](https://scanner-wx4.handy.pub/NT-1203L/zh)
 
 
 ```{figure} ../media/series/NT-1203L.jpg
 :align: center
-:target: https://scanner-wx4.pages.dev/NT-1203L/zh
+:target: https://scanner-wx4.handy.pub/NT-1203L/zh
 
-[NT-1203L](https://scanner-wx4.pages.dev/NT-1203L/zh)
+[NT-1203L](https://scanner-wx4.handy.pub/NT-1203L/zh)
 ```
 
-## [I8](https://scanner-wx3.pages.dev/I8/zh)
+## [I8](https://scanner-wx3.handy.pub/I8/zh)
 
 ```{figure} ../media/series/I8.jpg
 :align: center
-:target: https://scanner-wx3.pages.dev/I8/zh
+:target: https://scanner-wx3.handy.pub/I8/zh
 
-[I8](https://scanner-wx3.pages.dev/I8/zh)
+[I8](https://scanner-wx3.handy.pub/I8/zh)
 ```
 
-## [I5](https://scanner-280.pages.dev/I5/zh)
+## [I5](https://scanner-280.handy.pub/I5/zh)
 
 ```{figure} ../media/series/I5.jpg
 :align: center
-:target: https://scanner-280.pages.dev/I5/zh
+:target: https://scanner-280.handy.pub/I5/zh
 
-[I5](https://scanner-280.pages.dev/I5/zh)
+[I5](https://scanner-280.handy.pub/I5/zh)
 ```
 
-## [NT-1988](https://scanner-wx4.pages.dev/NT-1988/zh)
+## [NT-1988](https://scanner-wx4.handy.pub/NT-1988/zh)
 
 ```{figure} ../media/series/NT-1988.jpg
 :align: center
-:target: https://scanner-wx4.pages.dev/NT-1988/zh
+:target: https://scanner-wx4.handy.pub/NT-1988/zh
 
-[NT-1988](https://scanner-wx4.pages.dev/NT-1988/zh)
+[NT-1988](https://scanner-wx4.handy.pub/NT-1988/zh)
 ```
-## [NT-1288](https://scanner-wx4.pages.dev/NT-1288/zh)
+## [NT-1288](https://scanner-wx4.handy.pub/NT-1288/zh)
 
 ```{figure} ../media/series/NT-1288.jpg
 :align: center
-:target: https://scanner-wx4.pages.dev/NT-1288/zh
+:target: https://scanner-wx4.handy.pub/NT-1288/zh
 
-[NT-1288](https://scanner-wx4.pages.dev/NT-1288/zh)
+[NT-1288](https://scanner-wx4.handy.pub/NT-1288/zh)
 ```
-## [NT-12895](https://scanner-hs7.pages.dev/NT-12895/zh)
+## [NT-12895](https://scanner-hs7.handy.pub/NT-12895/zh)
 
 ```{figure} ../media/series/NT-12895.jpg
 :align: center
-:target: https://scanner-hs7.pages.dev/NT-12895/zh
+:target: https://scanner-hs7.handy.pub/NT-12895/zh
 
-[NT-12895](https://scanner-hs7.pages.dev/NT-12895/zh)
+[NT-12895](https://scanner-hs7.handy.pub/NT-12895/zh)
 ```
-## [RD-2023](https://scanner-290.pages.dev/RD-2023/zh)
+## [RD-2023](https://scanner-290.handy.pub/RD-2023/zh)
 
 ```{figure} ../media/series/RD-2023.jpg
 :align: center
-:target: https://scanner-290.pages.dev/RD-2023/zh
+:target: https://scanner-290.handy.pub/RD-2023/zh
 
-[RD-2023](https://scanner-290.pages.dev/RD-2023/zh)
+[RD-2023](https://scanner-290.handy.pub/RD-2023/zh)
 ```
 
 

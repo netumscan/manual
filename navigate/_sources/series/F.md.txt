@@ -5,42 +5,42 @@ hide-toc: true
 # F Series Scanner
 
 
-## [F20](https://scanner-ccd.pages.dev/F20/en)
+## [F20](https://scanner-ccd.handy.pub/F20/en)
 
 
 ```{figure} ../media/series/F20.jpg
 :align: center
-:target: https://scanner-ccd.pages.dev/F20/en
+:target: https://scanner-ccd.handy.pub/F20/en
 
-[F20](https://scanner-ccd.pages.dev/F20/en)
+[F20](https://scanner-ccd.handy.pub/F20/en)
 ```
 
-## [F1900](https://scanner-wx2.pages.dev/F1900/en)
+## [F1900](https://scanner-wx2.handy.pub/F1900/en)
 
 
 ```{figure} ../media/series/F1900.jpg
 :align: center
-:target: https://scanner-wx2.pages.dev/F1900/en
+:target: https://scanner-wx2.handy.pub/F1900/en
 
-[F1900](https://scanner-wx2.pages.dev/F1900/en)
+[F1900](https://scanner-wx2.handy.pub/F1900/en)
 ```
 
-## [F16](https://scanner-212.pages.dev/F16/en)
+## [F16](https://scanner-212.handy.pub/F16/en)
 
 ```{figure} ../media/series/F16.jpg
 :align: center
-:target: https://scanner-212.pages.dev/F16/en
+:target: https://scanner-212.handy.pub/F16/en
 
-[F16](https://scanner-212.pages.dev/F16/en)
+[F16](https://scanner-212.handy.pub/F16/en)
 ```
 
-## [F18W](https://scanner-wx2.pages.dev/F18W/en)
+## [F18W](https://scanner-wx2.handy.pub/F18W/en)
 
 ```{figure} ../media/series/F18W.jpg
 :align: center
-:target: https://scanner-wx2.pages.dev/F18W/en
+:target: https://scanner-wx2.handy.pub/F18W/en
 
-[F18W](https://scanner-wx2.pages.dev/F18W/en)
+[F18W](https://scanner-wx2.handy.pub/F18W/en)
 ```
 
 

@@ -4,52 +4,52 @@ hide-toc: true
 
 # W系列扫描枪
 
-## [W9](https://scanner-280.pages.dev/W9/zh)
+## [W9](https://scanner-280.handy.pub/W9/zh)
 
 ```{figure} ../media/series/W9.jpg
 :align: center
-:target: https://scanner-280.pages.dev/W9/zh
+:target: https://scanner-280.handy.pub/W9/zh
 
-[W9](https://scanner-280.pages.dev/W9/zh)
+[W9](https://scanner-280.handy.pub/W9/zh)
 ```
 
 
-## [W6-X](https://scanner-wx5.pages.dev/W6-X/zh)
+## [W6-X](https://scanner-wx5.handy.pub/W6-X/zh)
 
 
 ```{figure} ../media/series/W6-X.jpg
 :align: center
-:target: https://scanner-wx5.pages.dev/W6-X/zh
+:target: https://scanner-wx5.handy.pub/W6-X/zh
 
-[W6-X](https://scanner-wx5.pages.dev/W6-X/zh)
+[W6-X](https://scanner-wx5.handy.pub/W6-X/zh)
 ```
 
-## [W8-X](https://scanner-wx5.pages.dev/W8-X/zh)
+## [W8-X](https://scanner-wx5.handy.pub/W8-X/zh)
 
 
 ```{figure} ../media/series/W8-X.jpg
 :align: center
-:target: https://scanner-wx5.pages.dev/W8-X/zh
+:target: https://scanner-wx5.handy.pub/W8-X/zh
 
-[W8-X](https://scanner-wx5.pages.dev/W8-X/zh)
+[W8-X](https://scanner-wx5.handy.pub/W8-X/zh)
 ```
 
-## [W22](https://scanner-212.pages.dev/W22/zh)
+## [W22](https://scanner-212.handy.pub/W22/zh)
 
 ```{figure} ../media/series/W22.jpg
 :align: center
-:target: https://scanner-212.pages.dev/W22/zh
+:target: https://scanner-212.handy.pub/W22/zh
 
-[W22](https://scanner-212.pages.dev/W22/zh)
+[W22](https://scanner-212.handy.pub/W22/zh)
 ```
 
-## [W28](https://scanner-wx5.pages.dev/W28/zh)
+## [W28](https://scanner-wx5.handy.pub/W28/zh)
 
 ```{figure} ../media/series/W28.jpg
 :align: center
-:target: https://scanner-wx5.pages.dev/W28/zh
+:target: https://scanner-wx5.handy.pub/W28/zh
 
-[W28](https://scanner-wx5.pages.dev/W28/zh)
+[W28](https://scanner-wx5.handy.pub/W28/zh)
 ```
 
 

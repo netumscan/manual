@@ -4,40 +4,40 @@ hide-toc: true
 
 # RS系列扫描枪
 
-## [R2L](https://scanner-wx5.pages.dev/R2L/zh)
+## [R2L](https://scanner-wx5.handy.pub/R2L/zh)
 
 ```{figure} ../media/series/R2L.jpg
 :align: center
-:target: https://scanner-wx5.pages.dev/R2L/zh
+:target: https://scanner-wx5.handy.pub/R2L/zh
 
-[R2L](https://scanner-wx5.pages.dev/R2L/zh)
+[R2L](https://scanner-wx5.handy.pub/R2L/zh)
 ```
 
 
-## [RS-8000BT](https://scanner-wx5.pages.dev/RS-8000BT/zh)
+## [RS-8000BT](https://scanner-wx5.handy.pub/RS-8000BT/zh)
 
 
 ```{figure} ../media/series/RS-8000BT.jpg
 :align: center
-:target: https://scanner-wx5.pages.dev/RS-8000BT/zh
+:target: https://scanner-wx5.handy.pub/RS-8000BT/zh
 
-[RS-8000BT](https://scanner-wx5.pages.dev/RS-8000BT/zh)
+[RS-8000BT](https://scanner-wx5.handy.pub/RS-8000BT/zh)
 ```
 
-## [RS-9000BT](https://scanner-wx5.pages.dev/RS-9000BT/zh)
+## [RS-9000BT](https://scanner-wx5.handy.pub/RS-9000BT/zh)
 
 ```{figure} ../media/series/RS-9000BT.jpg
 :align: center
-:target: https://scanner-wx5.pages.dev/RS-9000BT/zh
+:target: https://scanner-wx5.handy.pub/RS-9000BT/zh
 
-[RS-9000BT](https://scanner-wx5.pages.dev/RS-9000BT/zh)
+[RS-9000BT](https://scanner-wx5.handy.pub/RS-9000BT/zh)
 ```
 
-## [RS-9000PT](https://scanner-wx5.pages.dev/RS-9000PT/zh)
+## [RS-9000PT](https://scanner-wx5.handy.pub/RS-9000PT/zh)
 
 ```{figure} ../media/series/RS-9000PT.jpg
 :align: center
-:target: https://scanner-wx5.pages.dev/RS-9000PT/zh
+:target: https://scanner-wx5.handy.pub/RS-9000PT/zh
 
-[RS-9000PT](https://scanner-wx5.pages.dev/RS-9000PT/zh)
+[RS-9000PT](https://scanner-wx5.handy.pub/RS-9000PT/zh)
 ```
