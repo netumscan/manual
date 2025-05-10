@@ -4,51 +4,51 @@ hide-toc: true
 
 #   M系列扫描枪
 
-## [M20](https://scanner-wx3.handy.pub/M20/zh)
+## [M20](https://docs.gzxlscan.cn/manual/M20/zh)
 
 
 ```{figure} ../media/series/M20.jpg
 :align: center
-:target: https://scanner-wx3.handy.pub/M20/zh
+:target: https://docs.gzxlscan.cn/manual/M20/zh
 
-[M20](https://scanner-wx3.handy.pub/M20/zh)
+[M20](https://docs.gzxlscan.cn/manual/M20/zh)
 ```
 
-## [M5](https://scanner-212.handy.pub/M5/zh)
+## [M5](https://docs.gzxlscan.cn/manual/M5/zh)
 
 
 ```{figure} ../media/series/M5.jpg
 :align: center
-:target: https://scanner-212.handy.pub/M5/zh
+:target: https://docs.gzxlscan.cn/manual/M5/zh
 
-[M5](https://scanner-212.handy.pub/M5/zh)
+[M5](https://docs.gzxlscan.cn/manual/M5/zh)
 ```
 
-## [M60](https://scanner-212.handy.pub/M60/zh)
+## [M60](https://docs.gzxlscan.cn/manual/M60/zh)
 
 ```{figure} ../media/series/M60.jpg
 :align: center
-:target: https://scanner-212.handy.pub/M60/zh
+:target: https://docs.gzxlscan.cn/manual/M60/zh
 
-[M60](https://scanner-212.handy.pub/M60/zh)
+[M60](https://docs.gzxlscan.cn/manual/M60/zh)
 ```
 
-## [M80](https://scanner-wx3.handy.pub/M80/zh)
+## [M80](https://docs.gzxlscan.cn/manual/M80/zh)
 
 ```{figure} ../media/series/M80.jpg
 :align: center
-:target: https://scanner-wx3.handy.pub/M80/zh
+:target: https://docs.gzxlscan.cn/manual/M80/zh
 
-[M80](https://scanner-wx3.handy.pub/M80/zh)
+[M80](https://docs.gzxlscan.cn/manual/M80/zh)
 ```
 
-## [M8BT](https://scanner-wx3.handy.pub/M8BT/zh)
+## [M8BT](https://docs.gzxlscan.cn/manual/M8BT/zh)
 
 ```{figure} ../media/series/M8BT.jpg
 :align: center
-:target: https://scanner-wx3.handy.pub/M8BT/zh
+:target: https://docs.gzxlscan.cn/manual/M8BT/zh
 
-[M8BT](https://scanner-wx3.handy.pub/M8BT/zh)
+[M8BT](https://docs.gzxlscan.cn/manual/M8BT/zh)
 ```
 
 

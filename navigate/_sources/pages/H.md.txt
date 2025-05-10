@@ -4,22 +4,22 @@ hide-toc: true
 
 # H系列扫描枪
 
-## [H3](https://scanner-wx2.handy.pub/H3/zh)
+## [H3](https://docs.gzxlscan.cn/manual/H3/zh)
 
 ```{figure} ../media/series/H3.jpg
 :align: center
-:target: https://scanner-wx2.handy.pub/H3/zh
+:target: https://docs.gzxlscan.cn/manual/H3/zh
 
-[H3](https://scanner-wx2.handy.pub/H3/zh)
+[H3](https://docs.gzxlscan.cn/manual/H3/zh)
 ```
 
 
-## [H8](https://scanner-wx2.handy.pub/H8/zh)
+## [H8](https://docs.gzxlscan.cn/manual/H8/zh)
 
 
 ```{figure} ../media/series/H8.jpg
 :align: center
-:target: https://scanner-wx2.handy.pub/H8/zh
+:target: https://docs.gzxlscan.cn/manual/H8/zh
 
-[H8](https://scanner-wx2.handy.pub/H8/zh)
+[H8](https://docs.gzxlscan.cn/manual/H8/zh)
 ```

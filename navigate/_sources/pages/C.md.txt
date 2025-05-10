@@ -7,54 +7,54 @@ hide-toc: true
 # C系列扫描枪
 
 
-## [C740](https://scanner-wx1.handy.pub/C740/zh)
+## [C740](https://docs.gzxlscan.cn/manual/C740/zh)
 
 
 ```{figure} ../media/series/C740.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C740/zh
+:target: https://docs.gzxlscan.cn/manual/C740/zh
 
-[C740](https://scanner-wx1.handy.pub/C740/zh)
+[C740](https://docs.gzxlscan.cn/manual/C740/zh)
 ```
 
 
-## [C750](https://scanner-wx1.handy.pub/C750/zh)
+## [C750](https://docs.gzxlscan.cn/manual/C750/zh)
 
 ```{figure} ../media/series/C750.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C750/zh
+:target: https://docs.gzxlscan.cn/manual/C750/zh
 
-[C750](https://scanner-wx1.handy.pub/C750/zh)
+[C750](https://docs.gzxlscan.cn/manual/C750/zh)
 ```
 
-## [C830](https://scanner-wx1.handy.pub/C830/zh)
+## [C830](https://docs.gzxlscan.cn/manual/C830/zh)
 
 
 ```{figure} ../media/series/C830.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C830/zh
+:target: https://docs.gzxlscan.cn/manual/C830/zh
 
-[C830](https://scanner-wx1.handy.pub/C830/zh)
+[C830](https://docs.gzxlscan.cn/manual/C830/zh)
 ```
 
-## [C850_B2C](https://scanner-wx1.handy.pub/C850_B2C/zh)
+## [C850_B2C](https://docs.gzxlscan.cn/manual/C850_B2C/zh)
 
 
 ```{figure} ../media/series/C850_B2C.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C850_B2C/zh
+:target: https://docs.gzxlscan.cn/manual/C850_B2C/zh
 
-[C850_B2C](https://scanner-wx1.handy.pub/C850_B2C/zh)
+[C850_B2C](https://docs.gzxlscan.cn/manual/C850_B2C/zh)
 ```
 
-## [C990](https://scanner-wx1.handy.pub/C990/zh)
+## [C990](https://docs.gzxlscan.cn/manual/C990/zh)
 
 
 ```{figure} ../media/series/C990.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C990/zh
+:target: https://docs.gzxlscan.cn/manual/C990/zh
 
-[C990](https://scanner-wx1.handy.pub/C990/zh)
+[C990](https://docs.gzxlscan.cn/manual/C990/zh)
 ```
 
 
