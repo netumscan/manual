@@ -1,38 +1,57 @@
-# Barcode Settings
-## Disable Scanning 1D Codes
+# Symbologies
+
+## Disable All Symbologies
+
+```{figure} ../../media/3030900.png
+:align: center
+:width: 300px
+
+Disable All Symbologies
+```
+
+## Enable All Symbologies
+
+```{figure} ../../media/3030901.png
+:align: center
+:width: 300px
+
+Enable All Symbologies
+```
+
+## Disable 1D Symbologies
 
 ```{figure} ../../media/3030110.png
 :align: center
 :width: 300px
 
-Disable Scanning 1D Codes
+Disable 1D Symbologies
 ```
 
-## Enable Scanning 1D Codes
+## Enable 1D Symbologies
 
 ```{figure} ../../media/3030111.png
 :align: center
 :width: 300px
 
-Enable Scanning 1D Codes
+Enable 1D Symbologies
 ```
 
-## Disable Scanning 2D Codes
+## Disable 2D Symbologies
 
 ```{figure} ../../media/3030500.png
 :align: center
 :width: 300px
 
-Disable Scanning 2D Codes
+Disable 2D Symbologies
 ```
 
-## Enable Scanning 2D Codes
+## Enable 2D Symbologies
 
 ```{figure} ../../media/3030501.png
 :align: center
 :width: 300px
 
-Enable Scanning 2D Codes
+Enable 2D Symbologies
 ```
 
 ## QR Code URL Settings

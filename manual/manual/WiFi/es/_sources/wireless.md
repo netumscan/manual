@@ -4,7 +4,7 @@
 
 ```{raw} html
 
-    <iframe src="../../plugins/wifi-clientId.html" height="400px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-clientId.html" height="500px" width="100%"></iframe>
 
 ```
 ## Data Upload Format

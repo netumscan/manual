@@ -2,7 +2,7 @@
 
 ## Quick Configuration
 ```{raw} html
-    <iframe src="../../plugins/wifi-tcpserver.html" height="700px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-tcpserver.html" height="750px" width="100%"></iframe>
 
 ```
 ```{note}

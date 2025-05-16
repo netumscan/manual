@@ -74,21 +74,21 @@ Restart Scanner
 
 ```{raw} html
 
-    <iframe src="../../plugins/wifi-network-address.html" height="400px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-network-address.html" height="500px" width="100%"></iframe>
 
 ```
 ### 5.Setting the Gateway
 
 ```{raw} html
 
-    <iframe src="../../plugins/wifi-network-gateway.html" height="400px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-network-gateway.html" height="500px" width="100%"></iframe>
 
 ```
 ### 6.Set the subnet mask
 
 ```{raw} html
 
-    <iframe src="../../plugins/wifi-network-mask.html" height="400px" width="100%"></iframe>
+    <iframe src="../../plugins/wifi-network-mask.html" height="500px" width="100%"></iframe>
 
 ```
 

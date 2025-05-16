@@ -1,7 +1,9 @@
-# End Character Settings
+# Character
+
+## End Character Settings
 The end character is added after the decoded data in the format of decoded data + end character.
 
-## No End Character
+### No End Character
 
 ```{figure} ../../media/3030050.png
 :align: center
@@ -11,7 +13,7 @@ No End Character
 ```
 
 
-## Enter+New Line(CRLF)
+### Enter+New Line(CRLF)
 
 ```{figure} ../../media/3030051.png
 :align: center
@@ -21,7 +23,7 @@ Enter+New Line(CRLF)
 ```
 
 
-## Enter(CR)
+### Enter(CR)
 
 ```{figure} ../../media/3030052.png
 :align: center
@@ -31,7 +33,7 @@ Enter(CR) `Default`
 ```
 
 
-## Tab(TAB)
+### Tab(TAB)
 
 ```{figure} ../../media/3030053.png
 :align: center
@@ -41,7 +43,7 @@ Tab(TAB)
 ```
 
 
-## Enter+Enter(CRCR)
+### Enter+Enter(CRCR)
 
 ```{figure} ../../media/3030054.png
 :align: center
@@ -49,3 +51,5 @@ Tab(TAB)
 
 Enter+Enter(CRCR)
 ```
+
+
