@@ -4,52 +4,52 @@ hide-toc: true
 
 # W Series Scanner
 
-## [W9](https://scanner-280.handy.pub/W9/en)
+## [W9](https://280.scandocs.net/W9/en)
 
 ```{figure} ../media/series/W9.jpg
 :align: center
-:target: https://scanner-280.handy.pub/W9/en
+:target: https://280.scandocs.net/W9/en
 
-[W9](https://scanner-280.handy.pub/W9/en)
+[W9](https://280.scandocs.net/W9/en)
 ```
 
 
-## [W6-X](https://scanner-wx5.handy.pub/W6-X/en)
+## [W6-X](https://wx5.scandocs.net/W6-X/en)
 
 
 ```{figure} ../media/series/W6-X.jpg
 :align: center
-:target: https://scanner-wx5.handy.pub/W6-X/en
+:target: https://wx5.scandocs.net/W6-X/en
 
-[W6-X](https://scanner-wx5.handy.pub/W6-X/en)
+[W6-X](https://wx5.scandocs.net/W6-X/en)
 ```
 
-## [W8-X](https://scanner-wx5.handy.pub/W8-X/en)
+## [W8-X](https://wx5.scandocs.net/W8-X/en)
 
 
 ```{figure} ../media/series/W8-X.jpg
 :align: center
-:target: https://scanner-wx5.handy.pub/W8-X/en
+:target: https://wx5.scandocs.net/W8-X/en
 
-[W8-X](https://scanner-wx5.handy.pub/W8-X/en)
+[W8-X](https://wx5.scandocs.net/W8-X/en)
 ```
 
-## [W22](https://scanner-212.handy.pub/W22/en)
+## [W22](https://212.scandocs.net/W22/en)
 
 ```{figure} ../media/series/W22.jpg
 :align: center
-:target: https://scanner-212.handy.pub/W22/en
+:target: https://212.scandocs.net/W22/en
 
-[W22](https://scanner-212.handy.pub/W22/en)
+[W22](https://212.scandocs.net/W22/en)
 ```
 
-## [W28](https://scanner-wx5.handy.pub/W28/en)
+## [W28](https://wx5.scandocs.net/W28/en)
 
 ```{figure} ../media/series/W28.jpg
 :align: center
-:target: https://scanner-wx5.handy.pub/W28/en
+:target: https://wx5.scandocs.net/W28/en
 
-[W28](https://scanner-wx5.handy.pub/W28/en)
+[W28](https://wx5.scandocs.net/W28/en)
 ```
 
 

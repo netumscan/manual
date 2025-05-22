@@ -4,32 +4,32 @@ hide-toc: true
 
 # K Series Scanner
 
-## [K20](https://scanner-212.handy.pub/K20/en)
+## [K20](https://212.scandocs.net/K20/en)
 
 ```{figure} ../media/series/K20.jpg
 :align: center
-:target: https://scanner-212.handy.pub/K20/en
+:target: https://212.scandocs.net/K20/en
 
-[K20](https://scanner-212.handy.pub/K20/en)
+[K20](https://212.scandocs.net/K20/en)
 ```
 
 
-## [K6](https://scanner-wx3.handy.pub/K6/en)
+## [K6](https://wx3.scandocs.net/K6/en)
 
 
 ```{figure} ../media/series/K6.jpg
 :align: center
-:target: https://scanner-wx3.handy.pub/K6/en
+:target: https://wx3.scandocs.net/K6/en
 
-[K6](https://scanner-wx3.handy.pub/K6/en)
+[K6](https://wx3.scandocs.net/K6/en)
 ```
 
-## [K28](https://scanner-wx3.handy.pub/K28/en)
+## [K28](https://wx3.scandocs.net/K28/en)
 
 
 ```{figure} ../media/series/K28.jpg
 :align: center
-:target: https://scanner-wx3.handy.pub/K28/en
+:target: https://wx3.scandocs.net/K28/en
 
-[K28](https://scanner-wx3.handy.pub/K28/en)
+[K28](https://wx3.scandocs.net/K28/en)
 ```

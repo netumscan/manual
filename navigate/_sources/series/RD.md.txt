@@ -4,85 +4,85 @@ hide-toc: true
 
 # RD Series Scanner
 
-## [NT-1202](https://scanner-280.handy.pub/NT-1202/en)
+## [NT-1202](https://280.scandocs.net/NT-1202/en)
 
 ```{figure} ../media/series/NT-1202.jpg
 :align: center
-:target: https://scanner-280.handy.pub/NT-1202/en
+:target: https://280.scandocs.net/NT-1202/en
 
-[NT-1202](https://scanner-280.handy.pub/NT-1202/en)
+[NT-1202](https://280.scandocs.net/NT-1202/en)
 ```
 
 
-## [NT-1202W](https://scanner-wx4.handy.pub/NT-1202W/en)
+## [NT-1202W](https://wx4.scandocs.net/NT-1202W/en)
 
 
 ```{figure} ../media/series/NT-1202W.jpg
 :align: center
-:target: https://scanner-wx4.handy.pub/NT-1202W/en
+:target: https://wx4.scandocs.net/NT-1202W/en
 
-[NT-1202W](https://scanner-wx4.handy.pub/NT-1202W/en)
+[NT-1202W](https://wx4.scandocs.net/NT-1202W/en)
 ```
 
-## [NT-1203L](https://scanner-wx4.handy.pub/NT-1203L/en)
+## [NT-1203L](https://wx4.scandocs.net/NT-1203L/en)
 
 
 ```{figure} ../media/series/NT-1203L.jpg
 :align: center
-:target: https://scanner-wx4.handy.pub/NT-1203L/en
+:target: https://wx4.scandocs.net/NT-1203L/en
 
-[NT-1203L](https://scanner-wx4.handy.pub/NT-1203L/en)
+[NT-1203L](https://wx4.scandocs.net/NT-1203L/en)
 ```
 
-## [I8](https://scanner-wx3.handy.pub/I8/en)
+## [I8](https://wx3.scandocs.net/I8/en)
 
 ```{figure} ../media/series/I8.jpg
 :align: center
-:target: https://scanner-wx3.handy.pub/I8/en
+:target: https://wx3.scandocs.net/I8/en
 
-[I8](https://scanner-wx3.handy.pub/I8/en)
+[I8](https://wx3.scandocs.net/I8/en)
 ```
 
-## [I5](https://scanner-280.handy.pub/I5/en)
+## [I5](https://280.scandocs.net/I5/en)
 
 ```{figure} ../media/series/I5.jpg
 :align: center
-:target: https://scanner-280.handy.pub/I5/en
+:target: https://280.scandocs.net/I5/en
 
-[I5](https://scanner-280.handy.pub/I5/en)
+[I5](https://280.scandocs.net/I5/en)
 ```
 
-## [NT-1988](https://scanner-wx4.handy.pub/NT-1988/en)
+## [NT-1988](https://wx4.scandocs.net/NT-1988/en)
 
 ```{figure} ../media/series/NT-1988.jpg
 :align: center
-:target: https://scanner-wx4.handy.pub/NT-1988/en
+:target: https://wx4.scandocs.net/NT-1988/en
 
-[NT-1988](https://scanner-wx4.handy.pub/NT-1988/en)
+[NT-1988](https://wx4.scandocs.net/NT-1988/en)
 ```
-## [NT-1288](https://scanner-wx4.handy.pub/NT-1288/en)
+## [NT-1288](https://wx4.scandocs.net/NT-1288/en)
 
 ```{figure} ../media/series/NT-1288.jpg
 :align: center
-:target: https://scanner-wx4.handy.pub/NT-1288/en
+:target: https://wx4.scandocs.net/NT-1288/en
 
-[NT-1288](https://scanner-wx4.handy.pub/NT-1288/en)
+[NT-1288](https://wx4.scandocs.net/NT-1288/en)
 ```
-## [NT-12895](https://scanner-hs7.handy.pub/NT-12895/en)
+## [NT-12895](https://hs7.scandocs.net/NT-12895/en)
 
 ```{figure} ../media/series/NT-12895.jpg
 :align: center
-:target: https://scanner-hs7.handy.pub/NT-12895/en
+:target: https://hs7.scandocs.net/NT-12895/en
 
-[NT-12895](https://scanner-hs7.handy.pub/NT-12895/en)
+[NT-12895](https://hs7.scandocs.net/NT-12895/en)
 ```
-## [RD-2023](https://scanner-290.handy.pub/RD-2023/en)
+## [RD-2023](https://290.scandocs.net/RD-2023/en)
 
 ```{figure} ../media/series/RD-2023.jpg
 :align: center
-:target: https://scanner-290.handy.pub/RD-2023/en
+:target: https://290.scandocs.net/RD-2023/en
 
-[RD-2023](https://scanner-290.handy.pub/RD-2023/en)
+[RD-2023](https://290.scandocs.net/RD-2023/en)
 ```
 
 

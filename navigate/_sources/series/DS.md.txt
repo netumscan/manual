@@ -4,40 +4,40 @@ hide-toc: true
 
 # DS Series Scanner
 
-## [DS2800](https://scanner-wifi.handy.pub/DS2800/en)
+## [DS2800](https://wifi.scandocs.net/DS2800/en)
 
 ```{figure} ../media/series/DS2800.jpg
 :align: center
-:target: https://scanner-wifi.handy.pub/DS2800/en
+:target: https://wifi.scandocs.net/DS2800/en
 
-[DS2800](https://scanner-wifi.handy.pub/DS2800/en)
+[DS2800](https://wifi.scandocs.net/DS2800/en)
 ```
 
-## [DS7500](https://scanner-wx1.handy.pub/DS7500/en)
+## [DS7500](https://wx1.scandocs.net/DS7500/en)
 
 ```{figure} ../media/series/DS7500.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/DS7500/en
+:target: https://wx1.scandocs.net/DS7500/en
 
-[DS7500](https://scanner-wx1.handy.pub/DS7500/en)
+[DS7500](https://wx1.scandocs.net/DS7500/en)
 ```
 
-## [DS-8100](https://scanner-wx1.handy.pub/DS-8100/en)
+## [DS-8100](https://wx1.scandocs.net/DS-8100/en)
 
 
 ```{figure} ../media/series/DS-8100.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/DS-8100/en
+:target: https://wx1.scandocs.net/DS-8100/en
 
-[DS-8100](https://scanner-wx1.handy.pub/DS-8100/en)
+[DS-8100](https://wx1.scandocs.net/DS-8100/en)
 ```
 
-## [DS-8500](https://scanner-wx1.handy.pub/DS-8500/en)
+## [DS-8500](https://wx1.scandocs.net/DS-8500/en)
 
 
 ```{figure} ../media/series/DS-8500.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/DS-8500/en
+:target: https://wx1.scandocs.net/DS-8500/en
 
-[DS-8500](https://scanner-wx1.handy.pub/DS-8500/en)
+[DS-8500](https://wx1.scandocs.net/DS-8500/en)
 ```

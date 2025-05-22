@@ -4,77 +4,77 @@ hide-toc: true
 
 # Desktop Scanner
 
-## [A5](https://platform-86l.handy.pub/A5/en)
+## [A5](https://platform.scandocs.net/A5/en)
 
 ```{figure} ../media/series/A5.jpg
 :align: center
-:target: https://platform-86l.handy.pub/A5/en
+:target: https://platform.scandocs.net/A5/en
 
-[A5](https://platform-86l.handy.pub/A5/en)
+[A5](https://platform.scandocs.net/A5/en)
 ```
 
 
-## [A6](https://scanner-wx1.handy.pub/A6/en)
+## [A6](https://wx1.scandocs.net/A6/en)
 
 
 ```{figure} ../media/series/A6.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/A6/en
+:target: https://wx1.scandocs.net/A6/en
 
-[A6](https://scanner-wx1.handy.pub/A6/en)
+[A6](https://wx1.scandocs.net/A6/en)
 ```
 
-## [NT-2055M](https://platform-86l.handy.pub/NT-2055M/en)
+## [NT-2055M](https://platform.scandocs.net/NT-2055M/en)
 
 
 ```{figure} ../media/series/NT-2055M.jpg
 :align: center
-:target: https://platform-86l.handy.pub/NT-2055M/en
+:target: https://platform.scandocs.net/NT-2055M/en
 
-[NT-2055M](https://platform-86l.handy.pub/NT-2055M/en)
+[NT-2055M](https://platform.scandocs.net/NT-2055M/en)
 ```
 
-## [NT-2055A1](https://platform-86l.handy.pub/NT-2055A1/en)
+## [NT-2055A1](https://platform.scandocs.net/NT-2055A1/en)
 
 ```{figure} ../media/series/NT-2055A1.jpg
 :align: center
-:target: https://platform-86l.handy.pub/NT-2055A1/en
+:target: https://platform.scandocs.net/NT-2055A1/en
 
-[NT-2055A1](https://platform-86l.handy.pub/NT-2055A1/en)
+[NT-2055A1](https://platform.scandocs.net/NT-2055A1/en)
 ```
 
-## [NT-2085PRO](https://platform-86l.handy.pub/NT-2085PRO/en)
+## [NT-2085PRO](https://platform.scandocs.net/NT-2085PRO/en)
 
 ```{figure} ../media/series/NT-2085PRO.jpg
 :align: center
-:target: https://platform-86l.handy.pub/NT-2085PRO/en
+:target: https://platform.scandocs.net/NT-2085PRO/en
 
-[NT-2085PRO](https://platform-86l.handy.pub/NT-2085PRO/en)
+[NT-2085PRO](https://platform.scandocs.net/NT-2085PRO/en)
 ```
 
-## [D-8600](https://platform-86l.handy.pub/D-8600/en)
+## [D-8600](https://platform.scandocs.net/D-8600/en)
 
 ```{figure} ../media/series/D-8600.jpg
 :align: center
-:target: https://platform-86l.handy.pub/D-8600/en
+:target: https://platform.scandocs.net/D-8600/en
 
-[D-8600](https://platform-86l.handy.pub/D-8600/en)
+[D-8600](https://platform.scandocs.net/D-8600/en)
 ```
-## [A8](https://platform-86l.handy.pub/A8/en)
+## [A8](https://platform.scandocs.net/A8/en)
 
 ```{figure} ../media/series/A8.jpg
 :align: center
-:target: https://platform-86l.handy.pub/A8/en
+:target: https://platform.scandocs.net/A8/en
 
-[A8](https://platform-86l.handy.pub/A8/en)
+[A8](https://platform.scandocs.net/A8/en)
 ```
-## [CN-40](https://platform-86l.handy.pub/CN-40/en)
+## [CN-40](https://platform.scandocs.net/CN-40/en)
 
 ```{figure} ../media/series/CN-40.jpg
 :align: center
-:target: https://platform-86l.handy.pub/CN-40/en
+:target: https://platform.scandocs.net/CN-40/en
 
-[CN-40](https://platform-86l.handy.pub/CN-40/en)
+[CN-40](https://platform.scandocs.net/CN-40/en)
 ```
 
 

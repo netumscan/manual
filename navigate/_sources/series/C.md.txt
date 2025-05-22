@@ -7,54 +7,54 @@ hide-toc: true
 # C Series Scanner
 
 
-## [C740](https://scanner-wx1.handy.pub/C740/en)
+## [C740](https://wx1.scandocs.net/C740/en)
 
 
 ```{figure} ../media/series/C740.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C740/en
+:target: https://wx1.scandocs.net/C740/en
 
-[C740](https://scanner-wx1.handy.pub/C740/en)
+[C740](https://wx1.scandocs.net/C740/en)
 ```
 
 
-## [C750](https://scanner-wx1.handy.pub/C750/en)
+## [C750](https://wx1.scandocs.net/C750/en)
 
 ```{figure} ../media/series/C750.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C750/en
+:target: https://wx1.scandocs.net/C750/en
 
-[C750](https://scanner-wx1.handy.pub/C750/en)
+[C750](https://wx1.scandocs.net/C750/en)
 ```
 
-## [C830](https://scanner-wx1.handy.pub/C830/en)
+## [C830](https://wx1.scandocs.net/C830/en)
 
 
 ```{figure} ../media/series/C830.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C830/en
+:target: https://wx1.scandocs.net/C830/en
 
-[C830](https://scanner-wx1.handy.pub/C830/en)
+[C830](https://wx1.scandocs.net/C830/en)
 ```
 
-## [C850_B2C](https://scanner-wx1.handy.pub/C850_B2C/en)
+## [C850_B2C](https://wx1.scandocs.net/C850_B2C/en)
 
 
 ```{figure} ../media/series/C850_B2C.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C850_B2C/en
+:target: https://wx1.scandocs.net/C850_B2C/en
 
-[C850_B2C](https://scanner-wx1.handy.pub/C850_B2C/en)
+[C850_B2C](https://wx1.scandocs.net/C850_B2C/en)
 ```
 
-## [C990](https://scanner-wx1.handy.pub/C990/en)
+## [C990](https://wx1.scandocs.net/C990/en)
 
 
 ```{figure} ../media/series/C990.jpg
 :align: center
-:target: https://scanner-wx1.handy.pub/C990/en
+:target: https://wx1.scandocs.net/C990/en
 
-[C990](https://scanner-wx1.handy.pub/C990/en)
+[C990](https://wx1.scandocs.net/C990/en)
 ```
 
 

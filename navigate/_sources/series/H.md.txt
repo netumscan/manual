@@ -4,22 +4,22 @@ hide-toc: true
 
 # H Series Scanner
 
-## [H3](https://scanner-wx2.handy.pub/H3/en)
+## [H3](https://wx2.scandocs.net/H3/en)
 
 ```{figure} ../media/series/H3.jpg
 :align: center
-:target: https://scanner-wx2.handy.pub/H3/en
+:target: https://wx2.scandocs.net/H3/en
 
-[H3](https://scanner-wx2.handy.pub/H3/en)
+[H3](https://wx2.scandocs.net/H3/en)
 ```
 
 
-## [H8](https://scanner-wx2.handy.pub/H8/en)
+## [H8](https://wx2.scandocs.net/H8/en)
 
 
 ```{figure} ../media/series/H8.jpg
 :align: center
-:target: https://scanner-wx2.handy.pub/H8/en
+:target: https://wx2.scandocs.net/H8/en
 
-[H8](https://scanner-wx2.handy.pub/H8/en)
+[H8](https://wx2.scandocs.net/H8/en)
 ```
