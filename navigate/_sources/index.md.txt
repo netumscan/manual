@@ -9,6 +9,8 @@
     - English
 *   - [C Series Scanner](page-zh:C)
     - [C Series Scanner](page-en:C)
+*   - [CPro Series Scanner](page-zh:CS)
+    - [CPro Series Scanner](page-en:CS)
 *   - [DS Series Scanner](page-zh:DS)
     - [DS Series Scanner](page-en:DS)
 *   - [E Series Scanner](page-zh:E)
