@@ -1,0 +1,12 @@
+# Document Camera User Manual
+
+Please obtain the corresponding software and user manual according to your computer system
+
+```{toctree}
+:maxdepth: 2
+
+windows.md
+macos.md
+linux.md
+
+```

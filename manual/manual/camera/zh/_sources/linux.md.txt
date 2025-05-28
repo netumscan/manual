@@ -1,0 +1,22 @@
+# Linux
+## User Manual
+- [German User Manual](https://pan.gzxlscan.cn/s/5j0ev4)
+- [Spanish User Manual](https://pan.gzxlscan.cn/s/dzo93j)
+- [French User Manual](https://pan.gzxlscan.cn/s/j8800o)
+- [English User Manual](https://pan.gzxlscan.cn/s/72024r)
+- [Italian User Manual](https://pan.gzxlscan.cn/s/btsq58)
+- [Dutch User Manual](https://pan.gzxlscan.cn/s/bjjg3u)
+- [Polish User Manual](https://pan.gzxlscan.cn/s/4tg9nu)
+- [Swedish User Manual](https://pan.gzxlscan.cn/s/617d0p)
+- [Chinese User Manual](https://pan.gzxlscan.cn/s/mbz85m)
+
+
+## Supporting Software
+
+- [Deb Package](https://pan.gzxlscan.cn/s/fh23j6)
+- [Rpm Package](https://pan.gzxlscan.cn/s/vqejuw)
+
+```{note}
+- `Deb Package` supports Tongxin uos/kylin/deepin/ubuntu/debian.
+- `Rpm Package` supports fedora
+```
