@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>条码设置 &#8212; RD-2023 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=beaddf03"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\barcode.b870865a-fd0e-4e92-9b19-0cea19e06ab1.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -311,13 +323,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">开始设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">启用所有一维码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">禁用所有一维码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">启用所有二维码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">禁用所有二维码</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">开始设置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-symbologies">一维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">二维码</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">结束设置</a></li>
 </ul>
             </nav>
@@ -330,61 +338,55 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="barcode-settings">
-<h1>条码设置<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
+  <section id="symbologies">
+<h1>条码设置<a class="headerlink" href="#symbologies" title="Link to this heading">#</a></h1>
 <section id="start-setup">
 <h2>开始设置<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>只有扫描<a class="reference internal" href="#start-setup">开始设置</a>后，才能扫描其他功能设置码进行配置，需要扫描<a class="reference internal" href="#end-setup">结束设置</a>才能使相应配置生效。</p>
 </div>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/23SETUPE1.png"><img alt="../../media/23SETUPE1.png" src="../../media/23SETUPE1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">开始设置</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">开始设置</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<section id="enable-all-1d-codes">
-<h3>启用所有一维码<a class="headerlink" href="#enable-all-1d-codes" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id2">
+</section>
+<section id="d-symbologies">
+<h2>一维码<a class="headerlink" href="#d-symbologies" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/40ENABLE_ALL1D.png"><img alt="../../media/40ENABLE_ALL1D.png" src="../../media/40ENABLE_ALL1D.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">启用所有一维码</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">启用</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="disable-all-1d-codes">
-<h3>禁用所有一维码<a class="headerlink" href="#disable-all-1d-codes" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/40DISABLE_ALL1D.png"><img alt="../../media/40DISABLE_ALL1D.png" src="../../media/40DISABLE_ALL1D.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁用所有一维码</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="enable-all-2d-codes">
-<h3>启用所有二维码<a class="headerlink" href="#enable-all-2d-codes" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id4">
+<section id="id1">
+<h2>二维码<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/40ENABLE_ALL2D.png"><img alt="../../media/40ENABLE_ALL2D.png" src="../../media/40ENABLE_ALL2D.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">启用所有二维码</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">启用</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="disable-all-2d-codes">
-<h3>禁用所有二维码<a class="headerlink" href="#disable-all-2d-codes" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/40DISABLE_ALL2D.png"><img alt="../../media/40DISABLE_ALL2D.png" src="../../media/40DISABLE_ALL2D.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁用所有二维码</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
 </section>
 <section id="end-setup">
 <h2>结束设置<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
@@ -392,11 +394,11 @@ document.write(`
 <p class="admonition-title">备注</p>
 <p>只有扫描<a class="reference internal" href="#start-setup">开始设置</a>后，才能扫描其他功能设置码进行配置，需要扫描<a class="reference internal" href="#end-setup">结束设置</a>才能使相应配置生效。</p>
 </div>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/23SETUPE0.png"><img alt="../../media/23SETUPE0.png" src="../../media/23SETUPE0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">结束设置</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">结束设置</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -438,13 +440,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">开始设置</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">启用所有一维码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">禁用所有一维码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">启用所有二维码</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">禁用所有二维码</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">开始设置</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-symbologies">一维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">二维码</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">结束设置</a></li>
 </ul>
   </nav></div>

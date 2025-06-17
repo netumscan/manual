@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Mode sans fil &#8212; WX-BT Scanner User Manual</title>
   
   
@@ -31,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=11d075df" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ca8ee3f5" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=e6b791cb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\wireless.dddf7dae-a524-4040-9239-d0a855d0f875.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'wireless';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -238,6 +250,7 @@
 <li class="toctree-l1"><a class="reference internal" href="working.html">Mode de travail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bluetooth.html">Mode Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
+<li class="toctree-l1"><a class="reference internal" href="process.html">Édition de données</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Foire Aux Questions</a></li>
 </ul>
 
@@ -410,12 +423,18 @@ document.write(`
 <a class="reference internal image-reference" href="../../media/2523IFSNO241.png"><img alt="../../media/2523IFSNO241.png" src="../../media/2523IFSNO241.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Mode sans fil <code class="docutils literal notranslate"><span class="pre">Défaut</span></code></span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Mode Sans-fil</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Les scanners de la série C Pro ne prennent pas en charge la numérisation de ce code de réglage pour basculer</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Les récepteurs sont divisés en petits récepteurs et récepteurs de base</p>
+<ul class="simple">
+<li><p>Les récepteurs sont divisés en petits récepteurs et récepteurs de base</p></li>
+</ul>
 </div>
 <section id="one-to-one-pairing">
 <h2>Appairage unique<a class="headerlink" href="#one-to-one-pairing" title="Lien vers cette rubrique">#</a></h2>

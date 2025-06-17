@@ -2,7 +2,7 @@
 
 ## Start Setup
 ```{note}
-Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
+Only after scanning [Start Setup](#start-setup-figure) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup-figure) for the corresponding configuration to take effect.
 ```
 ```{figure} ../../media/252B24.24.png
 :align: center
@@ -19,7 +19,7 @@ Press the button to trigger scanning, and release the button to end scanning. Sc
 :align: center
 :width: 300px
 
-Key Trigger Mode `Default`
+`*` Key Trigger Mode
 ```
 
 
@@ -46,7 +46,7 @@ Continuous Mode
 
 ## End Setup
 ```{note}
-Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
+Only after scanning [Start Setup](#start-setup-figure) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup-figure) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/25242425.png

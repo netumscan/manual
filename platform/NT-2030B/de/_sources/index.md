@@ -9,3 +9,7 @@ qrcodeurl.md
 codedelay.md
 
 ```
+
+```{note}
+- asterisks ( * ) indicate default values.
+```

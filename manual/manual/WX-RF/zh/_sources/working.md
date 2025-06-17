@@ -7,7 +7,7 @@ In the working area outside the range of the 2.4G receiver or Bluetooth signal, 
 :align: center
 :width: 300px
 
-Normal Mode `Default`
+`*` Normal Mode
 ```
 
 ```{note}

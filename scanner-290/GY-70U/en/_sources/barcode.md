@@ -1,4 +1,4 @@
-# Barcode Settings
+# Symbologies
 
 
 ## Start Setup
@@ -13,40 +13,37 @@ Only after scanning [Start Setup](#start-setup) can you scan other function setu
 Start Setup
 ```
 
-### Enable All 1D Codes
+## 1D Symbologies
 
 ```{figure} ../../media/40ENABLE_ALL1D.png
 :align: center
 :width: 300px
 
-Enable All 1D Codes
+Enable
 ```
-
-### Disable All 1D Codes
 
 ```{figure} ../../media/40DISABLE_ALL1D.png
 :align: center
 :width: 300px
 
-Disable All 1D Codes
+Disable
 ```
 
-### Enable All 2D Codes
+## 2D Symbologies
 
 ```{figure} ../../media/40ENABLE_ALL2D.png
 :align: center
 :width: 300px
 
-Enable All 2D Codes
+Enable
 ```
 
-### Disable All 2D Codes
 
 ```{figure} ../../media/40DISABLE_ALL2D.png
 :align: center
 :width: 300px
 
-Disable All 2D Codes
+Disable
 ```
 
 

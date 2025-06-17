@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>YX-CCD Wired Scanner Guida Di Configurazione Rapida &#8212; YX-CCD Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=45930005"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\index.83d806a2-afdd-4887-93b2-9dcc2e64ab10.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -237,9 +249,9 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modalità Scansione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Carattere</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni Codici A Barre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a></li>
 </ul>
 
     </div>
@@ -407,23 +419,43 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="scanmode.html#duplicate-barcode-detection-settings">Impostazioni Di Rilevamento Codici A Barre Duplicate</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">Nessun Carattere Finale</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Enter(CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#new-line-lf">Nuova Linea (LF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#tab-tab">Tab(TAB)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Carattere</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Impostazioni Dei Caratteri Finali</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">Trasmetti Carattere ID Codice</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="keyboard.html#keyboard-language">Lingua Della Tastiera</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni Codici A Barre</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#reversal-barcode-settings">Impostazioni Barcode Reversal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#reverse-symbologies">Simbologie Inversa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-8">EAN-8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-13">EAN-13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-a">UPC-A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-e">UPC-E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#codabar">Codabar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-11">Codice 11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-39">Codice 39</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-93">Codice 93</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-128">Codice 128</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-limited-rss-limited">GS1 DataBar Limited(Rss Limited)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-omnidirectional-rss-omnidirectional">GS1 DataBar Omnidirezionale (RSS Omnidirezionale)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-expanded-rss-expanded">GS1 DataBar Espanso (Rss Espanso)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#interleaved-2-of-5">Interfogliatura 2 di 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#industrial-2-of-5">Industria 2 di 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#matrix-2-of-5">Matrice 2 di 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#china-post">Cina Post</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#msi">MSI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#plessey-telepen">Plessey/Telepen</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p>asterischi ( * ) indicano i valori predefiniti.</p></li>
 </ul>
 </div>
 </section>

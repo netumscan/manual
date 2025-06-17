@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Configuración de End Caracter &#8212; YX-280 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\character.2d4fbb28-f5eb-42c1-91e7-1488acfc0fd4.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
@@ -238,7 +250,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Configuración de End Caracter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Ajustes de código de barras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologías</a></li>
 </ul>
 
     </div>
@@ -410,43 +422,43 @@ document.write(`
 <h2>Iniciar configuración<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Sólo después de escanear <a class="reference internal" href="#start-setup">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
+<p>Sólo después de escanear <a class="reference internal" href="#start-setup-figure">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup-figure">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
 </div>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="start-setup-figure">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Iniciar configuración</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Iniciar configuración</span><a class="headerlink" href="#start-setup-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="no-end-character">
 <h2>Sin caracteres de fin<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/TC01.png"><img alt="../../media/TC01.png" src="../../media/TC01.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Sin caracteres de fin</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Sin caracteres de fin</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="enter-new-line-crlf">
 <h2>Entrar+Nueva línea (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/TC02.png"><img alt="../../media/TC02.png" src="../../media/TC02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Entrar+Nueva línea (CRLF)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Entrar+Nueva línea (CRLF)</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="enter-cr">
 <h2>Entrar (CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/TC03.png"><img alt="../../media/TC03.png" src="../../media/TC03.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Enter(CR) <code class="docutils literal notranslate"><span class="pre">Por</span> <span class="pre">defecto</span></code></span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Enter(CR)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -454,13 +466,13 @@ document.write(`
 <h2>Finalizar configuración<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Sólo después de escanear <a class="reference internal" href="#start-setup">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
+<p>Sólo después de escanear <a class="reference internal" href="#start-setup-figure">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup-figure">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
 </div>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="end-setup-figure">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Finalizar configuración</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Finalizar configuración</span><a class="headerlink" href="#end-setup-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

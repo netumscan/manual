@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Impostazioni Di Sistema &#8212; YX-280 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=45930005"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\system.2533b9d9-2ccc-462f-92c0-dcecadf49e71.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'system';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -238,7 +250,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modalità Scansione</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni Codici A Barre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a></li>
 </ul>
 
     </div>
@@ -412,24 +424,24 @@ document.write(`
 <h2>Avvia Configurazione<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Solo dopo la scansione <a class="reference internal" href="#start-setup">Start Setup</a> è possibile eseguire la scansione di altri codici di configurazione delle funzioni. È necessario eseguire la scansione <a class="reference internal" href="#end-setup">Fine installazione</a> affinché la configurazione corrispondente abbia effetto.</p>
+<p>Solo dopo la scansione <a class="reference internal" href="#start-setup-figure">Start Setup</a> è possibile eseguire la scansione di altri codici di configurazione delle funzioni. È necessario eseguire la scansione <a class="reference internal" href="#end-setup-figure">Fine installazione</a> affinché la configurazione corrispondente abbia effetto.</p>
 </div>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="start-setup-figure">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Avvia Configurazione</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Avvia Configurazione</span><a class="headerlink" href="#start-setup-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="restore-default-settings">
 <h2>Ripristina Impostazioni Predefinite<a class="headerlink" href="#restore-default-settings" title="Link to this heading">#</a></h2>
 <p>Quando si verifica un errore sconosciuto sullo scanner, è possibile ripristinare lo scanner ripristinando le impostazioni predefinite.</p>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/252B2B25.png"><img alt="../../media/252B2B25.png" src="../../media/252B2B25.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Ripristina Impostazioni Predefinite</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Ripristina Impostazioni Predefinite</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -437,21 +449,21 @@ document.write(`
 <h2>Impostazioni Volume<a class="headerlink" href="#volume-settings" title="Link to this heading">#</a></h2>
 <section id="enable">
 <h3>Abilita<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/SND1.png"><img alt="../../media/SND1.png" src="../../media/SND1.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Abilita <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Abilita</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="disable">
 <h3>Disabilita<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/SND0.png"><img alt="../../media/SND0.png" src="../../media/SND0.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disabilita</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disabilita</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -460,13 +472,13 @@ document.write(`
 <h2>Termina L’Impostazione<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>Solo dopo la scansione <a class="reference internal" href="#start-setup">Start Setup</a> è possibile eseguire la scansione di altri codici di configurazione delle funzioni. È necessario eseguire la scansione <a class="reference internal" href="#end-setup">Fine installazione</a> affinché la configurazione corrispondente abbia effetto.</p>
+<p>Solo dopo la scansione <a class="reference internal" href="#start-setup-figure">Start Setup</a> è possibile eseguire la scansione di altri codici di configurazione delle funzioni. È necessario eseguire la scansione <a class="reference internal" href="#end-setup-figure">Fine installazione</a> affinché la configurazione corrispondente abbia effetto.</p>
 </div>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="end-setup-figure">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Termina L’Impostazione</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Termina L’Impostazione</span><a class="headerlink" href="#end-setup-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>キーボードの設定 &#8212; YX-280 Scanner User Manual</title>
   
   
@@ -45,10 +54,13 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=4755f45a"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\keyboard.9035ae7b-d295-4a0d-acaa-f9d7548d8a43.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'keyboard';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
-    <link rel="next" title="バーコードの設定" href="barcode.html" />
+    <link rel="next" title="Symbologies" href="barcode.html" />
     <link rel="prev" title="終了文字設定" href="character.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="ja"/>
@@ -238,7 +250,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">キーボードの設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">バーコードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
 </ul>
 
     </div>
@@ -415,15 +427,15 @@ document.write(`
 <h1>キーボードの設定<a class="headerlink" href="#keyboard-settings" title="Link to this heading">#</a></h1>
 <section id="start-setup">
 <h2>セットアップを開始<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p><a class="reference internal" href="#start-setup">Start Setup</a>をスキャンした後にのみ、設定用の他の関数設定コードをスキャンすることができます。 対応する設定を有効にするには、<a class="reference internal" href="#end-setup">End Setup</a>をスキャンする必要があります。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><a class="reference internal" href="#start-setup-figure">Start Setup</a>をスキャンした後にのみ、設定用の他の関数設定コードをスキャンすることができます。 対応する設定を有効にするには、<a class="reference internal" href="#end-setup-figure">End Setup</a>をスキャンする必要があります。</p>
 </div>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="start-setup-figure">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">セットアップを開始</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">セットアップを開始</span><a class="headerlink" href="#start-setup-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -431,96 +443,96 @@ document.write(`
 <h2>キーボードの言語<a class="headerlink" href="#keyboard-language" title="Link to this heading">#</a></h2>
 <section id="america">
 <h3>アメリカ<a class="headerlink" href="#america" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/KM00.png"><img alt="../../media/KM00.png" src="../../media/KM00.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">アメリカ <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> アメリカ</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="britain">
 <h3>Britain<a class="headerlink" href="#britain" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/KM02.png"><img alt="../../media/KM02.png" src="../../media/KM02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">&lt;unk&gt;</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">&lt;unk&gt;</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="france">
 <h3>フランス<a class="headerlink" href="#france" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/KM04.png"><img alt="../../media/KM04.png" src="../../media/KM04.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">フランス</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">フランス</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="germany">
 <h3>ドイツ<a class="headerlink" href="#germany" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/KM05.png"><img alt="../../media/KM05.png" src="../../media/KM05.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ドイツ</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">ドイツ</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="italy">
 <h3>イタリア<a class="headerlink" href="#italy" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/KM06.png"><img alt="../../media/KM06.png" src="../../media/KM06.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">イタリア</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">イタリア</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="portugal">
 <h3>ポルトガル<a class="headerlink" href="#portugal" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/KM08.png"><img alt="../../media/KM08.png" src="../../media/KM08.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">ポルトガル</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">ポルトガル</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="spain">
 <h3>スペイン<a class="headerlink" href="#spain" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/KM09.png"><img alt="../../media/KM09.png" src="../../media/KM09.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">スペイン</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">スペイン</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="turkey-q">
 <h3>Turkey-Q<a class="headerlink" href="#turkey-q" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/KM19.png"><img alt="../../media/KM19.png" src="../../media/KM19.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Turkey-Q</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Turkey-Q</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="end-setup">
 <h2>セットアップを終了<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">注釈</p>
-<p><a class="reference internal" href="#start-setup">Start Setup</a>をスキャンした後にのみ、設定用の他の関数設定コードをスキャンすることができます。 対応する設定を有効にするには、<a class="reference internal" href="#end-setup">End Setup</a>をスキャンする必要があります。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><a class="reference internal" href="#start-setup-figure">Start Setup</a>をスキャンした後にのみ、設定用の他の関数設定コードをスキャンすることができます。 対応する設定を有効にするには、<a class="reference internal" href="#end-setup-figure">End Setup</a>をスキャンする必要があります。</p>
 </div>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="end-setup-figure">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">セットアップを終了</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">セットアップを終了</span><a class="headerlink" href="#end-setup-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -551,7 +563,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">次へ</p>
-        <p class="prev-next-title">バーコードの設定</p>
+        <p class="prev-next-title">Symbologies</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

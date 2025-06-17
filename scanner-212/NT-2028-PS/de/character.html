@@ -8,7 +8,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>End-Charakter-Einstellungen &#8212; NT-2028-PS Scanner User Manual</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>Charakter &#8212; NT-2028-PS Scanner User Manual</title>
   
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=9bf55d28"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\character.e9b9c85f-18ce-4fce-8ca9-de3c3a2ee463.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
@@ -242,9 +254,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Systemeinstellungen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan-Modus</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">End-Charakter-Einstellungen</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Charakter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Tastatureinstellungen</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Einstellungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologien</a></li>
 </ul>
 
     </div>
@@ -383,7 +395,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>End-Charakter-Einstellungen</h1>
+    <h1>Charakter</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,11 +405,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Kein End-Zeichen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Eingabetaste+neue Zeile (CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Eingabetaste (CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Registerkarte(TAB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Eingabe+Eingabe(CRCR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">End-Charakter-Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Kein End-Zeichen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Eingabetaste+neue Zeile (CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Eingabetaste (CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Registerkarte(TAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Eingabe+Eingabe(CRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">Übertrage Code ID Zeichen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">Code-ID Identifikatoren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-code-identifiers">AIM-Code-Identifikatoren</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -409,11 +429,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="end-character-settings">
-<h1>End-Charakter-Einstellungen<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
+  <section id="character">
+<h1>Charakter<a class="headerlink" href="#character" title="Link to this heading">#</a></h1>
+<section id="end-character-settings">
+<h2>End-Charakter-Einstellungen<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h2>
 <p>Das End-Zeichen wird nach den dekodierten Daten im Format der dekodierten Daten + End-Zeichen hinzugefügt.</p>
 <section id="no-end-character">
-<h2>Kein End-Zeichen<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<h3>Kein End-Zeichen<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3030050.png"><img alt="../../media/3030050.png" src="../../media/3030050.png" style="width: 300px;" />
 </a>
@@ -423,7 +445,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-new-line-crlf">
-<h2>Eingabetaste+neue Zeile (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<h3>Eingabetaste+neue Zeile (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3030051.png"><img alt="../../media/3030051.png" src="../../media/3030051.png" style="width: 300px;" />
 </a>
@@ -433,17 +455,17 @@ document.write(`
 </figure>
 </section>
 <section id="enter-cr">
-<h2>Eingabetaste (CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<h3>Eingabetaste (CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3030052.png"><img alt="../../media/3030052.png" src="../../media/3030052.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Eingabe (CR) <code class="docutils literal notranslate"><span class="pre">Standard</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Enter(CR)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="tab-tab">
-<h2>Registerkarte(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h2>
+<h3>Registerkarte(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030053.png"><img alt="../../media/3030053.png" src="../../media/3030053.png" style="width: 300px;" />
 </a>
@@ -453,7 +475,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-enter-crcr">
-<h2>Eingabe+Eingabe(CRCR)<a class="headerlink" href="#enter-enter-crcr" title="Link to this heading">#</a></h2>
+<h3>Eingabe+Eingabe(CRCR)<a class="headerlink" href="#enter-enter-crcr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030054.png"><img alt="../../media/3030054.png" src="../../media/3030054.png" style="width: 300px;" />
 </a>
@@ -461,6 +483,44 @@ document.write(`
 <p><span class="caption-text">Eingabe+Eingabe(CRCR)</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+</section>
+<section id="transmit-code-id-character">
+<h2>Übertrage Code ID Zeichen<a class="headerlink" href="#transmit-code-id-character" title="Link to this heading">#</a></h2>
+<p>Ein Code-ID-Zeichen identifiziert den Code-Typ eines gescannten Barcodes. Dies kann nützlich sein, wenn mehrere Code-Typen dekodiert werden. Das Code-ID-Zeichen wird zwischen dem Präfix Zeichen (falls ausgewählt) und dem dekodierten Symbol eingefügt.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../media/2051700.png"><img alt="../../media/2051700.png" src="../../media/2051700.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Keine</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../media/2051701.png"><img alt="../../media/2051701.png" src="../../media/2051701.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">AIM-ID</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../media/2051702.png"><img alt="../../media/2051702.png" src="../../media/2051702.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Code-ID</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="code-id-identifiers">
+<h3>Code-ID Identifikatoren<a class="headerlink" href="#code-id-identifiers" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/212-codeid.html" style="height:800px; width:100%; border:none;"></iframe></section>
+<section id="aim-code-identifiers">
+<h3>AIM-Code-Identifikatoren<a class="headerlink" href="#aim-code-identifiers" title="Link to this heading">#</a></h3>
+<p>Jeder AIM-Code-Identifikator enthält den dreistelligen String ]cm, wo: <br></p>
+<ul class="simple">
+<li><p>] = Zeichen markieren</p></li>
+<li><p>c =Code-Zeichen (siehe Tabelle)</p></li>
+<li><p>m= Modifikatorzeichen</p></li>
+</ul>
+<iframe src="../../plugins/212-aimid.html" style="height:800px; width:100%; border:none;"></iframe></section>
 </section>
 </section>
 
@@ -509,11 +569,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Kein End-Zeichen</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Eingabetaste+neue Zeile (CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Eingabetaste (CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Registerkarte(TAB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Eingabe+Eingabe(CRCR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">End-Charakter-Einstellungen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Kein End-Zeichen</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Eingabetaste+neue Zeile (CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Eingabetaste (CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Registerkarte(TAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Eingabe+Eingabe(CRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">Übertrage Code ID Zeichen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">Code-ID Identifikatoren</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-code-identifiers">AIM-Code-Identifikatoren</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

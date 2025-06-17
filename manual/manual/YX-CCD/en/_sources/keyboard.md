@@ -10,7 +10,7 @@
 :align: center
 :width: 300px
 
-American `Default`
+`*` American
 ```
 
 ### Canada (French)

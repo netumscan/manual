@@ -8,7 +8,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Impostazioni Codici A Barre &#8212; YX-HS7 Scanner User Manual</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>Simbologie &#8212; YX-HS7 Scanner User Manual</title>
   
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=45930005"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\barcode.6d1aa58c-e17b-4bf4-b747-65b70c964530.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -237,7 +249,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modalità Scansione</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Impostazioni Codici A Barre</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Simbologie</a></li>
 </ul>
 
     </div>
@@ -376,7 +388,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Impostazioni Codici A Barre</h1>
+    <h1>Simbologie</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -386,17 +398,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">Disabilita Tutti I Codici 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">Abilita Tutti I Codici 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">Disabilita Tutti I Codici 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">Abilita Tutti I Codici 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-symbologies">Simbologie 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Simbologie 2D</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">Impostazioni Barcode Reversal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">Nessun Supporto Reversal Barcode</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">Supporta Solo Reversal Barcode</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">Tutti Supportati</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Impostazioni URL Codice QR</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-barcodes-with-urls">Blocca Codici A Barre Con Url</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Disabilita</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Abilita</a></li>
 </ul>
@@ -412,45 +422,39 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="barcode-settings">
-<h1>Impostazioni Codici A Barre<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
-<section id="disable-all-1d-codes">
-<h2>Disabilita Tutti I Codici 1D<a class="headerlink" href="#disable-all-1d-codes" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id1">
+  <section id="symbologies">
+<h1>Simbologie<a class="headerlink" href="#symbologies" title="Link to this heading">#</a></h1>
+<section id="d-symbologies">
+<h2>Simbologie 1D<a class="headerlink" href="#d-symbologies" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/9950041..png"><img alt="../../media/9950041..png" src="../../media/9950041..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disabilita Tutti I Codici 1D</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disabilita</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="enable-all-1d-codes">
-<h2>Abilita Tutti I Codici 1D<a class="headerlink" href="#enable-all-1d-codes" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/9950040..png"><img alt="../../media/9950040..png" src="../../media/9950040..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Abilita Tutti I Codici 1D</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">Abilita</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="disable-all-2d-codes">
-<h2>Disabilita Tutti I Codici 2D<a class="headerlink" href="#disable-all-2d-codes" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id3">
+<section id="id1">
+<h2>Simbologie 2D<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/9950071..png"><img alt="../../media/9950071..png" src="../../media/9950071..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disabilita Tutti I Codici 2D</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disabilita</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="enable-all-2d-codes">
-<h2>Abilita Tutti I Codici 2D<a class="headerlink" href="#enable-all-2d-codes" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/9950070..png"><img alt="../../media/9950070..png" src="../../media/9950070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Abilita Tutti I Codici 2D</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">Abilita</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -458,31 +462,31 @@ document.write(`
 <h2>Impostazioni Barcode Reversal<a class="headerlink" href="#reversal-barcode-settings" title="Link to this heading">#</a></h2>
 <section id="no-support-reversal-barcode">
 <h3>Nessun Supporto Reversal Barcode<a class="headerlink" href="#no-support-reversal-barcode" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/8910010..png"><img alt="../../media/8910010..png" src="../../media/8910010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Nessun Supporto Reversal Barcode</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Nessun Supporto Reversal Barcode</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="only-supports-reversal-barcode">
 <h3>Supporta Solo Reversal Barcode<a class="headerlink" href="#only-supports-reversal-barcode" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/8910011..png"><img alt="../../media/8910011..png" src="../../media/8910011..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Supporta Solo Reversal Barcode</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">Supporta Solo Reversal Barcode</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="all-supported">
 <h3>Tutti Supportati<a class="headerlink" href="#all-supported" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/8910012..png"><img alt="../../media/8910012..png" src="../../media/8910012..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Tutti Supportati</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Tutti Supportati</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -491,26 +495,26 @@ document.write(`
 </div>
 </section>
 </section>
-<section id="qr-code-url-settings">
-<h2>Impostazioni URL Codice QR<a class="headerlink" href="#qr-code-url-settings" title="Link to this heading">#</a></h2>
+<section id="block-barcodes-with-urls">
+<h2>Blocca Codici A Barre Con Url<a class="headerlink" href="#block-barcodes-with-urls" title="Link to this heading">#</a></h2>
 <p>Blocca la scansione dei codici QR URL a partire da <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
 <section id="disable">
 <h3>Disabilita<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/9950061..png"><img alt="../../media/9950061..png" src="../../media/9950061..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disabilita</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">Disabilita</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="enable">
 <h3>Abilita<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/9950060..png"><img alt="../../media/9950060..png" src="../../media/9950060..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Abilita</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Abilita</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -553,17 +557,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">Disabilita Tutti I Codici 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">Abilita Tutti I Codici 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">Disabilita Tutti I Codici 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">Abilita Tutti I Codici 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-symbologies">Simbologie 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Simbologie 2D</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">Impostazioni Barcode Reversal</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">Nessun Supporto Reversal Barcode</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">Supporta Solo Reversal Barcode</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">Tutti Supportati</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Impostazioni URL Codice QR</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-barcodes-with-urls">Blocca Codici A Barre Con Url</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Disabilita</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Abilita</a></li>
 </ul>

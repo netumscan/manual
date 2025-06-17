@@ -26,7 +26,7 @@ Scan the corresponding setting code to turn on/off the sound prompt of the scann
 :align: center
 :width: 300px
 
-Enable `Default`
+`*` Enable
 ```
 
 ### Disable

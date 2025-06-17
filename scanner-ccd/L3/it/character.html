@@ -8,7 +8,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Impostazioni Dei Caratteri Finali &#8212; L3 Scanner User Manual</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>Carattere &#8212; L3 Scanner User Manual</title>
   
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=45930005"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\character.3bf468d2-9876-41c9-8876-265fe31cb3a8.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -242,9 +254,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modalità Scansione</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Impostazioni Dei Caratteri Finali</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Carattere</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni Codici A Barre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a></li>
 </ul>
 
     </div>
@@ -383,7 +395,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Impostazioni Dei Caratteri Finali</h1>
+    <h1>Carattere</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,12 +405,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Nessun Carattere Finale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">Nuova Linea (LF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">Impostazioni Dei Caratteri Finali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Nessun Carattere Finale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">Nuova Linea (LF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">Trasmetti Carattere ID Codice</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">Codice ID Identificatori</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -410,11 +429,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="end-character-settings">
-<h1>Impostazioni Dei Caratteri Finali<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
+  <section id="character">
+<h1>Carattere<a class="headerlink" href="#character" title="Link to this heading">#</a></h1>
+<section id="end-character-settings">
+<h2>Impostazioni Dei Caratteri Finali<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h2>
 <p>Il carattere finale viene aggiunto dopo i dati decodificati nel formato dei dati decodificati + carattere finale.</p>
 <section id="no-end-character">
-<h2>Nessun Carattere Finale<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<h3>Nessun Carattere Finale<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/021040.png"><img alt="../../media/021040.png" src="../../media/021040.png" style="width: 300px;" />
 </a>
@@ -424,7 +445,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-new-line-crlf">
-<h2>Enter+New Line (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<h3>Enter+New Line (CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/0213405Cr5Cn.png"><img alt="../../media/0213405Cr5Cn.png" src="../../media/0213405Cr5Cn.png" style="width: 300px;" />
 </a>
@@ -434,17 +455,17 @@ document.write(`
 </figure>
 </section>
 <section id="enter-cr">
-<h2>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<h3>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/0212405Cr.png"><img alt="../../media/0212405Cr.png" src="../../media/0212405Cr.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Enter(CR) <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Enter(CR)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="new-line-lf">
-<h2>Nuova Linea (LF)<a class="headerlink" href="#new-line-lf" title="Link to this heading">#</a></h2>
+<h3>Nuova Linea (LF)<a class="headerlink" href="#new-line-lf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/0212405Cn.png"><img alt="../../media/0212405Cn.png" src="../../media/0212405Cn.png" style="width: 300px;" />
 </a>
@@ -454,7 +475,7 @@ document.write(`
 </figure>
 </section>
 <section id="tab-tab">
-<h2>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h2>
+<h3>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/0212405Ct.png"><img alt="../../media/0212405Ct.png" src="../../media/0212405Ct.png" style="width: 300px;" />
 </a>
@@ -464,7 +485,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-enter-crcr">
-<h2>Enter+Enter(CRCR)<a class="headerlink" href="#enter-enter-crcr" title="Link to this heading">#</a></h2>
+<h3>Enter+Enter(CRCR)<a class="headerlink" href="#enter-enter-crcr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/0211405Cr5Cr.png"><img alt="../../media/0211405Cr5Cr.png" src="../../media/0211405Cr5Cr.png" style="width: 300px;" />
 </a>
@@ -472,6 +493,35 @@ document.write(`
 <p><span class="caption-text">Enter+Enter(CRCR)</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+</section>
+<section id="transmit-code-id-character">
+<h2>Trasmetti Carattere ID Codice<a class="headerlink" href="#transmit-code-id-character" title="Link to this heading">#</a></h2>
+<p>Un carattere ID codice identifica il tipo di codice di un codice a barre scansionato. Questo può essere utile quando si decodifica più di un tipo di codice. Il carattere ID codice è inserito tra il carattere prefisso (se selezionato) e il simbolo decodificato.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../media/01400.png"><img alt="../../media/01400.png" src="../../media/01400.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Nessuno</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../media/01401.png"><img alt="../../media/01401.png" src="../../media/01401.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Abilita Codice ID (Prefisso)</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../media/01402.png"><img alt="../../media/01402.png" src="../../media/01402.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Abilita ID Codice (Suffix)</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="code-id-identifiers">
+<h3>Codice ID Identificatori<a class="headerlink" href="#code-id-identifiers" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/212-codeid.html" style="height:800px; width:100%; border:none;"></iframe></section>
 </section>
 </section>
 
@@ -520,12 +570,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Nessun Carattere Finale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">Nuova Linea (LF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">Impostazioni Dei Caratteri Finali</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Nessun Carattere Finale</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-line-lf">Nuova Linea (LF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">Trasmetti Carattere ID Codice</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">Codice ID Identificatori</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

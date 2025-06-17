@@ -1,0 +1,22 @@
+selector_to_html = {"a[href=\"#enable\"]": "<h3 class=\"tippy-header\" style=\"margin-top: 0;\">Enable<a class=\"headerlink\" href=\"#enable\" title=\"Link to this heading\">#</a></h3>", "a[href=\"#id1\"]": "<figure class=\"align-center\" id=\"id1\">\n<a class=\"reference internal image-reference\" href=\"../../media/23SETUPE1.png\"><img alt=\"../../media/23SETUPE1.png\" src=\"../../media/23SETUPE1.png\" style=\"width: 300px;\"/>\n</a>\n<figcaption>\n<p><span class=\"caption-text\">Start Setup</span><a class=\"headerlink\" href=\"#id1\" title=\"Link to this image\">#</a></p>\n</figcaption>\n</figure>", "a[href=\"#disable\"]": "<h3 class=\"tippy-header\" style=\"margin-top: 0;\">Disable<a class=\"headerlink\" href=\"#disable\" title=\"Link to this heading\">#</a></h3>", "a[href=\"#id5\"]": "<figure class=\"align-center\" id=\"id5\">\n<a class=\"reference internal image-reference\" href=\"../../media/23SETUPE0.png\"><img alt=\"../../media/23SETUPE0.png\" src=\"../../media/23SETUPE0.png\" style=\"width: 300px;\"/>\n</a>\n<figcaption>\n<p><span class=\"caption-text\">End Setup</span><a class=\"headerlink\" href=\"#id5\" title=\"Link to this image\">#</a></p>\n</figcaption>\n</figure>", "a[href=\"#id3\"]": "<figure class=\"align-center\" id=\"id3\">\n<a class=\"reference internal image-reference\" href=\"../../media/40BUZZERON5.png\"><img alt=\"../../media/40BUZZERON5.png\" src=\"../../media/40BUZZERON5.png\" style=\"width: 300px;\"/>\n</a>\n<figcaption>\n<p><span class=\"caption-text\"><code class=\"docutils literal notranslate\"><span class=\"pre\">*</span></code> Enable</span><a class=\"headerlink\" href=\"#id3\" title=\"Link to this image\">#</a></p>\n</figcaption>\n</figure>", "a[href=\"#start-setup\"]": "<h2 class=\"tippy-header\" style=\"margin-top: 0;\">Start Setup<a class=\"headerlink\" href=\"#start-setup\" title=\"Link to this heading\">#</a></h2>", "a[href=\"#end-setup\"]": "<h2 class=\"tippy-header\" style=\"margin-top: 0;\">End Setup<a class=\"headerlink\" href=\"#end-setup\" title=\"Link to this heading\">#</a></h2>", "a[href=\"#volume-settings\"]": "<h2 class=\"tippy-header\" style=\"margin-top: 0;\">Volume Settings<a class=\"headerlink\" href=\"#volume-settings\" title=\"Link to this heading\">#</a></h2><p>Scan the corresponding setting code to turn on/off the sound prompt of the scanner</p>", "a[href=\"#id2\"]": "<figure class=\"align-center\" id=\"id2\">\n<a class=\"reference internal image-reference\" href=\"../../media/40DFTPAM4.png\"><img alt=\"../../media/40DFTPAM4.png\" src=\"../../media/40DFTPAM4.png\" style=\"width: 300px;\"/>\n</a>\n<figcaption>\n<p><span class=\"caption-text\">Restore Default Settings</span><a class=\"headerlink\" href=\"#id2\" title=\"Link to this image\">#</a></p>\n</figcaption>\n</figure>", "a[href=\"#system-settings\"]": "<h1 class=\"tippy-header\" style=\"margin-top: 0;\">System Settings<a class=\"headerlink\" href=\"#system-settings\" title=\"Link to this heading\">#</a></h1><h2>Start Setup<a class=\"headerlink\" href=\"#start-setup\" title=\"Link to this heading\">#</a></h2>", "a[href=\"#id4\"]": "<figure class=\"align-center\" id=\"id4\">\n<a class=\"reference internal image-reference\" href=\"../../media/40BUZZEROFF6.png\"><img alt=\"../../media/40BUZZEROFF6.png\" src=\"../../media/40BUZZEROFF6.png\" style=\"width: 300px;\"/>\n</a>\n<figcaption>\n<p><span class=\"caption-text\">Disable</span><a class=\"headerlink\" href=\"#id4\" title=\"Link to this image\">#</a></p>\n</figcaption>\n</figure>", "a[href=\"#restore-default-settings\"]": "<h2 class=\"tippy-header\" style=\"margin-top: 0;\">Restore Default Settings<a class=\"headerlink\" href=\"#restore-default-settings\" title=\"Link to this heading\">#</a></h2><p>When an unknown error occurs on the scanner, you can reset the scanner by restoring the default settings.</p>"}
+skip_classes = ["headerlink", "sd-stretched-link", "sd-rounded-pill"]
+
+window.onload = function () {
+    for (const [select, tip_html] of Object.entries(selector_to_html)) {
+        const links = document.querySelectorAll(`article.bd-article ${select}`);
+        for (const link of links) {
+            if (skip_classes.some(c => link.classList.contains(c))) {
+                continue;
+            }
+
+            tippy(link, {
+                content: tip_html,
+                allowHTML: true,
+                arrow: true,
+                placement: 'auto-start', maxWidth: 500, interactive: false,
+
+            });
+        };
+    };
+    console.log("tippy tips loaded!");
+};

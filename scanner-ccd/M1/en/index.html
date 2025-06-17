@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>M1 Wired Scanner Quick Setup Guide &#8212; M1 Scanner User Manual</title>
   
   
@@ -44,6 +53,9 @@
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\index.9c8de00a-d62d-4e66-bca6-c012422dbf8a.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -242,9 +254,9 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan Mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">End Character Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Character</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
 </ul>
 
     </div>
@@ -412,23 +424,43 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="scanmode.html#duplicate-barcode-detection-settings">Duplicate Barcode Detection Settings</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">End Character Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">No End Character</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Enter(CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#new-line-lf">New Line(LF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#tab-tab">Tab(TAB)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Character</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">End Character Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">Transmit Code ID Character</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Keyboard Settings</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="keyboard.html#keyboard-language">Keyboard Language</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Settings</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#reversal-barcode-settings">Reversal Barcode Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#reverse-symbologies">Reverse Symbologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-8">EAN-8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-13">EAN-13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-a">UPC-A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-e">UPC-E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#codabar">Codabar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-11">Code 11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-39">Code 39</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-93">Code 93</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-128">Code 128</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-limited-rss-limited">GS1 DataBar Limited（RSS Limited）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-omnidirectional-rss-omnidirectional">GS1 DataBar Omnidirectional（RSS Omnidirectional）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-expanded-rss-expanded">GS1 DataBar Expanded (RSS Expanded)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#interleaved-2-of-5">Interleaved 2 of 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#industrial-2-of-5">Industrial 2 of 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#matrix-2-of-5">Matrix 2 of 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#china-post">China Post</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#msi">MSI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#plessey-telepen">Plessey/Telepen</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>asterisks ( * ) indicate default values.</p></li>
 </ul>
 </div>
 </section>

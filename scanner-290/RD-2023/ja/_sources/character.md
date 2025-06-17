@@ -29,7 +29,7 @@ No End Character
 :align: center
 :width: 300px
 
-Enter(CR) `Default`
+`*` Enter(CR)
 ```
 
 

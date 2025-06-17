@@ -2,11 +2,12 @@
 
 ## Start Setup
 ```{note}
-Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
+Only after scanning [Start Setup](#start-setup-figure) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup-figure) for the corresponding configuration to take effect.
 ```
 ```{figure} ../../media/252B24.24.png
 :align: center
 :width: 300px
+:name: start-setup-figure
 
 Start Setup
 ```
@@ -32,7 +33,7 @@ Restore Default Settings
 :align: center
 :width: 300px
 
-Enable `Default`
+`*` Enable
 ```
   
 ### Disable
@@ -46,12 +47,13 @@ Disable
 
 ## End Setup
 ```{note}
-Only after scanning [Start Setup](#start-setup) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup) for the corresponding configuration to take effect.
+Only after scanning [Start Setup](#start-setup-figure) can you scan other function setup codes for configuration. You need to scan [End Setup](#end-setup-figure) for the corresponding configuration to take effect.
 ```
 
 ```{figure} ../../media/25242425.png
 :align: center
 :width: 300px
+:name: end-setup-figure
 
 End Setup
 ```

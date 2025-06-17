@@ -8,3 +8,7 @@ character.md
 barcode.md
 
 ```
+
+```{note}
+- asterisks ( * ) indicate default values.
+```

@@ -7,7 +7,7 @@ Press the button to trigger scanning, and release the button to end scanning. Sc
 :align: center
 :width: 300px
 
-Key Trigger Mode `Default`
+`*` Key Trigger Mode
 ```
 
 ## Continuous Mode
@@ -30,7 +30,7 @@ In the auto sensing mode, the scanner will detect the brightness of the surround
 :align: center
 :width: 300px
 
-Disable `Default`
+`*` Disable
 ```
 
 
@@ -51,7 +51,7 @@ Enable
 :align: center
 :width: 300px
 
-Disable `Default`
+`*` Disable
 ```
 
 ### Enable

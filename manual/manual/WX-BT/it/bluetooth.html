@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Modalità Bluetooth &#8212; WX-BT Scanner User Manual</title>
   
   
@@ -31,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=11d075df" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=ca8ee3f5" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=45930005"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\bluetooth.bfc764ca-4774-4b68-8cae-473e3c82c33d.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'bluetooth';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -238,6 +250,7 @@
 <li class="toctree-l1"><a class="reference internal" href="working.html">Modalità Di Lavoro</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Modalità Bluetooth</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
+<li class="toctree-l1"><a class="reference internal" href="process.html">Modifica Dati</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 </ul>
 
@@ -419,6 +432,10 @@ document.write(`
 <p><span class="caption-text">Modalità Bluetooth</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+<div class="admonition warning">
+<p class="admonition-title">Avvertimento</p>
+<p>Gli scanner serie C Pro non supportano la scansione di questo codice di impostazione per cambiare</p>
+</div>
 <ul class="simple">
 <li><p>Scansiona la modalità Bluetooth, quindi premi il pulsante per iniziare, puoi passare alla trasmissione Bluetooth, attivare Bluetooth per cercare dispositivi per l’accoppiamento, e dopo il successo dell’accoppiamento, è possibile trasmettere i dati tramite Bluetooth.</p></li>
 <li><p>Nome Bluetooth: <code class="docutils literal notranslate"><span class="pre">barcode</span> <span class="pre">scanner</span></code> o <code class="docutils literal notranslate"><span class="pre">NETUM</span> <span class="pre">Bluetooth</span></code></p></li>
@@ -434,7 +451,7 @@ document.write(`
 <a class="reference internal image-reference" href="../../media/AT2BMODE3D2.png"><img alt="../../media/AT2BMODE3D2.png" src="../../media/AT2BMODE3D2.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">HID Bluetooth <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> HID Bluetooth</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

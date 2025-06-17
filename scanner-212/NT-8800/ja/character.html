@@ -8,7 +8,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>終了文字設定 &#8212; NT-8800 Scanner User Manual</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>文字 &#8212; NT-8800 Scanner User Manual</title>
   
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=4755f45a"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\character.c6b07144-af53-48a3-beec-d8267f744e10.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -242,9 +254,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">終了文字設定</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">文字</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">バーコードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
 </ul>
 
     </div>
@@ -383,7 +395,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>終了文字設定</h1>
+    <h1>文字</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,11 +405,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCRCR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">終了文字設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">コードID文字を送信</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">コード ID 識別子</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-code-identifiers">AIMコード識別子</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -409,11 +429,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="end-character-settings">
-<h1>終了文字設定<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h1>
+  <section id="character">
+<h1>文字<a class="headerlink" href="#character" title="Link to this heading">#</a></h1>
+<section id="end-character-settings">
+<h2>終了文字設定<a class="headerlink" href="#end-character-settings" title="Link to this heading">#</a></h2>
 <p>デコードされたデータ+エンド・キャラクターのフォーマットでデコードされたデータの後に、エンド・キャラクターが追加されます。</p>
 <section id="no-end-character">
-<h2>終了文字なし<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h2>
+<h3>終了文字なし<a class="headerlink" href="#no-end-character" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3030050.png"><img alt="../../media/3030050.png" src="../../media/3030050.png" style="width: 300px;" />
 </a>
@@ -423,7 +445,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-new-line-crlf">
-<h2>Enter+New Line(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h2>
+<h3>Enter+New Line(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3030051.png"><img alt="../../media/3030051.png" src="../../media/3030051.png" style="width: 300px;" />
 </a>
@@ -433,17 +455,17 @@ document.write(`
 </figure>
 </section>
 <section id="enter-cr">
-<h2>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h2>
+<h3>Enter(CR)<a class="headerlink" href="#enter-cr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3030052.png"><img alt="../../media/3030052.png" src="../../media/3030052.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Enter(CR) <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Enter(CR)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="tab-tab">
-<h2>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h2>
+<h3>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030053.png"><img alt="../../media/3030053.png" src="../../media/3030053.png" style="width: 300px;" />
 </a>
@@ -453,7 +475,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-enter-crcr">
-<h2>Enter+Enter(CRCRCR)<a class="headerlink" href="#enter-enter-crcr" title="Link to this heading">#</a></h2>
+<h3>Enter+Enter(CRCRCR)<a class="headerlink" href="#enter-enter-crcr" title="Link to this heading">#</a></h3>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030054.png"><img alt="../../media/3030054.png" src="../../media/3030054.png" style="width: 300px;" />
 </a>
@@ -461,6 +483,44 @@ document.write(`
 <p><span class="caption-text">Enter+Enter(CRCRCR)</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
+</section>
+</section>
+<section id="transmit-code-id-character">
+<h2>コードID文字を送信<a class="headerlink" href="#transmit-code-id-character" title="Link to this heading">#</a></h2>
+<p>コードID文字は、スキャンされたバーコードのコードタイプを識別します。複数のコードタイプをデコードする場合に便利です。 コード ID 文字は、プレフィックス文字(選択されている場合)とデコードされたシンボルの間に挿入されます。</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../media/2051700.png"><img alt="../../media/2051700.png" src="../../media/2051700.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> なし</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../media/2051701.png"><img alt="../../media/2051701.png" src="../../media/2051701.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">AIM ID</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../media/2051702.png"><img alt="../../media/2051702.png" src="../../media/2051702.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">コード ID</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="code-id-identifiers">
+<h3>コード ID 識別子<a class="headerlink" href="#code-id-identifiers" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/212-codeid.html" style="height:800px; width:100%; border:none;"></iframe></section>
+<section id="aim-code-identifiers">
+<h3>AIMコード識別子<a class="headerlink" href="#aim-code-identifiers" title="Link to this heading">#</a></h3>
+<p>各 AIMコード識別子には3文字の文字列 ]cm where: <br></p>
+<ul class="simple">
+<li><p>] = 旗の文字</p></li>
+<li><p>c =Code Character (表参照)</p></li>
+<li><p>m= 変更文字</p></li>
+</ul>
+<iframe src="../../plugins/212-aimid.html" style="height:800px; width:100%; border:none;"></iframe></section>
 </section>
 </section>
 
@@ -509,11 +569,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCRCR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">終了文字設定</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">終了文字なし</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Enter(CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">コードID文字を送信</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">コード ID 識別子</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-code-identifiers">AIMコード識別子</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>NT-12895 Wired Scanner Guida Di Configurazione Rapida &#8212; NT-12895 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=45930005"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\index.e1723824-b788-4fb4-97f8-754c98c6eafc.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -245,7 +257,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modalità Scansione</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni Codici A Barre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a></li>
 </ul>
 
     </div>
@@ -428,15 +440,19 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="keyboard.html#keyboard-language">Lingua Della Tastiera</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni Codici A Barre</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#disable-all-1d-codes">Disabilita Tutti I Codici 1D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#enable-all-1d-codes">Abilita Tutti I Codici 1D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#disable-all-2d-codes">Disabilita Tutti I Codici 2D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#enable-all-2d-codes">Abilita Tutti I Codici 2D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#d-symbologies">Simbologie 1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#id1">Simbologie 2D</a></li>
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#reversal-barcode-settings">Impostazioni Barcode Reversal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#qr-code-url-settings">Impostazioni URL Codice QR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#block-barcodes-with-urls">Blocca Codici A Barre Con Url</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p>asterischi ( * ) indicano i valori predefiniti.</p></li>
 </ul>
 </div>
 </section>

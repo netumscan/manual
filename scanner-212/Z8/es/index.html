@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Guía de configuración rápida del escáner con cable Z8 &#8212; Z8 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\index.6bcbce3f-998d-4b86-8f6f-fe42d0e34372.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
@@ -243,9 +255,9 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Carácter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Ajustes de código de barras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologías</a></li>
 </ul>
 
     </div>
@@ -413,12 +425,9 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="scanmode.html#same-code-delay-settings">Configuración del mismo código de retraso</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">Sin caracteres de fin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Entrar+Nueva línea (CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Entrar (CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#tab-tab">Tab(TAB)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Carácter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Configuración de End Caracter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">Trassmit Código ID Carácter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a><ul>
@@ -426,14 +435,50 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="keyboard.html#keyboard-language">Idioma del teclado</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Ajustes de código de barras</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#disable-scanning-1d-codes">Desactivar el escaneo de códigos 1D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#enable-scanning-1d-codes">Habilitar el escaneo de códigos 1D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#disable-scanning-2d-codes">Desactivar el escaneo de códigos 2D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#enable-scanning-2d-codes">Habilitar el escaneo de códigos 2D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#qr-code-url-settings">Configuración de URL del código QR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologías</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#all-symbologies">Todas las Symbologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#d-symbologies">Symbologías 1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#id1">Symbologías 2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#d-reverse-symbologies">Simbologías inversas 1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#block-barcodes-with-urls">Bloquear códigos de barras con URLs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-a">UPC-A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-e">UPC-E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-8">EAN-8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-13">EAN-13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#bookland-ean-isbn">Librería EAN(ISBN)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-128">Código 128</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-128-ucc-ean-128">GS1-128 (UCC/EAN-128)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#isbt-128">ISBT 128</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-39">Código 39</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-32">Código 32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-93">Código 93</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-11">Código 11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#interleaved-2-of-5-itf">Intervalado 2 de 5/ITF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#discrete-2-of-5-industrial-2-of-5-ind25">Discreta 2 de 5/Industrial 2 de 5/IND25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#matrix-25">Matriz 25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#standdard-25-iata-25">Standdard 25/IATA 25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#codabar">Codabar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#msi-msi-plessey">MSI/MSI Plessey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-rss">Barra de datos/RSS de GS1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#pdf417">PDF417</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#qr-code">QR Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#data-matrix-dm">Matrimonio de datos (DM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#maxi-code">Código Maxi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#aztec-code">Aztec Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#han-xin-code">Han Xin COde</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#issn">ISSN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#nec-25-coop25">NEC-25(COOP25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#composite">COMPOSITE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#brazil-bank-code">Código bancario de Brasil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#digital-barcode">Código de barras digital</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<ul class="simple">
+<li><p>asterisks ( * ) indican los valores por defecto.</p></li>
 </ul>
 </div>
 </section>

@@ -19,7 +19,7 @@ Press the button to trigger scanning, and release the button to end scanning. Sc
 :align: center
 :width: 300px
 
-Key Trigger Mode `Default`
+`*` Key Trigger Mode
 ```
 
 ## Auto Sensing Mode

@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Guide d’installation rapide du scanner filaire W9 &#8212; W9 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=e6b791cb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\index.993cae8a-d92e-4733-ad93-af16b578ce5a.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -245,7 +257,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Paramètres du code-barres</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
 </ul>
 
     </div>
@@ -429,15 +441,21 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="keyboard.html#end-setup">Fin de la configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Paramètres du code-barres</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#start-setup">Démarrer la configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#enable-all-barcodes">Activer tous les codes-barres</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#only-enable-1d-codes">Activer uniquement les codes 1D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#only-enable-2d-codes">Activer uniquement les codes 2D</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#qr-code-url-settings">Paramètres de l’URL du QR Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#enable-all-symbologies">Activer toutes les symboles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#only-enable-1d-symbologies">Activer uniquement les symboles 1D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#only-enable-2d-symbologies">Activer uniquement les symboles 2D</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#block-barcodes-with-urls">Bloquer les codes-barres avec des URL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#end-setup">Fin de la configuration</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>astérisques ( * ) indiquent les valeurs par défaut.</p></li>
 </ul>
 </div>
 </section>

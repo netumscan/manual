@@ -3,14 +3,8 @@
     margin-bottom: 0px !important;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
-
-th, td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 10px;
+.tippy-box {
+    background-color:var(--pst-color-surface);
+    color:var(--pst-color-text-base);
+    border: 1px solid var(--pst-color-border);
 }

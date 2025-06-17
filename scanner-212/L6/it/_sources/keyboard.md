@@ -6,7 +6,7 @@
 :align: center
 :width: 300px
 
-Original Types `Default`
+`*` Original Types
 ```
 ### GBK(GB2312)
 

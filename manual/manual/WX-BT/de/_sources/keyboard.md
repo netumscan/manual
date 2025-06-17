@@ -7,7 +7,7 @@
 :align: center
 :width: 300px
 
-Normal `Default`
+`*` Normal
 ```
 
 ### Inverted Case (A<->a)

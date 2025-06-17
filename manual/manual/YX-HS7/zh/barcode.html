@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>条码设置 &#8212; YX-HS7 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=beaddf03"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\barcode.9db2b1e1-9aec-4e83-8f06-6c21e9750cff.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -306,17 +318,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">禁用所有一维码</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">启用所有一维码</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">禁用所有二维码</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">启用所有二维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-symbologies">一维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">二维码</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">反白条码设置</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">不支持反白条码</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">仅支持反白条码</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">全部支持</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QR网址码</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-barcodes-with-urls">屏蔽带有URL的条码</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">禁用</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">启用</a></li>
 </ul>
@@ -332,45 +342,39 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="barcode-settings">
-<h1>条码设置<a class="headerlink" href="#barcode-settings" title="Link to this heading">#</a></h1>
-<section id="disable-all-1d-codes">
-<h2>禁用所有一维码<a class="headerlink" href="#disable-all-1d-codes" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id1">
+  <section id="symbologies">
+<h1>条码设置<a class="headerlink" href="#symbologies" title="Link to this heading">#</a></h1>
+<section id="d-symbologies">
+<h2>一维码<a class="headerlink" href="#d-symbologies" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/9950041..png"><img alt="../../media/9950041..png" src="../../media/9950041..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁用所有一维码</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="enable-all-1d-codes">
-<h2>启用所有一维码<a class="headerlink" href="#enable-all-1d-codes" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/9950040..png"><img alt="../../media/9950040..png" src="../../media/9950040..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">启用所有一维码</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text">启用</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="disable-all-2d-codes">
-<h2>禁用所有二维码<a class="headerlink" href="#disable-all-2d-codes" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id3">
+<section id="id1">
+<h2>二维码<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/9950071..png"><img alt="../../media/9950071..png" src="../../media/9950071..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁用所有二维码</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="enable-all-2d-codes">
-<h2>启用所有二维码<a class="headerlink" href="#enable-all-2d-codes" title="Link to this heading">#</a></h2>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/9950070..png"><img alt="../../media/9950070..png" src="../../media/9950070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">启用所有二维码</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">启用</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -378,31 +382,31 @@ document.write(`
 <h2>反白条码设置<a class="headerlink" href="#reversal-barcode-settings" title="Link to this heading">#</a></h2>
 <section id="no-support-reversal-barcode">
 <h3>不支持反白条码<a class="headerlink" href="#no-support-reversal-barcode" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/8910010..png"><img alt="../../media/8910010..png" src="../../media/8910010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">不支持反白条码</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">不支持反白条码</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="only-supports-reversal-barcode">
 <h3>仅支持反白条码<a class="headerlink" href="#only-supports-reversal-barcode" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/8910011..png"><img alt="../../media/8910011..png" src="../../media/8910011..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">仅支持反白条码</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">仅支持反白条码</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="all-supported">
 <h3>全部支持<a class="headerlink" href="#all-supported" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/8910012..png"><img alt="../../media/8910012..png" src="../../media/8910012..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">全部支持</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">全部支持</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -411,26 +415,26 @@ document.write(`
 </div>
 </section>
 </section>
-<section id="qr-code-url-settings">
-<h2>QR网址码<a class="headerlink" href="#qr-code-url-settings" title="Link to this heading">#</a></h2>
+<section id="block-barcodes-with-urls">
+<h2>屏蔽带有URL的条码<a class="headerlink" href="#block-barcodes-with-urls" title="Link to this heading">#</a></h2>
 <p>屏蔽识读 <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code> 开头的QR网址码</p>
 <section id="disable">
 <h3>禁用<a class="headerlink" href="#disable" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/9950061..png"><img alt="../../media/9950061..png" src="../../media/9950061..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">禁用</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">禁用</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="enable">
 <h3>启用<a class="headerlink" href="#enable" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/9950060..png"><img alt="../../media/9950060..png" src="../../media/9950060..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">启用</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">启用</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -473,17 +477,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">禁用所有一维码</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">启用所有一维码</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">禁用所有二维码</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">启用所有二维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-symbologies">一维码</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">二维码</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">反白条码设置</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">不支持反白条码</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">仅支持反白条码</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">全部支持</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">QR网址码</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-barcodes-with-urls">屏蔽带有URL的条码</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">禁用</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">启用</a></li>
 </ul>

@@ -8,7 +8,7 @@ You can configure the output to be all uppercase or all lowercase
 :align: center
 :width: 300px
 
-Normal `Default`
+`*` Normal
 ```
 
 ### Inverted Case (A<->a)
@@ -56,7 +56,7 @@ Original Types
 :align: center
 :width: 300px
 
-GBK `Default`
+`*` GBK
 ```
 
 ### UTF8

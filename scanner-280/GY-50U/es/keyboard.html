@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Ajustes del teclado &#8212; GY-50U Scanner User Manual</title>
   
   
@@ -45,10 +54,13 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\keyboard.40918218-c130-4499-b509-587d88ef3a33.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'keyboard';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Ajustes de código de barras" href="barcode.html" />
+    <link rel="next" title="Symbologías" href="barcode.html" />
     <link rel="prev" title="Configuración de End Caracter" href="character.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
@@ -244,7 +256,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Ajustes del teclado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Ajustes de código de barras</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologías</a></li>
 </ul>
 
     </div>
@@ -421,15 +433,15 @@ document.write(`
 <h1>Ajustes del teclado<a class="headerlink" href="#keyboard-settings" title="Link to this heading">#</a></h1>
 <section id="start-setup">
 <h2>Iniciar configuración<a class="headerlink" href="#start-setup" title="Link to this heading">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p>Sólo después de escanear <a class="reference internal" href="#start-setup">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Sólo después de escanear <a class="reference internal" href="#start-setup-figure">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup-figure">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
 </div>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="start-setup-figure">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Iniciar configuración</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text">Iniciar configuración</span><a class="headerlink" href="#start-setup-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -437,96 +449,96 @@ document.write(`
 <h2>Idioma del teclado<a class="headerlink" href="#keyboard-language" title="Link to this heading">#</a></h2>
 <section id="america">
 <h3>Estados Unidos<a class="headerlink" href="#america" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/KM00.png"><img alt="../../media/KM00.png" src="../../media/KM00.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Estados Unidos <code class="docutils literal notranslate"><span class="pre">por</span> <span class="pre">defecto</span></code></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> América</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="britain">
 <h3>Gran Bretaña<a class="headerlink" href="#britain" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id3">
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/KM02.png"><img alt="../../media/KM02.png" src="../../media/KM02.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Gran Bretaña</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text">Gran Bretaña</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="france">
 <h3>Francia<a class="headerlink" href="#france" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/KM04.png"><img alt="../../media/KM04.png" src="../../media/KM04.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Francia</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">Francia</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="germany">
 <h3>Alemania<a class="headerlink" href="#germany" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/KM05.png"><img alt="../../media/KM05.png" src="../../media/KM05.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Alemania</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text">Alemania</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="italy">
 <h3>Italia<a class="headerlink" href="#italy" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/KM06.png"><img alt="../../media/KM06.png" src="../../media/KM06.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Italia</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+<p><span class="caption-text">Italia</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="portugal">
 <h3>Portugal<a class="headerlink" href="#portugal" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/KM08.png"><img alt="../../media/KM08.png" src="../../media/KM08.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Portugal</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text">Portugal</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="spain">
 <h3>España<a class="headerlink" href="#spain" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/KM09.png"><img alt="../../media/KM09.png" src="../../media/KM09.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">España</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+<p><span class="caption-text">España</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="turkey-q">
 <h3>Turquía-Q<a class="headerlink" href="#turkey-q" title="Link to this heading">#</a></h3>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/KM19.png"><img alt="../../media/KM19.png" src="../../media/KM19.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Turquía-Q</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+<p><span class="caption-text">Turquía-Q</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 </section>
 <section id="end-setup">
 <h2>Finalizar configuración<a class="headerlink" href="#end-setup" title="Link to this heading">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p>Sólo después de escanear <a class="reference internal" href="#start-setup">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Sólo después de escanear <a class="reference internal" href="#start-setup-figure">Iniciar configuración</a> puede escanear otros códigos de configuración de función. Necesitas escanear <a class="reference internal" href="#end-setup-figure">Configuración final</a> para que la configuración correspondiente tenga efecto.</p>
 </div>
-<figure class="align-center" id="id10">
+<figure class="align-center" id="end-setup-figure">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Finalizar configuración</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+<p><span class="caption-text">Finalizar configuración</span><a class="headerlink" href="#end-setup-figure" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -557,7 +569,7 @@ document.write(`
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Ajustes de código de barras</p>
+        <p class="prev-next-title">Symbologías</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

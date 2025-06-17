@@ -8,7 +8,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Paramètres du code-barres &#8212; NT-12895 Scanner User Manual</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>Symbologies &#8212; NT-12895 Scanner User Manual</title>
   
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=e6b791cb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\barcode.5a6bb733-d4e0-4e0a-8ba7-a6371027273b.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -243,7 +255,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres du code-barres</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Symbologies</a></li>
 </ul>
 
     </div>
@@ -382,7 +394,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Paramètres du code-barres</h1>
+    <h1>Symbologies</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -392,17 +404,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">Désactiver tous les codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">Activer tous les codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">Désactiver tous les codes 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">Activer tous les codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-symbologies">Symbologies 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Symbologies 2D</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">Inverser les paramètres du code-barres</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">Pas de code-barres d’inversion de support</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">Supporte uniquement le code-barres d’inversion</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">Tous supportés</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Paramètres de l’URL du QR Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-barcodes-with-urls">Bloquer les codes-barres avec des URL</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
 </ul>
@@ -418,45 +428,39 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="barcode-settings">
-<h1>Paramètres du code-barres<a class="headerlink" href="#barcode-settings" title="Lien vers cette rubrique">#</a></h1>
-<section id="disable-all-1d-codes">
-<h2>Désactiver tous les codes 1D<a class="headerlink" href="#disable-all-1d-codes" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id1">
+  <section id="symbologies">
+<h1>Symbologies<a class="headerlink" href="#symbologies" title="Lien vers cette rubrique">#</a></h1>
+<section id="d-symbologies">
+<h2>Symbologies 1D<a class="headerlink" href="#d-symbologies" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/9950041..png"><img alt="../../media/9950041..png" src="../../media/9950041..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Désactiver tous les codes 1D</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="enable-all-1d-codes">
-<h2>Activer tous les codes 1D<a class="headerlink" href="#enable-all-1d-codes" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id2">
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/9950040..png"><img alt="../../media/9950040..png" src="../../media/9950040..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer tous les codes 1D</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="disable-all-2d-codes">
-<h2>Désactiver tous les codes 2D<a class="headerlink" href="#disable-all-2d-codes" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id3">
+<section id="id1">
+<h2>Symbologies 2D<a class="headerlink" href="#id1" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/9950071..png"><img alt="../../media/9950071..png" src="../../media/9950071..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Désactiver tous les codes 2D</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="enable-all-2d-codes">
-<h2>Activer tous les codes 2D<a class="headerlink" href="#enable-all-2d-codes" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id4">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/9950070..png"><img alt="../../media/9950070..png" src="../../media/9950070..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer tous les codes 2D</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -464,31 +468,31 @@ document.write(`
 <h2>Inverser les paramètres du code-barres<a class="headerlink" href="#reversal-barcode-settings" title="Lien vers cette rubrique">#</a></h2>
 <section id="no-support-reversal-barcode">
 <h3>Pas de code-barres d’inversion de support<a class="headerlink" href="#no-support-reversal-barcode" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id6">
 <a class="reference internal image-reference" href="../../media/8910010..png"><img alt="../../media/8910010..png" src="../../media/8910010..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Pas de code-barres d’inversion de support</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Pas de code-barres d’inversion de support</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="only-supports-reversal-barcode">
 <h3>Supporte uniquement le code-barres d’inversion<a class="headerlink" href="#only-supports-reversal-barcode" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id7">
 <a class="reference internal image-reference" href="../../media/8910011..png"><img alt="../../media/8910011..png" src="../../media/8910011..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Supporte uniquement le code-barres d’inversion</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Supporte uniquement le code-barres d’inversion</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="all-supported">
 <h3>Tous supportés<a class="headerlink" href="#all-supported" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../media/8910012..png"><img alt="../../media/8910012..png" src="../../media/8910012..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Tous supportés</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Tous supportés</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -497,26 +501,26 @@ document.write(`
 </div>
 </section>
 </section>
-<section id="qr-code-url-settings">
-<h2>Paramètres de l’URL du QR Code<a class="headerlink" href="#qr-code-url-settings" title="Lien vers cette rubrique">#</a></h2>
+<section id="block-barcodes-with-urls">
+<h2>Bloquer les codes-barres avec des URL<a class="headerlink" href="#block-barcodes-with-urls" title="Lien vers cette rubrique">#</a></h2>
 <p>Bloquer la numérisation des codes QR URL commençant par <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
 <section id="disable">
 <h3>Désactiver<a class="headerlink" href="#disable" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id8">
+<figure class="align-center" id="id9">
 <a class="reference internal image-reference" href="../../media/9950061..png"><img alt="../../media/9950061..png" src="../../media/9950061..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="enable">
 <h3>Activer<a class="headerlink" href="#enable" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id9">
+<figure class="align-center" id="id10">
 <a class="reference internal image-reference" href="../../media/9950060..png"><img alt="../../media/9950060..png" src="../../media/9950060..png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer</span><a class="headerlink" href="#id9" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer</span><a class="headerlink" href="#id10" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -559,17 +563,15 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-1d-codes">Désactiver tous les codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-1d-codes">Activer tous les codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disable-all-2d-codes">Désactiver tous les codes 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-2d-codes">Activer tous les codes 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#d-symbologies">Symbologies 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Symbologies 2D</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reversal-barcode-settings">Inverser les paramètres du code-barres</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-support-reversal-barcode">Pas de code-barres d’inversion de support</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#only-supports-reversal-barcode">Supporte uniquement le code-barres d’inversion</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#all-supported">Tous supportés</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Paramètres de l’URL du QR Code</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-barcodes-with-urls">Bloquer les codes-barres avec des URL</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
 </ul>

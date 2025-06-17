@@ -7,3 +7,7 @@ scanmode.md
 prompts.md
 
 ```
+
+```{note}
+- asterisks ( * ) indicate default values.
+```

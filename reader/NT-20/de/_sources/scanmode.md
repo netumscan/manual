@@ -37,7 +37,7 @@ Auto Sensing Mode
 :align: center
 :width: 300px
 
-Enable Scanning QR `Default`
+`*` Enable Scanning QR
 ```
 
 ## Disable Scanning QR

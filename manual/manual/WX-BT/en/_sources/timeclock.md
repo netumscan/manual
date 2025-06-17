@@ -16,7 +16,7 @@ Enable
 :align: center
 :width: 300px
 
-Disable `Default`
+`*` Disable
 ```
 
 ## Set Real-Time Clock

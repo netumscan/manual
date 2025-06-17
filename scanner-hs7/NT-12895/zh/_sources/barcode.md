@@ -1,42 +1,42 @@
-# Barcode Settings
+# Symbologies
 
-## Disable All 1D Codes
+## 1D Symbologies
 
 ```{figure} ../../media/9950041..png
 :align: center
 :width: 300px
 
-Disable All 1D Codes
+Disable
 ```
 
-## Enable All 1D Codes
 
 ```{figure} ../../media/9950040..png
 :align: center
 :width: 300px
 
-Enable All 1D Codes
+Enable
 ```
 
-## Disable All 2D Codes
+## 2D Symbologies
 
 ```{figure} ../../media/9950071..png
 :align: center
 :width: 300px
 
-Disable All 2D Codes
+Disable
 ```
 
-## Enable All 2D Codes 
 
 ```{figure} ../../media/9950070..png
 :align: center
 :width: 300px
 
-Enable All 2D Codes
+Enable
 ```
 
 ## Reversal Barcode Settings
+
+
 
 ### No Support Reversal Barcode
 ```{figure} ../../media/8910010..png
@@ -67,7 +67,7 @@ If the scanner is configured as [Only Supports Reversal Barcode](#only-supports-
 ```
 
 
-## QR Code URL Settings
+## Block Barcodes With URLs
 Block scanning of URL QR codes starting with `http://`, `https://`
 
 ### Disable

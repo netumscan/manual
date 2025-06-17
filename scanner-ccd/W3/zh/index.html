@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>W3 有线扫描枪快速设置手册 &#8212; W3 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=beaddf03"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\index.50710232-1d3b-4375-83c0-0fea55ed426b.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -163,7 +175,7 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">扫描模式</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">结束字符设置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">字符设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">条码设置</a></li>
 </ul>
@@ -333,13 +345,9 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="scanmode.html#duplicate-barcode-detection-settings">重码检测设置</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">结束字符设置</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">无结束字符</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">回车符+换行符(CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">回车符(CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#new-line-lf">换行符(LF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#tab-tab">制表符(TAB)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-enter-crcr">回车符+回车符(CRCR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">字符设置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">结束字符设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">传输Code ID字符</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">键盘设置</a><ul>
@@ -347,9 +355,33 @@ document.write(`
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">条码设置</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#reversal-barcode-settings">反白条码设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#reverse-symbologies">反白条码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-8">EAN-8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-13">EAN-13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-a">UPC-A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-e">UPC-E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#codabar">Codabar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-11">Code 11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-39">Code 39</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-93">Code 93</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-128">Code 128</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-limited-rss-limited">GS1 DataBar Limited（RSS Limited）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-omnidirectional-rss-omnidirectional">GS1 DataBar Omnidirectional（RSS Omnidirectional）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-expanded-rss-expanded">GS1 DataBar Expanded (RSS Expanded)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#interleaved-2-of-5">Interleaved 2 of 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#industrial-2-of-5">Industrial 2 of 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#matrix-2-of-5">Matrix 2 of 5</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#china-post">中国邮政码</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#msi">MSI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#plessey-telepen">Plessey/Telepen</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<ul class="simple">
+<li><p>星号 ( * ) 表示默认值。</p></li>
 </ul>
 </div>
 </section>

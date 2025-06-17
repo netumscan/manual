@@ -43,7 +43,7 @@ Medium Volume
 :align: center
 :width: 300px
 
-High Volume `Default`
+`*` High Volume
 ```
   
 ### Disable

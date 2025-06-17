@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Carácter &#8212; YX-212 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\character.1a4b6582-2f1a-4b42-85ee-fa2aca06c3dc.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
@@ -395,6 +407,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">Trassmit Código ID Carácter</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">Identificadores de código ID</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-code-identifiers">Identificadores de código AIM</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -437,7 +454,7 @@ document.write(`
 <a class="reference internal image-reference" href="../../media/3030052.png"><img alt="../../media/3030052.png" src="../../media/3030052.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Enter(CR) <code class="docutils literal notranslate"><span class="pre">Por</span> <span class="pre">defecto</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Enter(CR)</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -461,6 +478,43 @@ document.write(`
 </figcaption>
 </figure>
 </section>
+</section>
+<section id="transmit-code-id-character">
+<h2>Trassmit Código ID Carácter<a class="headerlink" href="#transmit-code-id-character" title="Link to this heading">#</a></h2>
+<p>Un caracter de código identifica el tipo de código de un código escaneado. Esto puede ser útil cuando se decodifica más de un tipo de código. El caracter de código ID se inserta entre el caracter de prefijo (si se selecciona) y el símbolo decodificado.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../media/2051700.png"><img alt="../../media/2051700.png" src="../../media/2051700.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Ninguno</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../media/2051701.png"><img alt="../../media/2051701.png" src="../../media/2051701.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">ID AIM</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../media/2051702.png"><img alt="../../media/2051702.png" src="../../media/2051702.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Código ID</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="code-id-identifiers">
+<h3>Identificadores de código ID<a class="headerlink" href="#code-id-identifiers" title="Link to this heading">#</a></h3>
+<iframe src="../../plugins/212-codeid.html" style="height:800px; width:100%; border:none;"></iframe></section>
+<section id="aim-code-identifiers">
+<h3>Identificadores de código AIM<a class="headerlink" href="#aim-code-identifiers" title="Link to this heading">#</a></h3>
+<p>Cada identificador de código AIM contiene la cadena de tres caracteres ]cm donde: <br></p>
+<ul class="simple">
+<li><p>] = Bandera de personaje</p></li>
+<li><p>c =Code Character (ver tabla)</p></li>
+<li><p>m= Carácter de modificador</p></li>
+</ul>
+<iframe src="../../plugins/212-aimid.html" style="height:800px; width:100%; border:none;"></iframe></section>
 </section>
 </section>
 
@@ -515,6 +569,11 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Entrar (CR)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Enter+Enter(CRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">Trassmit Código ID Carácter</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">Identificadores de código ID</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-code-identifiers">Identificadores de código AIM</a></li>
 </ul>
 </li>
 </ul>

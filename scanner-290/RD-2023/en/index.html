@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>RD-2023 有线扫描枪快速设置手册 &#8212; RD-2023 Scanner User Manual</title>
   
   
@@ -44,6 +53,9 @@
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\index.75999026-3e81-4180-834b-5e96555effd2.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -243,7 +255,7 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">System Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Scan Mode</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">End Character Settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
 </ul>
 
     </div>
@@ -423,11 +435,19 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-setup">End Setup</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Barcode Settings</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#start-setup">Start Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#d-symbologies">1D Symbologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#id1">2D Symbologies</a></li>
 <li class="toctree-l2"><a class="reference internal" href="barcode.html#end-setup">End Setup</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>asterisks ( * ) indicate default values.</p></li>
 </ul>
 </div>
 </section>

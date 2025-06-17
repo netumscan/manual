@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>Modalità Scansione &#8212; F20 Scanner User Manual</title>
   
   
@@ -45,10 +54,13 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=45930005"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\scanmode.ae2a1f87-27b0-42ca-a623-525a6ffdbf70.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'scanmode';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
-    <link rel="next" title="Impostazioni Dei Caratteri Finali" href="character.html" />
+    <link rel="next" title="Carattere" href="character.html" />
     <link rel="prev" title="Impostazioni Di Sistema" href="system.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="it"/>
@@ -242,9 +254,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni Di Sistema</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Modalità Scansione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Carattere</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Impostazioni Tastiera</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Impostazioni Codici A Barre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a></li>
 </ul>
 
     </div>
@@ -426,7 +438,7 @@ document.write(`
 <a class="reference internal image-reference" href="../../media/013300.png"><img alt="../../media/013300.png" src="../../media/013300.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Tasto Attivatore Della Modalità <code class="docutils literal notranslate"><span class="pre">Predefinito</span></code></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Modalità Trigger Chiave</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -450,7 +462,7 @@ document.write(`
 <a class="reference internal image-reference" href="../../media/02310.png"><img alt="../../media/02310.png" src="../../media/02310.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disabilita <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Disabilita</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -473,7 +485,7 @@ document.write(`
 <a class="reference internal image-reference" href="../../media/02770.png"><img alt="../../media/02770.png" src="../../media/02770.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Disabilita <code class="docutils literal notranslate"><span class="pre">Default</span></code></span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Disabilita</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -553,7 +565,7 @@ document.write(`
        title="pagina seguente">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">successivo</p>
-        <p class="prev-next-title">Impostazioni Dei Caratteri Finali</p>
+        <p class="prev-next-title">Carattere</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

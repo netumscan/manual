@@ -8,7 +8,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Paramètres du code-barres &#8212; NT-1202 Scanner User Manual</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>Symbologies &#8212; NT-1202 Scanner User Manual</title>
   
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=e6b791cb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\barcode.a74c2793-3346-4ac5-a9f2-99484639667c.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'barcode';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -243,7 +255,7 @@
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres du code-barres</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Symbologies</a></li>
 </ul>
 
     </div>
@@ -382,7 +394,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Paramètres du code-barres</h1>
+    <h1>Symbologies</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,14 +405,10 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Démarrer la configuration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-barcodes">Activer tous les codes-barres</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-1d-codes">Activer uniquement les codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-2d-codes">Activer uniquement les codes 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Paramètres de l’URL du QR Code</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-symbologies">Activer toutes les symboles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-1d-symbologies">Activer uniquement les symboles 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-2d-symbologies">Activer uniquement les symboles 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-barcodes-with-urls">Bloquer les codes-barres avec des URL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Fin de la configuration</a></li>
 </ul>
             </nav>
@@ -413,87 +421,81 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="barcode-settings">
-<h1>Paramètres du code-barres<a class="headerlink" href="#barcode-settings" title="Lien vers cette rubrique">#</a></h1>
+  <section id="symbologies">
+<h1>Symbologies<a class="headerlink" href="#symbologies" title="Lien vers cette rubrique">#</a></h1>
 <section id="start-setup">
 <h2>Démarrer la configuration<a class="headerlink" href="#start-setup" title="Lien vers cette rubrique">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Ce n’est qu’après avoir scanné <a class="reference internal" href="#start-setup">Démarrer l’installation</a> que vous pouvez scanner d’autres codes de configuration de fonction pour la configuration. Vous devez scanner <a class="reference internal" href="#end-setup">End Setup</a> pour que la configuration correspondante prenne effet.</p>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Ce n’est qu’après avoir scanné <a class="reference internal" href="#start-setup-figure">Démarrer l’installation</a> que vous pouvez scanner d’autres codes de configuration de fonction pour la configuration. Vous devez scanner <a class="reference internal" href="#end-setup-figure">End Setup</a> pour que la configuration correspondante prenne effet.</p>
 </div>
-<figure class="align-center" id="id1">
+<figure class="align-center" id="start-setup-figure">
 <a class="reference internal image-reference" href="../../media/252B24.24.png"><img alt="../../media/252B24.24.png" src="../../media/252B24.24.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Démarrer la configuration</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Démarrer la configuration</span><a class="headerlink" href="#start-setup-figure" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="enable-all-barcodes">
-<h2>Activer tous les codes-barres<a class="headerlink" href="#enable-all-barcodes" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id2">
+<section id="enable-all-symbologies">
+<h2>Activer toutes les symboles<a class="headerlink" href="#enable-all-symbologies" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/EC00.png"><img alt="../../media/EC00.png" src="../../media/EC00.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer tous les codes-barres</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer toutes les symboles</span><a class="headerlink" href="#id1" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="only-enable-1d-codes">
-<h2>Activer uniquement les codes 1D<a class="headerlink" href="#only-enable-1d-codes" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id3">
+<section id="only-enable-1d-symbologies">
+<h2>Activer uniquement les symboles 1D<a class="headerlink" href="#only-enable-1d-symbologies" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/OE1D.png"><img alt="../../media/OE1D.png" src="../../media/OE1D.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer uniquement les codes 1D</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer uniquement les symboles 1D</span><a class="headerlink" href="#id2" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="only-enable-2d-codes">
-<h2>Activer uniquement les codes 2D<a class="headerlink" href="#only-enable-2d-codes" title="Lien vers cette rubrique">#</a></h2>
-<figure class="align-center" id="id4">
+<section id="only-enable-2d-symbologies">
+<h2>Activer uniquement les symboles 2D<a class="headerlink" href="#only-enable-2d-symbologies" title="Lien vers cette rubrique">#</a></h2>
+<figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/OE2D.png"><img alt="../../media/OE2D.png" src="../../media/OE2D.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer uniquement les codes 2D</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Activer uniquement les symboles 2D</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-<section id="qr-code-url-settings">
-<h2>Paramètres de l’URL du QR Code<a class="headerlink" href="#qr-code-url-settings" title="Lien vers cette rubrique">#</a></h2>
+<section id="block-barcodes-with-urls">
+<h2>Bloquer les codes-barres avec des URL<a class="headerlink" href="#block-barcodes-with-urls" title="Lien vers cette rubrique">#</a></h2>
 <p>Bloquer la numérisation des codes QR URL commençant par <code class="docutils literal notranslate"><span class="pre">http://</span></code>, <code class="docutils literal notranslate"><span class="pre">https://</span></code></p>
-<section id="disable">
-<h3>Désactiver<a class="headerlink" href="#disable" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id5">
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/25DISABLE_WEB25.png"><img alt="../../media/25DISABLE_WEB25.png" src="../../media/25DISABLE_WEB25.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Désactiver</span><a class="headerlink" href="#id4" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
-</section>
-<section id="enable">
-<h3>Activer<a class="headerlink" href="#enable" title="Lien vers cette rubrique">#</a></h3>
-<figure class="align-center" id="id6">
+<figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/25ENABLE_WEB25.png"><img alt="../../media/25ENABLE_WEB25.png" src="../../media/25ENABLE_WEB25.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Activer <code class="docutils literal notranslate"><span class="pre">Défaut</span></code></span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Activer</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
-</section>
 <section id="end-setup">
 <h2>Fin de la configuration<a class="headerlink" href="#end-setup" title="Lien vers cette rubrique">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Ce n’est qu’après avoir scanné <a class="reference internal" href="#start-setup">Démarrer l’installation</a> que vous pouvez scanner d’autres codes de configuration de fonction pour la configuration. Vous devez scanner <a class="reference internal" href="#end-setup">End Setup</a> pour que la configuration correspondante prenne effet.</p>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Ce n’est qu’après avoir scanné <a class="reference internal" href="#start-setup-figure">Démarrer l’installation</a> que vous pouvez scanner d’autres codes de configuration de fonction pour la configuration. Vous devez scanner <a class="reference internal" href="#end-setup-figure">End Setup</a> pour que la configuration correspondante prenne effet.</p>
 </div>
-<figure class="align-center" id="id7">
+<figure class="align-center" id="end-setup-figure">
 <a class="reference internal image-reference" href="../../media/25242425.png"><img alt="../../media/25242425.png" src="../../media/25242425.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Fin de la configuration</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text">Fin de la configuration</span><a class="headerlink" href="#end-setup-figure" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
@@ -536,14 +538,10 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#start-setup">Démarrer la configuration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-barcodes">Activer tous les codes-barres</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-1d-codes">Activer uniquement les codes 1D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-2d-codes">Activer uniquement les codes 2D</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#qr-code-url-settings">Paramètres de l’URL du QR Code</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disable">Désactiver</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enable">Activer</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enable-all-symbologies">Activer toutes les symboles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-1d-symbologies">Activer uniquement les symboles 1D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#only-enable-2d-symbologies">Activer uniquement les symboles 2D</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#block-barcodes-with-urls">Bloquer les codes-barres avec des URL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-setup">Fin de la configuration</a></li>
 </ul>
   </nav></div>

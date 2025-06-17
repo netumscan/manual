@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>F16 有線スキャナークイックセットアップガイド &#8212; F16 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=4755f45a"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\index.988641d3-87d1-48ff-80c3-947c920540fd.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="検索" href="search.html" />
@@ -243,9 +255,9 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">システム設定</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">スキャンモード</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">文字</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">バーコードの設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
 </ul>
 
     </div>
@@ -413,12 +425,9 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="scanmode.html#same-code-delay-settings">同じコードの遅延設定</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">終了文字設定</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">終了文字なし</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Enter+New Line(CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Enter(CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#tab-tab">Tab(TAB)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-enter-crcr">Enter+Enter(CRCRCR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">文字</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">終了文字設定</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#transmit-code-id-character">コードID文字を送信</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">キーボードの設定</a><ul>
@@ -426,14 +435,50 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="keyboard.html#keyboard-language">キーボードの言語</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">バーコードの設定</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#disable-scanning-1d-codes">スキャン中 1 D コードを無効にする</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#enable-scanning-1d-codes">スキャンする 1 D コードを有効にする</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#disable-scanning-2d-codes">2Dコードのスキャンを無効にする</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#enable-scanning-2d-codes">2Dコードのスキャンを有効にする</a></li>
-<li class="toctree-l2"><a class="reference internal" href="barcode.html#qr-code-url-settings">QRコードのURL設定</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#all-symbologies">すべてのSymbologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#d-symbologies">1Dシンボロジー数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#id1">2D Symbologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#d-reverse-symbologies">1次元の対称性を逆にする</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#block-barcodes-with-urls">URL付きバーコードをブロック</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-a">UPC-A</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#upc-e">UPC-E</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-8">EAN-8</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#ean-13">EAN-13</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#bookland-ean-isbn">Bookland EAN(ISBN)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-128">コード 128</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-128-ucc-ean-128">GS1-128 (UCC/EAN-128)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#isbt-128">ISBT 128</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-39">Code 39</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-32">コード 32</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-93">コード 93</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#code-11">コード 11</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#interleaved-2-of-5-itf">インターリーブ2/5/ITF2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#discrete-2-of-5-industrial-2-of-5-ind25">離散2 / 5/IND25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#matrix-25">マトリクス25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#standdard-25-iata-25">Standdard 25/IATA 25</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#codabar">Codabar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#msi-msi-plessey">MSI/MSI Plessey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#gs1-databar-rss">GS1 データバー/RSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#pdf417">PDF417</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#qr-code">QR Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#data-matrix-dm">Data Matrix(DM)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#maxi-code">Maxi Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#aztec-code">Aztec Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#han-xin-code">Han Xin COde</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#issn">ISSN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#nec-25-coop25">NEC-25(COOP25)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#composite">COMPOSITE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#brazil-bank-code">ブラジルの銀行コード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="barcode.html#digital-barcode">デジタルバーコード</a></li>
 </ul>
 </li>
+</ul>
+</div>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<ul class="simple">
+<li><p>アスタリスク ( * ) はデフォルト値を示します。</p></li>
 </ul>
 </div>
 </section>

@@ -19,7 +19,7 @@ Only after scanning [Start Setup](#start-setup) can you scan other function setu
 :align: center
 :width: 300px
 
-Enable Voice Prompts `Default`
+`*` Enable Voice Prompts
 ```
 
 ## Disable Voice Prompts

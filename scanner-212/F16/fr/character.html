@@ -8,7 +8,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Paramètres de caractère de fin &#8212; F16 Scanner User Manual</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
+    <title>Caractère &#8212; F16 Scanner User Manual</title>
   
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=e6b791cb"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\character.d09a8966-70a4-41e5-9bd0-7585791930a9.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'character';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -242,9 +254,9 @@
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Paramètres de caractère de fin</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Caractère</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode.html">Paramètres du code-barres</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
 </ul>
 
     </div>
@@ -383,7 +395,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Paramètres de caractère de fin</h1>
+    <h1>Caractère</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -393,11 +405,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Aucun caractère de fin</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Entrée+Nouvelle ligne(CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Entrée(CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Entrée+Entrée(CRCR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">Paramètres de caractère de fin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Aucun caractère de fin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Entrée+Nouvelle ligne(CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Entrée(CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Entrée+Entrée(CRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">Transmettre le code ID du personnage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">Identificateurs d’ID de code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-code-identifiers">Identifiants de code AIM</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -409,11 +429,13 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="end-character-settings">
-<h1>Paramètres de caractère de fin<a class="headerlink" href="#end-character-settings" title="Lien vers cette rubrique">#</a></h1>
+  <section id="character">
+<h1>Caractère<a class="headerlink" href="#character" title="Lien vers cette rubrique">#</a></h1>
+<section id="end-character-settings">
+<h2>Paramètres de caractère de fin<a class="headerlink" href="#end-character-settings" title="Lien vers cette rubrique">#</a></h2>
 <p>Le caractère de fin est ajouté après le décodage des données au format des données décodées + caractère de fin.</p>
 <section id="no-end-character">
-<h2>Aucun caractère de fin<a class="headerlink" href="#no-end-character" title="Lien vers cette rubrique">#</a></h2>
+<h3>Aucun caractère de fin<a class="headerlink" href="#no-end-character" title="Lien vers cette rubrique">#</a></h3>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../../media/3030050.png"><img alt="../../media/3030050.png" src="../../media/3030050.png" style="width: 300px;" />
 </a>
@@ -423,7 +445,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-new-line-crlf">
-<h2>Entrée+Nouvelle ligne(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Lien vers cette rubrique">#</a></h2>
+<h3>Entrée+Nouvelle ligne(CRLF)<a class="headerlink" href="#enter-new-line-crlf" title="Lien vers cette rubrique">#</a></h3>
 <figure class="align-center" id="id2">
 <a class="reference internal image-reference" href="../../media/3030051.png"><img alt="../../media/3030051.png" src="../../media/3030051.png" style="width: 300px;" />
 </a>
@@ -433,17 +455,17 @@ document.write(`
 </figure>
 </section>
 <section id="enter-cr">
-<h2>Entrée(CR)<a class="headerlink" href="#enter-cr" title="Lien vers cette rubrique">#</a></h2>
+<h3>Entrée(CR)<a class="headerlink" href="#enter-cr" title="Lien vers cette rubrique">#</a></h3>
 <figure class="align-center" id="id3">
 <a class="reference internal image-reference" href="../../media/3030052.png"><img alt="../../media/3030052.png" src="../../media/3030052.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Entrée(CR) <code class="docutils literal notranslate"><span class="pre">Par</span> <span class="pre">défaut</span></code></span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Entrée(CR)</span><a class="headerlink" href="#id3" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="tab-tab">
-<h2>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Lien vers cette rubrique">#</a></h2>
+<h3>Tab(TAB)<a class="headerlink" href="#tab-tab" title="Lien vers cette rubrique">#</a></h3>
 <figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../../media/3030053.png"><img alt="../../media/3030053.png" src="../../media/3030053.png" style="width: 300px;" />
 </a>
@@ -453,7 +475,7 @@ document.write(`
 </figure>
 </section>
 <section id="enter-enter-crcr">
-<h2>Entrée+Entrée(CRCR)<a class="headerlink" href="#enter-enter-crcr" title="Lien vers cette rubrique">#</a></h2>
+<h3>Entrée+Entrée(CRCR)<a class="headerlink" href="#enter-enter-crcr" title="Lien vers cette rubrique">#</a></h3>
 <figure class="align-center" id="id5">
 <a class="reference internal image-reference" href="../../media/3030054.png"><img alt="../../media/3030054.png" src="../../media/3030054.png" style="width: 300px;" />
 </a>
@@ -461,6 +483,44 @@ document.write(`
 <p><span class="caption-text">Entrée+Entrée(CRCR)</span><a class="headerlink" href="#id5" title="Lien vers cette image">#</a></p>
 </figcaption>
 </figure>
+</section>
+</section>
+<section id="transmit-code-id-character">
+<h2>Transmettre le code ID du personnage<a class="headerlink" href="#transmit-code-id-character" title="Lien vers cette rubrique">#</a></h2>
+<p>Un caractère ID de code identifie le type de code d’un code à barres scanné. Cela peut être utile lors du décodage de plusieurs types de code. Le caractère ID du code est inséré entre le caractère préfixe (si sélectionné) et le symbole décodé.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../media/2051700.png"><img alt="../../media/2051700.png" src="../../media/2051700.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> Aucun</span><a class="headerlink" href="#id6" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../media/2051701.png"><img alt="../../media/2051701.png" src="../../media/2051701.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">ID AIM</span><a class="headerlink" href="#id7" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../media/2051702.png"><img alt="../../media/2051702.png" src="../../media/2051702.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">ID du code</span><a class="headerlink" href="#id8" title="Lien vers cette image">#</a></p>
+</figcaption>
+</figure>
+<section id="code-id-identifiers">
+<h3>Identificateurs d’ID de code<a class="headerlink" href="#code-id-identifiers" title="Lien vers cette rubrique">#</a></h3>
+<iframe src="../../plugins/212-codeid.html" style="height:800px; width:100%; border:none;"></iframe></section>
+<section id="aim-code-identifiers">
+<h3>Identifiants de code AIM<a class="headerlink" href="#aim-code-identifiers" title="Lien vers cette rubrique">#</a></h3>
+<p>Chaque identifiant de code AIM contient la chaîne de trois caractères ]cm où : <br></p>
+<ul class="simple">
+<li><p>] = Caractère du drapeau</p></li>
+<li><p>c =Caractère de code (voir tableau)</p></li>
+<li><p>m= Modifier le personnage</p></li>
+</ul>
+<iframe src="../../plugins/212-aimid.html" style="height:800px; width:100%; border:none;"></iframe></section>
 </section>
 </section>
 
@@ -509,11 +569,19 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Aucun caractère de fin</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Entrée+Nouvelle ligne(CRLF)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Entrée(CR)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Entrée+Entrée(CRCR)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#end-character-settings">Paramètres de caractère de fin</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#no-end-character">Aucun caractère de fin</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-new-line-crlf">Entrée+Nouvelle ligne(CRLF)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-cr">Entrée(CR)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tab-tab">Tab(TAB)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#enter-enter-crcr">Entrée+Entrée(CRCR)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transmit-code-id-character">Transmettre le code ID du personnage</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-id-identifiers">Identificateurs d’ID de code</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aim-code-identifiers">Identifiants de code AIM</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
