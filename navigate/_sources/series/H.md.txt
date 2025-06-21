@@ -4,22 +4,22 @@ hide-toc: true
 
 # H Series Scanner
 
-## [H3](https://wx2.scandocs.net/H3/en)
+## [H3](https://doc3.scandocs.net/H3/en)
 
 ```{figure} ../media/series/H3.jpg
 :align: center
-:target: https://wx2.scandocs.net/H3/en
+:target: https://doc3.scandocs.net/H3/en
 
-[H3](https://wx2.scandocs.net/H3/en)
+[H3](https://doc3.scandocs.net/H3/en)
 ```
 
 
-## [H8](https://wx2.scandocs.net/H8/en)
+## [H8](https://doc1.scandocs.net/H8/en)
 
 
 ```{figure} ../media/series/H8.jpg
 :align: center
-:target: https://wx2.scandocs.net/H8/en
+:target: https://doc1.scandocs.net/H8/en
 
-[H8](https://wx2.scandocs.net/H8/en)
+[H8](https://doc1.scandocs.net/H8/en)
 ```

@@ -4,40 +4,40 @@ hide-toc: true
 
 # RS Series Scanner
 
-## [R2L](https://wx5.scandocs.net/R2L/en)
+## [R2L](https://doc2.scandocs.net/R2L/en)
 
 ```{figure} ../media/series/R2L.jpg
 :align: center
-:target: https://wx5.scandocs.net/R2L/en
+:target: https://doc2.scandocs.net/R2L/en
 
-[R2L](https://wx5.scandocs.net/R2L/en)
+[R2L](https://doc2.scandocs.net/R2L/en)
 ```
 
 
-## [RS-8000BT](https://wx5.scandocs.net/RS-8000BT/en)
+## [RS-8000BT](https://doc2.scandocs.net/RS-8000BT/en)
 
 
 ```{figure} ../media/series/RS-8000BT.jpg
 :align: center
-:target: https://wx5.scandocs.net/RS-8000BT/en
+:target: https://doc2.scandocs.net/RS-8000BT/en
 
-[RS-8000BT](https://wx5.scandocs.net/RS-8000BT/en)
+[RS-8000BT](https://doc2.scandocs.net/RS-8000BT/en)
 ```
 
-## [RS-9000BT](https://wx5.scandocs.net/RS-9000BT/en)
+## [RS-9000BT](https://doc5.scandocs.net/RS-9000BT/en)
 
 ```{figure} ../media/series/RS-9000BT.jpg
 :align: center
-:target: https://wx5.scandocs.net/RS-9000BT/en
+:target: https://doc5.scandocs.net/RS-9000BT/en
 
-[RS-9000BT](https://wx5.scandocs.net/RS-9000BT/en)
+[RS-9000BT](https://doc5.scandocs.net/RS-9000BT/en)
 ```
 
-## [RS-9000PT](https://wx5.scandocs.net/RS-9000PT/en)
+## [RS-9000PT](https://doc5.scandocs.net/RS-9000PT/en)
 
 ```{figure} ../media/series/RS-9000PT.jpg
 :align: center
-:target: https://wx5.scandocs.net/RS-9000PT/en
+:target: https://doc5.scandocs.net/RS-9000PT/en
 
-[RS-9000PT](https://wx5.scandocs.net/RS-9000PT/en)
+[RS-9000PT](https://doc5.scandocs.net/RS-9000PT/en)
 ```

@@ -8,6 +8,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4FLCEP0X8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-K4FLCEP0X8');
+    </script>
+    
     <title>蓝牙模式 &#8212; DS2800 Scanner User Manual</title>
   
   
@@ -45,6 +54,9 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="_static/translations.js?v=beaddf03"></script>
+    <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
+    <script defer="defer" src="_static/tippy\bluetooth.1573a89d-dc37-4161-b357-36822904e72a.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'bluetooth';</script>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -163,7 +175,7 @@
 <li class="toctree-l1"><a class="reference internal" href="system.html">系统设置</a></li>
 <li class="toctree-l1"><a class="reference internal" href="working.html">工作模式</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="wireless.html">Wi-Fi 传输模式</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用 TCP 客户端来传输数据</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tcpclient.html">使用 TCP 客户端传输数据</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tcpserver.html">使用 TCP 服务端传输数据</a></li>
 <li class="toctree-l2"><a class="reference internal" href="mqtt.html">使用 MQTT 协议传输数据</a></li>
 <li class="toctree-l2"><a class="reference internal" href="http.html">使用 HTTP 协议传输数据</a></li>
@@ -361,7 +373,7 @@ document.write(`
 <a class="reference internal image-reference" href="../../media/AT2BPROFILE3D2.png"><img alt="../../media/AT2BPROFILE3D2.png" src="../../media/AT2BPROFILE3D2.png" style="width: 300px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">蓝牙 HID <code class="docutils literal notranslate"><span class="pre">默认</span></code></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+<p><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">*</span></code> 蓝牙 HID</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>

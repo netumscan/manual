@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=f85f4cfb"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.06e38b1b-2288-4216-9d32-94c40cfdc876.js"></script>
+    <script defer="defer" src="_static/tippy\index.8f42b3e3-9513-4f60-bf99-eff751a6bf4f.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
@@ -255,7 +255,7 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modo de escaneo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminador</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologías</a></li>
 </ul>
@@ -428,11 +428,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="scanmode.html#scanning-interval">Intervalo de escaneo</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="character.html#add-enter-cr">Añadir Enter(CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#cancel-enter-cr">Cancelar Enter(CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#add-enter-new-line-crlf">Añadir entrada+nueva línea (CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#cancel-enter-new-line-crlf">Cancelar Enter+Nueva Línea (CRLF)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminador</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Configuración de End Caracter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a><ul>
@@ -451,9 +448,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<ul class="simple">
-<li><p>asterisks ( * ) indican los valores por defecto.</p></li>
-</ul>
+<p>Los escáneres de código de barras están programados por fábrica para los ajustes de terminal y comunicaciones más comunes. Si necesita cambiar estos ajustes, la programación se logra escaneando los códigos de barras de esta guía. Un asterisco (*) junto a una opción indica la configuración por defecto.</p>
 </div>
 </section>
 

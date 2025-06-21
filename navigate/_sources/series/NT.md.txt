@@ -5,34 +5,34 @@ hide-toc: true
 # NT Series Scanner
 
 
-## [NT-1228BC](https://wx4.scandocs.net/NT-1228BC/en)
+## [NT-1228BC](https://doc3.scandocs.net/NT-1228BC/en)
 
 ```{figure} ../media/series/NT-1228BC.jpg
 :align: center
-:target: https://wx4.scandocs.net/NT-1228BC/en
+:target: https://doc3.scandocs.net/NT-1228BC/en
 
-[NT-1228BC](https://wx4.scandocs.net/NT-1228BC/en)
+[NT-1228BC](https://doc3.scandocs.net/NT-1228BC/en)
 ```
 
 
-## [NT-1228BL](https://wx4.scandocs.net/NT-1228BL/en)
+## [NT-1228BL](https://doc2.scandocs.net/NT-1228BL/en)
 
 
 ```{figure} ../media/series/NT-1228BL.jpg
 :align: center
-:target: https://wx4.scandocs.net/NT-1228BL/en
+:target: https://doc2.scandocs.net/NT-1228BL/en
 
-[NT-1228BL](https://wx4.scandocs.net/NT-1228BL/en)
+[NT-1228BL](https://doc2.scandocs.net/NT-1228BL/en)
 ```
 
-## [NT-2028](https://wx4.scandocs.net/NT-2028/en)
+## [NT-2028](https://doc2.scandocs.net/NT-2028/en)
 
 
 ```{figure} ../media/series/NT-2028.jpg
 :align: center
-:target: https://wx4.scandocs.net/NT-2028/en
+:target: https://doc2.scandocs.net/NT-2028/en
 
-[NT-2028](https://wx4.scandocs.net/NT-2028/en)
+[NT-2028](https://doc2.scandocs.net/NT-2028/en)
 ```
 
 ## [NT-2028-PS](https://212.scandocs.net/NT-2028-PS/en)
@@ -44,13 +44,13 @@ hide-toc: true
 [NT-2028-PS](https://212.scandocs.net/NT-2028-PS/en)
 ```
 
-## [NT-2028-PS-W](https://wx4.scandocs.net/NT-2028-PS/en-W)
+## [NT-2028-PS-W](https://doc2.scandocs.net/NT-2028-PS-W/en)
 
 ```{figure} ../media/series/NT-2028-PS-W.jpg
 :align: center
-:target: https://wx4.scandocs.net/NT-2028-PS-W/en
+:target: https://doc2.scandocs.net/NT-2028-PS-W/en
 
-[NT-2028-PS-W](https://wx4.scandocs.net/NT-2028-PS/en-W)
+[NT-2028-PS-W](https://doc2.scandocs.net/NT-2028-PS-W/en)
 ```
 
 

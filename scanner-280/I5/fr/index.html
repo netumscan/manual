@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=e6b791cb"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.fde3a80b-67a2-4318-bc4a-2fde6d0c9b6c.js"></script>
+    <script defer="defer" src="_static/tippy\index.ab062ebe-7070-4351-bdab-b430e5e3642a.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Recherche" href="search.html" />
@@ -255,7 +255,7 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Paramètres du système</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Mode de scan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminateur</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Paramètres du clavier</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Symbologies</a></li>
 </ul>
@@ -427,11 +427,9 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="scanmode.html#end-setup">Fin de la configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Paramètres de caractère de fin</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminateur</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#start-setup">Démarrer la configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">Aucun caractère de fin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Entrée+Nouvelle ligne(CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Entrée(CR)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Paramètres de caractère de fin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-setup">Fin de la configuration</a></li>
 </ul>
 </li>
@@ -454,9 +452,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul class="simple">
-<li><p>astérisques ( * ) indiquent les valeurs par défaut.</p></li>
-</ul>
+<p>Les scanners de codes à barres sont programmés en usine pour les paramètres de terminal et de communication les plus courants. Si vous avez besoin de modifier ces paramètres, la programmation est effectuée en scannant les codes à barres dans ce guide. Un astérisque (*) à côté d’une option indique le paramètre par défaut.</p>
 </div>
 </section>
 

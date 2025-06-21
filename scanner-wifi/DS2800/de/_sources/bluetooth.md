@@ -16,7 +16,7 @@ The blue light means:<br>①The blue light flashes, indicating that it is not co
 :align: center
 :width: 300px
 
-Bluetooth HID `Default`
+`*` Bluetooth HID
 ```
 
  ## Bluetooth SPP

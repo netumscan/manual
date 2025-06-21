@@ -14,22 +14,22 @@ hide-toc: true
 ```
 
 
-## [K6](https://wx3.scandocs.net/K6/en)
+## [K6](https://doc3.scandocs.net/K6/en)
 
 
 ```{figure} ../media/series/K6.jpg
 :align: center
-:target: https://wx3.scandocs.net/K6/en
+:target: https://doc3.scandocs.net/K6/en
 
-[K6](https://wx3.scandocs.net/K6/en)
+[K6](https://doc3.scandocs.net/K6/en)
 ```
 
-## [K28](https://wx3.scandocs.net/K28/en)
+## [K28](https://doc1.scandocs.net/K28/en)
 
 
 ```{figure} ../media/series/K28.jpg
 :align: center
-:target: https://wx3.scandocs.net/K28/en
+:target: https://doc1.scandocs.net/K28/en
 
-[K28](https://wx3.scandocs.net/K28/en)
+[K28](https://doc1.scandocs.net/K28/en)
 ```

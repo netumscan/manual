@@ -14,14 +14,14 @@ hide-toc: true
 ```
 
 
-## [GY-60U](https://wx2.scandocs.net/GY-60U/en)
+## [GY-60U](https://doc4.scandocs.net/GY-60U/en)
 
 
 ```{figure} ../media/series/GY-60U.jpg
 :align: center
-:target: https://wx2.scandocs.net/GY-60U/en
+:target: https://doc4.scandocs.net/GY-60U/en
 
-[GY-60U](https://wx2.scandocs.net/GY-60U/en)
+[GY-60U](https://doc4.scandocs.net/GY-60U/en)
 ```
 
 ## [GY-70U](https://290.scandocs.net/GY-70U/en)
@@ -34,11 +34,11 @@ hide-toc: true
 [GY-70U](https://290.scandocs.net/GY-70U/en)
 ```
 
-## [GY-80U](https://wx2.scandocs.net/GY-80U/en)
+## [GY-80U](https://doc4.scandocs.net/GY-80U/en)
 
 ```{figure} ../media/series/GY-80U.jpg
 :align: center
-:target: https://wx2.scandocs.net/GY-80U/en
+:target: https://doc4.scandocs.net/GY-80U/en
 
-[GY-80U](https://wx2.scandocs.net/GY-80U/en)
+[GY-80U](https://doc4.scandocs.net/GY-80U/en)
 ```

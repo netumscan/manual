@@ -13,31 +13,40 @@ hide-toc: true
 [DS2800](https://wifi.scandocs.net/DS2800/en)
 ```
 
-## [DS7500](https://wx1.scandocs.net/DS7500/en)
+## [DS5000](https://doc3.scandocs.net/DS5000/en)
 
 ```{figure} ../media/series/DS7500.jpg
 :align: center
-:target: https://wx1.scandocs.net/DS7500/en
+:target: https://doc3.scandocs.net/DS5000/en
 
-[DS7500](https://wx1.scandocs.net/DS7500/en)
+[DS5000](https://doc3.scandocs.net/DS5000/en)
 ```
 
-## [DS-8100](https://wx1.scandocs.net/DS-8100/en)
+## [DS7500](https://doc1.scandocs.net/DS7500/en)
+
+```{figure} ../media/series/DS7500.jpg
+:align: center
+:target: https://doc1.scandocs.net/DS7500/en
+
+[DS7500](https://doc1.scandocs.net/DS7500/en)
+```
+
+## [DS-8100](https://doc1.scandocs.net/DS-8100/en)
 
 
 ```{figure} ../media/series/DS-8100.jpg
 :align: center
-:target: https://wx1.scandocs.net/DS-8100/en
+:target: https://doc1.scandocs.net/DS-8100/en
 
-[DS-8100](https://wx1.scandocs.net/DS-8100/en)
+[DS-8100](https://doc1.scandocs.net/DS-8100/en)
 ```
 
-## [DS-8500](https://wx1.scandocs.net/DS-8500/en)
+## [DS-8500](https://doc1.scandocs.net/DS-8500/en)
 
 
 ```{figure} ../media/series/DS-8500.jpg
 :align: center
-:target: https://wx1.scandocs.net/DS-8500/en
+:target: https://doc1.scandocs.net/DS-8500/en
 
-[DS-8500](https://wx1.scandocs.net/DS-8500/en)
+[DS-8500](https://doc1.scandocs.net/DS-8500/en)
 ```

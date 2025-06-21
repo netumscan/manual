@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=f85f4cfb"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.42f384dd-4978-4bb4-8da2-e08c7f87ed43.js"></script>
+    <script defer="defer" src="_static/tippy\index.65c5018f-eb53-4058-8c24-165ce27aa0c8.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
@@ -254,7 +254,7 @@
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Ajustes del sistema</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminador</a></li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a></li>
 <li class="toctree-l1"><a class="reference internal" href="qrcodeurl.html">Configuración de URL del código QR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="codedelay.html">Configuración del mismo código de retraso</a></li>
@@ -418,11 +418,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="system.html#volume-settings">Ajustes de volumen</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Configuración de End Caracter</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">Sin caracteres de fin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Entrar (CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#tab-tab">Tab(TAB)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Entrar+Nueva línea (CRLF)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminador</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Configuración de End Caracter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="keyboard.html">Ajustes del teclado</a><ul>
@@ -446,9 +443,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<ul class="simple">
-<li><p>asterisks ( * ) indican los valores por defecto.</p></li>
-</ul>
+<p>Los escáneres de código de barras están programados por fábrica para los ajustes de terminal y comunicaciones más comunes. Si necesita cambiar estos ajustes, la programación se logra escaneando los códigos de barras de esta guía. Un asterisco (*) junto a una opción indica la configuración por defecto.</p>
 </div>
 </section>
 

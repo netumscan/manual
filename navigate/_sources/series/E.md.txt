@@ -6,41 +6,41 @@ hide-toc: true
 # E Series Scanner
 
 
-## [E740](https://wx2.scandocs.net/E740/en)
+## [E740](https://doc3.scandocs.net/E740/en)
 
 ```{figure} ../media/series/E740.jpg
 :align: center
-:target: https://wx2.scandocs.net/E740/en
+:target: https://doc3.scandocs.net/E740/en
 
-[E740](https://wx2.scandocs.net/E740/en)
+[E740](https://doc3.scandocs.net/E740/en)
 ```
 
-## [E800](https://wx2.scandocs.net/E800/en)
+## [E800](https://doc1.scandocs.net/E800/en)
 
 
 ```{figure} ../media/series/E800.jpg
 :align: center
-:target: https://wx2.scandocs.net/E800/en
+:target: https://doc1.scandocs.net/E800/en
 
-[E800](https://wx2.scandocs.net/E800/en)
+[E800](https://doc1.scandocs.net/E800/en)
 ```
 
-## [E900](https://wx2.scandocs.net/E900/en)
+## [E900](https://doc5.scandocs.net/E900/en)
 
 
 ```{figure} ../media/series/E900.jpg
 :align: center
-:target: https://wx2.scandocs.net/E900/en
+:target: https://doc5.scandocs.net/E900/en
 
-[E900](https://wx2.scandocs.net/E900/en)
+[E900](https://doc5.scandocs.net/E900/en)
 ```
 
-## [E950](https://wx2.scandocs.net/E950/en)
+## [E950](https://doc5.scandocs.net/E950/en)
 
 ```{figure} ../media/series/E950.jpg
 :align: center
-:target: https://wx2.scandocs.net/E950/en
+:target: https://doc5.scandocs.net/E950/en
 
-[E950](https://wx2.scandocs.net/E950/en)
+[E950](https://doc5.scandocs.net/E950/en)
 ```
 

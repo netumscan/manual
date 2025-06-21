@@ -4,14 +4,14 @@ hide-toc: true
 
 #   M Series Scanner
 
-## [M20](https://wx3.scandocs.net/M20/en)
+## [M20](https://doc3.scandocs.net/M20/en)
 
 
 ```{figure} ../media/series/M20.jpg
 :align: center
-:target: https://wx3.scandocs.net/M20/en
+:target: https://doc3.scandocs.net/M20/en
 
-[M20](https://wx3.scandocs.net/M20/en)
+[M20](https://doc3.scandocs.net/M20/en)
 ```
 
 ## [M5](https://212.scandocs.net/M5/en)
@@ -33,22 +33,22 @@ hide-toc: true
 [M60](https://212.scandocs.net/M60/en)
 ```
 
-## [M80](https://wx3.scandocs.net/M80/en)
+## [M80](https://doc1.scandocs.net/M80/en)
 
 ```{figure} ../media/series/M80.jpg
 :align: center
-:target: https://wx3.scandocs.net/M80/en
+:target: https://doc1.scandocs.net/M80/en
 
-[M80](https://wx3.scandocs.net/M80/en)
+[M80](https://doc1.scandocs.net/M80/en)
 ```
 
-## [M8BT](https://wx3.scandocs.net/M8BT/en)
+## [M8BT](https://doc1.scandocs.net/M8BT/en)
 
 ```{figure} ../media/series/M8BT.jpg
 :align: center
-:target: https://wx3.scandocs.net/M8BT/en
+:target: https://doc1.scandocs.net/M8BT/en
 
-[M8BT](https://wx3.scandocs.net/M8BT/en)
+[M8BT](https://doc1.scandocs.net/M8BT/en)
 ```
 
 

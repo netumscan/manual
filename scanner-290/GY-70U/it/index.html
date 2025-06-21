@@ -56,7 +56,7 @@
     <script src="_static/translations.js?v=45930005"></script>
     <script defer="defer" src="https://unpkg.com/@popperjs/core@2"></script>
     <script defer="defer" src="https://unpkg.com/tippy.js@6"></script>
-    <script defer="defer" src="_static/tippy\index.6fde0868-89be-4854-8ddc-0907e6a6cdf7.js"></script>
+    <script defer="defer" src="_static/tippy\index.a60b9dc9-b3cb-44fd-a422-60b682fede59.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Indice" href="genindex.html" />
     <link rel="search" title="Cerca" href="search.html" />
@@ -255,7 +255,7 @@
         <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="system.html">Impostazioni di Sistema</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scanmode.html">Modalità Scansione</a></li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a></li>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminatore</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode.html">Simbologie</a></li>
 </ul>
 
@@ -426,13 +426,9 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="scanmode.html#end-setup">Termina L’Impostazione</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="character.html">Impostazioni Dei Caratteri Finali</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="character.html">Terminatore</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="character.html#start-setup">Avvia Configurazione</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#no-end-character">Nessun Carattere Finale</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-cr">Enter(CR)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#enter-new-line-crlf">Enter+New Line (CRLF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#new-line-lf">Nuova Linea (LF)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="character.html#tab-tab">Tab(TAB)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="character.html#end-character-settings">Impostazioni Dei Caratteri Finali</a></li>
 <li class="toctree-l2"><a class="reference internal" href="character.html#end-setup">Termina L’Impostazione</a></li>
 </ul>
 </li>
@@ -447,9 +443,7 @@ document.write(`
 </div>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<ul class="simple">
-<li><p>asterischi ( * ) indicano i valori predefiniti.</p></li>
-</ul>
+<p>Gli scanner di codici a barre sono programmati in fabbrica per il terminale e le impostazioni di comunicazione più comuni. Se è necessario modificare queste impostazioni, la programmazione viene eseguita scansionando i codici a barre in questa guida. Un asterisco (*) accanto a un’opzione indica l’impostazione predefinita.</p>
 </div>
 </section>
 

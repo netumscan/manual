@@ -14,24 +14,24 @@ hide-toc: true
 ```
 
 
-## [W6-X](https://wx5.scandocs.net/W6-X/en)
+## [W6-X](https://doc3.scandocs.net/W6-X/en)
 
 
 ```{figure} ../media/series/W6-X.jpg
 :align: center
-:target: https://wx5.scandocs.net/W6-X/en
+:target: https://doc3.scandocs.net/W6-X/en
 
-[W6-X](https://wx5.scandocs.net/W6-X/en)
+[W6-X](https://doc3.scandocs.net/W6-X/en)
 ```
 
-## [W8-X](https://wx5.scandocs.net/W8-X/en)
+## [W8-X](https://doc4.scandocs.net/W8-X/en)
 
 
 ```{figure} ../media/series/W8-X.jpg
 :align: center
-:target: https://wx5.scandocs.net/W8-X/en
+:target: https://doc4.scandocs.net/W8-X/en
 
-[W8-X](https://wx5.scandocs.net/W8-X/en)
+[W8-X](https://doc4.scandocs.net/W8-X/en)
 ```
 
 ## [W22](https://212.scandocs.net/W22/en)
@@ -43,13 +43,13 @@ hide-toc: true
 [W22](https://212.scandocs.net/W22/en)
 ```
 
-## [W28](https://wx5.scandocs.net/W28/en)
+## [W28](https://doc2.scandocs.net/W28/en)
 
 ```{figure} ../media/series/W28.jpg
 :align: center
-:target: https://wx5.scandocs.net/W28/en
+:target: https://doc2.scandocs.net/W28/en
 
-[W28](https://wx5.scandocs.net/W28/en)
+[W28](https://doc2.scandocs.net/W28/en)
 ```
 
 
