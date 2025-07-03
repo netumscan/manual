@@ -1,0 +1,65 @@
+ 
+
+- 如何分享文件到打印机？
+```{raw} html
+   <iframe width="100%" height="200px" src="https://www.youtube.com/embed/HBTTdVyOmfM" 
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+```
+
+- 去手写功能如何使用？
+```{raw} html
+   <iframe width="100%" height="200px" src="https://www.youtube.com/embed/K6guJCVtkNs" 
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+```
+
+- 如何连接蓝牙？
+```{raw} html
+   <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ERj_jwtlp54" 
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+```
+
+- 如何装纸？
+```{raw} html
+   <iframe width="100%" height="200px" src="https://www.youtube.com/embed/ZftaZ8nQ26I" 
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+```
+
+- 文档打印使用教程
+```{raw} html
+   <iframe width="100%" height="200px" src="https://www.youtube.com/embed/SMzSSoR1H4k" 
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+```
+
+- 纹身纸打印使用教程
+```{raw} html
+   <iframe width="100%" height="200px" src="https://www.youtube.com/embed/01HuTnOohD8" 
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+```
+
+- 图片扫描如何使用？
+```{raw} html
+   <iframe width="100%" height="200px" src="https://www.youtube.com/embed/rx2RBT8FeiE" 
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+```
+
+- 手机应用商店搜不到，怎么下载呢？
+```{raw} html
+   <iframe width="100%" height="200px" src="https://www.youtube.com/embed/_twMa2z2ReM" 
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+           clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe>
+```
